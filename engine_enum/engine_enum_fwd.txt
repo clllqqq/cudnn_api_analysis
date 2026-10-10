@@ -1,0 +1,111 @@
+设备: dev0  sm_120  SM 数=26  驱动 13.3
+
+== 卷积图 fwd [N=4 C=3 64x64 -> K=16] 的 engine 总数 = 81
+
+== 逐个 engine 查询属性（engine 描述符 + engine config 描述符）
+idx   numerical_note                         behavior_note                                        preferred_layout               workspace      smem  sm
+0     STRICT_NAN_PROP                        -                                                    (无)                                  0        -1   0
+1     -                                      -                                                    (无)                                108        -1   0
+2     -                                      -                                                    (无)                            1769472        -1   0
+3     FFT                                    -                                                    (无)                            8521408        -1   0
+4     FFT                                    -                                                    (无)                             870400        -1   0
+5     -                                      RUNTIME_COMPILATION                                  (无)                                 -1        -1   0
+6     WINOGRAD                               -                                                    (无)                           11213568        -1   0
+7      finalize 失败: CUDNN_STATUS_NOT_SUPPORTED_ARCH_MISMATCH
+8      finalize 失败: CUDNN_STATUS_NOT_SUPPORTED_ARCH_MISMATCH
+9      finalize 失败: CUDNN_STATUS_NOT_SUPPORTED_ARCH_MISMATCH
+10     finalize 失败: CUDNN_STATUS_NOT_SUPPORTED_ARCH_MISMATCH
+11     finalize 失败: CUDNN_STATUS_NOT_SUPPORTED_ARCH_MISMATCH
+12     finalize 失败: CUDNN_STATUS_NOT_SUPPORTED_ARCH_MISMATCH
+13     finalize 失败: CUDNN_STATUS_NOT_SUPPORTED_ARCH_MISMATCH
+14     finalize 失败: CUDNN_STATUS_NOT_SUPPORTED_ARCH_MISMATCH
+15     finalize 失败: CUDNN_STATUS_NOT_SUPPORTED
+16     finalize 失败: CUDNN_STATUS_NOT_SUPPORTED_ARCH_MISMATCH
+17     finalize 失败: CUDNN_STATUS_NOT_SUPPORTED_ARCH_MISMATCH
+18     finalize 失败: CUDNN_STATUS_NOT_SUPPORTED_ARCH_MISMATCH
+19     finalize 失败: CUDNN_STATUS_NOT_SUPPORTED_ARCH_MISMATCH
+20     finalize 失败: CUDNN_STATUS_NOT_SUPPORTED
+21     finalize 失败: CUDNN_STATUS_NOT_SUPPORTED_ARCH_MISMATCH
+22    TENSOR_CORE,DOWN_CONVERT_INPUTS        -                                                    (无)                             788752        -1   0
+23    TENSOR_CORE,DOWN_CONVERT_INPUTS        -                                                    (无)                             788752        -1   0
+24     finalize 失败: CUDNN_STATUS_NOT_SUPPORTED_ARCH_MISMATCH
+25     finalize 失败: CUDNN_STATUS_NOT_SUPPORTED
+26     finalize 失败: CUDNN_STATUS_NOT_SUPPORTED_ARCH_MISMATCH
+27    TENSOR_CORE,DOWN_CONVERT_INPUTS        -                                                    (无)                             788752        -1   0
+28    -                                      -                                                    (无)                                  0        -1   0
+29     finalize 失败: CUDNN_STATUS_NOT_SUPPORTED_ARCH_MISMATCH
+30     finalize 失败: CUDNN_STATUS_NOT_SUPPORTED_ARCH_MISMATCH
+31     finalize 失败: CUDNN_STATUS_NOT_SUPPORTED_ARCH_MISMATCH
+32     finalize 失败: CUDNN_STATUS_NOT_SUPPORTED_ARCH_MISMATCH
+33     finalize 失败: CUDNN_STATUS_NOT_SUPPORTED_ARCH_MISMATCH
+34     finalize 失败: CUDNN_STATUS_NOT_SUPPORTED_ARCH_MISMATCH
+35    TENSOR_CORE                            -                                                    (无)                            1313040        -1   0
+36    TENSOR_CORE                            -                                                    (无)                            1313040        -1   0
+37     finalize 失败: CUDNN_STATUS_NOT_SUPPORTED
+38    TENSOR_CORE                            -                                                    (无)                             264464        -1   0
+39    TENSOR_CORE                            -                                                    (无)                            1313040        -1   0
+40     finalize 失败: CUDNN_STATUS_NOT_SUPPORTED
+41    TENSOR_CORE                            -                                                    (无)                             264464        -1   0
+42     finalize 失败: CUDNN_STATUS_NOT_SUPPORTED_ARCH_MISMATCH
+43     finalize 失败: CUDNN_STATUS_NOT_SUPPORTED
+44     finalize 失败: CUDNN_STATUS_NOT_SUPPORTED
+45    TENSOR_CORE,DOWN_CONVERT_INPUTS        -                                                    (无)                             788752        -1   0
+46    TENSOR_CORE                            -                                                    (无)                            1313040        -1   0
+47    TENSOR_CORE,DOWN_CONVERT_INPUTS        -                                                    (无)                             623472        -1   0
+48    TENSOR_CORE                            -                                                    (无)                            1246928        -1   0
+49     finalize 失败: CUDNN_STATUS_NOT_SUPPORTED_ARCH_MISMATCH
+50     finalize 失败: CUDNN_STATUS_NOT_SUPPORTED_ARCH_MISMATCH
+51     finalize 失败: CUDNN_STATUS_NOT_SUPPORTED_ARCH_MISMATCH
+52     finalize 失败: CUDNN_STATUS_NOT_SUPPORTED_ARCH_MISMATCH
+53     finalize 失败: CUDNN_STATUS_NOT_SUPPORTED_ARCH_MISMATCH
+54     finalize 失败: CUDNN_STATUS_NOT_SUPPORTED_ARCH_MISMATCH
+55     finalize 失败: CUDNN_STATUS_NOT_SUPPORTED_ARCH_MISMATCH
+56     finalize 失败: CUDNN_STATUS_NOT_SUPPORTED_ARCH_MISMATCH
+57     finalize 失败: CUDNN_STATUS_NOT_SUPPORTED
+58    TENSOR_CORE                            -                                                    (无)                                 -1        -1   0
+59     finalize 失败: CUDNN_STATUS_NOT_SUPPORTED
+60     finalize 失败: CUDNN_STATUS_NOT_SUPPORTED
+61     finalize 失败: CUDNN_STATUS_NOT_SUPPORTED_ARCH_MISMATCH
+62     finalize 失败: CUDNN_STATUS_NOT_SUPPORTED_ARCH_MISMATCH
+63     finalize 失败: CUDNN_STATUS_NOT_SUPPORTED_ARCH_MISMATCH
+64     finalize 失败: CUDNN_STATUS_NOT_SUPPORTED_ARCH_MISMATCH
+65     finalize 失败: CUDNN_STATUS_NOT_SUPPORTED
+66     finalize 失败: CUDNN_STATUS_NOT_SUPPORTED
+67     finalize 失败: CUDNN_STATUS_NOT_SUPPORTED_ARCH_MISMATCH
+68     finalize 失败: CUDNN_STATUS_NOT_SUPPORTED
+69     finalize 失败: CUDNN_STATUS_NOT_SUPPORTED
+70     finalize 失败: CUDNN_STATUS_NOT_SUPPORTED_ARCH_MISMATCH
+71    TENSOR_CORE                            RUNTIME_COMPILATION,SUPPORTS_CUDA_GRAPH_NATIVE_API   (无)                            1247296        -1   0
+72    TENSOR_CORE                            RUNTIME_COMPILATION,SUPPORTS_CUDA_GRAPH_NATIVE_API   (无)                                 -1        -1   0
+73     finalize 失败: CUDNN_STATUS_NOT_SUPPORTED_ARCH_MISMATCH
+74     finalize 失败: CUDNN_STATUS_NOT_SUPPORTED_ARCH_MISMATCH
+75     finalize 失败: CUDNN_STATUS_NOT_SUPPORTED_ARCH_MISMATCH
+76     finalize 失败: CUDNN_STATUS_NOT_SUPPORTED_ARCH_MISMATCH
+77     finalize 失败: CUDNN_STATUS_NOT_SUPPORTED_ARCH_MISMATCH
+78     finalize 失败: CUDNN_STATUS_NOT_SUPPORTED_ARCH_MISMATCH
+79    TENSOR_CORE                            RUNTIME_COMPILATION,SUPPORTS_CUDA_GRAPH_NATIVE_API   (无)                                 -1        -1   0
+80    -                                      RUNTIME_COMPILATION,SUPPORTS_CUDA_GRAPH_NATIVE_API   (无)                                 -1        -1   0
+
+== heuristic（mode 3）返回的候选 engine config ==
+候选数 = 17（count 查询报 17，实际取回 17）
+  # 0  engineId=28   workspace=0         smVersion=1200   旋钮={"CUDNN_KNOB_TYPE_TILE_SIZE":4,"CUDNN_KNOB_TYPE_USE_TEX":0}
+  # 1  engineId=28   workspace=0         smVersion=1200   旋钮={"CUDNN_KNOB_TYPE_TILE_SIZE":3,"CUDNN_KNOB_TYPE_USE_TEX":0}
+  # 2  engineId=48   workspace=1246928   smVersion=1200   旋钮={"CUDNN_KNOB_TYPE_TILE_SIZE":2,"CUDNN_KNOB_TYPE_LDGA":0,"CUDNN_KNOB_TYPE_TILEK":2,"CUDNN_KNOB_TYPE_STAGES":0,"CUDNN_KNOB_TYPE_LDGC":1}
+  # 3  engineId=48   workspace=1246928   smVersion=1200   旋钮={"CUDNN_KNOB_TYPE_TILE_SIZE":15,"CUDNN_KNOB_TYPE_LDGA":0,"CUDNN_KNOB_TYPE_TILEK":0,"CUDNN_KNOB_TYPE_STAGES":0,"CUDNN_KNOB_TYPE_LDGC":0}
+  # 4  engineId=1    workspace=108       smVersion=1200   旋钮={"CUDNN_KNOB_TYPE_TILE_SIZE":2,"CUDNN_KNOB_TYPE_USE_TEX":0}
+  # 5  engineId=6    workspace=11213568  smVersion=1200   旋钮={"CUDNN_KNOB_TYPE_WORKSPACE":0}
+  # 6  engineId=46   workspace=1313040   smVersion=1200   旋钮={"CUDNN_KNOB_TYPE_TILE_SIZE":4,"CUDNN_KNOB_TYPE_KBLOCK":2,"CUDNN_KNOB_TYPE_STAGES":3}
+  # 7  engineId=28   workspace=0         smVersion=1200   旋钮={"CUDNN_KNOB_TYPE_TILE_SIZE":1,"CUDNN_KNOB_TYPE_USE_TEX":0}
+  # 8  engineId=0    workspace=0         smVersion=1200   旋钮={}
+  # 9  engineId=46   workspace=1313040   smVersion=1200   旋钮={"CUDNN_KNOB_TYPE_TILE_SIZE":1,"CUDNN_KNOB_TYPE_KBLOCK":3,"CUDNN_KNOB_TYPE_STAGES":2}
+  #10  engineId=46   workspace=1313040   smVersion=1200   旋钮={"CUDNN_KNOB_TYPE_TILE_SIZE":5,"CUDNN_KNOB_TYPE_KBLOCK":2,"CUDNN_KNOB_TYPE_STAGES":6}
+  #11  engineId=36   workspace=1313040   smVersion=1200   旋钮={"CUDNN_KNOB_TYPE_TILE_SIZE":0,"CUDNN_KNOB_TYPE_TILEK":2,"CUDNN_KNOB_TYPE_STAGES":3,"CUDNN_KNOB_TYPE_IDX_MODE":1,"CUDNN_KNOB_TYPE_SPECFILT":0}
+  #12  engineId=38   workspace=264464    smVersion=1200   旋钮={"CUDNN_KNOB_TYPE_TILE_SIZE":0,"CUDNN_KNOB_TYPE_TILEK":2,"CUDNN_KNOB_TYPE_STAGES":3,"CUDNN_KNOB_TYPE_IDX_MODE":0,"CUDNN_KNOB_TYPE_LDGC":0,"CUDNN_KNOB_TYPE_SPECFILT":0}
+  #13  engineId=46   workspace=1313040   smVersion=1200   旋钮={"CUDNN_KNOB_TYPE_TILE_SIZE":5,"CUDNN_KNOB_TYPE_KBLOCK":3,"CUDNN_KNOB_TYPE_STAGES":4}
+  #14  engineId=35   workspace=1313040   smVersion=1200   旋钮={"CUDNN_KNOB_TYPE_TILE_SIZE":1,"CUDNN_KNOB_TYPE_KBLOCK":3,"CUDNN_KNOB_TYPE_STAGES":2}
+  #15  engineId=3    workspace=8521408   smVersion=1200   旋钮={"CUDNN_KNOB_TYPE_MULTIPLY":0}
+  #16  engineId=4    workspace=870400    smVersion=1200   旋钮={}
+
+== 汇总 ==
+  全局 engine=81，本机能 finalize 的=25；其中 runtime 编译=5  TensorCore=16  Winograd=1  FFT=2  非确定性=0
+  无法只靠 engine 描述符 finalize 成 config 的（缺省 knob 不完整）=5

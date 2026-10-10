@@ -1,0 +1,178 @@
+图 [N=4 C=3 64x64 -> K=16]：engine 数 = 85
+engine 0   finalize=CUDNN_STATUS_SUCCESS | 计数查询(空指针) st=CUDNN_STATUS_SUCCESS nk=0 | 旋钮数=0  （无旋钮 / 属性不可读）
+engine 1   finalize=CUDNN_STATUS_SUCCESS | 计数查询(空指针) st=CUDNN_STATUS_SUCCESS nk=2 | 旋钮数=2 | 取回 st=CUDNN_STATUS_SUCCESS got=2
+        TILE_SIZE              取值 [0..3] 步长 1   (1111)
+        USE_TEX                取值 [0..1] 步长 1   (1111)
+engine 2   finalize=CUDNN_STATUS_SUCCESS | 计数查询(空指针) st=CUDNN_STATUS_SUCCESS nk=2 | 旋钮数=2 | 取回 st=CUDNN_STATUS_SUCCESS got=2
+        TILE_SIZE              取值 [0..3] 步长 1   (1111)
+        USE_TEX                取值 [0..1] 步长 1   (1111)
+engine 3   finalize=CUDNN_STATUS_SUCCESS | 计数查询(空指针) st=CUDNN_STATUS_SUCCESS nk=1 | 旋钮数=1 | 取回 st=CUDNN_STATUS_SUCCESS got=1
+        USE_TEX                取值 [0..1] 步长 1   (1111)
+engine 4   finalize=CUDNN_STATUS_SUCCESS | 计数查询(空指针) st=CUDNN_STATUS_SUCCESS nk=1 | 旋钮数=1 | 取回 st=CUDNN_STATUS_SUCCESS got=1
+        MULTIPLY               取值 [0..2] 步长 1   (1111)
+engine 5   finalize=CUDNN_STATUS_SUCCESS | 计数查询(空指针) st=CUDNN_STATUS_SUCCESS nk=0 | 旋钮数=0  （无旋钮 / 属性不可读）
+engine 6   finalize=CUDNN_STATUS_SUCCESS | 计数查询(空指针) st=CUDNN_STATUS_SUCCESS nk=0 | 旋钮数=0  （无旋钮 / 属性不可读）
+engine 7   finalize=CUDNN_STATUS_SUCCESS | 计数查询(空指针) st=CUDNN_STATUS_SUCCESS nk=1 | 旋钮数=1 | 取回 st=CUDNN_STATUS_SUCCESS got=1
+        WORKSPACE              取值 [0..2] 步长 1   (1111)
+engine 8   finalize=CUDNN_STATUS_NOT_SUPPORTED_ARCH_MISMATCH
+engine 9   finalize=CUDNN_STATUS_NOT_SUPPORTED_ARCH_MISMATCH
+engine 10  finalize=CUDNN_STATUS_NOT_SUPPORTED_ARCH_MISMATCH
+engine 11  finalize=CUDNN_STATUS_NOT_SUPPORTED_ARCH_MISMATCH
+engine 12  finalize=CUDNN_STATUS_NOT_SUPPORTED_ARCH_MISMATCH
+engine 13  finalize=CUDNN_STATUS_NOT_SUPPORTED_ARCH_MISMATCH
+engine 14  finalize=CUDNN_STATUS_NOT_SUPPORTED_ARCH_MISMATCH
+engine 15  finalize=CUDNN_STATUS_NOT_SUPPORTED_ARCH_MISMATCH
+engine 16  finalize=CUDNN_STATUS_NOT_SUPPORTED_ARCH_MISMATCH
+engine 17  finalize=CUDNN_STATUS_NOT_SUPPORTED_ARCH_MISMATCH
+engine 18  finalize=CUDNN_STATUS_NOT_SUPPORTED_ARCH_MISMATCH
+engine 19  finalize=CUDNN_STATUS_NOT_SUPPORTED_ARCH_MISMATCH
+engine 20  finalize=CUDNN_STATUS_NOT_SUPPORTED_ARCH_MISMATCH
+engine 21  finalize=CUDNN_STATUS_NOT_SUPPORTED_ARCH_MISMATCH
+engine 22  finalize=CUDNN_STATUS_SUCCESS | 计数查询(空指针) st=CUDNN_STATUS_SUCCESS nk=4 | 旋钮数=4 | 取回 st=CUDNN_STATUS_SUCCESS got=4
+        TILE_SIZE              取值 [0..23] 步长 1   (1111)
+        TILEK                  取值 [0..3] 步长 1   (1111)
+        STAGES                 取值 [0..7] 步长 1   (1111)
+        SPECFILT               取值 [0..4] 步长 1   (1111)
+engine 23  finalize=CUDNN_STATUS_SUCCESS | 计数查询(空指针) st=CUDNN_STATUS_SUCCESS nk=7 | 旋钮数=7 | 取回 st=CUDNN_STATUS_SUCCESS got=7
+        TILE_SIZE              取值 [0..23] 步长 1   (1111)
+        SPLIT_K_BUF            取值 [1..2048] 步长 1   (1111)
+        TILEK                  取值 [0..3] 步长 1   (1111)
+        STAGES                 取值 [0..7] 步长 1   (1111)
+        REDUCTION_MODE         取值 [0..1] 步长 1   (1111)
+        SPLIT_K_SLC            取值 [1..2048] 步长 1   (1111)
+        SPECFILT               取值 [0..4] 步长 1   (1111)
+engine 24  finalize=CUDNN_STATUS_SUCCESS | 计数查询(空指针) st=CUDNN_STATUS_SUCCESS nk=3 | 旋钮数=3 | 取回 st=CUDNN_STATUS_SUCCESS got=3
+        TILE_SIZE              取值 [0..23] 步长 1   (1111)
+        KBLOCK                 取值 [0..5] 步长 1   (1111)
+        STAGES                 取值 [0..7] 步长 1   (1111)
+engine 25  finalize=CUDNN_STATUS_SUCCESS | 计数查询(空指针) st=CUDNN_STATUS_SUCCESS nk=2 | 旋钮数=2 | 取回 st=CUDNN_STATUS_SUCCESS got=2
+        TILE_SIZE              取值 [0..2] 步长 1   (1111)
+        USE_TEX                取值 [0..1] 步长 1   (1111)
+engine 26  finalize=CUDNN_STATUS_NOT_SUPPORTED_ARCH_MISMATCH
+engine 27  finalize=CUDNN_STATUS_SUCCESS | 计数查询(空指针) st=CUDNN_STATUS_SUCCESS nk=3 | 旋钮数=3 | 取回 st=CUDNN_STATUS_SUCCESS got=3
+        TILE_SIZE              取值 [0..23] 步长 1   (1111)
+        KBLOCK                 取值 [0..5] 步长 1   (1111)
+        STAGES                 取值 [0..7] 步长 1   (1111)
+engine 28  finalize=CUDNN_STATUS_SUCCESS | 计数查询(空指针) st=CUDNN_STATUS_SUCCESS nk=5 | 旋钮数=5 | 取回 st=CUDNN_STATUS_SUCCESS got=5
+        TILE_SIZE              取值 [0..23] 步长 1   (1111)
+        TILEK                  取值 [0..3] 步长 1   (1111)
+        STAGES                 取值 [0..7] 步长 1   (1111)
+        IDX_MODE               取值 [0..1] 步长 1   (1111)
+        SPECFILT               取值 [0..4] 步长 1   (1111)
+engine 29  finalize=CUDNN_STATUS_NOT_SUPPORTED_ARCH_MISMATCH
+engine 30  finalize=CUDNN_STATUS_NOT_SUPPORTED_ARCH_MISMATCH
+engine 31  finalize=CUDNN_STATUS_NOT_SUPPORTED_ARCH_MISMATCH
+engine 32  finalize=CUDNN_STATUS_NOT_SUPPORTED
+engine 33  finalize=CUDNN_STATUS_NOT_SUPPORTED
+engine 34  finalize=CUDNN_STATUS_SUCCESS | 计数查询(空指针) st=CUDNN_STATUS_SUCCESS nk=8 | 旋钮数=8 | 取回 st=CUDNN_STATUS_SUCCESS got=8
+        TILE_SIZE              取值 [0..23] 步长 1   (1111)
+        SPLIT_K_BUF            取值 [1..2048] 步长 1   (1111)
+        TILEK                  取值 [0..3] 步长 1   (1111)
+        STAGES                 取值 [0..7] 步长 1   (1111)
+        REDUCTION_MODE         取值 [0..1] 步长 1   (1111)
+        SPLIT_K_SLC            取值 [1..2048] 步长 1   (1111)
+        IDX_MODE               取值 [0..1] 步长 1   (1111)
+        SPECFILT               取值 [0..4] 步长 1   (1111)
+engine 35  finalize=CUDNN_STATUS_NOT_SUPPORTED
+engine 36  finalize=CUDNN_STATUS_NOT_SUPPORTED
+engine 37  finalize=CUDNN_STATUS_NOT_SUPPORTED
+engine 38  finalize=CUDNN_STATUS_NOT_SUPPORTED_ARCH_MISMATCH
+engine 39  finalize=CUDNN_STATUS_NOT_SUPPORTED_ARCH_MISMATCH
+engine 40  finalize=CUDNN_STATUS_SUCCESS | 计数查询(空指针) st=CUDNN_STATUS_SUCCESS nk=3 | 旋钮数=3 | 取回 st=CUDNN_STATUS_SUCCESS got=3
+        TILE_SIZE              取值 [0..23] 步长 1   (1111)
+        TILEK                  取值 [0..3] 步长 1   (1111)
+        STAGES                 取值 [0..7] 步长 1   (1111)
+engine 41  finalize=CUDNN_STATUS_NOT_SUPPORTED_ARCH_MISMATCH
+engine 42  finalize=CUDNN_STATUS_NOT_SUPPORTED_ARCH_MISMATCH
+engine 43  finalize=CUDNN_STATUS_SUCCESS | 计数查询(空指针) st=CUDNN_STATUS_SUCCESS nk=5 | 旋钮数=5 | 取回 st=CUDNN_STATUS_SUCCESS got=5
+        TILE_SIZE              取值 [0..23] 步长 1   (1111)
+        SPLIT_K_BUF            取值 [1..2048] 步长 1   (1111)
+        TILEK                  取值 [0..3] 步长 1   (1111)
+        STAGES                 取值 [0..7] 步长 1   (1111)
+        SPLIT_K_SLC            取值 [1..2048] 步长 1   (1111)
+engine 44  finalize=CUDNN_STATUS_NOT_SUPPORTED_ARCH_MISMATCH
+engine 45  finalize=CUDNN_STATUS_NOT_SUPPORTED_ARCH_MISMATCH
+engine 46  finalize=CUDNN_STATUS_SUCCESS | 计数查询(空指针) st=CUDNN_STATUS_SUCCESS nk=3 | 旋钮数=3 | 取回 st=CUDNN_STATUS_SUCCESS got=3
+        TILE_SIZE              取值 [0..23] 步长 1   (1111)
+        TILEK                  取值 [0..3] 步长 1   (1111)
+        STAGES                 取值 [0..7] 步长 1   (1111)
+engine 47  finalize=CUDNN_STATUS_NOT_SUPPORTED_ARCH_MISMATCH
+engine 48  finalize=CUDNN_STATUS_NOT_SUPPORTED_ARCH_MISMATCH
+engine 49  finalize=CUDNN_STATUS_SUCCESS | 计数查询(空指针) st=CUDNN_STATUS_SUCCESS nk=5 | 旋钮数=5 | 取回 st=CUDNN_STATUS_SUCCESS got=5
+        TILE_SIZE              取值 [0..23] 步长 1   (1111)
+        SPLIT_K_BUF            取值 [1..2048] 步长 1   (1111)
+        TILEK                  取值 [0..3] 步长 1   (1111)
+        STAGES                 取值 [0..7] 步长 1   (1111)
+        SPLIT_K_SLC            取值 [1..2048] 步长 1   (1111)
+engine 50  finalize=CUDNN_STATUS_SUCCESS | 计数查询(空指针) st=CUDNN_STATUS_SUCCESS nk=0 | 旋钮数=0  （无旋钮 / 属性不可读）
+engine 51  finalize=CUDNN_STATUS_SUCCESS | 计数查询(空指针) st=CUDNN_STATUS_SUCCESS nk=3 | 旋钮数=3 | 取回 st=CUDNN_STATUS_SUCCESS got=3
+        TILE_SIZE              取值 [0..23] 步长 1   (1111)
+        TILEK                  取值 [0..3] 步长 1   (1111)
+        STAGES                 取值 [0..7] 步长 1   (1111)
+engine 52  finalize=CUDNN_STATUS_NOT_SUPPORTED
+engine 53  finalize=CUDNN_STATUS_NOT_SUPPORTED
+engine 54  finalize=CUDNN_STATUS_SUCCESS | 计数查询(空指针) st=CUDNN_STATUS_SUCCESS nk=5 | 旋钮数=5 | 取回 st=CUDNN_STATUS_SUCCESS got=5
+        TILE_SIZE              取值 [0..23] 步长 1   (1111)
+        SPLIT_K_BUF            取值 [1..2048] 步长 1   (1111)
+        TILEK                  取值 [0..3] 步长 1   (1111)
+        STAGES                 取值 [0..7] 步长 1   (1111)
+        SPLIT_K_SLC            取值 [1..2048] 步长 1   (1111)
+engine 55  finalize=CUDNN_STATUS_NOT_SUPPORTED
+engine 56  finalize=CUDNN_STATUS_NOT_SUPPORTED
+engine 57  finalize=CUDNN_STATUS_SUCCESS | 计数查询(空指针) st=CUDNN_STATUS_SUCCESS nk=3 | 旋钮数=3 | 取回 st=CUDNN_STATUS_SUCCESS got=3
+        TILE_SIZE              取值 [0..23] 步长 1   (1111)
+        KBLOCK                 取值 [0..5] 步长 1   (1111)
+        STAGES                 取值 [0..7] 步长 1   (1111)
+engine 58  finalize=CUDNN_STATUS_SUCCESS | 计数查询(空指针) st=CUDNN_STATUS_SUCCESS nk=3 | 旋钮数=3 | 取回 st=CUDNN_STATUS_SUCCESS got=3
+        TILE_SIZE              取值 [0..23] 步长 1   (1111)
+        KBLOCK                 取值 [0..5] 步长 1   (1111)
+        STAGES                 取值 [0..7] 步长 1   (1111)
+engine 59  finalize=CUDNN_STATUS_SUCCESS | 计数查询(空指针) st=CUDNN_STATUS_SUCCESS nk=3 | 旋钮数=3 | 取回 st=CUDNN_STATUS_SUCCESS got=3
+        TILE_SIZE              取值 [0..23] 步长 1   (1111)
+        KBLOCK                 取值 [0..5] 步长 1   (1111)
+        STAGES                 取值 [0..7] 步长 1   (1111)
+engine 60  finalize=CUDNN_STATUS_SUCCESS | 计数查询(空指针) st=CUDNN_STATUS_SUCCESS nk=3 | 旋钮数=3 | 取回 st=CUDNN_STATUS_SUCCESS got=3
+        TILE_SIZE              取值 [0..23] 步长 1   (1111)
+        KBLOCK                 取值 [0..5] 步长 1   (1111)
+        STAGES                 取值 [0..7] 步长 1   (1111)
+engine 61  finalize=CUDNN_STATUS_NOT_SUPPORTED
+engine 62  finalize=CUDNN_STATUS_NOT_SUPPORTED
+engine 63  finalize=CUDNN_STATUS_SUCCESS | 计数查询(空指针) st=CUDNN_STATUS_SUCCESS nk=1 | 旋钮数=1 | 取回 st=CUDNN_STATUS_SUCCESS got=1
+        WORKSPACE              取值 [0..2] 步长 1   (1111)
+engine 64  finalize=CUDNN_STATUS_SUCCESS | 计数查询(空指针) st=CUDNN_STATUS_SUCCESS nk=3 | 旋钮数=3 | 取回 st=CUDNN_STATUS_SUCCESS got=3
+        TILE_SIZE              取值 [0..23] 步长 1   (1111)
+        KBLOCK                 取值 [0..5] 步长 1   (1111)
+        STAGES                 取值 [0..7] 步长 1   (1111)
+engine 65  finalize=CUDNN_STATUS_SUCCESS | 计数查询(空指针) st=CUDNN_STATUS_SUCCESS nk=3 | 旋钮数=3 | 取回 st=CUDNN_STATUS_SUCCESS got=3
+        TILE_SIZE              取值 [0..23] 步长 1   (1111)
+        KBLOCK                 取值 [0..5] 步长 1   (1111)
+        STAGES                 取值 [0..7] 步长 1   (1111)
+engine 66  finalize=CUDNN_STATUS_NOT_SUPPORTED_ARCH_MISMATCH
+engine 67  finalize=CUDNN_STATUS_NOT_SUPPORTED_ARCH_MISMATCH
+engine 68  finalize=CUDNN_STATUS_NOT_SUPPORTED_ARCH_MISMATCH
+engine 69  finalize=CUDNN_STATUS_NOT_SUPPORTED_ARCH_MISMATCH
+engine 70  finalize=CUDNN_STATUS_NOT_SUPPORTED_ARCH_MISMATCH
+engine 71  finalize=CUDNN_STATUS_NOT_SUPPORTED_ARCH_MISMATCH
+engine 72  finalize=CUDNN_STATUS_NOT_SUPPORTED_ARCH_MISMATCH
+engine 73  finalize=CUDNN_STATUS_NOT_SUPPORTED_ARCH_MISMATCH
+engine 74  finalize=CUDNN_STATUS_NOT_SUPPORTED_ARCH_MISMATCH
+engine 75  finalize=CUDNN_STATUS_NOT_SUPPORTED_ARCH_MISMATCH
+engine 76  finalize=CUDNN_STATUS_NOT_SUPPORTED_ARCH_MISMATCH
+engine 77  finalize=CUDNN_STATUS_SUCCESS | 计数查询(空指针) st=CUDNN_STATUS_SUCCESS nk=2 | 旋钮数=2 | 取回 st=CUDNN_STATUS_SUCCESS got=2
+        SPLIT_K_SLC            取值 [1..128] 步长 1   (1111)
+        KERNEL_CFG             取值 [0..42] 步长 1   (1111)
+engine 78  finalize=CUDNN_STATUS_SUCCESS | 计数查询(空指针) st=CUDNN_STATUS_SUCCESS nk=3 | 旋钮数=3 | 取回 st=CUDNN_STATUS_SUCCESS got=3
+        SPLIT_K_SLC            取值 [1..128] 步长 1   (1111)
+        KERNEL_CFG             取值 [0..55] 步长 1   (1111)
+        STREAM_K               取值 [1..2] 步长 1   (1111)
+engine 79  finalize=CUDNN_STATUS_NOT_SUPPORTED_ARCH_MISMATCH
+engine 80  finalize=CUDNN_STATUS_NOT_SUPPORTED_ARCH_MISMATCH
+engine 81  finalize=CUDNN_STATUS_NOT_SUPPORTED_ARCH_MISMATCH
+engine 82  finalize=CUDNN_STATUS_NOT_SUPPORTED_ARCH_MISMATCH
+engine 83  finalize=CUDNN_STATUS_SUCCESS | 计数查询(空指针) st=CUDNN_STATUS_SUCCESS nk=3 | 旋钮数=3 | 取回 st=CUDNN_STATUS_SUCCESS got=3
+        SPLIT_K_SLC            取值 [1..128] 步长 1   (1111)
+        KERNEL_CFG             取值 [0..263] 步长 1   (1111)
+        STREAM_K               取值 [1..2] 步长 1   (1111)
+engine 84  finalize=CUDNN_STATUS_SUCCESS | 计数查询(空指针) st=CUDNN_STATUS_SUCCESS nk=2 | 旋钮数=2 | 取回 st=CUDNN_STATUS_SUCCESS got=2
+        SPLIT_K_SLC            取值 [1..128] 步长 1   (1111)
+        KERNEL_CFG             取值 [0..0] 步长 1   (1111)

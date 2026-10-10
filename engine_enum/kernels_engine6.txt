@@ -1,0 +1,85 @@
+# 全局 engine 6: plan finalize=9.25 ms  0.0899 ms/iter  maxerr=1.43e-05  kernels=84
+  void cudnn::winograd_nonfused::winogradForwardData4x4<float, float>(cudnn::winograd_nonfused::Wi grid=[16, 3, 1]       block=[256, 1, 1]      smem=  22656 regs=  64      3.3us  libcudnn_engines_precompiled
+  void cudnn::winograd_nonfused::winogradForwardFilter4x4<float, float>(cudnn::winograd_nonfused:: grid=[1, 2, 1]        block=[32, 8, 1]       smem=   9216 regs=  40      1.2us  libcudnn_engines_precompiled
+  void gemmSN_NN_kernel<float, 128, 2, 4, 8, 4, 4, false, cublasGemvTensorStridedBatched<float con grid=[64, 4, 36]      block=[128, 1, 1]      smem=  10240 regs=  80     65.5us  ?
+  void cudnn::winograd_nonfused::winogradForwardOutput4x4<float, float>(cudnn::winograd_nonfused:: grid=[16, 16, 1]      block=[256, 1, 1]      smem=  16640 regs=  48      6.6us  libcudnn_engines_precompiled
+  void cudnn::winograd_nonfused::winogradForwardData4x4<float, float>(cudnn::winograd_nonfused::Wi grid=[16, 3, 1]       block=[256, 1, 1]      smem=  22656 regs=  64      3.2us  libcudnn_engines_precompiled
+  void cudnn::winograd_nonfused::winogradForwardFilter4x4<float, float>(cudnn::winograd_nonfused:: grid=[1, 2, 1]        block=[32, 8, 1]       smem=   9216 regs=  40      1.2us  libcudnn_engines_precompiled
+  void gemmSN_NN_kernel<float, 128, 2, 4, 8, 4, 4, false, cublasGemvTensorStridedBatched<float con grid=[64, 4, 36]      block=[128, 1, 1]      smem=  10240 regs=  80     65.4us  ?
+  void cudnn::winograd_nonfused::winogradForwardOutput4x4<float, float>(cudnn::winograd_nonfused:: grid=[16, 16, 1]      block=[256, 1, 1]      smem=  16640 regs=  48      6.5us  libcudnn_engines_precompiled
+  void cudnn::winograd_nonfused::winogradForwardData4x4<float, float>(cudnn::winograd_nonfused::Wi grid=[16, 3, 1]       block=[256, 1, 1]      smem=  22656 regs=  64      3.4us  libcudnn_engines_precompiled
+  void cudnn::winograd_nonfused::winogradForwardFilter4x4<float, float>(cudnn::winograd_nonfused:: grid=[1, 2, 1]        block=[32, 8, 1]       smem=   9216 regs=  40      1.2us  libcudnn_engines_precompiled
+  void gemmSN_NN_kernel<float, 128, 2, 4, 8, 4, 4, false, cublasGemvTensorStridedBatched<float con grid=[64, 4, 36]      block=[128, 1, 1]      smem=  10240 regs=  80     64.8us  ?
+  void cudnn::winograd_nonfused::winogradForwardOutput4x4<float, float>(cudnn::winograd_nonfused:: grid=[16, 16, 1]      block=[256, 1, 1]      smem=  16640 regs=  48      6.4us  libcudnn_engines_precompiled
+  void cudnn::winograd_nonfused::winogradForwardData4x4<float, float>(cudnn::winograd_nonfused::Wi grid=[16, 3, 1]       block=[256, 1, 1]      smem=  22656 regs=  64      3.3us  libcudnn_engines_precompiled
+  void cudnn::winograd_nonfused::winogradForwardFilter4x4<float, float>(cudnn::winograd_nonfused:: grid=[1, 2, 1]        block=[32, 8, 1]       smem=   9216 regs=  40      1.3us  libcudnn_engines_precompiled
+  void gemmSN_NN_kernel<float, 128, 2, 4, 8, 4, 4, false, cublasGemvTensorStridedBatched<float con grid=[64, 4, 36]      block=[128, 1, 1]      smem=  10240 regs=  80     64.8us  ?
+  void cudnn::winograd_nonfused::winogradForwardOutput4x4<float, float>(cudnn::winograd_nonfused:: grid=[16, 16, 1]      block=[256, 1, 1]      smem=  16640 regs=  48      6.4us  libcudnn_engines_precompiled
+  void cudnn::winograd_nonfused::winogradForwardData4x4<float, float>(cudnn::winograd_nonfused::Wi grid=[16, 3, 1]       block=[256, 1, 1]      smem=  22656 regs=  64      3.3us  libcudnn_engines_precompiled
+  void cudnn::winograd_nonfused::winogradForwardFilter4x4<float, float>(cudnn::winograd_nonfused:: grid=[1, 2, 1]        block=[32, 8, 1]       smem=   9216 regs=  40      1.2us  libcudnn_engines_precompiled
+  void gemmSN_NN_kernel<float, 128, 2, 4, 8, 4, 4, false, cublasGemvTensorStridedBatched<float con grid=[64, 4, 36]      block=[128, 1, 1]      smem=  10240 regs=  80     64.9us  ?
+  void cudnn::winograd_nonfused::winogradForwardOutput4x4<float, float>(cudnn::winograd_nonfused:: grid=[16, 16, 1]      block=[256, 1, 1]      smem=  16640 regs=  48      6.4us  libcudnn_engines_precompiled
+  void cudnn::winograd_nonfused::winogradForwardData4x4<float, float>(cudnn::winograd_nonfused::Wi grid=[16, 3, 1]       block=[256, 1, 1]      smem=  22656 regs=  64      3.2us  libcudnn_engines_precompiled
+  void cudnn::winograd_nonfused::winogradForwardFilter4x4<float, float>(cudnn::winograd_nonfused:: grid=[1, 2, 1]        block=[32, 8, 1]       smem=   9216 regs=  40      1.2us  libcudnn_engines_precompiled
+  void gemmSN_NN_kernel<float, 128, 2, 4, 8, 4, 4, false, cublasGemvTensorStridedBatched<float con grid=[64, 4, 36]      block=[128, 1, 1]      smem=  10240 regs=  80     63.8us  ?
+  void cudnn::winograd_nonfused::winogradForwardOutput4x4<float, float>(cudnn::winograd_nonfused:: grid=[16, 16, 1]      block=[256, 1, 1]      smem=  16640 regs=  48      6.4us  libcudnn_engines_precompiled
+  void cudnn::winograd_nonfused::winogradForwardData4x4<float, float>(cudnn::winograd_nonfused::Wi grid=[16, 3, 1]       block=[256, 1, 1]      smem=  22656 regs=  64      3.4us  libcudnn_engines_precompiled
+  void cudnn::winograd_nonfused::winogradForwardFilter4x4<float, float>(cudnn::winograd_nonfused:: grid=[1, 2, 1]        block=[32, 8, 1]       smem=   9216 regs=  40      1.2us  libcudnn_engines_precompiled
+  void gemmSN_NN_kernel<float, 128, 2, 4, 8, 4, 4, false, cublasGemvTensorStridedBatched<float con grid=[64, 4, 36]      block=[128, 1, 1]      smem=  10240 regs=  80     64.7us  ?
+  void cudnn::winograd_nonfused::winogradForwardOutput4x4<float, float>(cudnn::winograd_nonfused:: grid=[16, 16, 1]      block=[256, 1, 1]      smem=  16640 regs=  48      6.4us  libcudnn_engines_precompiled
+  void cudnn::winograd_nonfused::winogradForwardData4x4<float, float>(cudnn::winograd_nonfused::Wi grid=[16, 3, 1]       block=[256, 1, 1]      smem=  22656 regs=  64      3.3us  libcudnn_engines_precompiled
+  void cudnn::winograd_nonfused::winogradForwardFilter4x4<float, float>(cudnn::winograd_nonfused:: grid=[1, 2, 1]        block=[32, 8, 1]       smem=   9216 regs=  40      1.2us  libcudnn_engines_precompiled
+  void gemmSN_NN_kernel<float, 128, 2, 4, 8, 4, 4, false, cublasGemvTensorStridedBatched<float con grid=[64, 4, 36]      block=[128, 1, 1]      smem=  10240 regs=  80     64.3us  ?
+  void cudnn::winograd_nonfused::winogradForwardOutput4x4<float, float>(cudnn::winograd_nonfused:: grid=[16, 16, 1]      block=[256, 1, 1]      smem=  16640 regs=  48      6.5us  libcudnn_engines_precompiled
+  void cudnn::winograd_nonfused::winogradForwardData4x4<float, float>(cudnn::winograd_nonfused::Wi grid=[16, 3, 1]       block=[256, 1, 1]      smem=  22656 regs=  64      3.3us  libcudnn_engines_precompiled
+  void cudnn::winograd_nonfused::winogradForwardFilter4x4<float, float>(cudnn::winograd_nonfused:: grid=[1, 2, 1]        block=[32, 8, 1]       smem=   9216 regs=  40      1.2us  libcudnn_engines_precompiled
+  void gemmSN_NN_kernel<float, 128, 2, 4, 8, 4, 4, false, cublasGemvTensorStridedBatched<float con grid=[64, 4, 36]      block=[128, 1, 1]      smem=  10240 regs=  80     64.6us  ?
+  void cudnn::winograd_nonfused::winogradForwardOutput4x4<float, float>(cudnn::winograd_nonfused:: grid=[16, 16, 1]      block=[256, 1, 1]      smem=  16640 regs=  48      6.5us  libcudnn_engines_precompiled
+  void cudnn::winograd_nonfused::winogradForwardData4x4<float, float>(cudnn::winograd_nonfused::Wi grid=[16, 3, 1]       block=[256, 1, 1]      smem=  22656 regs=  64      3.2us  libcudnn_engines_precompiled
+  void cudnn::winograd_nonfused::winogradForwardFilter4x4<float, float>(cudnn::winograd_nonfused:: grid=[1, 2, 1]        block=[32, 8, 1]       smem=   9216 regs=  40      1.2us  libcudnn_engines_precompiled
+  void gemmSN_NN_kernel<float, 128, 2, 4, 8, 4, 4, false, cublasGemvTensorStridedBatched<float con grid=[64, 4, 36]      block=[128, 1, 1]      smem=  10240 regs=  80     65.1us  ?
+  void cudnn::winograd_nonfused::winogradForwardOutput4x4<float, float>(cudnn::winograd_nonfused:: grid=[16, 16, 1]      block=[256, 1, 1]      smem=  16640 regs=  48      6.4us  libcudnn_engines_precompiled
+  void cudnn::winograd_nonfused::winogradForwardData4x4<float, float>(cudnn::winograd_nonfused::Wi grid=[16, 3, 1]       block=[256, 1, 1]      smem=  22656 regs=  64      3.2us  libcudnn_engines_precompiled
+  void cudnn::winograd_nonfused::winogradForwardFilter4x4<float, float>(cudnn::winograd_nonfused:: grid=[1, 2, 1]        block=[32, 8, 1]       smem=   9216 regs=  40      1.2us  libcudnn_engines_precompiled
+  void gemmSN_NN_kernel<float, 128, 2, 4, 8, 4, 4, false, cublasGemvTensorStridedBatched<float con grid=[64, 4, 36]      block=[128, 1, 1]      smem=  10240 regs=  80     64.5us  ?
+  void cudnn::winograd_nonfused::winogradForwardOutput4x4<float, float>(cudnn::winograd_nonfused:: grid=[16, 16, 1]      block=[256, 1, 1]      smem=  16640 regs=  48      6.4us  libcudnn_engines_precompiled
+  void cudnn::winograd_nonfused::winogradForwardData4x4<float, float>(cudnn::winograd_nonfused::Wi grid=[16, 3, 1]       block=[256, 1, 1]      smem=  22656 regs=  64      3.2us  libcudnn_engines_precompiled
+  void cudnn::winograd_nonfused::winogradForwardFilter4x4<float, float>(cudnn::winograd_nonfused:: grid=[1, 2, 1]        block=[32, 8, 1]       smem=   9216 regs=  40      1.2us  libcudnn_engines_precompiled
+  void gemmSN_NN_kernel<float, 128, 2, 4, 8, 4, 4, false, cublasGemvTensorStridedBatched<float con grid=[64, 4, 36]      block=[128, 1, 1]      smem=  10240 regs=  80     64.6us  ?
+  void cudnn::winograd_nonfused::winogradForwardOutput4x4<float, float>(cudnn::winograd_nonfused:: grid=[16, 16, 1]      block=[256, 1, 1]      smem=  16640 regs=  48      6.5us  libcudnn_engines_precompiled
+  void cudnn::winograd_nonfused::winogradForwardData4x4<float, float>(cudnn::winograd_nonfused::Wi grid=[16, 3, 1]       block=[256, 1, 1]      smem=  22656 regs=  64      3.2us  libcudnn_engines_precompiled
+  void cudnn::winograd_nonfused::winogradForwardFilter4x4<float, float>(cudnn::winograd_nonfused:: grid=[1, 2, 1]        block=[32, 8, 1]       smem=   9216 regs=  40      1.2us  libcudnn_engines_precompiled
+  void gemmSN_NN_kernel<float, 128, 2, 4, 8, 4, 4, false, cublasGemvTensorStridedBatched<float con grid=[64, 4, 36]      block=[128, 1, 1]      smem=  10240 regs=  80     64.7us  ?
+  void cudnn::winograd_nonfused::winogradForwardOutput4x4<float, float>(cudnn::winograd_nonfused:: grid=[16, 16, 1]      block=[256, 1, 1]      smem=  16640 regs=  48      6.4us  libcudnn_engines_precompiled
+  void cudnn::winograd_nonfused::winogradForwardData4x4<float, float>(cudnn::winograd_nonfused::Wi grid=[16, 3, 1]       block=[256, 1, 1]      smem=  22656 regs=  64      3.2us  libcudnn_engines_precompiled
+  void cudnn::winograd_nonfused::winogradForwardFilter4x4<float, float>(cudnn::winograd_nonfused:: grid=[1, 2, 1]        block=[32, 8, 1]       smem=   9216 regs=  40      1.2us  libcudnn_engines_precompiled
+  void gemmSN_NN_kernel<float, 128, 2, 4, 8, 4, 4, false, cublasGemvTensorStridedBatched<float con grid=[64, 4, 36]      block=[128, 1, 1]      smem=  10240 regs=  80     64.6us  ?
+  void cudnn::winograd_nonfused::winogradForwardOutput4x4<float, float>(cudnn::winograd_nonfused:: grid=[16, 16, 1]      block=[256, 1, 1]      smem=  16640 regs=  48      6.3us  libcudnn_engines_precompiled
+  void cudnn::winograd_nonfused::winogradForwardData4x4<float, float>(cudnn::winograd_nonfused::Wi grid=[16, 3, 1]       block=[256, 1, 1]      smem=  22656 regs=  64      3.2us  libcudnn_engines_precompiled
+  void cudnn::winograd_nonfused::winogradForwardFilter4x4<float, float>(cudnn::winograd_nonfused:: grid=[1, 2, 1]        block=[32, 8, 1]       smem=   9216 regs=  40      1.2us  libcudnn_engines_precompiled
+  void gemmSN_NN_kernel<float, 128, 2, 4, 8, 4, 4, false, cublasGemvTensorStridedBatched<float con grid=[64, 4, 36]      block=[128, 1, 1]      smem=  10240 regs=  80     64.6us  ?
+  void cudnn::winograd_nonfused::winogradForwardOutput4x4<float, float>(cudnn::winograd_nonfused:: grid=[16, 16, 1]      block=[256, 1, 1]      smem=  16640 regs=  48      6.4us  libcudnn_engines_precompiled
+  void cudnn::winograd_nonfused::winogradForwardData4x4<float, float>(cudnn::winograd_nonfused::Wi grid=[16, 3, 1]       block=[256, 1, 1]      smem=  22656 regs=  64      3.1us  libcudnn_engines_precompiled
+  void cudnn::winograd_nonfused::winogradForwardFilter4x4<float, float>(cudnn::winograd_nonfused:: grid=[1, 2, 1]        block=[32, 8, 1]       smem=   9216 regs=  40      1.2us  libcudnn_engines_precompiled
+  void gemmSN_NN_kernel<float, 128, 2, 4, 8, 4, 4, false, cublasGemvTensorStridedBatched<float con grid=[64, 4, 36]      block=[128, 1, 1]      smem=  10240 regs=  80     63.9us  ?
+  void cudnn::winograd_nonfused::winogradForwardOutput4x4<float, float>(cudnn::winograd_nonfused:: grid=[16, 16, 1]      block=[256, 1, 1]      smem=  16640 regs=  48      6.4us  libcudnn_engines_precompiled
+  void cudnn::winograd_nonfused::winogradForwardData4x4<float, float>(cudnn::winograd_nonfused::Wi grid=[16, 3, 1]       block=[256, 1, 1]      smem=  22656 regs=  64      3.3us  libcudnn_engines_precompiled
+  void cudnn::winograd_nonfused::winogradForwardFilter4x4<float, float>(cudnn::winograd_nonfused:: grid=[1, 2, 1]        block=[32, 8, 1]       smem=   9216 regs=  40      1.2us  libcudnn_engines_precompiled
+  void gemmSN_NN_kernel<float, 128, 2, 4, 8, 4, 4, false, cublasGemvTensorStridedBatched<float con grid=[64, 4, 36]      block=[128, 1, 1]      smem=  10240 regs=  80     64.4us  ?
+  void cudnn::winograd_nonfused::winogradForwardOutput4x4<float, float>(cudnn::winograd_nonfused:: grid=[16, 16, 1]      block=[256, 1, 1]      smem=  16640 regs=  48      6.4us  libcudnn_engines_precompiled
+  void cudnn::winograd_nonfused::winogradForwardData4x4<float, float>(cudnn::winograd_nonfused::Wi grid=[16, 3, 1]       block=[256, 1, 1]      smem=  22656 regs=  64      3.2us  libcudnn_engines_precompiled
+  void cudnn::winograd_nonfused::winogradForwardFilter4x4<float, float>(cudnn::winograd_nonfused:: grid=[1, 2, 1]        block=[32, 8, 1]       smem=   9216 regs=  40      1.2us  libcudnn_engines_precompiled
+  void gemmSN_NN_kernel<float, 128, 2, 4, 8, 4, 4, false, cublasGemvTensorStridedBatched<float con grid=[64, 4, 36]      block=[128, 1, 1]      smem=  10240 regs=  80     64.2us  ?
+  void cudnn::winograd_nonfused::winogradForwardOutput4x4<float, float>(cudnn::winograd_nonfused:: grid=[16, 16, 1]      block=[256, 1, 1]      smem=  16640 regs=  48      6.3us  libcudnn_engines_precompiled
+  void cudnn::winograd_nonfused::winogradForwardData4x4<float, float>(cudnn::winograd_nonfused::Wi grid=[16, 3, 1]       block=[256, 1, 1]      smem=  22656 regs=  64      3.2us  libcudnn_engines_precompiled
+  void cudnn::winograd_nonfused::winogradForwardFilter4x4<float, float>(cudnn::winograd_nonfused:: grid=[1, 2, 1]        block=[32, 8, 1]       smem=   9216 regs=  40      1.1us  libcudnn_engines_precompiled
+  void gemmSN_NN_kernel<float, 128, 2, 4, 8, 4, 4, false, cublasGemvTensorStridedBatched<float con grid=[64, 4, 36]      block=[128, 1, 1]      smem=  10240 regs=  80     64.6us  ?
+  void cudnn::winograd_nonfused::winogradForwardOutput4x4<float, float>(cudnn::winograd_nonfused:: grid=[16, 16, 1]      block=[256, 1, 1]      smem=  16640 regs=  48      6.3us  libcudnn_engines_precompiled
+  void cudnn::winograd_nonfused::winogradForwardData4x4<float, float>(cudnn::winograd_nonfused::Wi grid=[16, 3, 1]       block=[256, 1, 1]      smem=  22656 regs=  64      3.2us  libcudnn_engines_precompiled
+  void cudnn::winograd_nonfused::winogradForwardFilter4x4<float, float>(cudnn::winograd_nonfused:: grid=[1, 2, 1]        block=[32, 8, 1]       smem=   9216 regs=  40      1.2us  libcudnn_engines_precompiled
+  void gemmSN_NN_kernel<float, 128, 2, 4, 8, 4, 4, false, cublasGemvTensorStridedBatched<float con grid=[64, 4, 36]      block=[128, 1, 1]      smem=  10240 regs=  80     64.0us  ?
+  void cudnn::winograd_nonfused::winogradForwardOutput4x4<float, float>(cudnn::winograd_nonfused:: grid=[16, 16, 1]      block=[256, 1, 1]      smem=  16640 regs=  48      6.4us  libcudnn_engines_precompiled
+  void cudnn::winograd_nonfused::winogradForwardData4x4<float, float>(cudnn::winograd_nonfused::Wi grid=[16, 3, 1]       block=[256, 1, 1]      smem=  22656 regs=  64      3.3us  libcudnn_engines_precompiled
+  void cudnn::winograd_nonfused::winogradForwardFilter4x4<float, float>(cudnn::winograd_nonfused:: grid=[1, 2, 1]        block=[32, 8, 1]       smem=   9216 regs=  40      1.2us  libcudnn_engines_precompiled
+  void gemmSN_NN_kernel<float, 128, 2, 4, 8, 4, 4, false, cublasGemvTensorStridedBatched<float con grid=[64, 4, 36]      block=[128, 1, 1]      smem=  10240 regs=  80     64.0us  ?
+  void cudnn::winograd_nonfused::winogradForwardOutput4x4<float, float>(cudnn::winograd_nonfused:: grid=[16, 16, 1]      block=[256, 1, 1]      smem=  16640 regs=  48      6.4us  libcudnn_engines_precompiled

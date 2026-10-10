@@ -1,0 +1,5 @@
+# attention: 2 个 kernel 发射（CUPTI，torch.profiler）
+# target=/home/liquan/cudnn_per_op.py case=attention
+# kernel                                                                   grid             block                smem  regs stream        us  归属库
+void at::native::(anonymous namespace)::distribution_elementwise_grid_st [156, 1, 1]      [256, 1, 1]             0    61      7       3.0  ?
+void pytorch_flash::flash_fwd_kernel<Flash_fwd_kernel_traits<64, 128, 12 [1, 2, 8]        [128, 1, 1]         49152   255      7       7.3  ?

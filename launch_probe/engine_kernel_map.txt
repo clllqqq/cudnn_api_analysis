@@ -1,0 +1,24 @@
+# engine_id ↔ 实际发射的 kernel（同一进程内同时开 CUDNN_LOGLEVEL_DBG=3 与 CUPTI 得到）
+# 日志侧：/tmp/conv_fwd_bwd.log  ->  CONV_FORWARD engine_id=28 / CONV_BWD_DATA engine_id=0 / CONV_BWD_FILTER engine_id=50
+# CUPTI 侧：kernels_conv_fwd.txt / kernels_conv_bwd.txt
+
+CONV_FORWARD (engine_id=28):
+  implicit_convolve_sgemm<float, float, int, 1024, 5, 5, 3, 3, 3, 1, ...>
+    grid=[512,1,1] block=[8,8,1] smem=2304 regs=63 stream=7   ← libcudnn_engines_precompiled
+
+CONV_BWD_DATA (engine_id=0):
+  cudnn::cnn::dgrad2d_grouped_direct_kernel<float, int, float, float, ...>
+    grid=[48,1,1] block=[1024,1,1] smem=0 regs=64 stream=7    ← libcudnn_engines_precompiled
+
+CONV_BWD_FILTER (engine_id=50):
+  cudnn::engines_precompiled::nchwToNhwcKernel ×2
+    grid=[128,1,4] block=[256,1,1] smem=4224 regs=24
+  cutlass__5x_cudnn::Kernel<cutlass__5x_cudnn::conv::kernel::ImplicitGemmConvolution<...>>
+    grid=[1,1,4] block=[128,1,1] smem=81920 regs=106          ← 主 kernel
+  cutlass__5x_cudnn::Kernel<...reduction...>
+    grid=[4,1,1] block=[32,4,1] smem=0 regs=38
+  cudnn::engines_precompiled::nhwcToNchwKernel
+    grid=[1,1,16] block=[256,1,1] smem=4224 regs=20
+
+# 结论：engine 不是一个 kernel，而是"一组 kernel + 每个 kernel 的 launch 配置"；
+#       graph 侧选的 knob(TILE_KERNEL_CFG/STREAM_K...) 就落到 grid/block/smem 这些数值上。

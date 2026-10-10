@@ -1,0 +1,3128 @@
+
+I! CuDNN (v92400 43) function cudnnCreate() called:
+i!     handle: location=host; addr=0x70ba52427140;
+i! Time: 2026-10-08T10:10:17.222598 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnGraphLibraryConfigInit() called:
+i!     apiLog: type=cudnnLibConfig_t; val=AUTO;
+i! Time: 2026-10-08T10:10:17.222689 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnCreate() called:
+i!     compute_capability_major: type=int; val=12;
+i!     compute_capability_minor: type=int; val=0;
+i!     status: type=cudnnStatus_t; val=CUDNN_STATUS_SUCCESS (0);
+i! Time: 2026-10-08T10:10:17.228149 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnSetStream() called:
+i!     handle: type=cudnnHandle_t:
+i!         streamId: type=cudaStream_t; streamId=(nil) (defaultStream);
+i!         deviceProp: type=CUDNN_BACKEND_DEVICEPROP_DESCRIPTOR:
+i!             deviceName: type=string; val="NVIDIA GeForce RTX 5060 Laptop GPU";
+i!             cudaDeviceId: type=int; val=0;
+i!             deviceVer: type=int; val=1200;
+i!             multiProcessorCount: type=int; val=26;
+i!             driverVer: type=int; val=13030;
+i!             maxSharedMemoryPerBlockOptin: type=int; val=101376;
+i!             totalGlobalMem: type=size_t; val=8546484224;
+i!     streamId: type=cudaStream_t; streamId=0x288c91c0;
+i! Time: 2026-10-08T10:10:17.228675 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=0; Handle=0x287602f0; StreamId=(nil) (defaultStream).
+
+
+I! CuDNN (v92400 43) function cudnnBackendCreateDescriptor() called:
+i!     descriptorType: type=cudnnBackendDescriptorType_t; val=CUDNN_BACKEND_TENSOR_DESCRIPTOR (17);
+i! Time: 2026-10-08T10:10:17.229211 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendCreateDescriptor() called:
+i!     status: type=cudnnStatus_t; val=CUDNN_STATUS_SUCCESS (0);
+i! Time: 2026-10-08T10:10:17.229248 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendSetAttribute() called:
+i!     descriptor: type=CUDNN_BACKEND_TENSOR_DESCRIPTOR:
+i!         type: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!         nbDims: type=int; val=-1;
+i!         dimA: type=int; val=[];
+i!         strideA: type=int; val=[];
+i!         uid: type=int64_t; val=-1;
+i!         alignmentInBytes: type=int64_t; val=1;
+i!         isVirtual: type=bool; val=false;
+i!         isByVal: type=bool; val=false;
+i!         isRagged: type=bool; val=false;
+i!         raggedOffsetMultiplier: type=int64_t; val=1;
+i!     attributeName: type=cudnnBackendAttributeName_t; val=CUDNN_ATTR_TENSOR_DATA_TYPE (901);
+i!     attributeType: type=cudnnBackendAttributeType_t; val=CUDNN_TYPE_DATA_TYPE (1);
+i!     elementCount: type=int64_t; val=1;
+i!     [0]: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i! Time: 2026-10-08T10:10:17.229356 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendSetAttribute() called:
+i!     status: type=cudnnStatus_t; val=CUDNN_STATUS_SUCCESS (0);
+i! Time: 2026-10-08T10:10:17.229388 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendSetAttribute() called:
+i!     descriptor: type=CUDNN_BACKEND_TENSOR_DESCRIPTOR:
+i!         type: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!         nbDims: type=int; val=-1;
+i!         dimA: type=int; val=[];
+i!         strideA: type=int; val=[];
+i!         uid: type=int64_t; val=-1;
+i!         alignmentInBytes: type=int64_t; val=1;
+i!         isVirtual: type=bool; val=false;
+i!         isByVal: type=bool; val=false;
+i!         isRagged: type=bool; val=false;
+i!         raggedOffsetMultiplier: type=int64_t; val=1;
+i!     attributeName: type=cudnnBackendAttributeName_t; val=CUDNN_ATTR_TENSOR_DIMENSIONS (902);
+i!     attributeType: type=cudnnBackendAttributeType_t; val=CUDNN_TYPE_INT64 (3);
+i!     elementCount: type=int64_t; val=4;
+i!     [0]: type=int64_t; val=4;
+i!     [1]: type=int64_t; val=3;
+i!     [2]: type=int64_t; val=64;
+i!     [3]: type=int64_t; val=64;
+i! Time: 2026-10-08T10:10:17.229403 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendSetAttribute() called:
+i!     status: type=cudnnStatus_t; val=CUDNN_STATUS_SUCCESS (0);
+i! Time: 2026-10-08T10:10:17.229418 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendSetAttribute() called:
+i!     descriptor: type=CUDNN_BACKEND_TENSOR_DESCRIPTOR:
+i!         type: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!         nbDims: type=int; val=4;
+i!         dimA: type=int; val=[4,3,64,64];
+i!         strideA: type=int; val=[0,0,0,0];
+i!         uid: type=int64_t; val=-1;
+i!         alignmentInBytes: type=int64_t; val=1;
+i!         isVirtual: type=bool; val=false;
+i!         isByVal: type=bool; val=false;
+i!         isRagged: type=bool; val=false;
+i!         raggedOffsetMultiplier: type=int64_t; val=1;
+i!     attributeName: type=cudnnBackendAttributeName_t; val=CUDNN_ATTR_TENSOR_STRIDES (903);
+i!     attributeType: type=cudnnBackendAttributeType_t; val=CUDNN_TYPE_INT64 (3);
+i!     elementCount: type=int64_t; val=4;
+i!     [0]: type=int64_t; val=12288;
+i!     [1]: type=int64_t; val=4096;
+i!     [2]: type=int64_t; val=64;
+i!     [3]: type=int64_t; val=1;
+i! Time: 2026-10-08T10:10:17.229427 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendSetAttribute() called:
+i!     status: type=cudnnStatus_t; val=CUDNN_STATUS_SUCCESS (0);
+i! Time: 2026-10-08T10:10:17.229433 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendSetAttribute() called:
+i!     descriptor: type=CUDNN_BACKEND_TENSOR_DESCRIPTOR:
+i!         type: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!         nbDims: type=int; val=4;
+i!         dimA: type=int; val=[4,3,64,64];
+i!         strideA: type=int; val=[12288,4096,64,1];
+i!         uid: type=int64_t; val=-1;
+i!         alignmentInBytes: type=int64_t; val=1;
+i!         isVirtual: type=bool; val=false;
+i!         isByVal: type=bool; val=false;
+i!         isRagged: type=bool; val=false;
+i!         raggedOffsetMultiplier: type=int64_t; val=1;
+i!     attributeName: type=cudnnBackendAttributeName_t; val=CUDNN_ATTR_TENSOR_UNIQUE_ID (906);
+i!     attributeType: type=cudnnBackendAttributeType_t; val=CUDNN_TYPE_INT64 (3);
+i!     elementCount: type=int64_t; val=1;
+i!     [0]: type=int64_t; val=0;
+i! Time: 2026-10-08T10:10:17.229442 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendSetAttribute() called:
+i!     status: type=cudnnStatus_t; val=CUDNN_STATUS_SUCCESS (0);
+i! Time: 2026-10-08T10:10:17.229448 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendSetAttribute() called:
+i!     descriptor: type=CUDNN_BACKEND_TENSOR_DESCRIPTOR:
+i!         type: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!         nbDims: type=int; val=4;
+i!         dimA: type=int; val=[4,3,64,64];
+i!         strideA: type=int; val=[12288,4096,64,1];
+i!         uid: type=int64_t; val=0;
+i!         alignmentInBytes: type=int64_t; val=1;
+i!         isVirtual: type=bool; val=false;
+i!         isByVal: type=bool; val=false;
+i!         isRagged: type=bool; val=false;
+i!         raggedOffsetMultiplier: type=int64_t; val=1;
+i!     attributeName: type=cudnnBackendAttributeName_t; val=CUDNN_ATTR_TENSOR_BYTE_ALIGNMENT (900);
+i!     attributeType: type=cudnnBackendAttributeType_t; val=CUDNN_TYPE_INT64 (3);
+i!     elementCount: type=int64_t; val=1;
+i!     [0]: type=int64_t; val=16;
+i! Time: 2026-10-08T10:10:17.229455 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendSetAttribute() called:
+i!     status: type=cudnnStatus_t; val=CUDNN_STATUS_SUCCESS (0);
+i! Time: 2026-10-08T10:10:17.229463 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendFinalize() called:
+i!     descriptor: type=CUDNN_BACKEND_TENSOR_DESCRIPTOR:
+i!         type: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!         nbDims: type=int; val=4;
+i!         dimA: type=int; val=[4,3,64,64];
+i!         strideA: type=int; val=[12288,4096,64,1];
+i!         uid: type=int64_t; val=0;
+i!         alignmentInBytes: type=int64_t; val=16;
+i!         isVirtual: type=bool; val=false;
+i!         isByVal: type=bool; val=false;
+i!         isRagged: type=bool; val=false;
+i!         raggedOffsetMultiplier: type=int64_t; val=1;
+i! Time: 2026-10-08T10:10:17.229556 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendFinalize() called:
+i!     status: type=cudnnStatus_t; val=CUDNN_STATUS_SUCCESS (0);
+i! Time: 2026-10-08T10:10:17.285045 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+W! CuDNN (v92400 43) function cudnnBackendFinalize() called:
+w!     Info: Traceback contains 1 message(s)
+w!         Warning: CUDNN_STATUS_SUCCESS; Reason: cuDNN Library configuration is set to AUTO. Automatically configuring the library mode to FULL.
+
+w! Time: 2026-10-08T10:10:17.285105 (0d+0h+0m+1s since start)
+w! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendCreateDescriptor() called:
+i!     descriptorType: type=cudnnBackendDescriptorType_t; val=CUDNN_BACKEND_TENSOR_DESCRIPTOR (17);
+i! Time: 2026-10-08T10:10:17.285120 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendCreateDescriptor() called:
+i!     status: type=cudnnStatus_t; val=CUDNN_STATUS_SUCCESS (0);
+i! Time: 2026-10-08T10:10:17.285128 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendSetAttribute() called:
+i!     descriptor: type=CUDNN_BACKEND_TENSOR_DESCRIPTOR:
+i!         type: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!         nbDims: type=int; val=-1;
+i!         dimA: type=int; val=[];
+i!         strideA: type=int; val=[];
+i!         uid: type=int64_t; val=-1;
+i!         alignmentInBytes: type=int64_t; val=1;
+i!         isVirtual: type=bool; val=false;
+i!         isByVal: type=bool; val=false;
+i!         isRagged: type=bool; val=false;
+i!         raggedOffsetMultiplier: type=int64_t; val=1;
+i!     attributeName: type=cudnnBackendAttributeName_t; val=CUDNN_ATTR_TENSOR_DATA_TYPE (901);
+i!     attributeType: type=cudnnBackendAttributeType_t; val=CUDNN_TYPE_DATA_TYPE (1);
+i!     elementCount: type=int64_t; val=1;
+i!     [0]: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i! Time: 2026-10-08T10:10:17.285141 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendSetAttribute() called:
+i!     status: type=cudnnStatus_t; val=CUDNN_STATUS_SUCCESS (0);
+i! Time: 2026-10-08T10:10:17.285147 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendSetAttribute() called:
+i!     descriptor: type=CUDNN_BACKEND_TENSOR_DESCRIPTOR:
+i!         type: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!         nbDims: type=int; val=-1;
+i!         dimA: type=int; val=[];
+i!         strideA: type=int; val=[];
+i!         uid: type=int64_t; val=-1;
+i!         alignmentInBytes: type=int64_t; val=1;
+i!         isVirtual: type=bool; val=false;
+i!         isByVal: type=bool; val=false;
+i!         isRagged: type=bool; val=false;
+i!         raggedOffsetMultiplier: type=int64_t; val=1;
+i!     attributeName: type=cudnnBackendAttributeName_t; val=CUDNN_ATTR_TENSOR_DIMENSIONS (902);
+i!     attributeType: type=cudnnBackendAttributeType_t; val=CUDNN_TYPE_INT64 (3);
+i!     elementCount: type=int64_t; val=4;
+i!     [0]: type=int64_t; val=16;
+i!     [1]: type=int64_t; val=3;
+i!     [2]: type=int64_t; val=3;
+i!     [3]: type=int64_t; val=3;
+i! Time: 2026-10-08T10:10:17.285154 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendSetAttribute() called:
+i!     status: type=cudnnStatus_t; val=CUDNN_STATUS_SUCCESS (0);
+i! Time: 2026-10-08T10:10:17.285168 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendSetAttribute() called:
+i!     descriptor: type=CUDNN_BACKEND_TENSOR_DESCRIPTOR:
+i!         type: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!         nbDims: type=int; val=4;
+i!         dimA: type=int; val=[16,3,3,3];
+i!         strideA: type=int; val=[0,0,0,0];
+i!         uid: type=int64_t; val=-1;
+i!         alignmentInBytes: type=int64_t; val=1;
+i!         isVirtual: type=bool; val=false;
+i!         isByVal: type=bool; val=false;
+i!         isRagged: type=bool; val=false;
+i!         raggedOffsetMultiplier: type=int64_t; val=1;
+i!     attributeName: type=cudnnBackendAttributeName_t; val=CUDNN_ATTR_TENSOR_STRIDES (903);
+i!     attributeType: type=cudnnBackendAttributeType_t; val=CUDNN_TYPE_INT64 (3);
+i!     elementCount: type=int64_t; val=4;
+i!     [0]: type=int64_t; val=27;
+i!     [1]: type=int64_t; val=9;
+i!     [2]: type=int64_t; val=3;
+i!     [3]: type=int64_t; val=1;
+i! Time: 2026-10-08T10:10:17.285177 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendSetAttribute() called:
+i!     status: type=cudnnStatus_t; val=CUDNN_STATUS_SUCCESS (0);
+i! Time: 2026-10-08T10:10:17.285182 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendSetAttribute() called:
+i!     descriptor: type=CUDNN_BACKEND_TENSOR_DESCRIPTOR:
+i!         type: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!         nbDims: type=int; val=4;
+i!         dimA: type=int; val=[16,3,3,3];
+i!         strideA: type=int; val=[27,9,3,1];
+i!         uid: type=int64_t; val=-1;
+i!         alignmentInBytes: type=int64_t; val=1;
+i!         isVirtual: type=bool; val=false;
+i!         isByVal: type=bool; val=false;
+i!         isRagged: type=bool; val=false;
+i!         raggedOffsetMultiplier: type=int64_t; val=1;
+i!     attributeName: type=cudnnBackendAttributeName_t; val=CUDNN_ATTR_TENSOR_UNIQUE_ID (906);
+i!     attributeType: type=cudnnBackendAttributeType_t; val=CUDNN_TYPE_INT64 (3);
+i!     elementCount: type=int64_t; val=1;
+i!     [0]: type=int64_t; val=1;
+i! Time: 2026-10-08T10:10:17.285189 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendSetAttribute() called:
+i!     status: type=cudnnStatus_t; val=CUDNN_STATUS_SUCCESS (0);
+i! Time: 2026-10-08T10:10:17.285194 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendSetAttribute() called:
+i!     descriptor: type=CUDNN_BACKEND_TENSOR_DESCRIPTOR:
+i!         type: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!         nbDims: type=int; val=4;
+i!         dimA: type=int; val=[16,3,3,3];
+i!         strideA: type=int; val=[27,9,3,1];
+i!         uid: type=int64_t; val=1;
+i!         alignmentInBytes: type=int64_t; val=1;
+i!         isVirtual: type=bool; val=false;
+i!         isByVal: type=bool; val=false;
+i!         isRagged: type=bool; val=false;
+i!         raggedOffsetMultiplier: type=int64_t; val=1;
+i!     attributeName: type=cudnnBackendAttributeName_t; val=CUDNN_ATTR_TENSOR_BYTE_ALIGNMENT (900);
+i!     attributeType: type=cudnnBackendAttributeType_t; val=CUDNN_TYPE_INT64 (3);
+i!     elementCount: type=int64_t; val=1;
+i!     [0]: type=int64_t; val=16;
+i! Time: 2026-10-08T10:10:17.285201 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendSetAttribute() called:
+i!     status: type=cudnnStatus_t; val=CUDNN_STATUS_SUCCESS (0);
+i! Time: 2026-10-08T10:10:17.285209 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendFinalize() called:
+i!     descriptor: type=CUDNN_BACKEND_TENSOR_DESCRIPTOR:
+i!         type: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!         nbDims: type=int; val=4;
+i!         dimA: type=int; val=[16,3,3,3];
+i!         strideA: type=int; val=[27,9,3,1];
+i!         uid: type=int64_t; val=1;
+i!         alignmentInBytes: type=int64_t; val=16;
+i!         isVirtual: type=bool; val=false;
+i!         isByVal: type=bool; val=false;
+i!         isRagged: type=bool; val=false;
+i!         raggedOffsetMultiplier: type=int64_t; val=1;
+i! Time: 2026-10-08T10:10:17.285216 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendFinalize() called:
+i!     status: type=cudnnStatus_t; val=CUDNN_STATUS_SUCCESS (0);
+i! Time: 2026-10-08T10:10:17.285223 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendCreateDescriptor() called:
+i!     descriptorType: type=cudnnBackendDescriptorType_t; val=CUDNN_BACKEND_TENSOR_DESCRIPTOR (17);
+i! Time: 2026-10-08T10:10:17.285230 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendCreateDescriptor() called:
+i!     status: type=cudnnStatus_t; val=CUDNN_STATUS_SUCCESS (0);
+i! Time: 2026-10-08T10:10:17.285236 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendSetAttribute() called:
+i!     descriptor: type=CUDNN_BACKEND_TENSOR_DESCRIPTOR:
+i!         type: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!         nbDims: type=int; val=-1;
+i!         dimA: type=int; val=[];
+i!         strideA: type=int; val=[];
+i!         uid: type=int64_t; val=-1;
+i!         alignmentInBytes: type=int64_t; val=1;
+i!         isVirtual: type=bool; val=false;
+i!         isByVal: type=bool; val=false;
+i!         isRagged: type=bool; val=false;
+i!         raggedOffsetMultiplier: type=int64_t; val=1;
+i!     attributeName: type=cudnnBackendAttributeName_t; val=CUDNN_ATTR_TENSOR_DATA_TYPE (901);
+i!     attributeType: type=cudnnBackendAttributeType_t; val=CUDNN_TYPE_DATA_TYPE (1);
+i!     elementCount: type=int64_t; val=1;
+i!     [0]: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i! Time: 2026-10-08T10:10:17.285243 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendSetAttribute() called:
+i!     status: type=cudnnStatus_t; val=CUDNN_STATUS_SUCCESS (0);
+i! Time: 2026-10-08T10:10:17.285249 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendSetAttribute() called:
+i!     descriptor: type=CUDNN_BACKEND_TENSOR_DESCRIPTOR:
+i!         type: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!         nbDims: type=int; val=-1;
+i!         dimA: type=int; val=[];
+i!         strideA: type=int; val=[];
+i!         uid: type=int64_t; val=-1;
+i!         alignmentInBytes: type=int64_t; val=1;
+i!         isVirtual: type=bool; val=false;
+i!         isByVal: type=bool; val=false;
+i!         isRagged: type=bool; val=false;
+i!         raggedOffsetMultiplier: type=int64_t; val=1;
+i!     attributeName: type=cudnnBackendAttributeName_t; val=CUDNN_ATTR_TENSOR_DIMENSIONS (902);
+i!     attributeType: type=cudnnBackendAttributeType_t; val=CUDNN_TYPE_INT64 (3);
+i!     elementCount: type=int64_t; val=4;
+i!     [0]: type=int64_t; val=4;
+i!     [1]: type=int64_t; val=16;
+i!     [2]: type=int64_t; val=64;
+i!     [3]: type=int64_t; val=64;
+i! Time: 2026-10-08T10:10:17.285256 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendSetAttribute() called:
+i!     status: type=cudnnStatus_t; val=CUDNN_STATUS_SUCCESS (0);
+i! Time: 2026-10-08T10:10:17.285265 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendSetAttribute() called:
+i!     descriptor: type=CUDNN_BACKEND_TENSOR_DESCRIPTOR:
+i!         type: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!         nbDims: type=int; val=4;
+i!         dimA: type=int; val=[4,16,64,64];
+i!         strideA: type=int; val=[0,0,0,0];
+i!         uid: type=int64_t; val=-1;
+i!         alignmentInBytes: type=int64_t; val=1;
+i!         isVirtual: type=bool; val=false;
+i!         isByVal: type=bool; val=false;
+i!         isRagged: type=bool; val=false;
+i!         raggedOffsetMultiplier: type=int64_t; val=1;
+i!     attributeName: type=cudnnBackendAttributeName_t; val=CUDNN_ATTR_TENSOR_STRIDES (903);
+i!     attributeType: type=cudnnBackendAttributeType_t; val=CUDNN_TYPE_INT64 (3);
+i!     elementCount: type=int64_t; val=4;
+i!     [0]: type=int64_t; val=65536;
+i!     [1]: type=int64_t; val=4096;
+i!     [2]: type=int64_t; val=64;
+i!     [3]: type=int64_t; val=1;
+i! Time: 2026-10-08T10:10:17.285272 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendSetAttribute() called:
+i!     status: type=cudnnStatus_t; val=CUDNN_STATUS_SUCCESS (0);
+i! Time: 2026-10-08T10:10:17.285279 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendSetAttribute() called:
+i!     descriptor: type=CUDNN_BACKEND_TENSOR_DESCRIPTOR:
+i!         type: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!         nbDims: type=int; val=4;
+i!         dimA: type=int; val=[4,16,64,64];
+i!         strideA: type=int; val=[65536,4096,64,1];
+i!         uid: type=int64_t; val=-1;
+i!         alignmentInBytes: type=int64_t; val=1;
+i!         isVirtual: type=bool; val=false;
+i!         isByVal: type=bool; val=false;
+i!         isRagged: type=bool; val=false;
+i!         raggedOffsetMultiplier: type=int64_t; val=1;
+i!     attributeName: type=cudnnBackendAttributeName_t; val=CUDNN_ATTR_TENSOR_UNIQUE_ID (906);
+i!     attributeType: type=cudnnBackendAttributeType_t; val=CUDNN_TYPE_INT64 (3);
+i!     elementCount: type=int64_t; val=1;
+i!     [0]: type=int64_t; val=2;
+i! Time: 2026-10-08T10:10:17.285286 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendSetAttribute() called:
+i!     status: type=cudnnStatus_t; val=CUDNN_STATUS_SUCCESS (0);
+i! Time: 2026-10-08T10:10:17.285292 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendSetAttribute() called:
+i!     descriptor: type=CUDNN_BACKEND_TENSOR_DESCRIPTOR:
+i!         type: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!         nbDims: type=int; val=4;
+i!         dimA: type=int; val=[4,16,64,64];
+i!         strideA: type=int; val=[65536,4096,64,1];
+i!         uid: type=int64_t; val=2;
+i!         alignmentInBytes: type=int64_t; val=1;
+i!         isVirtual: type=bool; val=false;
+i!         isByVal: type=bool; val=false;
+i!         isRagged: type=bool; val=false;
+i!         raggedOffsetMultiplier: type=int64_t; val=1;
+i!     attributeName: type=cudnnBackendAttributeName_t; val=CUDNN_ATTR_TENSOR_BYTE_ALIGNMENT (900);
+i!     attributeType: type=cudnnBackendAttributeType_t; val=CUDNN_TYPE_INT64 (3);
+i!     elementCount: type=int64_t; val=1;
+i!     [0]: type=int64_t; val=16;
+i! Time: 2026-10-08T10:10:17.285300 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendSetAttribute() called:
+i!     status: type=cudnnStatus_t; val=CUDNN_STATUS_SUCCESS (0);
+i! Time: 2026-10-08T10:10:17.285308 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendFinalize() called:
+i!     descriptor: type=CUDNN_BACKEND_TENSOR_DESCRIPTOR:
+i!         type: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!         nbDims: type=int; val=4;
+i!         dimA: type=int; val=[4,16,64,64];
+i!         strideA: type=int; val=[65536,4096,64,1];
+i!         uid: type=int64_t; val=2;
+i!         alignmentInBytes: type=int64_t; val=16;
+i!         isVirtual: type=bool; val=false;
+i!         isByVal: type=bool; val=false;
+i!         isRagged: type=bool; val=false;
+i!         raggedOffsetMultiplier: type=int64_t; val=1;
+i! Time: 2026-10-08T10:10:17.285315 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendFinalize() called:
+i!     status: type=cudnnStatus_t; val=CUDNN_STATUS_SUCCESS (0);
+i! Time: 2026-10-08T10:10:17.285320 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendCreateDescriptor() called:
+i!     descriptorType: type=cudnnBackendDescriptorType_t; val=CUDNN_BACKEND_CONVOLUTION_DESCRIPTOR (1);
+i! Time: 2026-10-08T10:10:17.285325 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendCreateDescriptor() called:
+i!     status: type=cudnnStatus_t; val=CUDNN_STATUS_SUCCESS (0);
+i! Time: 2026-10-08T10:10:17.285336 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendSetAttribute() called:
+i!     descriptor: type=CUDNN_BACKEND_CONVOLUTION_DESCRIPTOR:
+i!         computeType: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!         mode: type=cudnnConvolutionMode_t; val=CUDNN_CONVOLUTION (0);
+i!         nbDims: type=int; val=-1;
+i!         upperPadA: type=int; val=[];
+i!         lowerPadA: type=int; val=[];
+i!         strideA: type=int; val=[];
+i!         dilationA: type=int; val=[];
+i!     attributeName: type=cudnnBackendAttributeName_t; val=CUDNN_ATTR_CONVOLUTION_CONV_MODE (101);
+i!     attributeType: type=cudnnBackendAttributeType_t; val=CUDNN_TYPE_CONVOLUTION_MODE (7);
+i!     elementCount: type=int64_t; val=1;
+i!     [0]: type=cudnnConvolutionMode_t; val=CUDNN_CROSS_CORRELATION (1);
+i! Time: 2026-10-08T10:10:17.285343 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendSetAttribute() called:
+i!     status: type=cudnnStatus_t; val=CUDNN_STATUS_SUCCESS (0);
+i! Time: 2026-10-08T10:10:17.285353 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendSetAttribute() called:
+i!     descriptor: type=CUDNN_BACKEND_CONVOLUTION_DESCRIPTOR:
+i!         computeType: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!         mode: type=cudnnConvolutionMode_t; val=CUDNN_CROSS_CORRELATION (1);
+i!         nbDims: type=int; val=-1;
+i!         upperPadA: type=int; val=[];
+i!         lowerPadA: type=int; val=[];
+i!         strideA: type=int; val=[];
+i!         dilationA: type=int; val=[];
+i!     attributeName: type=cudnnBackendAttributeName_t; val=CUDNN_ATTR_CONVOLUTION_COMP_TYPE (100);
+i!     attributeType: type=cudnnBackendAttributeType_t; val=CUDNN_TYPE_DATA_TYPE (1);
+i!     elementCount: type=int64_t; val=1;
+i!     [0]: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i! Time: 2026-10-08T10:10:17.285360 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendSetAttribute() called:
+i!     status: type=cudnnStatus_t; val=CUDNN_STATUS_SUCCESS (0);
+i! Time: 2026-10-08T10:10:17.285366 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendSetAttribute() called:
+i!     descriptor: type=CUDNN_BACKEND_CONVOLUTION_DESCRIPTOR:
+i!         computeType: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!         mode: type=cudnnConvolutionMode_t; val=CUDNN_CROSS_CORRELATION (1);
+i!         nbDims: type=int; val=-1;
+i!         upperPadA: type=int; val=[];
+i!         lowerPadA: type=int; val=[];
+i!         strideA: type=int; val=[];
+i!         dilationA: type=int; val=[];
+i!     attributeName: type=cudnnBackendAttributeName_t; val=CUDNN_ATTR_CONVOLUTION_SPATIAL_DIMS (106);
+i!     attributeType: type=cudnnBackendAttributeType_t; val=CUDNN_TYPE_INT64 (3);
+i!     elementCount: type=int64_t; val=1;
+i!     [0]: type=int64_t; val=2;
+i! Time: 2026-10-08T10:10:17.285393 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendSetAttribute() called:
+i!     status: type=cudnnStatus_t; val=CUDNN_STATUS_SUCCESS (0);
+i! Time: 2026-10-08T10:10:17.285406 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendSetAttribute() called:
+i!     descriptor: type=CUDNN_BACKEND_CONVOLUTION_DESCRIPTOR:
+i!         computeType: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!         mode: type=cudnnConvolutionMode_t; val=CUDNN_CROSS_CORRELATION (1);
+i!         nbDims: type=int; val=2;
+i!         upperPadA: type=int; val=[0,0];
+i!         lowerPadA: type=int; val=[0,0];
+i!         strideA: type=int; val=[0,0];
+i!         dilationA: type=int; val=[0,0];
+i!     attributeName: type=cudnnBackendAttributeName_t; val=CUDNN_ATTR_CONVOLUTION_PRE_PADDINGS (105);
+i!     attributeType: type=cudnnBackendAttributeType_t; val=CUDNN_TYPE_INT64 (3);
+i!     elementCount: type=int64_t; val=2;
+i!     [0]: type=int64_t; val=1;
+i!     [1]: type=int64_t; val=1;
+i! Time: 2026-10-08T10:10:17.285415 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendSetAttribute() called:
+i!     status: type=cudnnStatus_t; val=CUDNN_STATUS_SUCCESS (0);
+i! Time: 2026-10-08T10:10:17.285422 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendSetAttribute() called:
+i!     descriptor: type=CUDNN_BACKEND_CONVOLUTION_DESCRIPTOR:
+i!         computeType: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!         mode: type=cudnnConvolutionMode_t; val=CUDNN_CROSS_CORRELATION (1);
+i!         nbDims: type=int; val=2;
+i!         upperPadA: type=int; val=[0,0];
+i!         lowerPadA: type=int; val=[1,1];
+i!         strideA: type=int; val=[0,0];
+i!         dilationA: type=int; val=[0,0];
+i!     attributeName: type=cudnnBackendAttributeName_t; val=CUDNN_ATTR_CONVOLUTION_POST_PADDINGS (104);
+i!     attributeType: type=cudnnBackendAttributeType_t; val=CUDNN_TYPE_INT64 (3);
+i!     elementCount: type=int64_t; val=2;
+i!     [0]: type=int64_t; val=1;
+i!     [1]: type=int64_t; val=1;
+i! Time: 2026-10-08T10:10:17.285429 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendSetAttribute() called:
+i!     status: type=cudnnStatus_t; val=CUDNN_STATUS_SUCCESS (0);
+i! Time: 2026-10-08T10:10:17.285434 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendSetAttribute() called:
+i!     descriptor: type=CUDNN_BACKEND_CONVOLUTION_DESCRIPTOR:
+i!         computeType: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!         mode: type=cudnnConvolutionMode_t; val=CUDNN_CROSS_CORRELATION (1);
+i!         nbDims: type=int; val=2;
+i!         upperPadA: type=int; val=[1,1];
+i!         lowerPadA: type=int; val=[1,1];
+i!         strideA: type=int; val=[0,0];
+i!         dilationA: type=int; val=[0,0];
+i!     attributeName: type=cudnnBackendAttributeName_t; val=CUDNN_ATTR_CONVOLUTION_FILTER_STRIDES (103);
+i!     attributeType: type=cudnnBackendAttributeType_t; val=CUDNN_TYPE_INT64 (3);
+i!     elementCount: type=int64_t; val=2;
+i!     [0]: type=int64_t; val=1;
+i!     [1]: type=int64_t; val=1;
+i! Time: 2026-10-08T10:10:17.285440 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendSetAttribute() called:
+i!     status: type=cudnnStatus_t; val=CUDNN_STATUS_SUCCESS (0);
+i! Time: 2026-10-08T10:10:17.285448 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendSetAttribute() called:
+i!     descriptor: type=CUDNN_BACKEND_CONVOLUTION_DESCRIPTOR:
+i!         computeType: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!         mode: type=cudnnConvolutionMode_t; val=CUDNN_CROSS_CORRELATION (1);
+i!         nbDims: type=int; val=2;
+i!         upperPadA: type=int; val=[1,1];
+i!         lowerPadA: type=int; val=[1,1];
+i!         strideA: type=int; val=[1,1];
+i!         dilationA: type=int; val=[0,0];
+i!     attributeName: type=cudnnBackendAttributeName_t; val=CUDNN_ATTR_CONVOLUTION_DILATIONS (102);
+i!     attributeType: type=cudnnBackendAttributeType_t; val=CUDNN_TYPE_INT64 (3);
+i!     elementCount: type=int64_t; val=2;
+i!     [0]: type=int64_t; val=1;
+i!     [1]: type=int64_t; val=1;
+i! Time: 2026-10-08T10:10:17.285454 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendSetAttribute() called:
+i!     status: type=cudnnStatus_t; val=CUDNN_STATUS_SUCCESS (0);
+i! Time: 2026-10-08T10:10:17.285461 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendFinalize() called:
+i!     descriptor: type=CUDNN_BACKEND_CONVOLUTION_DESCRIPTOR:
+i!         computeType: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!         mode: type=cudnnConvolutionMode_t; val=CUDNN_CROSS_CORRELATION (1);
+i!         nbDims: type=int; val=2;
+i!         upperPadA: type=int; val=[1,1];
+i!         lowerPadA: type=int; val=[1,1];
+i!         strideA: type=int; val=[1,1];
+i!         dilationA: type=int; val=[1,1];
+i! Time: 2026-10-08T10:10:17.285467 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendFinalize() called:
+i!     status: type=cudnnStatus_t; val=CUDNN_STATUS_SUCCESS (0);
+i! Time: 2026-10-08T10:10:17.285474 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendCreateDescriptor() called:
+i!     descriptorType: type=cudnnBackendDescriptorType_t; val=CUDNN_BACKEND_OPERATION_CONVOLUTION_FORWARD_DESCRIPTOR (10);
+i! Time: 2026-10-08T10:10:17.285480 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendCreateDescriptor() called:
+i!     status: type=cudnnStatus_t; val=CUDNN_STATUS_SUCCESS (0);
+i! Time: 2026-10-08T10:10:17.285493 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendSetAttribute() called:
+i!     descriptor: type=CUDNN_BACKEND_OPERATION_CONVOLUTION_FORWARD_DESCRIPTOR:
+i!         xDesc: type=CUDNN_BACKEND_TENSOR_DESCRIPTOR:
+i!             type: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!             nbDims: type=int; val=-1;
+i!             dimA: type=int; val=[];
+i!             strideA: type=int; val=[];
+i!             uid: type=int64_t; val=-1;
+i!             alignmentInBytes: type=int64_t; val=1;
+i!             isVirtual: type=bool; val=false;
+i!             isByVal: type=bool; val=false;
+i!             isRagged: type=bool; val=false;
+i!             raggedOffsetMultiplier: type=int64_t; val=1;
+i!         wDesc: type=CUDNN_BACKEND_TENSOR_DESCRIPTOR:
+i!             type: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!             nbDims: type=int; val=-1;
+i!             dimA: type=int; val=[];
+i!             strideA: type=int; val=[];
+i!             uid: type=int64_t; val=-1;
+i!             alignmentInBytes: type=int64_t; val=1;
+i!             isVirtual: type=bool; val=false;
+i!             isByVal: type=bool; val=false;
+i!             isRagged: type=bool; val=false;
+i!             raggedOffsetMultiplier: type=int64_t; val=1;
+i!         convDesc: type=CUDNN_BACKEND_CONVOLUTION_DESCRIPTOR:
+i!             computeType: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!             mode: type=cudnnConvolutionMode_t; val=CUDNN_CONVOLUTION (0);
+i!             nbDims: type=int; val=-1;
+i!             upperPadA: type=int; val=[];
+i!             lowerPadA: type=int; val=[];
+i!             strideA: type=int; val=[];
+i!             dilationA: type=int; val=[];
+i!         yDesc: type=CUDNN_BACKEND_TENSOR_DESCRIPTOR:
+i!             type: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!             nbDims: type=int; val=-1;
+i!             dimA: type=int; val=[];
+i!             strideA: type=int; val=[];
+i!             uid: type=int64_t; val=-1;
+i!             alignmentInBytes: type=int64_t; val=1;
+i!             isVirtual: type=bool; val=false;
+i!             isByVal: type=bool; val=false;
+i!             isRagged: type=bool; val=false;
+i!             raggedOffsetMultiplier: type=int64_t; val=1;
+i!         alpha: type=float; val=1;
+i!         beta: type=float; val=0;
+i!     attributeName: type=cudnnBackendAttributeName_t; val=CUDNN_ATTR_OPERATION_CONVOLUTION_FORWARD_ALPHA (700);
+i!     attributeType: type=cudnnBackendAttributeType_t; val=CUDNN_TYPE_FLOAT (4);
+i!     elementCount: type=int64_t; val=1;
+i!     [0]: type=float; val=1;
+i! Time: 2026-10-08T10:10:17.285522 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendSetAttribute() called:
+i!     status: type=cudnnStatus_t; val=CUDNN_STATUS_SUCCESS (0);
+i! Time: 2026-10-08T10:10:17.285562 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendSetAttribute() called:
+i!     descriptor: type=CUDNN_BACKEND_OPERATION_CONVOLUTION_FORWARD_DESCRIPTOR:
+i!         xDesc: type=CUDNN_BACKEND_TENSOR_DESCRIPTOR:
+i!             type: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!             nbDims: type=int; val=-1;
+i!             dimA: type=int; val=[];
+i!             strideA: type=int; val=[];
+i!             uid: type=int64_t; val=-1;
+i!             alignmentInBytes: type=int64_t; val=1;
+i!             isVirtual: type=bool; val=false;
+i!             isByVal: type=bool; val=false;
+i!             isRagged: type=bool; val=false;
+i!             raggedOffsetMultiplier: type=int64_t; val=1;
+i!         wDesc: type=CUDNN_BACKEND_TENSOR_DESCRIPTOR:
+i!             type: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!             nbDims: type=int; val=-1;
+i!             dimA: type=int; val=[];
+i!             strideA: type=int; val=[];
+i!             uid: type=int64_t; val=-1;
+i!             alignmentInBytes: type=int64_t; val=1;
+i!             isVirtual: type=bool; val=false;
+i!             isByVal: type=bool; val=false;
+i!             isRagged: type=bool; val=false;
+i!             raggedOffsetMultiplier: type=int64_t; val=1;
+i!         convDesc: type=CUDNN_BACKEND_CONVOLUTION_DESCRIPTOR:
+i!             computeType: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!             mode: type=cudnnConvolutionMode_t; val=CUDNN_CONVOLUTION (0);
+i!             nbDims: type=int; val=-1;
+i!             upperPadA: type=int; val=[];
+i!             lowerPadA: type=int; val=[];
+i!             strideA: type=int; val=[];
+i!             dilationA: type=int; val=[];
+i!         yDesc: type=CUDNN_BACKEND_TENSOR_DESCRIPTOR:
+i!             type: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!             nbDims: type=int; val=-1;
+i!             dimA: type=int; val=[];
+i!             strideA: type=int; val=[];
+i!             uid: type=int64_t; val=-1;
+i!             alignmentInBytes: type=int64_t; val=1;
+i!             isVirtual: type=bool; val=false;
+i!             isByVal: type=bool; val=false;
+i!             isRagged: type=bool; val=false;
+i!             raggedOffsetMultiplier: type=int64_t; val=1;
+i!         alpha: type=float; val=1;
+i!         beta: type=float; val=0;
+i!     attributeName: type=cudnnBackendAttributeName_t; val=CUDNN_ATTR_OPERATION_CONVOLUTION_FORWARD_BETA (701);
+i!     attributeType: type=cudnnBackendAttributeType_t; val=CUDNN_TYPE_FLOAT (4);
+i!     elementCount: type=int64_t; val=1;
+i!     [0]: type=float; val=0;
+i! Time: 2026-10-08T10:10:17.285579 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendSetAttribute() called:
+i!     status: type=cudnnStatus_t; val=CUDNN_STATUS_SUCCESS (0);
+i! Time: 2026-10-08T10:10:17.285591 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendSetAttribute() called:
+i!     descriptor: type=CUDNN_BACKEND_OPERATION_CONVOLUTION_FORWARD_DESCRIPTOR:
+i!         xDesc: type=CUDNN_BACKEND_TENSOR_DESCRIPTOR:
+i!             type: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!             nbDims: type=int; val=-1;
+i!             dimA: type=int; val=[];
+i!             strideA: type=int; val=[];
+i!             uid: type=int64_t; val=-1;
+i!             alignmentInBytes: type=int64_t; val=1;
+i!             isVirtual: type=bool; val=false;
+i!             isByVal: type=bool; val=false;
+i!             isRagged: type=bool; val=false;
+i!             raggedOffsetMultiplier: type=int64_t; val=1;
+i!         wDesc: type=CUDNN_BACKEND_TENSOR_DESCRIPTOR:
+i!             type: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!             nbDims: type=int; val=-1;
+i!             dimA: type=int; val=[];
+i!             strideA: type=int; val=[];
+i!             uid: type=int64_t; val=-1;
+i!             alignmentInBytes: type=int64_t; val=1;
+i!             isVirtual: type=bool; val=false;
+i!             isByVal: type=bool; val=false;
+i!             isRagged: type=bool; val=false;
+i!             raggedOffsetMultiplier: type=int64_t; val=1;
+i!         convDesc: type=CUDNN_BACKEND_CONVOLUTION_DESCRIPTOR:
+i!             computeType: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!             mode: type=cudnnConvolutionMode_t; val=CUDNN_CONVOLUTION (0);
+i!             nbDims: type=int; val=-1;
+i!             upperPadA: type=int; val=[];
+i!             lowerPadA: type=int; val=[];
+i!             strideA: type=int; val=[];
+i!             dilationA: type=int; val=[];
+i!         yDesc: type=CUDNN_BACKEND_TENSOR_DESCRIPTOR:
+i!             type: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!             nbDims: type=int; val=-1;
+i!             dimA: type=int; val=[];
+i!             strideA: type=int; val=[];
+i!             uid: type=int64_t; val=-1;
+i!             alignmentInBytes: type=int64_t; val=1;
+i!             isVirtual: type=bool; val=false;
+i!             isByVal: type=bool; val=false;
+i!             isRagged: type=bool; val=false;
+i!             raggedOffsetMultiplier: type=int64_t; val=1;
+i!         alpha: type=float; val=1;
+i!         beta: type=float; val=0;
+i!     attributeName: type=cudnnBackendAttributeName_t; val=CUDNN_ATTR_OPERATION_CONVOLUTION_FORWARD_X (704);
+i!     attributeType: type=cudnnBackendAttributeType_t; val=CUDNN_TYPE_BACKEND_DESCRIPTOR (15);
+i!     elementCount: type=int64_t; val=1;
+i!     [0]: type=CUDNN_BACKEND_TENSOR_DESCRIPTOR; val=0x288c9290;
+i!         : type=bool; val=true;
+i! Time: 2026-10-08T10:10:17.285601 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendSetAttribute() called:
+i!     status: type=cudnnStatus_t; val=CUDNN_STATUS_SUCCESS (0);
+i! Time: 2026-10-08T10:10:17.285608 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendSetAttribute() called:
+i!     descriptor: type=CUDNN_BACKEND_OPERATION_CONVOLUTION_FORWARD_DESCRIPTOR:
+i!         xDesc: type=CUDNN_BACKEND_TENSOR_DESCRIPTOR:
+i!             type: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!             nbDims: type=int; val=4;
+i!             dimA: type=int; val=[4,3,64,64];
+i!             strideA: type=int; val=[12288,4096,64,1];
+i!             uid: type=int64_t; val=0;
+i!             alignmentInBytes: type=int64_t; val=16;
+i!             isVirtual: type=bool; val=false;
+i!             isByVal: type=bool; val=false;
+i!             isRagged: type=bool; val=false;
+i!             raggedOffsetMultiplier: type=int64_t; val=1;
+i!         wDesc: type=CUDNN_BACKEND_TENSOR_DESCRIPTOR:
+i!             type: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!             nbDims: type=int; val=-1;
+i!             dimA: type=int; val=[];
+i!             strideA: type=int; val=[];
+i!             uid: type=int64_t; val=-1;
+i!             alignmentInBytes: type=int64_t; val=1;
+i!             isVirtual: type=bool; val=false;
+i!             isByVal: type=bool; val=false;
+i!             isRagged: type=bool; val=false;
+i!             raggedOffsetMultiplier: type=int64_t; val=1;
+i!         convDesc: type=CUDNN_BACKEND_CONVOLUTION_DESCRIPTOR:
+i!             computeType: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!             mode: type=cudnnConvolutionMode_t; val=CUDNN_CONVOLUTION (0);
+i!             nbDims: type=int; val=-1;
+i!             upperPadA: type=int; val=[];
+i!             lowerPadA: type=int; val=[];
+i!             strideA: type=int; val=[];
+i!             dilationA: type=int; val=[];
+i!         yDesc: type=CUDNN_BACKEND_TENSOR_DESCRIPTOR:
+i!             type: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!             nbDims: type=int; val=-1;
+i!             dimA: type=int; val=[];
+i!             strideA: type=int; val=[];
+i!             uid: type=int64_t; val=-1;
+i!             alignmentInBytes: type=int64_t; val=1;
+i!             isVirtual: type=bool; val=false;
+i!             isByVal: type=bool; val=false;
+i!             isRagged: type=bool; val=false;
+i!             raggedOffsetMultiplier: type=int64_t; val=1;
+i!         alpha: type=float; val=1;
+i!         beta: type=float; val=0;
+i!     attributeName: type=cudnnBackendAttributeName_t; val=CUDNN_ATTR_OPERATION_CONVOLUTION_FORWARD_W (703);
+i!     attributeType: type=cudnnBackendAttributeType_t; val=CUDNN_TYPE_BACKEND_DESCRIPTOR (15);
+i!     elementCount: type=int64_t; val=1;
+i!     [0]: type=CUDNN_BACKEND_TENSOR_DESCRIPTOR; val=0x294821f0;
+i!         : type=bool; val=true;
+i! Time: 2026-10-08T10:10:17.285618 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendSetAttribute() called:
+i!     status: type=cudnnStatus_t; val=CUDNN_STATUS_SUCCESS (0);
+i! Time: 2026-10-08T10:10:17.285628 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendSetAttribute() called:
+i!     descriptor: type=CUDNN_BACKEND_OPERATION_CONVOLUTION_FORWARD_DESCRIPTOR:
+i!         xDesc: type=CUDNN_BACKEND_TENSOR_DESCRIPTOR:
+i!             type: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!             nbDims: type=int; val=4;
+i!             dimA: type=int; val=[4,3,64,64];
+i!             strideA: type=int; val=[12288,4096,64,1];
+i!             uid: type=int64_t; val=0;
+i!             alignmentInBytes: type=int64_t; val=16;
+i!             isVirtual: type=bool; val=false;
+i!             isByVal: type=bool; val=false;
+i!             isRagged: type=bool; val=false;
+i!             raggedOffsetMultiplier: type=int64_t; val=1;
+i!         wDesc: type=CUDNN_BACKEND_TENSOR_DESCRIPTOR:
+i!             type: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!             nbDims: type=int; val=4;
+i!             dimA: type=int; val=[16,3,3,3];
+i!             strideA: type=int; val=[27,9,3,1];
+i!             uid: type=int64_t; val=1;
+i!             alignmentInBytes: type=int64_t; val=16;
+i!             isVirtual: type=bool; val=false;
+i!             isByVal: type=bool; val=false;
+i!             isRagged: type=bool; val=false;
+i!             raggedOffsetMultiplier: type=int64_t; val=1;
+i!         convDesc: type=CUDNN_BACKEND_CONVOLUTION_DESCRIPTOR:
+i!             computeType: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!             mode: type=cudnnConvolutionMode_t; val=CUDNN_CONVOLUTION (0);
+i!             nbDims: type=int; val=-1;
+i!             upperPadA: type=int; val=[];
+i!             lowerPadA: type=int; val=[];
+i!             strideA: type=int; val=[];
+i!             dilationA: type=int; val=[];
+i!         yDesc: type=CUDNN_BACKEND_TENSOR_DESCRIPTOR:
+i!             type: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!             nbDims: type=int; val=-1;
+i!             dimA: type=int; val=[];
+i!             strideA: type=int; val=[];
+i!             uid: type=int64_t; val=-1;
+i!             alignmentInBytes: type=int64_t; val=1;
+i!             isVirtual: type=bool; val=false;
+i!             isByVal: type=bool; val=false;
+i!             isRagged: type=bool; val=false;
+i!             raggedOffsetMultiplier: type=int64_t; val=1;
+i!         alpha: type=float; val=1;
+i!         beta: type=float; val=0;
+i!     attributeName: type=cudnnBackendAttributeName_t; val=CUDNN_ATTR_OPERATION_CONVOLUTION_FORWARD_Y (705);
+i!     attributeType: type=cudnnBackendAttributeType_t; val=CUDNN_TYPE_BACKEND_DESCRIPTOR (15);
+i!     elementCount: type=int64_t; val=1;
+i!     [0]: type=CUDNN_BACKEND_TENSOR_DESCRIPTOR; val=0x29482350;
+i!         : type=bool; val=true;
+i! Time: 2026-10-08T10:10:17.285638 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendSetAttribute() called:
+i!     status: type=cudnnStatus_t; val=CUDNN_STATUS_SUCCESS (0);
+i! Time: 2026-10-08T10:10:17.285647 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendSetAttribute() called:
+i!     descriptor: type=CUDNN_BACKEND_OPERATION_CONVOLUTION_FORWARD_DESCRIPTOR:
+i!         xDesc: type=CUDNN_BACKEND_TENSOR_DESCRIPTOR:
+i!             type: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!             nbDims: type=int; val=4;
+i!             dimA: type=int; val=[4,3,64,64];
+i!             strideA: type=int; val=[12288,4096,64,1];
+i!             uid: type=int64_t; val=0;
+i!             alignmentInBytes: type=int64_t; val=16;
+i!             isVirtual: type=bool; val=false;
+i!             isByVal: type=bool; val=false;
+i!             isRagged: type=bool; val=false;
+i!             raggedOffsetMultiplier: type=int64_t; val=1;
+i!         wDesc: type=CUDNN_BACKEND_TENSOR_DESCRIPTOR:
+i!             type: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!             nbDims: type=int; val=4;
+i!             dimA: type=int; val=[16,3,3,3];
+i!             strideA: type=int; val=[27,9,3,1];
+i!             uid: type=int64_t; val=1;
+i!             alignmentInBytes: type=int64_t; val=16;
+i!             isVirtual: type=bool; val=false;
+i!             isByVal: type=bool; val=false;
+i!             isRagged: type=bool; val=false;
+i!             raggedOffsetMultiplier: type=int64_t; val=1;
+i!         convDesc: type=CUDNN_BACKEND_CONVOLUTION_DESCRIPTOR:
+i!             computeType: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!             mode: type=cudnnConvolutionMode_t; val=CUDNN_CONVOLUTION (0);
+i!             nbDims: type=int; val=-1;
+i!             upperPadA: type=int; val=[];
+i!             lowerPadA: type=int; val=[];
+i!             strideA: type=int; val=[];
+i!             dilationA: type=int; val=[];
+i!         yDesc: type=CUDNN_BACKEND_TENSOR_DESCRIPTOR:
+i!             type: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!             nbDims: type=int; val=4;
+i!             dimA: type=int; val=[4,16,64,64];
+i!             strideA: type=int; val=[65536,4096,64,1];
+i!             uid: type=int64_t; val=2;
+i!             alignmentInBytes: type=int64_t; val=16;
+i!             isVirtual: type=bool; val=false;
+i!             isByVal: type=bool; val=false;
+i!             isRagged: type=bool; val=false;
+i!             raggedOffsetMultiplier: type=int64_t; val=1;
+i!         alpha: type=float; val=1;
+i!         beta: type=float; val=0;
+i!     attributeName: type=cudnnBackendAttributeName_t; val=CUDNN_ATTR_OPERATION_CONVOLUTION_FORWARD_CONV_DESC (702);
+i!     attributeType: type=cudnnBackendAttributeType_t; val=CUDNN_TYPE_BACKEND_DESCRIPTOR (15);
+i!     elementCount: type=int64_t; val=1;
+i!     [0]: type=CUDNN_BACKEND_CONVOLUTION_DESCRIPTOR; val=0x28439200;
+i!         : type=bool; val=true;
+i! Time: 2026-10-08T10:10:17.285656 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendSetAttribute() called:
+i!     status: type=cudnnStatus_t; val=CUDNN_STATUS_SUCCESS (0);
+i! Time: 2026-10-08T10:10:17.285664 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendFinalize() called:
+i!     descriptor: type=CUDNN_BACKEND_OPERATION_CONVOLUTION_FORWARD_DESCRIPTOR:
+i!         xDesc: type=CUDNN_BACKEND_TENSOR_DESCRIPTOR:
+i!             type: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!             nbDims: type=int; val=4;
+i!             dimA: type=int; val=[4,3,64,64];
+i!             strideA: type=int; val=[12288,4096,64,1];
+i!             uid: type=int64_t; val=0;
+i!             alignmentInBytes: type=int64_t; val=16;
+i!             isVirtual: type=bool; val=false;
+i!             isByVal: type=bool; val=false;
+i!             isRagged: type=bool; val=false;
+i!             raggedOffsetMultiplier: type=int64_t; val=1;
+i!         wDesc: type=CUDNN_BACKEND_TENSOR_DESCRIPTOR:
+i!             type: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!             nbDims: type=int; val=4;
+i!             dimA: type=int; val=[16,3,3,3];
+i!             strideA: type=int; val=[27,9,3,1];
+i!             uid: type=int64_t; val=1;
+i!             alignmentInBytes: type=int64_t; val=16;
+i!             isVirtual: type=bool; val=false;
+i!             isByVal: type=bool; val=false;
+i!             isRagged: type=bool; val=false;
+i!             raggedOffsetMultiplier: type=int64_t; val=1;
+i!         convDesc: type=CUDNN_BACKEND_CONVOLUTION_DESCRIPTOR:
+i!             computeType: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!             mode: type=cudnnConvolutionMode_t; val=CUDNN_CROSS_CORRELATION (1);
+i!             nbDims: type=int; val=2;
+i!             upperPadA: type=int; val=[1,1];
+i!             lowerPadA: type=int; val=[1,1];
+i!             strideA: type=int; val=[1,1];
+i!             dilationA: type=int; val=[1,1];
+i!         yDesc: type=CUDNN_BACKEND_TENSOR_DESCRIPTOR:
+i!             type: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!             nbDims: type=int; val=4;
+i!             dimA: type=int; val=[4,16,64,64];
+i!             strideA: type=int; val=[65536,4096,64,1];
+i!             uid: type=int64_t; val=2;
+i!             alignmentInBytes: type=int64_t; val=16;
+i!             isVirtual: type=bool; val=false;
+i!             isByVal: type=bool; val=false;
+i!             isRagged: type=bool; val=false;
+i!             raggedOffsetMultiplier: type=int64_t; val=1;
+i!         alpha: type=float; val=1;
+i!         beta: type=float; val=0;
+i! Time: 2026-10-08T10:10:17.285672 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendFinalize() called:
+i!     status: type=cudnnStatus_t; val=CUDNN_STATUS_SUCCESS (0);
+i! Time: 2026-10-08T10:10:17.285682 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendCreateDescriptor() called:
+i!     descriptorType: type=cudnnBackendDescriptorType_t; val=CUDNN_BACKEND_OPERATIONGRAPH_DESCRIPTOR (15);
+i! Time: 2026-10-08T10:10:17.285688 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendCreateDescriptor() called:
+i!     status: type=cudnnStatus_t; val=CUDNN_STATUS_SUCCESS (0);
+i! Time: 2026-10-08T10:10:17.285694 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendSetAttribute() called:
+i!     descriptor: type=CUDNN_BACKEND_OPERATIONGRAPH_DESCRIPTOR:
+i!     attributeName: type=cudnnBackendAttributeName_t; val=CUDNN_ATTR_OPERATIONGRAPH_HANDLE (800);
+i!     attributeType: type=cudnnBackendAttributeType_t; val=CUDNN_TYPE_HANDLE (0);
+i!     elementCount: type=int64_t; val=1;
+i!     [0]: type=cudnnHandle_t:
+i!         streamId: type=cudaStream_t; streamId=0x288c91c0;
+i!         deviceProp: type=CUDNN_BACKEND_DEVICEPROP_DESCRIPTOR:
+i!             deviceName: type=string; val="NVIDIA GeForce RTX 5060 Laptop GPU";
+i!             cudaDeviceId: type=int; val=0;
+i!             deviceVer: type=int; val=1200;
+i!             multiProcessorCount: type=int; val=26;
+i!             driverVer: type=int; val=13030;
+i!             maxSharedMemoryPerBlockOptin: type=int; val=101376;
+i!             totalGlobalMem: type=size_t; val=8546484224;
+i! Time: 2026-10-08T10:10:17.285705 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendSetAttribute() called:
+i!     status: type=cudnnStatus_t; val=CUDNN_STATUS_SUCCESS (0);
+i! Time: 2026-10-08T10:10:17.285712 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendSetAttribute() called:
+i!     descriptor: type=CUDNN_BACKEND_OPERATIONGRAPH_DESCRIPTOR:
+i!     attributeName: type=cudnnBackendAttributeName_t; val=CUDNN_ATTR_OPERATIONGRAPH_OPS (801);
+i!     attributeType: type=cudnnBackendAttributeType_t; val=CUDNN_TYPE_BACKEND_DESCRIPTOR (15);
+i!     elementCount: type=int64_t; val=1;
+i!     [0]: type=CUDNN_BACKEND_OPERATION_CONVOLUTION_FORWARD_DESCRIPTOR; val=0x294824b0;
+i!         : type=bool; val=true;
+i! Time: 2026-10-08T10:10:17.285718 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendSetAttribute() called:
+i!     status: type=cudnnStatus_t; val=CUDNN_STATUS_SUCCESS (0);
+i! Time: 2026-10-08T10:10:17.285731 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendFinalize() called:
+i!     descriptor: type=CUDNN_BACKEND_OPERATIONGRAPH_DESCRIPTOR:
+i!         operation: type=CUDNN_BACKEND_OPERATION_CONVOLUTION_FORWARD_DESCRIPTOR:
+i!             xDesc: type=CUDNN_BACKEND_TENSOR_DESCRIPTOR:
+i!                 type: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!                 nbDims: type=int; val=4;
+i!                 dimA: type=int; val=[4,3,64,64];
+i!                 strideA: type=int; val=[12288,4096,64,1];
+i!                 uid: type=int64_t; val=0;
+i!                 alignmentInBytes: type=int64_t; val=16;
+i!                 isVirtual: type=bool; val=false;
+i!                 isByVal: type=bool; val=false;
+i!                 isRagged: type=bool; val=false;
+i!                 raggedOffsetMultiplier: type=int64_t; val=1;
+i!             wDesc: type=CUDNN_BACKEND_TENSOR_DESCRIPTOR:
+i!                 type: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!                 nbDims: type=int; val=4;
+i!                 dimA: type=int; val=[16,3,3,3];
+i!                 strideA: type=int; val=[27,9,3,1];
+i!                 uid: type=int64_t; val=1;
+i!                 alignmentInBytes: type=int64_t; val=16;
+i!                 isVirtual: type=bool; val=false;
+i!                 isByVal: type=bool; val=false;
+i!                 isRagged: type=bool; val=false;
+i!                 raggedOffsetMultiplier: type=int64_t; val=1;
+i!             convDesc: type=CUDNN_BACKEND_CONVOLUTION_DESCRIPTOR:
+i!                 computeType: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!                 mode: type=cudnnConvolutionMode_t; val=CUDNN_CROSS_CORRELATION (1);
+i!                 nbDims: type=int; val=2;
+i!                 upperPadA: type=int; val=[1,1];
+i!                 lowerPadA: type=int; val=[1,1];
+i!                 strideA: type=int; val=[1,1];
+i!                 dilationA: type=int; val=[1,1];
+i!             yDesc: type=CUDNN_BACKEND_TENSOR_DESCRIPTOR:
+i!                 type: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!                 nbDims: type=int; val=4;
+i!                 dimA: type=int; val=[4,16,64,64];
+i!                 strideA: type=int; val=[65536,4096,64,1];
+i!                 uid: type=int64_t; val=2;
+i!                 alignmentInBytes: type=int64_t; val=16;
+i!                 isVirtual: type=bool; val=false;
+i!                 isByVal: type=bool; val=false;
+i!                 isRagged: type=bool; val=false;
+i!                 raggedOffsetMultiplier: type=int64_t; val=1;
+i!             alpha: type=float; val=1;
+i!             beta: type=float; val=0;
+i! Time: 2026-10-08T10:10:17.285741 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendFinalizeGraphVisualize() called:
+i!     apiLog: type=json; val={"cudnnVersion":92400,"schemaVersion":4,"operationGraph":{"finalizeMode":"INVALID_OPERATION_MODE","tensors":[{"name":"0","dataType":"CUDNN_DATA_FLOAT","dim":[4,3,64,64],"stride":[12288,4096,64,1],"isVirtual":false,"isByValue":false,"vectCount":1,"vectDim":-1,"ptrAlignment":16,"reordering":"CUDNN_TENSOR_REORDERING_NONE"},{"name":"1","dataType":"CUDNN_DATA_FLOAT","dim":[16,3,3,3],"stride":[27,9,3,1],"isVirtual":false,"isByValue":false,"vectCount":1,"vectDim":-1,"ptrAlignment":16,"reordering":"CUDNN_TENSOR_REORDERING_NONE"},{"name":"2","dataType":"CUDNN_DATA_FLOAT","dim":[4,16,64,64],"stride":[65536,4096,64,1],"isVirtual":false,"isByValue":false,"vectCount":1,"vectDim":-1,"ptrAlignment":16,"reordering":"CUDNN_TENSOR_REORDERING_NONE"}],"nodes":[{"operation":"CUDNN_BACKEND_OPERATION_CONVOLUTION_FORWARD_DESCRIPTOR","mode":"CUDNN_CROSS_CORRELATION","mathPrec":"CUDNN_DATA_FLOAT","alpha":1.0,"beta":0.0,"pad":[1,1],"stride":[1,1],"dilation":[1,1],"X":"0","W":"1","Y":"2"}]}};
+i! Time: 2026-10-08T10:10:17.285887 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendFinalize() called:
+i!     status: type=cudnnStatus_t; val=CUDNN_STATUS_SUCCESS (0);
+i! Time: 2026-10-08T10:10:17.285925 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendCreateDescriptor() called:
+i!     descriptorType: type=cudnnBackendDescriptorType_t; val=CUDNN_BACKEND_ENGINEHEUR_DESCRIPTOR (4);
+i! Time: 2026-10-08T10:10:17.285937 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendCreateDescriptor() called:
+i!     status: type=cudnnStatus_t; val=CUDNN_STATUS_SUCCESS (0);
+i! Time: 2026-10-08T10:10:17.434230 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendSetAttribute() called:
+i!     descriptor: type=CUDNN_BACKEND_ENGINEHEUR_DESCRIPTOR; val=NOT_IMPLEMENTED;
+i!     attributeName: type=cudnnBackendAttributeName_t; val=CUDNN_ATTR_ENGINEHEUR_OPERATION_GRAPH (201);
+i!     attributeType: type=cudnnBackendAttributeType_t; val=CUDNN_TYPE_BACKEND_DESCRIPTOR (15);
+i!     elementCount: type=int64_t; val=1;
+i!     [0]: type=CUDNN_BACKEND_OPERATIONGRAPH_DESCRIPTOR; val=0x29482f40;
+i!         : type=bool; val=true;
+i! Time: 2026-10-08T10:10:17.434300 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendSetAttribute() called:
+i!     status: type=cudnnStatus_t; val=CUDNN_STATUS_SUCCESS (0);
+i! Time: 2026-10-08T10:10:17.434335 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendSetAttribute() called:
+i!     descriptor: type=CUDNN_BACKEND_ENGINEHEUR_DESCRIPTOR; val=NOT_IMPLEMENTED;
+i!     attributeName: type=cudnnBackendAttributeName_t; val=CUDNN_ATTR_ENGINEHEUR_MODE (200);
+i!     attributeType: type=cudnnBackendAttributeType_t; val=CUDNN_TYPE_HEUR_MODE (8);
+i!     elementCount: type=int64_t; val=1;
+i!     [0]: type=int; val=3;
+i! Time: 2026-10-08T10:10:17.434349 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendSetAttribute() called:
+i!     status: type=cudnnStatus_t; val=CUDNN_STATUS_SUCCESS (0);
+i! Time: 2026-10-08T10:10:17.434396 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendFinalize() called:
+i!     descriptor: type=CUDNN_BACKEND_ENGINEHEUR_DESCRIPTOR; val=NOT_IMPLEMENTED;
+i! Time: 2026-10-08T10:10:17.434410 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendFinalize() called:
+i!     status: type=cudnnStatus_t; val=CUDNN_STATUS_SUCCESS (0);
+i! Time: 2026-10-08T10:10:17.434539 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendGetAttribute() called:
+i!     descriptor: type=CUDNN_BACKEND_ENGINEHEUR_DESCRIPTOR; val=NOT_IMPLEMENTED;
+i!     attributeName: type=cudnnBackendAttributeName_t; val=CUDNN_ATTR_ENGINEHEUR_RESULTS (202);
+i!     attributeType: type=cudnnBackendAttributeType_t; val=CUDNN_TYPE_BACKEND_DESCRIPTOR (15);
+i!     requestedElementCount: type=int64_t; val=0;
+i!     elementCount: location=host; addr=0x7fffc12c4bf0;
+i!     arrayOfElements: location=host; addr=NULL_PTR;
+i! Time: 2026-10-08T10:10:17.434688 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendGetAttribute() called:
+i!     status: type=cudnnStatus_t; val=CUDNN_STATUS_SUCCESS (0);
+i! Time: 2026-10-08T10:10:17.434731 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendCreateDescriptor() called:
+i!     descriptorType: type=cudnnBackendDescriptorType_t; val=CUDNN_BACKEND_ENGINECFG_DESCRIPTOR (3);
+i! Time: 2026-10-08T10:10:17.434743 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendCreateDescriptor() called:
+i!     status: type=cudnnStatus_t; val=CUDNN_STATUS_SUCCESS (0);
+i! Time: 2026-10-08T10:10:17.434756 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendCreateDescriptor() called:
+i!     descriptorType: type=cudnnBackendDescriptorType_t; val=CUDNN_BACKEND_ENGINECFG_DESCRIPTOR (3);
+i! Time: 2026-10-08T10:10:17.434763 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendCreateDescriptor() called:
+i!     status: type=cudnnStatus_t; val=CUDNN_STATUS_SUCCESS (0);
+i! Time: 2026-10-08T10:10:17.434769 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendCreateDescriptor() called:
+i!     descriptorType: type=cudnnBackendDescriptorType_t; val=CUDNN_BACKEND_ENGINECFG_DESCRIPTOR (3);
+i! Time: 2026-10-08T10:10:17.434774 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendCreateDescriptor() called:
+i!     status: type=cudnnStatus_t; val=CUDNN_STATUS_SUCCESS (0);
+i! Time: 2026-10-08T10:10:17.434782 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendCreateDescriptor() called:
+i!     descriptorType: type=cudnnBackendDescriptorType_t; val=CUDNN_BACKEND_ENGINECFG_DESCRIPTOR (3);
+i! Time: 2026-10-08T10:10:17.434788 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendCreateDescriptor() called:
+i!     status: type=cudnnStatus_t; val=CUDNN_STATUS_SUCCESS (0);
+i! Time: 2026-10-08T10:10:17.434818 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendCreateDescriptor() called:
+i!     descriptorType: type=cudnnBackendDescriptorType_t; val=CUDNN_BACKEND_ENGINECFG_DESCRIPTOR (3);
+i! Time: 2026-10-08T10:10:17.434831 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendCreateDescriptor() called:
+i!     status: type=cudnnStatus_t; val=CUDNN_STATUS_SUCCESS (0);
+i! Time: 2026-10-08T10:10:17.434839 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendCreateDescriptor() called:
+i!     descriptorType: type=cudnnBackendDescriptorType_t; val=CUDNN_BACKEND_ENGINECFG_DESCRIPTOR (3);
+i! Time: 2026-10-08T10:10:17.434845 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendCreateDescriptor() called:
+i!     status: type=cudnnStatus_t; val=CUDNN_STATUS_SUCCESS (0);
+i! Time: 2026-10-08T10:10:17.434853 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendCreateDescriptor() called:
+i!     descriptorType: type=cudnnBackendDescriptorType_t; val=CUDNN_BACKEND_ENGINECFG_DESCRIPTOR (3);
+i! Time: 2026-10-08T10:10:17.434859 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendCreateDescriptor() called:
+i!     status: type=cudnnStatus_t; val=CUDNN_STATUS_SUCCESS (0);
+i! Time: 2026-10-08T10:10:17.434866 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendCreateDescriptor() called:
+i!     descriptorType: type=cudnnBackendDescriptorType_t; val=CUDNN_BACKEND_ENGINECFG_DESCRIPTOR (3);
+i! Time: 2026-10-08T10:10:17.434871 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendCreateDescriptor() called:
+i!     status: type=cudnnStatus_t; val=CUDNN_STATUS_SUCCESS (0);
+i! Time: 2026-10-08T10:10:17.434876 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendCreateDescriptor() called:
+i!     descriptorType: type=cudnnBackendDescriptorType_t; val=CUDNN_BACKEND_ENGINECFG_DESCRIPTOR (3);
+i! Time: 2026-10-08T10:10:17.434882 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendCreateDescriptor() called:
+i!     status: type=cudnnStatus_t; val=CUDNN_STATUS_SUCCESS (0);
+i! Time: 2026-10-08T10:10:17.434890 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendCreateDescriptor() called:
+i!     descriptorType: type=cudnnBackendDescriptorType_t; val=CUDNN_BACKEND_ENGINECFG_DESCRIPTOR (3);
+i! Time: 2026-10-08T10:10:17.434896 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendCreateDescriptor() called:
+i!     status: type=cudnnStatus_t; val=CUDNN_STATUS_SUCCESS (0);
+i! Time: 2026-10-08T10:10:17.434903 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendCreateDescriptor() called:
+i!     descriptorType: type=cudnnBackendDescriptorType_t; val=CUDNN_BACKEND_ENGINECFG_DESCRIPTOR (3);
+i! Time: 2026-10-08T10:10:17.434908 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendCreateDescriptor() called:
+i!     status: type=cudnnStatus_t; val=CUDNN_STATUS_SUCCESS (0);
+i! Time: 2026-10-08T10:10:17.434949 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendCreateDescriptor() called:
+i!     descriptorType: type=cudnnBackendDescriptorType_t; val=CUDNN_BACKEND_ENGINECFG_DESCRIPTOR (3);
+i! Time: 2026-10-08T10:10:17.434962 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendCreateDescriptor() called:
+i!     status: type=cudnnStatus_t; val=CUDNN_STATUS_SUCCESS (0);
+i! Time: 2026-10-08T10:10:17.434972 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendCreateDescriptor() called:
+i!     descriptorType: type=cudnnBackendDescriptorType_t; val=CUDNN_BACKEND_ENGINECFG_DESCRIPTOR (3);
+i! Time: 2026-10-08T10:10:17.434978 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendCreateDescriptor() called:
+i!     status: type=cudnnStatus_t; val=CUDNN_STATUS_SUCCESS (0);
+i! Time: 2026-10-08T10:10:17.435004 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendCreateDescriptor() called:
+i!     descriptorType: type=cudnnBackendDescriptorType_t; val=CUDNN_BACKEND_ENGINECFG_DESCRIPTOR (3);
+i! Time: 2026-10-08T10:10:17.435031 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendCreateDescriptor() called:
+i!     status: type=cudnnStatus_t; val=CUDNN_STATUS_SUCCESS (0);
+i! Time: 2026-10-08T10:10:17.435042 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendCreateDescriptor() called:
+i!     descriptorType: type=cudnnBackendDescriptorType_t; val=CUDNN_BACKEND_ENGINECFG_DESCRIPTOR (3);
+i! Time: 2026-10-08T10:10:17.435048 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendCreateDescriptor() called:
+i!     status: type=cudnnStatus_t; val=CUDNN_STATUS_SUCCESS (0);
+i! Time: 2026-10-08T10:10:17.435059 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendCreateDescriptor() called:
+i!     descriptorType: type=cudnnBackendDescriptorType_t; val=CUDNN_BACKEND_ENGINECFG_DESCRIPTOR (3);
+i! Time: 2026-10-08T10:10:17.435065 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendCreateDescriptor() called:
+i!     status: type=cudnnStatus_t; val=CUDNN_STATUS_SUCCESS (0);
+i! Time: 2026-10-08T10:10:17.435073 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendCreateDescriptor() called:
+i!     descriptorType: type=cudnnBackendDescriptorType_t; val=CUDNN_BACKEND_ENGINECFG_DESCRIPTOR (3);
+i! Time: 2026-10-08T10:10:17.435078 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendCreateDescriptor() called:
+i!     status: type=cudnnStatus_t; val=CUDNN_STATUS_SUCCESS (0);
+i! Time: 2026-10-08T10:10:17.435085 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendGetAttribute() called:
+i!     descriptor: type=CUDNN_BACKEND_ENGINEHEUR_DESCRIPTOR; val=NOT_IMPLEMENTED;
+i!     attributeName: type=cudnnBackendAttributeName_t; val=CUDNN_ATTR_ENGINEHEUR_RESULTS (202);
+i!     attributeType: type=cudnnBackendAttributeType_t; val=CUDNN_TYPE_BACKEND_DESCRIPTOR (15);
+i!     requestedElementCount: type=int64_t; val=17;
+i!     elementCount: location=host; addr=0x7fffc12c4bf8;
+i!     arrayOfElements: location=host; addr=0x29485840;
+i! Time: 2026-10-08T10:10:17.435092 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendFinalizeEngineCfgVisualize() called:
+i!     apiLog: type=json; val={"cudnnVersion":92400,"schemaVersion":4,"operationGraph":{"finalizeMode":"CONV_FORWARD","tensors":[{"name":"0","dataType":"CUDNN_DATA_FLOAT","dim":[4,3,64,64],"stride":[12288,4096,64,1],"isVirtual":false,"isByValue":false,"vectCount":1,"vectDim":-1,"ptrAlignment":16,"reordering":"CUDNN_TENSOR_REORDERING_NONE"},{"name":"1","dataType":"CUDNN_DATA_FLOAT","dim":[16,3,3,3],"stride":[27,9,3,1],"isVirtual":false,"isByValue":false,"vectCount":1,"vectDim":-1,"ptrAlignment":16,"reordering":"CUDNN_TENSOR_REORDERING_NONE"},{"name":"2","dataType":"CUDNN_DATA_FLOAT","dim":[4,16,64,64],"stride":[65536,4096,64,1],"isVirtual":false,"isByValue":false,"vectCount":1,"vectDim":-1,"ptrAlignment":16,"reordering":"CUDNN_TENSOR_REORDERING_NONE"}],"nodes":[{"operation":"CUDNN_BACKEND_OPERATION_CONVOLUTION_FORWARD_DESCRIPTOR","mode":"CUDNN_CROSS_CORRELATION","mathPrec":"CUDNN_DATA_FLOAT","alpha":1.0,"beta":0.0,"pad":[1,1],"stride":[1,1],"dilation":[1,1],"X":"0","W":"1","Y":"2"}]},"engine":{"engineId":28,"smVersion":1200,"knobChoices":{"CUDNN_KNOB_TYPE_TILE_SIZE":4,"CUDNN_KNOB_TYPE_USE_TEX":0}}};
+i! Time: 2026-10-08T10:10:17.435350 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendFinalizeEngineCfgVisualize() called:
+i!     apiLog: type=json; val={"cudnnVersion":92400,"schemaVersion":4,"operationGraph":{"finalizeMode":"CONV_FORWARD","tensors":[{"name":"0","dataType":"CUDNN_DATA_FLOAT","dim":[4,3,64,64],"stride":[12288,4096,64,1],"isVirtual":false,"isByValue":false,"vectCount":1,"vectDim":-1,"ptrAlignment":16,"reordering":"CUDNN_TENSOR_REORDERING_NONE"},{"name":"1","dataType":"CUDNN_DATA_FLOAT","dim":[16,3,3,3],"stride":[27,9,3,1],"isVirtual":false,"isByValue":false,"vectCount":1,"vectDim":-1,"ptrAlignment":16,"reordering":"CUDNN_TENSOR_REORDERING_NONE"},{"name":"2","dataType":"CUDNN_DATA_FLOAT","dim":[4,16,64,64],"stride":[65536,4096,64,1],"isVirtual":false,"isByValue":false,"vectCount":1,"vectDim":-1,"ptrAlignment":16,"reordering":"CUDNN_TENSOR_REORDERING_NONE"}],"nodes":[{"operation":"CUDNN_BACKEND_OPERATION_CONVOLUTION_FORWARD_DESCRIPTOR","mode":"CUDNN_CROSS_CORRELATION","mathPrec":"CUDNN_DATA_FLOAT","alpha":1.0,"beta":0.0,"pad":[1,1],"stride":[1,1],"dilation":[1,1],"X":"0","W":"1","Y":"2"}]},"engine":{"engineId":28,"smVersion":1200,"knobChoices":{"CUDNN_KNOB_TYPE_TILE_SIZE":3,"CUDNN_KNOB_TYPE_USE_TEX":0}}};
+i! Time: 2026-10-08T10:10:17.435442 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendFinalizeEngineCfgVisualize() called:
+i!     apiLog: type=json; val={"cudnnVersion":92400,"schemaVersion":4,"operationGraph":{"finalizeMode":"CONV_FORWARD","tensors":[{"name":"0","dataType":"CUDNN_DATA_FLOAT","dim":[4,3,64,64],"stride":[12288,4096,64,1],"isVirtual":false,"isByValue":false,"vectCount":1,"vectDim":-1,"ptrAlignment":16,"reordering":"CUDNN_TENSOR_REORDERING_NONE"},{"name":"1","dataType":"CUDNN_DATA_FLOAT","dim":[16,3,3,3],"stride":[27,9,3,1],"isVirtual":false,"isByValue":false,"vectCount":1,"vectDim":-1,"ptrAlignment":16,"reordering":"CUDNN_TENSOR_REORDERING_NONE"},{"name":"2","dataType":"CUDNN_DATA_FLOAT","dim":[4,16,64,64],"stride":[65536,4096,64,1],"isVirtual":false,"isByValue":false,"vectCount":1,"vectDim":-1,"ptrAlignment":16,"reordering":"CUDNN_TENSOR_REORDERING_NONE"}],"nodes":[{"operation":"CUDNN_BACKEND_OPERATION_CONVOLUTION_FORWARD_DESCRIPTOR","mode":"CUDNN_CROSS_CORRELATION","mathPrec":"CUDNN_DATA_FLOAT","alpha":1.0,"beta":0.0,"pad":[1,1],"stride":[1,1],"dilation":[1,1],"X":"0","W":"1","Y":"2"}]},"engine":{"engineId":48,"smVersion":1200,"knobChoices":{"CUDNN_KNOB_TYPE_TILE_SIZE":2,"CUDNN_KNOB_TYPE_LDGA":0,"CUDNN_KNOB_TYPE_TILEK":2,"CUDNN_KNOB_TYPE_STAGES":0,"CUDNN_KNOB_TYPE_LDGC":1}}};
+i! Time: 2026-10-08T10:10:17.481667 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendFinalizeEngineCfgVisualize() called:
+i!     apiLog: type=json; val={"cudnnVersion":92400,"schemaVersion":4,"operationGraph":{"finalizeMode":"CONV_FORWARD","tensors":[{"name":"0","dataType":"CUDNN_DATA_FLOAT","dim":[4,3,64,64],"stride":[12288,4096,64,1],"isVirtual":false,"isByValue":false,"vectCount":1,"vectDim":-1,"ptrAlignment":16,"reordering":"CUDNN_TENSOR_REORDERING_NONE"},{"name":"1","dataType":"CUDNN_DATA_FLOAT","dim":[16,3,3,3],"stride":[27,9,3,1],"isVirtual":false,"isByValue":false,"vectCount":1,"vectDim":-1,"ptrAlignment":16,"reordering":"CUDNN_TENSOR_REORDERING_NONE"},{"name":"2","dataType":"CUDNN_DATA_FLOAT","dim":[4,16,64,64],"stride":[65536,4096,64,1],"isVirtual":false,"isByValue":false,"vectCount":1,"vectDim":-1,"ptrAlignment":16,"reordering":"CUDNN_TENSOR_REORDERING_NONE"}],"nodes":[{"operation":"CUDNN_BACKEND_OPERATION_CONVOLUTION_FORWARD_DESCRIPTOR","mode":"CUDNN_CROSS_CORRELATION","mathPrec":"CUDNN_DATA_FLOAT","alpha":1.0,"beta":0.0,"pad":[1,1],"stride":[1,1],"dilation":[1,1],"X":"0","W":"1","Y":"2"}]},"engine":{"engineId":48,"smVersion":1200,"knobChoices":{"CUDNN_KNOB_TYPE_TILE_SIZE":15,"CUDNN_KNOB_TYPE_LDGA":0,"CUDNN_KNOB_TYPE_TILEK":0,"CUDNN_KNOB_TYPE_STAGES":0,"CUDNN_KNOB_TYPE_LDGC":0}}};
+i! Time: 2026-10-08T10:10:17.482285 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendFinalizeEngineCfgVisualize() called:
+i!     apiLog: type=json; val={"cudnnVersion":92400,"schemaVersion":4,"operationGraph":{"finalizeMode":"CONV_FORWARD","tensors":[{"name":"0","dataType":"CUDNN_DATA_FLOAT","dim":[4,3,64,64],"stride":[12288,4096,64,1],"isVirtual":false,"isByValue":false,"vectCount":1,"vectDim":-1,"ptrAlignment":16,"reordering":"CUDNN_TENSOR_REORDERING_NONE"},{"name":"1","dataType":"CUDNN_DATA_FLOAT","dim":[16,3,3,3],"stride":[27,9,3,1],"isVirtual":false,"isByValue":false,"vectCount":1,"vectDim":-1,"ptrAlignment":16,"reordering":"CUDNN_TENSOR_REORDERING_NONE"},{"name":"2","dataType":"CUDNN_DATA_FLOAT","dim":[4,16,64,64],"stride":[65536,4096,64,1],"isVirtual":false,"isByValue":false,"vectCount":1,"vectDim":-1,"ptrAlignment":16,"reordering":"CUDNN_TENSOR_REORDERING_NONE"}],"nodes":[{"operation":"CUDNN_BACKEND_OPERATION_CONVOLUTION_FORWARD_DESCRIPTOR","mode":"CUDNN_CROSS_CORRELATION","mathPrec":"CUDNN_DATA_FLOAT","alpha":1.0,"beta":0.0,"pad":[1,1],"stride":[1,1],"dilation":[1,1],"X":"0","W":"1","Y":"2"}]},"engine":{"engineId":1,"smVersion":1200,"knobChoices":{"CUDNN_KNOB_TYPE_TILE_SIZE":2,"CUDNN_KNOB_TYPE_USE_TEX":0}}};
+i! Time: 2026-10-08T10:10:17.482388 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendFinalizeEngineCfgVisualize() called:
+i!     apiLog: type=json; val={"cudnnVersion":92400,"schemaVersion":4,"operationGraph":{"finalizeMode":"CONV_FORWARD","tensors":[{"name":"0","dataType":"CUDNN_DATA_FLOAT","dim":[4,3,64,64],"stride":[12288,4096,64,1],"isVirtual":false,"isByValue":false,"vectCount":1,"vectDim":-1,"ptrAlignment":16,"reordering":"CUDNN_TENSOR_REORDERING_NONE"},{"name":"1","dataType":"CUDNN_DATA_FLOAT","dim":[16,3,3,3],"stride":[27,9,3,1],"isVirtual":false,"isByValue":false,"vectCount":1,"vectDim":-1,"ptrAlignment":16,"reordering":"CUDNN_TENSOR_REORDERING_NONE"},{"name":"2","dataType":"CUDNN_DATA_FLOAT","dim":[4,16,64,64],"stride":[65536,4096,64,1],"isVirtual":false,"isByValue":false,"vectCount":1,"vectDim":-1,"ptrAlignment":16,"reordering":"CUDNN_TENSOR_REORDERING_NONE"}],"nodes":[{"operation":"CUDNN_BACKEND_OPERATION_CONVOLUTION_FORWARD_DESCRIPTOR","mode":"CUDNN_CROSS_CORRELATION","mathPrec":"CUDNN_DATA_FLOAT","alpha":1.0,"beta":0.0,"pad":[1,1],"stride":[1,1],"dilation":[1,1],"X":"0","W":"1","Y":"2"}]},"engine":{"engineId":6,"smVersion":1200,"knobChoices":{"CUDNN_KNOB_TYPE_WORKSPACE":0}}};
+i! Time: 2026-10-08T10:10:17.484956 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendFinalizeEngineCfgVisualize() called:
+i!     apiLog: type=json; val={"cudnnVersion":92400,"schemaVersion":4,"operationGraph":{"finalizeMode":"CONV_FORWARD","tensors":[{"name":"0","dataType":"CUDNN_DATA_FLOAT","dim":[4,3,64,64],"stride":[12288,4096,64,1],"isVirtual":false,"isByValue":false,"vectCount":1,"vectDim":-1,"ptrAlignment":16,"reordering":"CUDNN_TENSOR_REORDERING_NONE"},{"name":"1","dataType":"CUDNN_DATA_FLOAT","dim":[16,3,3,3],"stride":[27,9,3,1],"isVirtual":false,"isByValue":false,"vectCount":1,"vectDim":-1,"ptrAlignment":16,"reordering":"CUDNN_TENSOR_REORDERING_NONE"},{"name":"2","dataType":"CUDNN_DATA_FLOAT","dim":[4,16,64,64],"stride":[65536,4096,64,1],"isVirtual":false,"isByValue":false,"vectCount":1,"vectDim":-1,"ptrAlignment":16,"reordering":"CUDNN_TENSOR_REORDERING_NONE"}],"nodes":[{"operation":"CUDNN_BACKEND_OPERATION_CONVOLUTION_FORWARD_DESCRIPTOR","mode":"CUDNN_CROSS_CORRELATION","mathPrec":"CUDNN_DATA_FLOAT","alpha":1.0,"beta":0.0,"pad":[1,1],"stride":[1,1],"dilation":[1,1],"X":"0","W":"1","Y":"2"}]},"engine":{"engineId":46,"smVersion":1200,"knobChoices":{"CUDNN_KNOB_TYPE_TILE_SIZE":4,"CUDNN_KNOB_TYPE_KBLOCK":2,"CUDNN_KNOB_TYPE_STAGES":3}}};
+i! Time: 2026-10-08T10:10:17.673517 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendFinalizeEngineCfgVisualize() called:
+i!     apiLog: type=json; val={"cudnnVersion":92400,"schemaVersion":4,"operationGraph":{"finalizeMode":"CONV_FORWARD","tensors":[{"name":"0","dataType":"CUDNN_DATA_FLOAT","dim":[4,3,64,64],"stride":[12288,4096,64,1],"isVirtual":false,"isByValue":false,"vectCount":1,"vectDim":-1,"ptrAlignment":16,"reordering":"CUDNN_TENSOR_REORDERING_NONE"},{"name":"1","dataType":"CUDNN_DATA_FLOAT","dim":[16,3,3,3],"stride":[27,9,3,1],"isVirtual":false,"isByValue":false,"vectCount":1,"vectDim":-1,"ptrAlignment":16,"reordering":"CUDNN_TENSOR_REORDERING_NONE"},{"name":"2","dataType":"CUDNN_DATA_FLOAT","dim":[4,16,64,64],"stride":[65536,4096,64,1],"isVirtual":false,"isByValue":false,"vectCount":1,"vectDim":-1,"ptrAlignment":16,"reordering":"CUDNN_TENSOR_REORDERING_NONE"}],"nodes":[{"operation":"CUDNN_BACKEND_OPERATION_CONVOLUTION_FORWARD_DESCRIPTOR","mode":"CUDNN_CROSS_CORRELATION","mathPrec":"CUDNN_DATA_FLOAT","alpha":1.0,"beta":0.0,"pad":[1,1],"stride":[1,1],"dilation":[1,1],"X":"0","W":"1","Y":"2"}]},"engine":{"engineId":28,"smVersion":1200,"knobChoices":{"CUDNN_KNOB_TYPE_TILE_SIZE":1,"CUDNN_KNOB_TYPE_USE_TEX":0}}};
+i! Time: 2026-10-08T10:10:17.673638 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendFinalizeEngineCfgVisualize() called:
+i!     apiLog: type=json; val={"cudnnVersion":92400,"schemaVersion":4,"operationGraph":{"finalizeMode":"CONV_FORWARD","tensors":[{"name":"0","dataType":"CUDNN_DATA_FLOAT","dim":[4,3,64,64],"stride":[12288,4096,64,1],"isVirtual":false,"isByValue":false,"vectCount":1,"vectDim":-1,"ptrAlignment":16,"reordering":"CUDNN_TENSOR_REORDERING_NONE"},{"name":"1","dataType":"CUDNN_DATA_FLOAT","dim":[16,3,3,3],"stride":[27,9,3,1],"isVirtual":false,"isByValue":false,"vectCount":1,"vectDim":-1,"ptrAlignment":16,"reordering":"CUDNN_TENSOR_REORDERING_NONE"},{"name":"2","dataType":"CUDNN_DATA_FLOAT","dim":[4,16,64,64],"stride":[65536,4096,64,1],"isVirtual":false,"isByValue":false,"vectCount":1,"vectDim":-1,"ptrAlignment":16,"reordering":"CUDNN_TENSOR_REORDERING_NONE"}],"nodes":[{"operation":"CUDNN_BACKEND_OPERATION_CONVOLUTION_FORWARD_DESCRIPTOR","mode":"CUDNN_CROSS_CORRELATION","mathPrec":"CUDNN_DATA_FLOAT","alpha":1.0,"beta":0.0,"pad":[1,1],"stride":[1,1],"dilation":[1,1],"X":"0","W":"1","Y":"2"}]},"engine":{"engineId":0,"smVersion":1200,"knobChoices":{}}};
+i! Time: 2026-10-08T10:10:17.673670 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendFinalizeEngineCfgVisualize() called:
+i!     apiLog: type=json; val={"cudnnVersion":92400,"schemaVersion":4,"operationGraph":{"finalizeMode":"CONV_FORWARD","tensors":[{"name":"0","dataType":"CUDNN_DATA_FLOAT","dim":[4,3,64,64],"stride":[12288,4096,64,1],"isVirtual":false,"isByValue":false,"vectCount":1,"vectDim":-1,"ptrAlignment":16,"reordering":"CUDNN_TENSOR_REORDERING_NONE"},{"name":"1","dataType":"CUDNN_DATA_FLOAT","dim":[16,3,3,3],"stride":[27,9,3,1],"isVirtual":false,"isByValue":false,"vectCount":1,"vectDim":-1,"ptrAlignment":16,"reordering":"CUDNN_TENSOR_REORDERING_NONE"},{"name":"2","dataType":"CUDNN_DATA_FLOAT","dim":[4,16,64,64],"stride":[65536,4096,64,1],"isVirtual":false,"isByValue":false,"vectCount":1,"vectDim":-1,"ptrAlignment":16,"reordering":"CUDNN_TENSOR_REORDERING_NONE"}],"nodes":[{"operation":"CUDNN_BACKEND_OPERATION_CONVOLUTION_FORWARD_DESCRIPTOR","mode":"CUDNN_CROSS_CORRELATION","mathPrec":"CUDNN_DATA_FLOAT","alpha":1.0,"beta":0.0,"pad":[1,1],"stride":[1,1],"dilation":[1,1],"X":"0","W":"1","Y":"2"}]},"engine":{"engineId":46,"smVersion":1200,"knobChoices":{"CUDNN_KNOB_TYPE_TILE_SIZE":1,"CUDNN_KNOB_TYPE_KBLOCK":3,"CUDNN_KNOB_TYPE_STAGES":2}}};
+i! Time: 2026-10-08T10:10:17.673749 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendFinalizeEngineCfgVisualize() called:
+i!     apiLog: type=json; val={"cudnnVersion":92400,"schemaVersion":4,"operationGraph":{"finalizeMode":"CONV_FORWARD","tensors":[{"name":"0","dataType":"CUDNN_DATA_FLOAT","dim":[4,3,64,64],"stride":[12288,4096,64,1],"isVirtual":false,"isByValue":false,"vectCount":1,"vectDim":-1,"ptrAlignment":16,"reordering":"CUDNN_TENSOR_REORDERING_NONE"},{"name":"1","dataType":"CUDNN_DATA_FLOAT","dim":[16,3,3,3],"stride":[27,9,3,1],"isVirtual":false,"isByValue":false,"vectCount":1,"vectDim":-1,"ptrAlignment":16,"reordering":"CUDNN_TENSOR_REORDERING_NONE"},{"name":"2","dataType":"CUDNN_DATA_FLOAT","dim":[4,16,64,64],"stride":[65536,4096,64,1],"isVirtual":false,"isByValue":false,"vectCount":1,"vectDim":-1,"ptrAlignment":16,"reordering":"CUDNN_TENSOR_REORDERING_NONE"}],"nodes":[{"operation":"CUDNN_BACKEND_OPERATION_CONVOLUTION_FORWARD_DESCRIPTOR","mode":"CUDNN_CROSS_CORRELATION","mathPrec":"CUDNN_DATA_FLOAT","alpha":1.0,"beta":0.0,"pad":[1,1],"stride":[1,1],"dilation":[1,1],"X":"0","W":"1","Y":"2"}]},"engine":{"engineId":46,"smVersion":1200,"knobChoices":{"CUDNN_KNOB_TYPE_TILE_SIZE":5,"CUDNN_KNOB_TYPE_KBLOCK":2,"CUDNN_KNOB_TYPE_STAGES":6}}};
+i! Time: 2026-10-08T10:10:17.673813 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendFinalizeEngineCfgVisualize() called:
+i!     apiLog: type=json; val={"cudnnVersion":92400,"schemaVersion":4,"operationGraph":{"finalizeMode":"CONV_FORWARD","tensors":[{"name":"0","dataType":"CUDNN_DATA_FLOAT","dim":[4,3,64,64],"stride":[12288,4096,64,1],"isVirtual":false,"isByValue":false,"vectCount":1,"vectDim":-1,"ptrAlignment":16,"reordering":"CUDNN_TENSOR_REORDERING_NONE"},{"name":"1","dataType":"CUDNN_DATA_FLOAT","dim":[16,3,3,3],"stride":[27,9,3,1],"isVirtual":false,"isByValue":false,"vectCount":1,"vectDim":-1,"ptrAlignment":16,"reordering":"CUDNN_TENSOR_REORDERING_NONE"},{"name":"2","dataType":"CUDNN_DATA_FLOAT","dim":[4,16,64,64],"stride":[65536,4096,64,1],"isVirtual":false,"isByValue":false,"vectCount":1,"vectDim":-1,"ptrAlignment":16,"reordering":"CUDNN_TENSOR_REORDERING_NONE"}],"nodes":[{"operation":"CUDNN_BACKEND_OPERATION_CONVOLUTION_FORWARD_DESCRIPTOR","mode":"CUDNN_CROSS_CORRELATION","mathPrec":"CUDNN_DATA_FLOAT","alpha":1.0,"beta":0.0,"pad":[1,1],"stride":[1,1],"dilation":[1,1],"X":"0","W":"1","Y":"2"}]},"engine":{"engineId":36,"smVersion":1200,"knobChoices":{"CUDNN_KNOB_TYPE_TILE_SIZE":0,"CUDNN_KNOB_TYPE_TILEK":2,"CUDNN_KNOB_TYPE_STAGES":3,"CUDNN_KNOB_TYPE_IDX_MODE":1,"CUDNN_KNOB_TYPE_SPECFILT":0}}};
+i! Time: 2026-10-08T10:10:17.673901 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendFinalizeEngineCfgVisualize() called:
+i!     apiLog: type=json; val={"cudnnVersion":92400,"schemaVersion":4,"operationGraph":{"finalizeMode":"CONV_FORWARD","tensors":[{"name":"0","dataType":"CUDNN_DATA_FLOAT","dim":[4,3,64,64],"stride":[12288,4096,64,1],"isVirtual":false,"isByValue":false,"vectCount":1,"vectDim":-1,"ptrAlignment":16,"reordering":"CUDNN_TENSOR_REORDERING_NONE"},{"name":"1","dataType":"CUDNN_DATA_FLOAT","dim":[16,3,3,3],"stride":[27,9,3,1],"isVirtual":false,"isByValue":false,"vectCount":1,"vectDim":-1,"ptrAlignment":16,"reordering":"CUDNN_TENSOR_REORDERING_NONE"},{"name":"2","dataType":"CUDNN_DATA_FLOAT","dim":[4,16,64,64],"stride":[65536,4096,64,1],"isVirtual":false,"isByValue":false,"vectCount":1,"vectDim":-1,"ptrAlignment":16,"reordering":"CUDNN_TENSOR_REORDERING_NONE"}],"nodes":[{"operation":"CUDNN_BACKEND_OPERATION_CONVOLUTION_FORWARD_DESCRIPTOR","mode":"CUDNN_CROSS_CORRELATION","mathPrec":"CUDNN_DATA_FLOAT","alpha":1.0,"beta":0.0,"pad":[1,1],"stride":[1,1],"dilation":[1,1],"X":"0","W":"1","Y":"2"}]},"engine":{"engineId":38,"smVersion":1200,"knobChoices":{"CUDNN_KNOB_TYPE_TILE_SIZE":0,"CUDNN_KNOB_TYPE_TILEK":2,"CUDNN_KNOB_TYPE_STAGES":3,"CUDNN_KNOB_TYPE_IDX_MODE":0,"CUDNN_KNOB_TYPE_LDGC":0,"CUDNN_KNOB_TYPE_SPECFILT":0}}};
+i! Time: 2026-10-08T10:10:17.674010 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendFinalizeEngineCfgVisualize() called:
+i!     apiLog: type=json; val={"cudnnVersion":92400,"schemaVersion":4,"operationGraph":{"finalizeMode":"CONV_FORWARD","tensors":[{"name":"0","dataType":"CUDNN_DATA_FLOAT","dim":[4,3,64,64],"stride":[12288,4096,64,1],"isVirtual":false,"isByValue":false,"vectCount":1,"vectDim":-1,"ptrAlignment":16,"reordering":"CUDNN_TENSOR_REORDERING_NONE"},{"name":"1","dataType":"CUDNN_DATA_FLOAT","dim":[16,3,3,3],"stride":[27,9,3,1],"isVirtual":false,"isByValue":false,"vectCount":1,"vectDim":-1,"ptrAlignment":16,"reordering":"CUDNN_TENSOR_REORDERING_NONE"},{"name":"2","dataType":"CUDNN_DATA_FLOAT","dim":[4,16,64,64],"stride":[65536,4096,64,1],"isVirtual":false,"isByValue":false,"vectCount":1,"vectDim":-1,"ptrAlignment":16,"reordering":"CUDNN_TENSOR_REORDERING_NONE"}],"nodes":[{"operation":"CUDNN_BACKEND_OPERATION_CONVOLUTION_FORWARD_DESCRIPTOR","mode":"CUDNN_CROSS_CORRELATION","mathPrec":"CUDNN_DATA_FLOAT","alpha":1.0,"beta":0.0,"pad":[1,1],"stride":[1,1],"dilation":[1,1],"X":"0","W":"1","Y":"2"}]},"engine":{"engineId":46,"smVersion":1200,"knobChoices":{"CUDNN_KNOB_TYPE_TILE_SIZE":5,"CUDNN_KNOB_TYPE_KBLOCK":3,"CUDNN_KNOB_TYPE_STAGES":4}}};
+i! Time: 2026-10-08T10:10:17.674110 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendFinalizeEngineCfgVisualize() called:
+i!     apiLog: type=json; val={"cudnnVersion":92400,"schemaVersion":4,"operationGraph":{"finalizeMode":"CONV_FORWARD","tensors":[{"name":"0","dataType":"CUDNN_DATA_FLOAT","dim":[4,3,64,64],"stride":[12288,4096,64,1],"isVirtual":false,"isByValue":false,"vectCount":1,"vectDim":-1,"ptrAlignment":16,"reordering":"CUDNN_TENSOR_REORDERING_NONE"},{"name":"1","dataType":"CUDNN_DATA_FLOAT","dim":[16,3,3,3],"stride":[27,9,3,1],"isVirtual":false,"isByValue":false,"vectCount":1,"vectDim":-1,"ptrAlignment":16,"reordering":"CUDNN_TENSOR_REORDERING_NONE"},{"name":"2","dataType":"CUDNN_DATA_FLOAT","dim":[4,16,64,64],"stride":[65536,4096,64,1],"isVirtual":false,"isByValue":false,"vectCount":1,"vectDim":-1,"ptrAlignment":16,"reordering":"CUDNN_TENSOR_REORDERING_NONE"}],"nodes":[{"operation":"CUDNN_BACKEND_OPERATION_CONVOLUTION_FORWARD_DESCRIPTOR","mode":"CUDNN_CROSS_CORRELATION","mathPrec":"CUDNN_DATA_FLOAT","alpha":1.0,"beta":0.0,"pad":[1,1],"stride":[1,1],"dilation":[1,1],"X":"0","W":"1","Y":"2"}]},"engine":{"engineId":35,"smVersion":1200,"knobChoices":{"CUDNN_KNOB_TYPE_TILE_SIZE":1,"CUDNN_KNOB_TYPE_KBLOCK":3,"CUDNN_KNOB_TYPE_STAGES":2}}};
+i! Time: 2026-10-08T10:10:17.674184 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendFinalizeEngineCfgVisualize() called:
+i!     apiLog: type=json; val={"cudnnVersion":92400,"schemaVersion":4,"operationGraph":{"finalizeMode":"CONV_FORWARD","tensors":[{"name":"0","dataType":"CUDNN_DATA_FLOAT","dim":[4,3,64,64],"stride":[12288,4096,64,1],"isVirtual":false,"isByValue":false,"vectCount":1,"vectDim":-1,"ptrAlignment":16,"reordering":"CUDNN_TENSOR_REORDERING_NONE"},{"name":"1","dataType":"CUDNN_DATA_FLOAT","dim":[16,3,3,3],"stride":[27,9,3,1],"isVirtual":false,"isByValue":false,"vectCount":1,"vectDim":-1,"ptrAlignment":16,"reordering":"CUDNN_TENSOR_REORDERING_NONE"},{"name":"2","dataType":"CUDNN_DATA_FLOAT","dim":[4,16,64,64],"stride":[65536,4096,64,1],"isVirtual":false,"isByValue":false,"vectCount":1,"vectDim":-1,"ptrAlignment":16,"reordering":"CUDNN_TENSOR_REORDERING_NONE"}],"nodes":[{"operation":"CUDNN_BACKEND_OPERATION_CONVOLUTION_FORWARD_DESCRIPTOR","mode":"CUDNN_CROSS_CORRELATION","mathPrec":"CUDNN_DATA_FLOAT","alpha":1.0,"beta":0.0,"pad":[1,1],"stride":[1,1],"dilation":[1,1],"X":"0","W":"1","Y":"2"}]},"engine":{"engineId":3,"smVersion":1200,"knobChoices":{"CUDNN_KNOB_TYPE_MULTIPLY":0}}};
+i! Time: 2026-10-08T10:10:17.674254 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendFinalizeEngineCfgVisualize() called:
+i!     apiLog: type=json; val={"cudnnVersion":92400,"schemaVersion":4,"operationGraph":{"finalizeMode":"CONV_FORWARD","tensors":[{"name":"0","dataType":"CUDNN_DATA_FLOAT","dim":[4,3,64,64],"stride":[12288,4096,64,1],"isVirtual":false,"isByValue":false,"vectCount":1,"vectDim":-1,"ptrAlignment":16,"reordering":"CUDNN_TENSOR_REORDERING_NONE"},{"name":"1","dataType":"CUDNN_DATA_FLOAT","dim":[16,3,3,3],"stride":[27,9,3,1],"isVirtual":false,"isByValue":false,"vectCount":1,"vectDim":-1,"ptrAlignment":16,"reordering":"CUDNN_TENSOR_REORDERING_NONE"},{"name":"2","dataType":"CUDNN_DATA_FLOAT","dim":[4,16,64,64],"stride":[65536,4096,64,1],"isVirtual":false,"isByValue":false,"vectCount":1,"vectDim":-1,"ptrAlignment":16,"reordering":"CUDNN_TENSOR_REORDERING_NONE"}],"nodes":[{"operation":"CUDNN_BACKEND_OPERATION_CONVOLUTION_FORWARD_DESCRIPTOR","mode":"CUDNN_CROSS_CORRELATION","mathPrec":"CUDNN_DATA_FLOAT","alpha":1.0,"beta":0.0,"pad":[1,1],"stride":[1,1],"dilation":[1,1],"X":"0","W":"1","Y":"2"}]},"engine":{"engineId":4,"smVersion":1200,"knobChoices":{}}};
+i! Time: 2026-10-08T10:10:17.674312 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendGetAttribute() called:
+i!     status: type=cudnnStatus_t; val=CUDNN_STATUS_SUCCESS (0);
+i! Time: 2026-10-08T10:10:17.674350 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendCreateDescriptor() called:
+i!     descriptorType: type=cudnnBackendDescriptorType_t; val=CUDNN_BACKEND_ENGINE_DESCRIPTOR (2);
+i! Time: 2026-10-08T10:10:17.674365 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendCreateDescriptor() called:
+i!     status: type=cudnnStatus_t; val=CUDNN_STATUS_SUCCESS (0);
+i! Time: 2026-10-08T10:10:17.674375 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendSetAttribute() called:
+i!     descriptor: type=CUDNN_BACKEND_ENGINE_DESCRIPTOR:
+i!         opGraph: type=void*; val=NULL_PTR;
+i!         engine_id: type=int; val=-1;
+i!         knobDesc: type=cudnnBackendDescriptor_t; val=NULL_PTR;
+i!         numericalNotes: type=cudnnBackendDescriptor_t; val=NULL_PTR;
+i!         behaviorNotes: type=cudnnBackendDescriptor_t; val=NULL_PTR;
+i!         deviceProp: type=cudnnBackendDescriptor_t; val=NULL_PTR;
+i!     attributeName: type=cudnnBackendAttributeName_t; val=CUDNN_ATTR_ENGINE_OPERATION_GRAPH (1300);
+i!     attributeType: type=cudnnBackendAttributeType_t; val=CUDNN_TYPE_BACKEND_DESCRIPTOR (15);
+i!     elementCount: type=int64_t; val=1;
+i!     [0]: type=CUDNN_BACKEND_OPERATIONGRAPH_DESCRIPTOR; val=0x29482f40;
+i!         : type=bool; val=true;
+i! Time: 2026-10-08T10:10:17.674405 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendSetAttribute() called:
+i!     status: type=cudnnStatus_t; val=CUDNN_STATUS_SUCCESS (0);
+i! Time: 2026-10-08T10:10:17.674445 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendSetAttribute() called:
+i!     descriptor: type=CUDNN_BACKEND_ENGINE_DESCRIPTOR:
+i!         opGraph: type=CUDNN_BACKEND_OPERATIONGRAPH_DESCRIPTOR:
+i!             operation: type=CUDNN_BACKEND_OPERATION_CONVOLUTION_FORWARD_DESCRIPTOR:
+i!                 xDesc: type=CUDNN_BACKEND_TENSOR_DESCRIPTOR:
+i!                     type: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!                     nbDims: type=int; val=4;
+i!                     dimA: type=int; val=[4,3,64,64];
+i!                     strideA: type=int; val=[12288,4096,64,1];
+i!                     uid: type=int64_t; val=0;
+i!                     alignmentInBytes: type=int64_t; val=16;
+i!                     isVirtual: type=bool; val=false;
+i!                     isByVal: type=bool; val=false;
+i!                     isRagged: type=bool; val=false;
+i!                     raggedOffsetMultiplier: type=int64_t; val=1;
+i!                 wDesc: type=CUDNN_BACKEND_TENSOR_DESCRIPTOR:
+i!                     type: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!                     nbDims: type=int; val=4;
+i!                     dimA: type=int; val=[16,3,3,3];
+i!                     strideA: type=int; val=[27,9,3,1];
+i!                     uid: type=int64_t; val=1;
+i!                     alignmentInBytes: type=int64_t; val=16;
+i!                     isVirtual: type=bool; val=false;
+i!                     isByVal: type=bool; val=false;
+i!                     isRagged: type=bool; val=false;
+i!                     raggedOffsetMultiplier: type=int64_t; val=1;
+i!                 convDesc: type=CUDNN_BACKEND_CONVOLUTION_DESCRIPTOR:
+i!                     computeType: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!                     mode: type=cudnnConvolutionMode_t; val=CUDNN_CROSS_CORRELATION (1);
+i!                     nbDims: type=int; val=2;
+i!                     upperPadA: type=int; val=[1,1];
+i!                     lowerPadA: type=int; val=[1,1];
+i!                     strideA: type=int; val=[1,1];
+i!                     dilationA: type=int; val=[1,1];
+i!                 yDesc: type=CUDNN_BACKEND_TENSOR_DESCRIPTOR:
+i!                     type: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!                     nbDims: type=int; val=4;
+i!                     dimA: type=int; val=[4,16,64,64];
+i!                     strideA: type=int; val=[65536,4096,64,1];
+i!                     uid: type=int64_t; val=2;
+i!                     alignmentInBytes: type=int64_t; val=16;
+i!                     isVirtual: type=bool; val=false;
+i!                     isByVal: type=bool; val=false;
+i!                     isRagged: type=bool; val=false;
+i!                     raggedOffsetMultiplier: type=int64_t; val=1;
+i!                 alpha: type=float; val=1;
+i!                 beta: type=float; val=0;
+i!         engine_id: type=int; val=-1;
+i!         knobDesc: type=cudnnBackendDescriptor_t; val=NULL_PTR;
+i!         numericalNotes: type=cudnnBackendDescriptor_t; val=NULL_PTR;
+i!         behaviorNotes: type=cudnnBackendDescriptor_t; val=NULL_PTR;
+i!         deviceProp: type=cudnnBackendDescriptor_t; val=NULL_PTR;
+i!     attributeName: type=cudnnBackendAttributeName_t; val=CUDNN_ATTR_ENGINE_GLOBAL_INDEX (1301);
+i!     attributeType: type=cudnnBackendAttributeType_t; val=CUDNN_TYPE_INT64 (3);
+i!     elementCount: type=int64_t; val=1;
+i!     [0]: type=int64_t; val=71;
+i! Time: 2026-10-08T10:10:17.674471 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendSetAttribute() called:
+i!     status: type=cudnnStatus_t; val=CUDNN_STATUS_SUCCESS (0);
+i! Time: 2026-10-08T10:10:17.674500 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendFinalize() called:
+i!     descriptor: type=CUDNN_BACKEND_ENGINE_DESCRIPTOR:
+i!         opGraph: type=CUDNN_BACKEND_OPERATIONGRAPH_DESCRIPTOR:
+i!             operation: type=CUDNN_BACKEND_OPERATION_CONVOLUTION_FORWARD_DESCRIPTOR:
+i!                 xDesc: type=CUDNN_BACKEND_TENSOR_DESCRIPTOR:
+i!                     type: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!                     nbDims: type=int; val=4;
+i!                     dimA: type=int; val=[4,3,64,64];
+i!                     strideA: type=int; val=[12288,4096,64,1];
+i!                     uid: type=int64_t; val=0;
+i!                     alignmentInBytes: type=int64_t; val=16;
+i!                     isVirtual: type=bool; val=false;
+i!                     isByVal: type=bool; val=false;
+i!                     isRagged: type=bool; val=false;
+i!                     raggedOffsetMultiplier: type=int64_t; val=1;
+i!                 wDesc: type=CUDNN_BACKEND_TENSOR_DESCRIPTOR:
+i!                     type: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!                     nbDims: type=int; val=4;
+i!                     dimA: type=int; val=[16,3,3,3];
+i!                     strideA: type=int; val=[27,9,3,1];
+i!                     uid: type=int64_t; val=1;
+i!                     alignmentInBytes: type=int64_t; val=16;
+i!                     isVirtual: type=bool; val=false;
+i!                     isByVal: type=bool; val=false;
+i!                     isRagged: type=bool; val=false;
+i!                     raggedOffsetMultiplier: type=int64_t; val=1;
+i!                 convDesc: type=CUDNN_BACKEND_CONVOLUTION_DESCRIPTOR:
+i!                     computeType: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!                     mode: type=cudnnConvolutionMode_t; val=CUDNN_CROSS_CORRELATION (1);
+i!                     nbDims: type=int; val=2;
+i!                     upperPadA: type=int; val=[1,1];
+i!                     lowerPadA: type=int; val=[1,1];
+i!                     strideA: type=int; val=[1,1];
+i!                     dilationA: type=int; val=[1,1];
+i!                 yDesc: type=CUDNN_BACKEND_TENSOR_DESCRIPTOR:
+i!                     type: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!                     nbDims: type=int; val=4;
+i!                     dimA: type=int; val=[4,16,64,64];
+i!                     strideA: type=int; val=[65536,4096,64,1];
+i!                     uid: type=int64_t; val=2;
+i!                     alignmentInBytes: type=int64_t; val=16;
+i!                     isVirtual: type=bool; val=false;
+i!                     isByVal: type=bool; val=false;
+i!                     isRagged: type=bool; val=false;
+i!                     raggedOffsetMultiplier: type=int64_t; val=1;
+i!                 alpha: type=float; val=1;
+i!                 beta: type=float; val=0;
+i!         engine_id: type=int; val=71;
+i!         knobDesc: type=cudnnBackendDescriptor_t; val=NULL_PTR;
+i!         numericalNotes: type=cudnnBackendDescriptor_t; val=NULL_PTR;
+i!         behaviorNotes: type=cudnnBackendDescriptor_t; val=NULL_PTR;
+i!         deviceProp: type=cudnnBackendDescriptor_t; val=NULL_PTR;
+i! Time: 2026-10-08T10:10:17.674520 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendFinalize() called:
+i!     status: type=cudnnStatus_t; val=CUDNN_STATUS_SUCCESS (0);
+i! Time: 2026-10-08T10:10:17.674612 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendCreateDescriptor() called:
+i!     descriptorType: type=cudnnBackendDescriptorType_t; val=CUDNN_BACKEND_ENGINECFG_DESCRIPTOR (3);
+i! Time: 2026-10-08T10:10:17.674650 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendCreateDescriptor() called:
+i!     status: type=cudnnStatus_t; val=CUDNN_STATUS_SUCCESS (0);
+i! Time: 2026-10-08T10:10:17.674667 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendSetAttribute() called:
+i!     descriptor: type=CUDNN_BACKEND_ENGINECFG_DESCRIPTOR:
+i!         engine: type=CUDNN_BACKEND_ENGINE_DESCRIPTOR:
+i!             opGraph: type=void*; val=NULL_PTR;
+i!             engine_id: type=int; val=-1;
+i!             knobDesc: type=cudnnBackendDescriptor_t; val=NULL_PTR;
+i!             numericalNotes: type=cudnnBackendDescriptor_t; val=NULL_PTR;
+i!             behaviorNotes: type=cudnnBackendDescriptor_t; val=NULL_PTR;
+i!             deviceProp: type=cudnnBackendDescriptor_t; val=NULL_PTR;
+i!     attributeName: type=cudnnBackendAttributeName_t; val=CUDNN_ATTR_ENGINECFG_ENGINE (300);
+i!     attributeType: type=cudnnBackendAttributeType_t; val=CUDNN_TYPE_BACKEND_DESCRIPTOR (15);
+i!     elementCount: type=int64_t; val=1;
+i!     [0]: type=CUDNN_BACKEND_ENGINE_DESCRIPTOR; val=0x2eecbe10;
+i!         : type=bool; val=true;
+i! Time: 2026-10-08T10:10:17.674679 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendSetAttribute() called:
+i!     status: type=cudnnStatus_t; val=CUDNN_STATUS_SUCCESS (0);
+i! Time: 2026-10-08T10:10:17.674686 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendFinalize() called:
+i!     descriptor: type=CUDNN_BACKEND_ENGINECFG_DESCRIPTOR:
+i!         engine: type=CUDNN_BACKEND_ENGINE_DESCRIPTOR:
+i!             opGraph: type=CUDNN_BACKEND_OPERATIONGRAPH_DESCRIPTOR:
+i!                 operation: type=CUDNN_BACKEND_OPERATION_CONVOLUTION_FORWARD_DESCRIPTOR:
+i!                     xDesc: type=CUDNN_BACKEND_TENSOR_DESCRIPTOR:
+i!                         type: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!                         nbDims: type=int; val=4;
+i!                         dimA: type=int; val=[4,3,64,64];
+i!                         strideA: type=int; val=[12288,4096,64,1];
+i!                         uid: type=int64_t; val=0;
+i!                         alignmentInBytes: type=int64_t; val=16;
+i!                         isVirtual: type=bool; val=false;
+i!                         isByVal: type=bool; val=false;
+i!                         isRagged: type=bool; val=false;
+i!                         raggedOffsetMultiplier: type=int64_t; val=1;
+i!                     wDesc: type=CUDNN_BACKEND_TENSOR_DESCRIPTOR:
+i!                         type: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!                         nbDims: type=int; val=4;
+i!                         dimA: type=int; val=[16,3,3,3];
+i!                         strideA: type=int; val=[27,9,3,1];
+i!                         uid: type=int64_t; val=1;
+i!                         alignmentInBytes: type=int64_t; val=16;
+i!                         isVirtual: type=bool; val=false;
+i!                         isByVal: type=bool; val=false;
+i!                         isRagged: type=bool; val=false;
+i!                         raggedOffsetMultiplier: type=int64_t; val=1;
+i!                     convDesc: type=CUDNN_BACKEND_CONVOLUTION_DESCRIPTOR:
+i!                         computeType: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!                         mode: type=cudnnConvolutionMode_t; val=CUDNN_CROSS_CORRELATION (1);
+i!                         nbDims: type=int; val=2;
+i!                         upperPadA: type=int; val=[1,1];
+i!                         lowerPadA: type=int; val=[1,1];
+i!                         strideA: type=int; val=[1,1];
+i!                         dilationA: type=int; val=[1,1];
+i!                     yDesc: type=CUDNN_BACKEND_TENSOR_DESCRIPTOR:
+i!                         type: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!                         nbDims: type=int; val=4;
+i!                         dimA: type=int; val=[4,16,64,64];
+i!                         strideA: type=int; val=[65536,4096,64,1];
+i!                         uid: type=int64_t; val=2;
+i!                         alignmentInBytes: type=int64_t; val=16;
+i!                         isVirtual: type=bool; val=false;
+i!                         isByVal: type=bool; val=false;
+i!                         isRagged: type=bool; val=false;
+i!                         raggedOffsetMultiplier: type=int64_t; val=1;
+i!                     alpha: type=float; val=1;
+i!                     beta: type=float; val=0;
+i!             engine_id: type=int; val=71;
+i!             knobDesc: type=cudnnBackendDescriptor_t:
+i!                 CUDNN_KNOB_TYPE_SPLIT_K_SLC: type=int; val=-1;
+i!                 CUDNN_KNOB_TYPE_KERNEL_CFG: type=int; val=-1;
+i!                 CUDNN_KNOB_TYPE_STREAM_K: type=int; val=-1;
+i!             numericalNotes: type=cudnnBackendDescriptor_t:
+i!                 CUDNN_NUMERICAL_NOTE_TENSOR_CORE: type=bool; val=true;
+i!             behaviorNotes: type=cudnnBackendDescriptor_t:
+i!                 CUDNN_BEHAVIOR_NOTE_RUNTIME_COMPILATION: type=bool; val=true;
+i!                 CUDNN_BEHAVIOR_NOTE_SUPPORTS_CUDA_GRAPH_NATIVE_API: type=bool; val=true;
+i!             deviceProp: type=cudnnBackendDescriptor_t; val=NULL_PTR;
+i! Time: 2026-10-08T10:10:17.674703 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendFinalizeEngineCfgVisualize() called:
+i!     apiLog: type=json; val={"cudnnVersion":92400,"schemaVersion":4,"operationGraph":{"finalizeMode":"CONV_FORWARD","tensors":[{"name":"0","dataType":"CUDNN_DATA_FLOAT","dim":[4,3,64,64],"stride":[12288,4096,64,1],"isVirtual":false,"isByValue":false,"vectCount":1,"vectDim":-1,"ptrAlignment":16,"reordering":"CUDNN_TENSOR_REORDERING_NONE"},{"name":"1","dataType":"CUDNN_DATA_FLOAT","dim":[16,3,3,3],"stride":[27,9,3,1],"isVirtual":false,"isByValue":false,"vectCount":1,"vectDim":-1,"ptrAlignment":16,"reordering":"CUDNN_TENSOR_REORDERING_NONE"},{"name":"2","dataType":"CUDNN_DATA_FLOAT","dim":[4,16,64,64],"stride":[65536,4096,64,1],"isVirtual":false,"isByValue":false,"vectCount":1,"vectDim":-1,"ptrAlignment":16,"reordering":"CUDNN_TENSOR_REORDERING_NONE"}],"nodes":[{"operation":"CUDNN_BACKEND_OPERATION_CONVOLUTION_FORWARD_DESCRIPTOR","mode":"CUDNN_CROSS_CORRELATION","mathPrec":"CUDNN_DATA_FLOAT","alpha":1.0,"beta":0.0,"pad":[1,1],"stride":[1,1],"dilation":[1,1],"X":"0","W":"1","Y":"2"}]},"engine":{"engineId":71,"smVersion":1200,"knobChoices":{"CUDNN_KNOB_TYPE_SPLIT_K_SLC":-1,"CUDNN_KNOB_TYPE_KERNEL_CFG":-1,"CUDNN_KNOB_TYPE_STREAM_K":-1}}};
+i! Time: 2026-10-08T10:10:17.674741 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendFinalize() called:
+i!     status: type=cudnnStatus_t; val=CUDNN_STATUS_SUCCESS (0);
+i! Time: 2026-10-08T10:10:17.676354 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendCreateDescriptor() called:
+i!     descriptorType: type=cudnnBackendDescriptorType_t; val=CUDNN_BACKEND_EXECUTION_PLAN_DESCRIPTOR (5);
+i! Time: 2026-10-08T10:10:17.676389 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendCreateDescriptor() called:
+i!     status: type=cudnnStatus_t; val=CUDNN_STATUS_SUCCESS (0);
+i! Time: 2026-10-08T10:10:17.676402 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendSetAttribute() called:
+i!     descriptor: type=CUDNN_BACKEND_EXECUTION_PLAN_DESCRIPTOR:
+i!         engcfg: type=CUDNN_BACKEND_ENGINECFG_DESCRIPTOR:
+i!             engine: type=CUDNN_BACKEND_ENGINE_DESCRIPTOR:
+i!                 opGraph: type=void*; val=NULL_PTR;
+i!                 engine_id: type=int; val=-1;
+i!                 knobDesc: type=cudnnBackendDescriptor_t; val=NULL_PTR;
+i!                 numericalNotes: type=cudnnBackendDescriptor_t; val=NULL_PTR;
+i!                 behaviorNotes: type=cudnnBackendDescriptor_t; val=NULL_PTR;
+i!                 deviceProp: type=cudnnBackendDescriptor_t; val=NULL_PTR;
+i!     attributeName: type=cudnnBackendAttributeName_t; val=CUDNN_ATTR_EXECUTION_PLAN_HANDLE (400);
+i!     attributeType: type=cudnnBackendAttributeType_t; val=CUDNN_TYPE_HANDLE (0);
+i!     elementCount: type=int64_t; val=1;
+i!     [0]: type=cudnnHandle_t:
+i!         streamId: type=cudaStream_t; streamId=0x288c91c0;
+i!         deviceProp: type=CUDNN_BACKEND_DEVICEPROP_DESCRIPTOR:
+i!             deviceName: type=string; val="NVIDIA GeForce RTX 5060 Laptop GPU";
+i!             cudaDeviceId: type=int; val=0;
+i!             deviceVer: type=int; val=1200;
+i!             multiProcessorCount: type=int; val=26;
+i!             driverVer: type=int; val=13030;
+i!             maxSharedMemoryPerBlockOptin: type=int; val=101376;
+i!             totalGlobalMem: type=size_t; val=8546484224;
+i! Time: 2026-10-08T10:10:17.676415 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendSetAttribute() called:
+i!     status: type=cudnnStatus_t; val=CUDNN_STATUS_SUCCESS (0);
+i! Time: 2026-10-08T10:10:17.676428 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendSetAttribute() called:
+i!     descriptor: type=CUDNN_BACKEND_EXECUTION_PLAN_DESCRIPTOR:
+i!         engcfg: type=CUDNN_BACKEND_ENGINECFG_DESCRIPTOR:
+i!             engine: type=CUDNN_BACKEND_ENGINE_DESCRIPTOR:
+i!                 opGraph: type=void*; val=NULL_PTR;
+i!                 engine_id: type=int; val=-1;
+i!                 knobDesc: type=cudnnBackendDescriptor_t; val=NULL_PTR;
+i!                 numericalNotes: type=cudnnBackendDescriptor_t; val=NULL_PTR;
+i!                 behaviorNotes: type=cudnnBackendDescriptor_t; val=NULL_PTR;
+i!                 deviceProp: type=cudnnBackendDescriptor_t; val=NULL_PTR;
+i!     attributeName: type=cudnnBackendAttributeName_t; val=CUDNN_ATTR_EXECUTION_PLAN_ENGINE_CONFIG (401);
+i!     attributeType: type=cudnnBackendAttributeType_t; val=CUDNN_TYPE_BACKEND_DESCRIPTOR (15);
+i!     elementCount: type=int64_t; val=1;
+i!     [0]: type=CUDNN_BACKEND_ENGINECFG_DESCRIPTOR; val=0x2eed0950;
+i!         : type=bool; val=true;
+i! Time: 2026-10-08T10:10:17.676437 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendSetAttribute() called:
+i!     status: type=cudnnStatus_t; val=CUDNN_STATUS_SUCCESS (0);
+i! Time: 2026-10-08T10:10:17.676443 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendFinalize() called:
+i!     descriptor: type=CUDNN_BACKEND_EXECUTION_PLAN_DESCRIPTOR:
+i!         engcfg: type=CUDNN_BACKEND_ENGINECFG_DESCRIPTOR:
+i!             engine: type=CUDNN_BACKEND_ENGINE_DESCRIPTOR:
+i!                 opGraph: type=CUDNN_BACKEND_OPERATIONGRAPH_DESCRIPTOR:
+i!                     operation: type=CUDNN_BACKEND_OPERATION_CONVOLUTION_FORWARD_DESCRIPTOR:
+i!                         xDesc: type=CUDNN_BACKEND_TENSOR_DESCRIPTOR:
+i!                             type: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!                             nbDims: type=int; val=4;
+i!                             dimA: type=int; val=[4,3,64,64];
+i!                             strideA: type=int; val=[12288,4096,64,1];
+i!                             uid: type=int64_t; val=0;
+i!                             alignmentInBytes: type=int64_t; val=16;
+i!                             isVirtual: type=bool; val=false;
+i!                             isByVal: type=bool; val=false;
+i!                             isRagged: type=bool; val=false;
+i!                             raggedOffsetMultiplier: type=int64_t; val=1;
+i!                         wDesc: type=CUDNN_BACKEND_TENSOR_DESCRIPTOR:
+i!                             type: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!                             nbDims: type=int; val=4;
+i!                             dimA: type=int; val=[16,3,3,3];
+i!                             strideA: type=int; val=[27,9,3,1];
+i!                             uid: type=int64_t; val=1;
+i!                             alignmentInBytes: type=int64_t; val=16;
+i!                             isVirtual: type=bool; val=false;
+i!                             isByVal: type=bool; val=false;
+i!                             isRagged: type=bool; val=false;
+i!                             raggedOffsetMultiplier: type=int64_t; val=1;
+i!                         convDesc: type=CUDNN_BACKEND_CONVOLUTION_DESCRIPTOR:
+i!                             computeType: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!                             mode: type=cudnnConvolutionMode_t; val=CUDNN_CROSS_CORRELATION (1);
+i!                             nbDims: type=int; val=2;
+i!                             upperPadA: type=int; val=[1,1];
+i!                             lowerPadA: type=int; val=[1,1];
+i!                             strideA: type=int; val=[1,1];
+i!                             dilationA: type=int; val=[1,1];
+i!                         yDesc: type=CUDNN_BACKEND_TENSOR_DESCRIPTOR:
+i!                             type: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!                             nbDims: type=int; val=4;
+i!                             dimA: type=int; val=[4,16,64,64];
+i!                             strideA: type=int; val=[65536,4096,64,1];
+i!                             uid: type=int64_t; val=2;
+i!                             alignmentInBytes: type=int64_t; val=16;
+i!                             isVirtual: type=bool; val=false;
+i!                             isByVal: type=bool; val=false;
+i!                             isRagged: type=bool; val=false;
+i!                             raggedOffsetMultiplier: type=int64_t; val=1;
+i!                         alpha: type=float; val=1;
+i!                         beta: type=float; val=0;
+i!                 engine_id: type=int; val=71;
+i!                 knobDesc: type=cudnnBackendDescriptor_t:
+i!                     CUDNN_KNOB_TYPE_SPLIT_K_SLC: type=int; val=-1;
+i!                     CUDNN_KNOB_TYPE_KERNEL_CFG: type=int; val=-1;
+i!                     CUDNN_KNOB_TYPE_STREAM_K: type=int; val=-1;
+i!                 numericalNotes: type=cudnnBackendDescriptor_t:
+i!                     CUDNN_NUMERICAL_NOTE_TENSOR_CORE: type=bool; val=true;
+i!                 behaviorNotes: type=cudnnBackendDescriptor_t:
+i!                     CUDNN_BEHAVIOR_NOTE_RUNTIME_COMPILATION: type=bool; val=true;
+i!                     CUDNN_BEHAVIOR_NOTE_SUPPORTS_CUDA_GRAPH_NATIVE_API: type=bool; val=true;
+i!                 deviceProp: type=cudnnBackendDescriptor_t; val=NULL_PTR;
+i! Time: 2026-10-08T10:10:17.676458 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendFinalize() called:
+i!     status: type=cudnnStatus_t; val=CUDNN_STATUS_SUCCESS (0);
+i! Time: 2026-10-08T10:10:17.713916 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendGetAttribute() called:
+i!     descriptor: type=CUDNN_BACKEND_EXECUTION_PLAN_DESCRIPTOR:
+i!         engcfg: type=CUDNN_BACKEND_ENGINECFG_DESCRIPTOR:
+i!             engine: type=CUDNN_BACKEND_ENGINE_DESCRIPTOR:
+i!                 opGraph: type=CUDNN_BACKEND_OPERATIONGRAPH_DESCRIPTOR:
+i!                     operation: type=CUDNN_BACKEND_OPERATION_CONVOLUTION_FORWARD_DESCRIPTOR:
+i!                         xDesc: type=CUDNN_BACKEND_TENSOR_DESCRIPTOR:
+i!                             type: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!                             nbDims: type=int; val=4;
+i!                             dimA: type=int; val=[4,3,64,64];
+i!                             strideA: type=int; val=[12288,4096,64,1];
+i!                             uid: type=int64_t; val=0;
+i!                             alignmentInBytes: type=int64_t; val=16;
+i!                             isVirtual: type=bool; val=false;
+i!                             isByVal: type=bool; val=false;
+i!                             isRagged: type=bool; val=false;
+i!                             raggedOffsetMultiplier: type=int64_t; val=1;
+i!                         wDesc: type=CUDNN_BACKEND_TENSOR_DESCRIPTOR:
+i!                             type: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!                             nbDims: type=int; val=4;
+i!                             dimA: type=int; val=[16,3,3,3];
+i!                             strideA: type=int; val=[27,9,3,1];
+i!                             uid: type=int64_t; val=1;
+i!                             alignmentInBytes: type=int64_t; val=16;
+i!                             isVirtual: type=bool; val=false;
+i!                             isByVal: type=bool; val=false;
+i!                             isRagged: type=bool; val=false;
+i!                             raggedOffsetMultiplier: type=int64_t; val=1;
+i!                         convDesc: type=CUDNN_BACKEND_CONVOLUTION_DESCRIPTOR:
+i!                             computeType: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!                             mode: type=cudnnConvolutionMode_t; val=CUDNN_CROSS_CORRELATION (1);
+i!                             nbDims: type=int; val=2;
+i!                             upperPadA: type=int; val=[1,1];
+i!                             lowerPadA: type=int; val=[1,1];
+i!                             strideA: type=int; val=[1,1];
+i!                             dilationA: type=int; val=[1,1];
+i!                         yDesc: type=CUDNN_BACKEND_TENSOR_DESCRIPTOR:
+i!                             type: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!                             nbDims: type=int; val=4;
+i!                             dimA: type=int; val=[4,16,64,64];
+i!                             strideA: type=int; val=[65536,4096,64,1];
+i!                             uid: type=int64_t; val=2;
+i!                             alignmentInBytes: type=int64_t; val=16;
+i!                             isVirtual: type=bool; val=false;
+i!                             isByVal: type=bool; val=false;
+i!                             isRagged: type=bool; val=false;
+i!                             raggedOffsetMultiplier: type=int64_t; val=1;
+i!                         alpha: type=float; val=1;
+i!                         beta: type=float; val=0;
+i!                 engine_id: type=int; val=71;
+i!                 knobDesc: type=cudnnBackendDescriptor_t:
+i!                     CUDNN_KNOB_TYPE_SPLIT_K_SLC: type=int; val=-1;
+i!                     CUDNN_KNOB_TYPE_KERNEL_CFG: type=int; val=-1;
+i!                     CUDNN_KNOB_TYPE_STREAM_K: type=int; val=-1;
+i!                 numericalNotes: type=cudnnBackendDescriptor_t:
+i!                     CUDNN_NUMERICAL_NOTE_TENSOR_CORE: type=bool; val=true;
+i!                 behaviorNotes: type=cudnnBackendDescriptor_t:
+i!                     CUDNN_BEHAVIOR_NOTE_RUNTIME_COMPILATION: type=bool; val=true;
+i!                     CUDNN_BEHAVIOR_NOTE_SUPPORTS_CUDA_GRAPH_NATIVE_API: type=bool; val=true;
+i!                 deviceProp: type=cudnnBackendDescriptor_t; val=NULL_PTR;
+i!     attributeName: type=cudnnBackendAttributeName_t; val=CUDNN_ATTR_EXECUTION_PLAN_JSON_REPRESENTATION (405);
+i!     attributeType: type=cudnnBackendAttributeType_t; val=CUDNN_TYPE_CHAR (24);
+i!     requestedElementCount: type=int64_t; val=0;
+i!     elementCount: location=host; addr=0x7fffc12c4d40;
+i!     arrayOfElements: location=host; addr=NULL_PTR;
+i! Time: 2026-10-08T10:10:17.713996 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendGetAttribute() called:
+i!     status: type=cudnnStatus_t; val=CUDNN_STATUS_SUCCESS (0);
+i! Time: 2026-10-08T10:10:17.714217 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendGetAttribute() called:
+i!     descriptor: type=CUDNN_BACKEND_EXECUTION_PLAN_DESCRIPTOR:
+i!         engcfg: type=CUDNN_BACKEND_ENGINECFG_DESCRIPTOR:
+i!             engine: type=CUDNN_BACKEND_ENGINE_DESCRIPTOR:
+i!                 opGraph: type=CUDNN_BACKEND_OPERATIONGRAPH_DESCRIPTOR:
+i!                     operation: type=CUDNN_BACKEND_OPERATION_CONVOLUTION_FORWARD_DESCRIPTOR:
+i!                         xDesc: type=CUDNN_BACKEND_TENSOR_DESCRIPTOR:
+i!                             type: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!                             nbDims: type=int; val=4;
+i!                             dimA: type=int; val=[4,3,64,64];
+i!                             strideA: type=int; val=[12288,4096,64,1];
+i!                             uid: type=int64_t; val=0;
+i!                             alignmentInBytes: type=int64_t; val=16;
+i!                             isVirtual: type=bool; val=false;
+i!                             isByVal: type=bool; val=false;
+i!                             isRagged: type=bool; val=false;
+i!                             raggedOffsetMultiplier: type=int64_t; val=1;
+i!                         wDesc: type=CUDNN_BACKEND_TENSOR_DESCRIPTOR:
+i!                             type: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!                             nbDims: type=int; val=4;
+i!                             dimA: type=int; val=[16,3,3,3];
+i!                             strideA: type=int; val=[27,9,3,1];
+i!                             uid: type=int64_t; val=1;
+i!                             alignmentInBytes: type=int64_t; val=16;
+i!                             isVirtual: type=bool; val=false;
+i!                             isByVal: type=bool; val=false;
+i!                             isRagged: type=bool; val=false;
+i!                             raggedOffsetMultiplier: type=int64_t; val=1;
+i!                         convDesc: type=CUDNN_BACKEND_CONVOLUTION_DESCRIPTOR:
+i!                             computeType: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!                             mode: type=cudnnConvolutionMode_t; val=CUDNN_CROSS_CORRELATION (1);
+i!                             nbDims: type=int; val=2;
+i!                             upperPadA: type=int; val=[1,1];
+i!                             lowerPadA: type=int; val=[1,1];
+i!                             strideA: type=int; val=[1,1];
+i!                             dilationA: type=int; val=[1,1];
+i!                         yDesc: type=CUDNN_BACKEND_TENSOR_DESCRIPTOR:
+i!                             type: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!                             nbDims: type=int; val=4;
+i!                             dimA: type=int; val=[4,16,64,64];
+i!                             strideA: type=int; val=[65536,4096,64,1];
+i!                             uid: type=int64_t; val=2;
+i!                             alignmentInBytes: type=int64_t; val=16;
+i!                             isVirtual: type=bool; val=false;
+i!                             isByVal: type=bool; val=false;
+i!                             isRagged: type=bool; val=false;
+i!                             raggedOffsetMultiplier: type=int64_t; val=1;
+i!                         alpha: type=float; val=1;
+i!                         beta: type=float; val=0;
+i!                 engine_id: type=int; val=71;
+i!                 knobDesc: type=cudnnBackendDescriptor_t:
+i!                     CUDNN_KNOB_TYPE_SPLIT_K_SLC: type=int; val=-1;
+i!                     CUDNN_KNOB_TYPE_KERNEL_CFG: type=int; val=-1;
+i!                     CUDNN_KNOB_TYPE_STREAM_K: type=int; val=-1;
+i!                 numericalNotes: type=cudnnBackendDescriptor_t:
+i!                     CUDNN_NUMERICAL_NOTE_TENSOR_CORE: type=bool; val=true;
+i!                 behaviorNotes: type=cudnnBackendDescriptor_t:
+i!                     CUDNN_BEHAVIOR_NOTE_RUNTIME_COMPILATION: type=bool; val=true;
+i!                     CUDNN_BEHAVIOR_NOTE_SUPPORTS_CUDA_GRAPH_NATIVE_API: type=bool; val=true;
+i!                 deviceProp: type=cudnnBackendDescriptor_t; val=NULL_PTR;
+i!     attributeName: type=cudnnBackendAttributeName_t; val=CUDNN_ATTR_EXECUTION_PLAN_JSON_REPRESENTATION (405);
+i!     attributeType: type=cudnnBackendAttributeType_t; val=CUDNN_TYPE_CHAR (24);
+i!     requestedElementCount: type=int64_t; val=8192;
+i!     elementCount: location=host; addr=0x7fffc12c4d40;
+i!     arrayOfElements: location=host; addr=0x277bd5f0;
+i! Time: 2026-10-08T10:10:17.714280 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendGetAttribute() called:
+i!     status: type=cudnnStatus_t; val=CUDNN_STATUS_BAD_PARAM_SIZE_INSUFFICIENT (2006);
+i! Time: 2026-10-08T10:10:17.714366 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+E! CuDNN (v92400 43) function cudnnBackendGetAttribute() called:
+e!     Info: Traceback contains 1 message(s)
+e!         Error: CUDNN_STATUS_BAD_PARAM_SIZE_INSUFFICIENT; Reason: status
+e! Time: 2026-10-08T10:10:17.714419 (0d+0h+0m+1s since start)
+e! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendDestroyDescriptor() called:
+i!     descriptor: type=CUDNN_BACKEND_EXECUTION_PLAN_DESCRIPTOR:
+i!         engcfg: type=CUDNN_BACKEND_ENGINECFG_DESCRIPTOR:
+i!             engine: type=CUDNN_BACKEND_ENGINE_DESCRIPTOR:
+i!                 opGraph: type=CUDNN_BACKEND_OPERATIONGRAPH_DESCRIPTOR:
+i!                     operation: type=CUDNN_BACKEND_OPERATION_CONVOLUTION_FORWARD_DESCRIPTOR:
+i!                         xDesc: type=CUDNN_BACKEND_TENSOR_DESCRIPTOR:
+i!                             type: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!                             nbDims: type=int; val=4;
+i!                             dimA: type=int; val=[4,3,64,64];
+i!                             strideA: type=int; val=[12288,4096,64,1];
+i!                             uid: type=int64_t; val=0;
+i!                             alignmentInBytes: type=int64_t; val=16;
+i!                             isVirtual: type=bool; val=false;
+i!                             isByVal: type=bool; val=false;
+i!                             isRagged: type=bool; val=false;
+i!                             raggedOffsetMultiplier: type=int64_t; val=1;
+i!                         wDesc: type=CUDNN_BACKEND_TENSOR_DESCRIPTOR:
+i!                             type: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!                             nbDims: type=int; val=4;
+i!                             dimA: type=int; val=[16,3,3,3];
+i!                             strideA: type=int; val=[27,9,3,1];
+i!                             uid: type=int64_t; val=1;
+i!                             alignmentInBytes: type=int64_t; val=16;
+i!                             isVirtual: type=bool; val=false;
+i!                             isByVal: type=bool; val=false;
+i!                             isRagged: type=bool; val=false;
+i!                             raggedOffsetMultiplier: type=int64_t; val=1;
+i!                         convDesc: type=CUDNN_BACKEND_CONVOLUTION_DESCRIPTOR:
+i!                             computeType: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!                             mode: type=cudnnConvolutionMode_t; val=CUDNN_CROSS_CORRELATION (1);
+i!                             nbDims: type=int; val=2;
+i!                             upperPadA: type=int; val=[1,1];
+i!                             lowerPadA: type=int; val=[1,1];
+i!                             strideA: type=int; val=[1,1];
+i!                             dilationA: type=int; val=[1,1];
+i!                         yDesc: type=CUDNN_BACKEND_TENSOR_DESCRIPTOR:
+i!                             type: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!                             nbDims: type=int; val=4;
+i!                             dimA: type=int; val=[4,16,64,64];
+i!                             strideA: type=int; val=[65536,4096,64,1];
+i!                             uid: type=int64_t; val=2;
+i!                             alignmentInBytes: type=int64_t; val=16;
+i!                             isVirtual: type=bool; val=false;
+i!                             isByVal: type=bool; val=false;
+i!                             isRagged: type=bool; val=false;
+i!                             raggedOffsetMultiplier: type=int64_t; val=1;
+i!                         alpha: type=float; val=1;
+i!                         beta: type=float; val=0;
+i!                 engine_id: type=int; val=71;
+i!                 knobDesc: type=cudnnBackendDescriptor_t:
+i!                     CUDNN_KNOB_TYPE_SPLIT_K_SLC: type=int; val=-1;
+i!                     CUDNN_KNOB_TYPE_KERNEL_CFG: type=int; val=-1;
+i!                     CUDNN_KNOB_TYPE_STREAM_K: type=int; val=-1;
+i!                 numericalNotes: type=cudnnBackendDescriptor_t:
+i!                     CUDNN_NUMERICAL_NOTE_TENSOR_CORE: type=bool; val=true;
+i!                 behaviorNotes: type=cudnnBackendDescriptor_t:
+i!                     CUDNN_BEHAVIOR_NOTE_RUNTIME_COMPILATION: type=bool; val=true;
+i!                     CUDNN_BEHAVIOR_NOTE_SUPPORTS_CUDA_GRAPH_NATIVE_API: type=bool; val=true;
+i!                 deviceProp: type=cudnnBackendDescriptor_t; val=NULL_PTR;
+i! Time: 2026-10-08T10:10:17.714618 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendDestroyDescriptor() called:
+i!     status: type=cudnnStatus_t; val=CUDNN_STATUS_SUCCESS (0);
+i! Time: 2026-10-08T10:10:17.714667 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendCreateDescriptor() called:
+i!     descriptorType: type=cudnnBackendDescriptorType_t; val=CUDNN_BACKEND_EXECUTION_PLAN_DESCRIPTOR (5);
+i! Time: 2026-10-08T10:10:17.714678 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendCreateDescriptor() called:
+i!     status: type=cudnnStatus_t; val=CUDNN_STATUS_SUCCESS (0);
+i! Time: 2026-10-08T10:10:17.714687 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendSetAttribute() called:
+i!     descriptor: type=CUDNN_BACKEND_EXECUTION_PLAN_DESCRIPTOR:
+i!         engcfg: type=CUDNN_BACKEND_ENGINECFG_DESCRIPTOR:
+i!             engine: type=CUDNN_BACKEND_ENGINE_DESCRIPTOR:
+i!                 opGraph: type=void*; val=NULL_PTR;
+i!                 engine_id: type=int; val=-1;
+i!                 knobDesc: type=cudnnBackendDescriptor_t; val=NULL_PTR;
+i!                 numericalNotes: type=cudnnBackendDescriptor_t; val=NULL_PTR;
+i!                 behaviorNotes: type=cudnnBackendDescriptor_t; val=NULL_PTR;
+i!                 deviceProp: type=cudnnBackendDescriptor_t; val=NULL_PTR;
+i!     attributeName: type=cudnnBackendAttributeName_t; val=CUDNN_ATTR_EXECUTION_PLAN_HANDLE (400);
+i!     attributeType: type=cudnnBackendAttributeType_t; val=CUDNN_TYPE_HANDLE (0);
+i!     elementCount: type=int64_t; val=1;
+i!     [0]: type=cudnnHandle_t:
+i!         streamId: type=cudaStream_t; streamId=0x288c91c0;
+i!         deviceProp: type=CUDNN_BACKEND_DEVICEPROP_DESCRIPTOR:
+i!             deviceName: type=string; val="NVIDIA GeForce RTX 5060 Laptop GPU";
+i!             cudaDeviceId: type=int; val=0;
+i!             deviceVer: type=int; val=1200;
+i!             multiProcessorCount: type=int; val=26;
+i!             driverVer: type=int; val=13030;
+i!             maxSharedMemoryPerBlockOptin: type=int; val=101376;
+i!             totalGlobalMem: type=size_t; val=8546484224;
+i! Time: 2026-10-08T10:10:17.714700 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendSetAttribute() called:
+i!     status: type=cudnnStatus_t; val=CUDNN_STATUS_SUCCESS (0);
+i! Time: 2026-10-08T10:10:17.714707 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendSetAttribute() called:
+i!     descriptor: type=CUDNN_BACKEND_EXECUTION_PLAN_DESCRIPTOR:
+i!         engcfg: type=CUDNN_BACKEND_ENGINECFG_DESCRIPTOR:
+i!             engine: type=CUDNN_BACKEND_ENGINE_DESCRIPTOR:
+i!                 opGraph: type=void*; val=NULL_PTR;
+i!                 engine_id: type=int; val=-1;
+i!                 knobDesc: type=cudnnBackendDescriptor_t; val=NULL_PTR;
+i!                 numericalNotes: type=cudnnBackendDescriptor_t; val=NULL_PTR;
+i!                 behaviorNotes: type=cudnnBackendDescriptor_t; val=NULL_PTR;
+i!                 deviceProp: type=cudnnBackendDescriptor_t; val=NULL_PTR;
+i!     attributeName: type=cudnnBackendAttributeName_t; val=CUDNN_ATTR_EXECUTION_PLAN_ENGINE_CONFIG (401);
+i!     attributeType: type=cudnnBackendAttributeType_t; val=CUDNN_TYPE_BACKEND_DESCRIPTOR (15);
+i!     elementCount: type=int64_t; val=1;
+i!     [0]: type=CUDNN_BACKEND_ENGINECFG_DESCRIPTOR; val=0x2eed0950;
+i!         : type=bool; val=true;
+i! Time: 2026-10-08T10:10:17.714715 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendSetAttribute() called:
+i!     status: type=cudnnStatus_t; val=CUDNN_STATUS_SUCCESS (0);
+i! Time: 2026-10-08T10:10:17.714726 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendFinalize() called:
+i!     descriptor: type=CUDNN_BACKEND_EXECUTION_PLAN_DESCRIPTOR:
+i!         engcfg: type=CUDNN_BACKEND_ENGINECFG_DESCRIPTOR:
+i!             engine: type=CUDNN_BACKEND_ENGINE_DESCRIPTOR:
+i!                 opGraph: type=CUDNN_BACKEND_OPERATIONGRAPH_DESCRIPTOR:
+i!                     operation: type=CUDNN_BACKEND_OPERATION_CONVOLUTION_FORWARD_DESCRIPTOR:
+i!                         xDesc: type=CUDNN_BACKEND_TENSOR_DESCRIPTOR:
+i!                             type: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!                             nbDims: type=int; val=4;
+i!                             dimA: type=int; val=[4,3,64,64];
+i!                             strideA: type=int; val=[12288,4096,64,1];
+i!                             uid: type=int64_t; val=0;
+i!                             alignmentInBytes: type=int64_t; val=16;
+i!                             isVirtual: type=bool; val=false;
+i!                             isByVal: type=bool; val=false;
+i!                             isRagged: type=bool; val=false;
+i!                             raggedOffsetMultiplier: type=int64_t; val=1;
+i!                         wDesc: type=CUDNN_BACKEND_TENSOR_DESCRIPTOR:
+i!                             type: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!                             nbDims: type=int; val=4;
+i!                             dimA: type=int; val=[16,3,3,3];
+i!                             strideA: type=int; val=[27,9,3,1];
+i!                             uid: type=int64_t; val=1;
+i!                             alignmentInBytes: type=int64_t; val=16;
+i!                             isVirtual: type=bool; val=false;
+i!                             isByVal: type=bool; val=false;
+i!                             isRagged: type=bool; val=false;
+i!                             raggedOffsetMultiplier: type=int64_t; val=1;
+i!                         convDesc: type=CUDNN_BACKEND_CONVOLUTION_DESCRIPTOR:
+i!                             computeType: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!                             mode: type=cudnnConvolutionMode_t; val=CUDNN_CROSS_CORRELATION (1);
+i!                             nbDims: type=int; val=2;
+i!                             upperPadA: type=int; val=[1,1];
+i!                             lowerPadA: type=int; val=[1,1];
+i!                             strideA: type=int; val=[1,1];
+i!                             dilationA: type=int; val=[1,1];
+i!                         yDesc: type=CUDNN_BACKEND_TENSOR_DESCRIPTOR:
+i!                             type: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!                             nbDims: type=int; val=4;
+i!                             dimA: type=int; val=[4,16,64,64];
+i!                             strideA: type=int; val=[65536,4096,64,1];
+i!                             uid: type=int64_t; val=2;
+i!                             alignmentInBytes: type=int64_t; val=16;
+i!                             isVirtual: type=bool; val=false;
+i!                             isByVal: type=bool; val=false;
+i!                             isRagged: type=bool; val=false;
+i!                             raggedOffsetMultiplier: type=int64_t; val=1;
+i!                         alpha: type=float; val=1;
+i!                         beta: type=float; val=0;
+i!                 engine_id: type=int; val=71;
+i!                 knobDesc: type=cudnnBackendDescriptor_t:
+i!                     CUDNN_KNOB_TYPE_SPLIT_K_SLC: type=int; val=-1;
+i!                     CUDNN_KNOB_TYPE_KERNEL_CFG: type=int; val=-1;
+i!                     CUDNN_KNOB_TYPE_STREAM_K: type=int; val=-1;
+i!                 numericalNotes: type=cudnnBackendDescriptor_t:
+i!                     CUDNN_NUMERICAL_NOTE_TENSOR_CORE: type=bool; val=true;
+i!                 behaviorNotes: type=cudnnBackendDescriptor_t:
+i!                     CUDNN_BEHAVIOR_NOTE_RUNTIME_COMPILATION: type=bool; val=true;
+i!                     CUDNN_BEHAVIOR_NOTE_SUPPORTS_CUDA_GRAPH_NATIVE_API: type=bool; val=true;
+i!                 deviceProp: type=cudnnBackendDescriptor_t; val=NULL_PTR;
+i! Time: 2026-10-08T10:10:17.714741 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendFinalize() called:
+i!     status: type=cudnnStatus_t; val=CUDNN_STATUS_SUCCESS (0);
+i! Time: 2026-10-08T10:10:17.714759 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendGetAttribute() called:
+i!     descriptor: type=CUDNN_BACKEND_EXECUTION_PLAN_DESCRIPTOR:
+i!         engcfg: type=CUDNN_BACKEND_ENGINECFG_DESCRIPTOR:
+i!             engine: type=CUDNN_BACKEND_ENGINE_DESCRIPTOR:
+i!                 opGraph: type=CUDNN_BACKEND_OPERATIONGRAPH_DESCRIPTOR:
+i!                     operation: type=CUDNN_BACKEND_OPERATION_CONVOLUTION_FORWARD_DESCRIPTOR:
+i!                         xDesc: type=CUDNN_BACKEND_TENSOR_DESCRIPTOR:
+i!                             type: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!                             nbDims: type=int; val=4;
+i!                             dimA: type=int; val=[4,3,64,64];
+i!                             strideA: type=int; val=[12288,4096,64,1];
+i!                             uid: type=int64_t; val=0;
+i!                             alignmentInBytes: type=int64_t; val=16;
+i!                             isVirtual: type=bool; val=false;
+i!                             isByVal: type=bool; val=false;
+i!                             isRagged: type=bool; val=false;
+i!                             raggedOffsetMultiplier: type=int64_t; val=1;
+i!                         wDesc: type=CUDNN_BACKEND_TENSOR_DESCRIPTOR:
+i!                             type: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!                             nbDims: type=int; val=4;
+i!                             dimA: type=int; val=[16,3,3,3];
+i!                             strideA: type=int; val=[27,9,3,1];
+i!                             uid: type=int64_t; val=1;
+i!                             alignmentInBytes: type=int64_t; val=16;
+i!                             isVirtual: type=bool; val=false;
+i!                             isByVal: type=bool; val=false;
+i!                             isRagged: type=bool; val=false;
+i!                             raggedOffsetMultiplier: type=int64_t; val=1;
+i!                         convDesc: type=CUDNN_BACKEND_CONVOLUTION_DESCRIPTOR:
+i!                             computeType: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!                             mode: type=cudnnConvolutionMode_t; val=CUDNN_CROSS_CORRELATION (1);
+i!                             nbDims: type=int; val=2;
+i!                             upperPadA: type=int; val=[1,1];
+i!                             lowerPadA: type=int; val=[1,1];
+i!                             strideA: type=int; val=[1,1];
+i!                             dilationA: type=int; val=[1,1];
+i!                         yDesc: type=CUDNN_BACKEND_TENSOR_DESCRIPTOR:
+i!                             type: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!                             nbDims: type=int; val=4;
+i!                             dimA: type=int; val=[4,16,64,64];
+i!                             strideA: type=int; val=[65536,4096,64,1];
+i!                             uid: type=int64_t; val=2;
+i!                             alignmentInBytes: type=int64_t; val=16;
+i!                             isVirtual: type=bool; val=false;
+i!                             isByVal: type=bool; val=false;
+i!                             isRagged: type=bool; val=false;
+i!                             raggedOffsetMultiplier: type=int64_t; val=1;
+i!                         alpha: type=float; val=1;
+i!                         beta: type=float; val=0;
+i!                 engine_id: type=int; val=71;
+i!                 knobDesc: type=cudnnBackendDescriptor_t:
+i!                     CUDNN_KNOB_TYPE_SPLIT_K_SLC: type=int; val=-1;
+i!                     CUDNN_KNOB_TYPE_KERNEL_CFG: type=int; val=-1;
+i!                     CUDNN_KNOB_TYPE_STREAM_K: type=int; val=-1;
+i!                 numericalNotes: type=cudnnBackendDescriptor_t:
+i!                     CUDNN_NUMERICAL_NOTE_TENSOR_CORE: type=bool; val=true;
+i!                 behaviorNotes: type=cudnnBackendDescriptor_t:
+i!                     CUDNN_BEHAVIOR_NOTE_RUNTIME_COMPILATION: type=bool; val=true;
+i!                     CUDNN_BEHAVIOR_NOTE_SUPPORTS_CUDA_GRAPH_NATIVE_API: type=bool; val=true;
+i!                 deviceProp: type=cudnnBackendDescriptor_t; val=NULL_PTR;
+i!     attributeName: type=cudnnBackendAttributeName_t; val=CUDNN_ATTR_EXECUTION_PLAN_WORKSPACE_SIZE (402);
+i!     attributeType: type=cudnnBackendAttributeType_t; val=CUDNN_TYPE_INT64 (3);
+i!     requestedElementCount: type=int64_t; val=1;
+i!     elementCount: location=host; addr=0x7fffc12c4bc0;
+i!     arrayOfElements: location=host; addr=0x7fffc12c4bb8;
+i! Time: 2026-10-08T10:10:17.714772 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendGetAttribute() called:
+i!     status: type=cudnnStatus_t; val=CUDNN_STATUS_SUCCESS (0);
+i! Time: 2026-10-08T10:10:17.714783 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendCreateDescriptor() called:
+i!     descriptorType: type=cudnnBackendDescriptorType_t; val=CUDNN_BACKEND_VARIANT_PACK_DESCRIPTOR (16);
+i! Time: 2026-10-08T10:10:17.716055 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendCreateDescriptor() called:
+i!     status: type=cudnnStatus_t; val=CUDNN_STATUS_SUCCESS (0);
+i! Time: 2026-10-08T10:10:17.716182 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendSetAttribute() called:
+i!     descriptor: type=CUDNN_BACKEND_VARIANT_PACK_DESCRIPTOR:
+i!         Workspace: location=dev; addr=NULL_PTR;
+i!     attributeName: type=cudnnBackendAttributeName_t; val=CUDNN_ATTR_VARIANT_PACK_UNIQUE_IDS (1000);
+i!     attributeType: type=cudnnBackendAttributeType_t; val=CUDNN_TYPE_INT64 (3);
+i!     elementCount: type=int64_t; val=3;
+i!     [0]: type=int64_t; val=0;
+i!     [1]: type=int64_t; val=1;
+i!     [2]: type=int64_t; val=2;
+i! Time: 2026-10-08T10:10:17.716201 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendSetAttribute() called:
+i!     status: type=cudnnStatus_t; val=CUDNN_STATUS_SUCCESS (0);
+i! Time: 2026-10-08T10:10:17.716210 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendSetAttribute() called:
+i!     descriptor: type=CUDNN_BACKEND_VARIANT_PACK_DESCRIPTOR:
+i!         Workspace: location=dev; addr=NULL_PTR;
+i!     attributeName: type=cudnnBackendAttributeName_t; val=CUDNN_ATTR_VARIANT_PACK_DATA_POINTERS (1001);
+i!     attributeType: type=cudnnBackendAttributeType_t; val=CUDNN_TYPE_VOID_PTR (6);
+i!     elementCount: type=int64_t; val=3;
+i!     [0]: location=dev; addr=0x7fffc12c4ca0;
+i!     [1]: location=dev; addr=0x7fffc12c4ca0;
+i!     [2]: location=dev; addr=0x7fffc12c4ca0;
+i! Time: 2026-10-08T10:10:17.716218 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendSetAttribute() called:
+i!     status: type=cudnnStatus_t; val=CUDNN_STATUS_SUCCESS (0);
+i! Time: 2026-10-08T10:10:17.716234 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendSetAttribute() called:
+i!     descriptor: type=CUDNN_BACKEND_VARIANT_PACK_DESCRIPTOR:
+i!         Uid=0: location=dev; addr=0x505e01600;
+i!         Uid=1: location=dev; addr=0x505e31600;
+i!         Uid=2: location=dev; addr=0x505e31e00;
+i!         Workspace: location=dev; addr=NULL_PTR;
+i!     attributeName: type=cudnnBackendAttributeName_t; val=CUDNN_ATTR_VARIANT_PACK_WORKSPACE (1003);
+i!     attributeType: type=cudnnBackendAttributeType_t; val=CUDNN_TYPE_VOID_PTR (6);
+i!     elementCount: type=int64_t; val=1;
+i!     [0]: location=dev; addr=0x7fffc12c4be0;
+i! Time: 2026-10-08T10:10:17.716241 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendSetAttribute() called:
+i!     status: type=cudnnStatus_t; val=CUDNN_STATUS_SUCCESS (0);
+i! Time: 2026-10-08T10:10:17.716250 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendFinalize() called:
+i!     descriptor: type=CUDNN_BACKEND_VARIANT_PACK_DESCRIPTOR:
+i!         Uid=0: location=dev; addr=0x505e01600;
+i!         Uid=1: location=dev; addr=0x505e31600;
+i!         Uid=2: location=dev; addr=0x505e31e00;
+i!         Workspace: location=dev; addr=0x506200000;
+i! Time: 2026-10-08T10:10:17.716258 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendFinalize() called:
+i!     status: type=cudnnStatus_t; val=CUDNN_STATUS_SUCCESS (0);
+i! Time: 2026-10-08T10:10:17.716265 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendExecute() called:
+i!     handle: type=cudnnHandle_t:
+i!         streamId: type=cudaStream_t; streamId=0x288c91c0;
+i!         deviceProp: type=CUDNN_BACKEND_DEVICEPROP_DESCRIPTOR:
+i!             deviceName: type=string; val="NVIDIA GeForce RTX 5060 Laptop GPU";
+i!             cudaDeviceId: type=int; val=0;
+i!             deviceVer: type=int; val=1200;
+i!             multiProcessorCount: type=int; val=26;
+i!             driverVer: type=int; val=13030;
+i!             maxSharedMemoryPerBlockOptin: type=int; val=101376;
+i!             totalGlobalMem: type=size_t; val=8546484224;
+i!     executionPlan: type=CUDNN_BACKEND_EXECUTION_PLAN_DESCRIPTOR:
+i!         engcfg: type=CUDNN_BACKEND_ENGINECFG_DESCRIPTOR:
+i!             engine: type=CUDNN_BACKEND_ENGINE_DESCRIPTOR:
+i!                 opGraph: type=CUDNN_BACKEND_OPERATIONGRAPH_DESCRIPTOR:
+i!                     operation: type=CUDNN_BACKEND_OPERATION_CONVOLUTION_FORWARD_DESCRIPTOR:
+i!                         xDesc: type=CUDNN_BACKEND_TENSOR_DESCRIPTOR:
+i!                             type: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!                             nbDims: type=int; val=4;
+i!                             dimA: type=int; val=[4,3,64,64];
+i!                             strideA: type=int; val=[12288,4096,64,1];
+i!                             uid: type=int64_t; val=0;
+i!                             alignmentInBytes: type=int64_t; val=16;
+i!                             isVirtual: type=bool; val=false;
+i!                             isByVal: type=bool; val=false;
+i!                             isRagged: type=bool; val=false;
+i!                             raggedOffsetMultiplier: type=int64_t; val=1;
+i!                         wDesc: type=CUDNN_BACKEND_TENSOR_DESCRIPTOR:
+i!                             type: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!                             nbDims: type=int; val=4;
+i!                             dimA: type=int; val=[16,3,3,3];
+i!                             strideA: type=int; val=[27,9,3,1];
+i!                             uid: type=int64_t; val=1;
+i!                             alignmentInBytes: type=int64_t; val=16;
+i!                             isVirtual: type=bool; val=false;
+i!                             isByVal: type=bool; val=false;
+i!                             isRagged: type=bool; val=false;
+i!                             raggedOffsetMultiplier: type=int64_t; val=1;
+i!                         convDesc: type=CUDNN_BACKEND_CONVOLUTION_DESCRIPTOR:
+i!                             computeType: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!                             mode: type=cudnnConvolutionMode_t; val=CUDNN_CROSS_CORRELATION (1);
+i!                             nbDims: type=int; val=2;
+i!                             upperPadA: type=int; val=[1,1];
+i!                             lowerPadA: type=int; val=[1,1];
+i!                             strideA: type=int; val=[1,1];
+i!                             dilationA: type=int; val=[1,1];
+i!                         yDesc: type=CUDNN_BACKEND_TENSOR_DESCRIPTOR:
+i!                             type: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!                             nbDims: type=int; val=4;
+i!                             dimA: type=int; val=[4,16,64,64];
+i!                             strideA: type=int; val=[65536,4096,64,1];
+i!                             uid: type=int64_t; val=2;
+i!                             alignmentInBytes: type=int64_t; val=16;
+i!                             isVirtual: type=bool; val=false;
+i!                             isByVal: type=bool; val=false;
+i!                             isRagged: type=bool; val=false;
+i!                             raggedOffsetMultiplier: type=int64_t; val=1;
+i!                         alpha: type=float; val=1;
+i!                         beta: type=float; val=0;
+i!                 engine_id: type=int; val=71;
+i!                 knobDesc: type=cudnnBackendDescriptor_t:
+i!                     CUDNN_KNOB_TYPE_SPLIT_K_SLC: type=int; val=-1;
+i!                     CUDNN_KNOB_TYPE_KERNEL_CFG: type=int; val=-1;
+i!                     CUDNN_KNOB_TYPE_STREAM_K: type=int; val=-1;
+i!                 numericalNotes: type=cudnnBackendDescriptor_t:
+i!                     CUDNN_NUMERICAL_NOTE_TENSOR_CORE: type=bool; val=true;
+i!                 behaviorNotes: type=cudnnBackendDescriptor_t:
+i!                     CUDNN_BEHAVIOR_NOTE_RUNTIME_COMPILATION: type=bool; val=true;
+i!                     CUDNN_BEHAVIOR_NOTE_SUPPORTS_CUDA_GRAPH_NATIVE_API: type=bool; val=true;
+i!                 deviceProp: type=cudnnBackendDescriptor_t; val=NULL_PTR;
+i!     variantPack: type=CUDNN_BACKEND_VARIANT_PACK_DESCRIPTOR:
+i!         Uid=0: location=dev; addr=0x505e01600;
+i!         Uid=1: location=dev; addr=0x505e31600;
+i!         Uid=2: location=dev; addr=0x505e31e00;
+i!         Workspace: location=dev; addr=0x506200000;
+i! Time: 2026-10-08T10:10:17.716549 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=0; Handle=0x287602f0; StreamId=0x288c91c0.
+
+
+I! CuDNN (v92400 43) function cudnnBackendExecuteInternal() called:
+i!     enable_tf32: type=bool; val=true;
+i!     operation: type=internalType; val=CONV_FORWARD;
+i!     engine_id: type=int; val=71;
+i!     target_sm_count: type=int; val=0;
+i!     knobDesc: type=cudnnBackendDescriptor_t:
+i!         CUDNN_KNOB_TYPE_SPLIT_K_SLC: type=int; val=-1;
+i!         CUDNN_KNOB_TYPE_KERNEL_CFG: type=int; val=-1;
+i!         CUDNN_KNOB_TYPE_STREAM_K: type=int; val=-1;
+i!     numericalNotes: type=cudnnBackendDescriptor_t:
+i!         CUDNN_NUMERICAL_NOTE_TENSOR_CORE: type=bool; val=true;
+i!     behaviorNotes: type=cudnnBackendDescriptor_t:
+i!         CUDNN_BEHAVIOR_NOTE_RUNTIME_COMPILATION: type=bool; val=true;
+i!         CUDNN_BEHAVIOR_NOTE_SUPPORTS_CUDA_GRAPH_NATIVE_API: type=bool; val=true;
+i! Time: 2026-10-08T10:10:17.716626 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=0; Handle=0x287602f0; StreamId=0x288c91c0.
+
+
+I! CuDNN (v92400 43) function cudnnBackendExecute() called:
+i!     status: type=cudnnStatus_t; val=CUDNN_STATUS_SUCCESS (0);
+i! Time: 2026-10-08T10:10:17.720357 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendExecute() called:
+i!     handle: type=cudnnHandle_t:
+i!         streamId: type=cudaStream_t; streamId=0x288c91c0;
+i!         deviceProp: type=CUDNN_BACKEND_DEVICEPROP_DESCRIPTOR:
+i!             deviceName: type=string; val="NVIDIA GeForce RTX 5060 Laptop GPU";
+i!             cudaDeviceId: type=int; val=0;
+i!             deviceVer: type=int; val=1200;
+i!             multiProcessorCount: type=int; val=26;
+i!             driverVer: type=int; val=13030;
+i!             maxSharedMemoryPerBlockOptin: type=int; val=101376;
+i!             totalGlobalMem: type=size_t; val=8546484224;
+i!     executionPlan: type=CUDNN_BACKEND_EXECUTION_PLAN_DESCRIPTOR:
+i!         engcfg: type=CUDNN_BACKEND_ENGINECFG_DESCRIPTOR:
+i!             engine: type=CUDNN_BACKEND_ENGINE_DESCRIPTOR:
+i!                 opGraph: type=CUDNN_BACKEND_OPERATIONGRAPH_DESCRIPTOR:
+i!                     operation: type=CUDNN_BACKEND_OPERATION_CONVOLUTION_FORWARD_DESCRIPTOR:
+i!                         xDesc: type=CUDNN_BACKEND_TENSOR_DESCRIPTOR:
+i!                             type: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!                             nbDims: type=int; val=4;
+i!                             dimA: type=int; val=[4,3,64,64];
+i!                             strideA: type=int; val=[12288,4096,64,1];
+i!                             uid: type=int64_t; val=0;
+i!                             alignmentInBytes: type=int64_t; val=16;
+i!                             isVirtual: type=bool; val=false;
+i!                             isByVal: type=bool; val=false;
+i!                             isRagged: type=bool; val=false;
+i!                             raggedOffsetMultiplier: type=int64_t; val=1;
+i!                         wDesc: type=CUDNN_BACKEND_TENSOR_DESCRIPTOR:
+i!                             type: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!                             nbDims: type=int; val=4;
+i!                             dimA: type=int; val=[16,3,3,3];
+i!                             strideA: type=int; val=[27,9,3,1];
+i!                             uid: type=int64_t; val=1;
+i!                             alignmentInBytes: type=int64_t; val=16;
+i!                             isVirtual: type=bool; val=false;
+i!                             isByVal: type=bool; val=false;
+i!                             isRagged: type=bool; val=false;
+i!                             raggedOffsetMultiplier: type=int64_t; val=1;
+i!                         convDesc: type=CUDNN_BACKEND_CONVOLUTION_DESCRIPTOR:
+i!                             computeType: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!                             mode: type=cudnnConvolutionMode_t; val=CUDNN_CROSS_CORRELATION (1);
+i!                             nbDims: type=int; val=2;
+i!                             upperPadA: type=int; val=[1,1];
+i!                             lowerPadA: type=int; val=[1,1];
+i!                             strideA: type=int; val=[1,1];
+i!                             dilationA: type=int; val=[1,1];
+i!                         yDesc: type=CUDNN_BACKEND_TENSOR_DESCRIPTOR:
+i!                             type: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!                             nbDims: type=int; val=4;
+i!                             dimA: type=int; val=[4,16,64,64];
+i!                             strideA: type=int; val=[65536,4096,64,1];
+i!                             uid: type=int64_t; val=2;
+i!                             alignmentInBytes: type=int64_t; val=16;
+i!                             isVirtual: type=bool; val=false;
+i!                             isByVal: type=bool; val=false;
+i!                             isRagged: type=bool; val=false;
+i!                             raggedOffsetMultiplier: type=int64_t; val=1;
+i!                         alpha: type=float; val=1;
+i!                         beta: type=float; val=0;
+i!                 engine_id: type=int; val=71;
+i!                 knobDesc: type=cudnnBackendDescriptor_t:
+i!                     CUDNN_KNOB_TYPE_SPLIT_K_SLC: type=int; val=-1;
+i!                     CUDNN_KNOB_TYPE_KERNEL_CFG: type=int; val=-1;
+i!                     CUDNN_KNOB_TYPE_STREAM_K: type=int; val=-1;
+i!                 numericalNotes: type=cudnnBackendDescriptor_t:
+i!                     CUDNN_NUMERICAL_NOTE_TENSOR_CORE: type=bool; val=true;
+i!                 behaviorNotes: type=cudnnBackendDescriptor_t:
+i!                     CUDNN_BEHAVIOR_NOTE_RUNTIME_COMPILATION: type=bool; val=true;
+i!                     CUDNN_BEHAVIOR_NOTE_SUPPORTS_CUDA_GRAPH_NATIVE_API: type=bool; val=true;
+i!                 deviceProp: type=cudnnBackendDescriptor_t; val=NULL_PTR;
+i!     variantPack: type=CUDNN_BACKEND_VARIANT_PACK_DESCRIPTOR:
+i!         Uid=0: location=dev; addr=0x505e01600;
+i!         Uid=1: location=dev; addr=0x505e31600;
+i!         Uid=2: location=dev; addr=0x505e31e00;
+i!         Workspace: location=dev; addr=0x506200000;
+i! Time: 2026-10-08T10:10:17.720631 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=0; Handle=0x287602f0; StreamId=0x288c91c0.
+
+
+I! CuDNN (v92400 43) function cudnnBackendExecuteInternal() called:
+i!     enable_tf32: type=bool; val=true;
+i!     operation: type=internalType; val=CONV_FORWARD;
+i!     engine_id: type=int; val=71;
+i!     target_sm_count: type=int; val=0;
+i!     knobDesc: type=cudnnBackendDescriptor_t:
+i!         CUDNN_KNOB_TYPE_SPLIT_K_SLC: type=int; val=-1;
+i!         CUDNN_KNOB_TYPE_KERNEL_CFG: type=int; val=-1;
+i!         CUDNN_KNOB_TYPE_STREAM_K: type=int; val=-1;
+i!     numericalNotes: type=cudnnBackendDescriptor_t:
+i!         CUDNN_NUMERICAL_NOTE_TENSOR_CORE: type=bool; val=true;
+i!     behaviorNotes: type=cudnnBackendDescriptor_t:
+i!         CUDNN_BEHAVIOR_NOTE_RUNTIME_COMPILATION: type=bool; val=true;
+i!         CUDNN_BEHAVIOR_NOTE_SUPPORTS_CUDA_GRAPH_NATIVE_API: type=bool; val=true;
+i! Time: 2026-10-08T10:10:17.720694 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=0; Handle=0x287602f0; StreamId=0x288c91c0.
+
+
+I! CuDNN (v92400 43) function cudnnBackendExecute() called:
+i!     status: type=cudnnStatus_t; val=CUDNN_STATUS_SUCCESS (0);
+i! Time: 2026-10-08T10:10:17.720755 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendExecute() called:
+i!     handle: type=cudnnHandle_t:
+i!         streamId: type=cudaStream_t; streamId=0x288c91c0;
+i!         deviceProp: type=CUDNN_BACKEND_DEVICEPROP_DESCRIPTOR:
+i!             deviceName: type=string; val="NVIDIA GeForce RTX 5060 Laptop GPU";
+i!             cudaDeviceId: type=int; val=0;
+i!             deviceVer: type=int; val=1200;
+i!             multiProcessorCount: type=int; val=26;
+i!             driverVer: type=int; val=13030;
+i!             maxSharedMemoryPerBlockOptin: type=int; val=101376;
+i!             totalGlobalMem: type=size_t; val=8546484224;
+i!     executionPlan: type=CUDNN_BACKEND_EXECUTION_PLAN_DESCRIPTOR:
+i!         engcfg: type=CUDNN_BACKEND_ENGINECFG_DESCRIPTOR:
+i!             engine: type=CUDNN_BACKEND_ENGINE_DESCRIPTOR:
+i!                 opGraph: type=CUDNN_BACKEND_OPERATIONGRAPH_DESCRIPTOR:
+i!                     operation: type=CUDNN_BACKEND_OPERATION_CONVOLUTION_FORWARD_DESCRIPTOR:
+i!                         xDesc: type=CUDNN_BACKEND_TENSOR_DESCRIPTOR:
+i!                             type: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!                             nbDims: type=int; val=4;
+i!                             dimA: type=int; val=[4,3,64,64];
+i!                             strideA: type=int; val=[12288,4096,64,1];
+i!                             uid: type=int64_t; val=0;
+i!                             alignmentInBytes: type=int64_t; val=16;
+i!                             isVirtual: type=bool; val=false;
+i!                             isByVal: type=bool; val=false;
+i!                             isRagged: type=bool; val=false;
+i!                             raggedOffsetMultiplier: type=int64_t; val=1;
+i!                         wDesc: type=CUDNN_BACKEND_TENSOR_DESCRIPTOR:
+i!                             type: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!                             nbDims: type=int; val=4;
+i!                             dimA: type=int; val=[16,3,3,3];
+i!                             strideA: type=int; val=[27,9,3,1];
+i!                             uid: type=int64_t; val=1;
+i!                             alignmentInBytes: type=int64_t; val=16;
+i!                             isVirtual: type=bool; val=false;
+i!                             isByVal: type=bool; val=false;
+i!                             isRagged: type=bool; val=false;
+i!                             raggedOffsetMultiplier: type=int64_t; val=1;
+i!                         convDesc: type=CUDNN_BACKEND_CONVOLUTION_DESCRIPTOR:
+i!                             computeType: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!                             mode: type=cudnnConvolutionMode_t; val=CUDNN_CROSS_CORRELATION (1);
+i!                             nbDims: type=int; val=2;
+i!                             upperPadA: type=int; val=[1,1];
+i!                             lowerPadA: type=int; val=[1,1];
+i!                             strideA: type=int; val=[1,1];
+i!                             dilationA: type=int; val=[1,1];
+i!                         yDesc: type=CUDNN_BACKEND_TENSOR_DESCRIPTOR:
+i!                             type: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!                             nbDims: type=int; val=4;
+i!                             dimA: type=int; val=[4,16,64,64];
+i!                             strideA: type=int; val=[65536,4096,64,1];
+i!                             uid: type=int64_t; val=2;
+i!                             alignmentInBytes: type=int64_t; val=16;
+i!                             isVirtual: type=bool; val=false;
+i!                             isByVal: type=bool; val=false;
+i!                             isRagged: type=bool; val=false;
+i!                             raggedOffsetMultiplier: type=int64_t; val=1;
+i!                         alpha: type=float; val=1;
+i!                         beta: type=float; val=0;
+i!                 engine_id: type=int; val=71;
+i!                 knobDesc: type=cudnnBackendDescriptor_t:
+i!                     CUDNN_KNOB_TYPE_SPLIT_K_SLC: type=int; val=-1;
+i!                     CUDNN_KNOB_TYPE_KERNEL_CFG: type=int; val=-1;
+i!                     CUDNN_KNOB_TYPE_STREAM_K: type=int; val=-1;
+i!                 numericalNotes: type=cudnnBackendDescriptor_t:
+i!                     CUDNN_NUMERICAL_NOTE_TENSOR_CORE: type=bool; val=true;
+i!                 behaviorNotes: type=cudnnBackendDescriptor_t:
+i!                     CUDNN_BEHAVIOR_NOTE_RUNTIME_COMPILATION: type=bool; val=true;
+i!                     CUDNN_BEHAVIOR_NOTE_SUPPORTS_CUDA_GRAPH_NATIVE_API: type=bool; val=true;
+i!                 deviceProp: type=cudnnBackendDescriptor_t; val=NULL_PTR;
+i!     variantPack: type=CUDNN_BACKEND_VARIANT_PACK_DESCRIPTOR:
+i!         Uid=0: location=dev; addr=0x505e01600;
+i!         Uid=1: location=dev; addr=0x505e31600;
+i!         Uid=2: location=dev; addr=0x505e31e00;
+i!         Workspace: location=dev; addr=0x506200000;
+i! Time: 2026-10-08T10:10:17.720793 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=0; Handle=0x287602f0; StreamId=0x288c91c0.
+
+
+I! CuDNN (v92400 43) function cudnnBackendExecuteInternal() called:
+i!     enable_tf32: type=bool; val=true;
+i!     operation: type=internalType; val=CONV_FORWARD;
+i!     engine_id: type=int; val=71;
+i!     target_sm_count: type=int; val=0;
+i!     knobDesc: type=cudnnBackendDescriptor_t:
+i!         CUDNN_KNOB_TYPE_SPLIT_K_SLC: type=int; val=-1;
+i!         CUDNN_KNOB_TYPE_KERNEL_CFG: type=int; val=-1;
+i!         CUDNN_KNOB_TYPE_STREAM_K: type=int; val=-1;
+i!     numericalNotes: type=cudnnBackendDescriptor_t:
+i!         CUDNN_NUMERICAL_NOTE_TENSOR_CORE: type=bool; val=true;
+i!     behaviorNotes: type=cudnnBackendDescriptor_t:
+i!         CUDNN_BEHAVIOR_NOTE_RUNTIME_COMPILATION: type=bool; val=true;
+i!         CUDNN_BEHAVIOR_NOTE_SUPPORTS_CUDA_GRAPH_NATIVE_API: type=bool; val=true;
+i! Time: 2026-10-08T10:10:17.720865 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=0; Handle=0x287602f0; StreamId=0x288c91c0.
+
+
+I! CuDNN (v92400 43) function cudnnBackendExecute() called:
+i!     status: type=cudnnStatus_t; val=CUDNN_STATUS_SUCCESS (0);
+i! Time: 2026-10-08T10:10:17.720922 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendExecute() called:
+i!     handle: type=cudnnHandle_t:
+i!         streamId: type=cudaStream_t; streamId=0x288c91c0;
+i!         deviceProp: type=CUDNN_BACKEND_DEVICEPROP_DESCRIPTOR:
+i!             deviceName: type=string; val="NVIDIA GeForce RTX 5060 Laptop GPU";
+i!             cudaDeviceId: type=int; val=0;
+i!             deviceVer: type=int; val=1200;
+i!             multiProcessorCount: type=int; val=26;
+i!             driverVer: type=int; val=13030;
+i!             maxSharedMemoryPerBlockOptin: type=int; val=101376;
+i!             totalGlobalMem: type=size_t; val=8546484224;
+i!     executionPlan: type=CUDNN_BACKEND_EXECUTION_PLAN_DESCRIPTOR:
+i!         engcfg: type=CUDNN_BACKEND_ENGINECFG_DESCRIPTOR:
+i!             engine: type=CUDNN_BACKEND_ENGINE_DESCRIPTOR:
+i!                 opGraph: type=CUDNN_BACKEND_OPERATIONGRAPH_DESCRIPTOR:
+i!                     operation: type=CUDNN_BACKEND_OPERATION_CONVOLUTION_FORWARD_DESCRIPTOR:
+i!                         xDesc: type=CUDNN_BACKEND_TENSOR_DESCRIPTOR:
+i!                             type: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!                             nbDims: type=int; val=4;
+i!                             dimA: type=int; val=[4,3,64,64];
+i!                             strideA: type=int; val=[12288,4096,64,1];
+i!                             uid: type=int64_t; val=0;
+i!                             alignmentInBytes: type=int64_t; val=16;
+i!                             isVirtual: type=bool; val=false;
+i!                             isByVal: type=bool; val=false;
+i!                             isRagged: type=bool; val=false;
+i!                             raggedOffsetMultiplier: type=int64_t; val=1;
+i!                         wDesc: type=CUDNN_BACKEND_TENSOR_DESCRIPTOR:
+i!                             type: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!                             nbDims: type=int; val=4;
+i!                             dimA: type=int; val=[16,3,3,3];
+i!                             strideA: type=int; val=[27,9,3,1];
+i!                             uid: type=int64_t; val=1;
+i!                             alignmentInBytes: type=int64_t; val=16;
+i!                             isVirtual: type=bool; val=false;
+i!                             isByVal: type=bool; val=false;
+i!                             isRagged: type=bool; val=false;
+i!                             raggedOffsetMultiplier: type=int64_t; val=1;
+i!                         convDesc: type=CUDNN_BACKEND_CONVOLUTION_DESCRIPTOR:
+i!                             computeType: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!                             mode: type=cudnnConvolutionMode_t; val=CUDNN_CROSS_CORRELATION (1);
+i!                             nbDims: type=int; val=2;
+i!                             upperPadA: type=int; val=[1,1];
+i!                             lowerPadA: type=int; val=[1,1];
+i!                             strideA: type=int; val=[1,1];
+i!                             dilationA: type=int; val=[1,1];
+i!                         yDesc: type=CUDNN_BACKEND_TENSOR_DESCRIPTOR:
+i!                             type: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!                             nbDims: type=int; val=4;
+i!                             dimA: type=int; val=[4,16,64,64];
+i!                             strideA: type=int; val=[65536,4096,64,1];
+i!                             uid: type=int64_t; val=2;
+i!                             alignmentInBytes: type=int64_t; val=16;
+i!                             isVirtual: type=bool; val=false;
+i!                             isByVal: type=bool; val=false;
+i!                             isRagged: type=bool; val=false;
+i!                             raggedOffsetMultiplier: type=int64_t; val=1;
+i!                         alpha: type=float; val=1;
+i!                         beta: type=float; val=0;
+i!                 engine_id: type=int; val=71;
+i!                 knobDesc: type=cudnnBackendDescriptor_t:
+i!                     CUDNN_KNOB_TYPE_SPLIT_K_SLC: type=int; val=-1;
+i!                     CUDNN_KNOB_TYPE_KERNEL_CFG: type=int; val=-1;
+i!                     CUDNN_KNOB_TYPE_STREAM_K: type=int; val=-1;
+i!                 numericalNotes: type=cudnnBackendDescriptor_t:
+i!                     CUDNN_NUMERICAL_NOTE_TENSOR_CORE: type=bool; val=true;
+i!                 behaviorNotes: type=cudnnBackendDescriptor_t:
+i!                     CUDNN_BEHAVIOR_NOTE_RUNTIME_COMPILATION: type=bool; val=true;
+i!                     CUDNN_BEHAVIOR_NOTE_SUPPORTS_CUDA_GRAPH_NATIVE_API: type=bool; val=true;
+i!                 deviceProp: type=cudnnBackendDescriptor_t; val=NULL_PTR;
+i!     variantPack: type=CUDNN_BACKEND_VARIANT_PACK_DESCRIPTOR:
+i!         Uid=0: location=dev; addr=0x505e01600;
+i!         Uid=1: location=dev; addr=0x505e31600;
+i!         Uid=2: location=dev; addr=0x505e31e00;
+i!         Workspace: location=dev; addr=0x506200000;
+i! Time: 2026-10-08T10:10:17.720959 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=0; Handle=0x287602f0; StreamId=0x288c91c0.
+
+
+I! CuDNN (v92400 43) function cudnnBackendExecuteInternal() called:
+i!     enable_tf32: type=bool; val=true;
+i!     operation: type=internalType; val=CONV_FORWARD;
+i!     engine_id: type=int; val=71;
+i!     target_sm_count: type=int; val=0;
+i!     knobDesc: type=cudnnBackendDescriptor_t:
+i!         CUDNN_KNOB_TYPE_SPLIT_K_SLC: type=int; val=-1;
+i!         CUDNN_KNOB_TYPE_KERNEL_CFG: type=int; val=-1;
+i!         CUDNN_KNOB_TYPE_STREAM_K: type=int; val=-1;
+i!     numericalNotes: type=cudnnBackendDescriptor_t:
+i!         CUDNN_NUMERICAL_NOTE_TENSOR_CORE: type=bool; val=true;
+i!     behaviorNotes: type=cudnnBackendDescriptor_t:
+i!         CUDNN_BEHAVIOR_NOTE_RUNTIME_COMPILATION: type=bool; val=true;
+i!         CUDNN_BEHAVIOR_NOTE_SUPPORTS_CUDA_GRAPH_NATIVE_API: type=bool; val=true;
+i! Time: 2026-10-08T10:10:17.720985 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=0; Handle=0x287602f0; StreamId=0x288c91c0.
+
+
+I! CuDNN (v92400 43) function cudnnBackendExecute() called:
+i!     status: type=cudnnStatus_t; val=CUDNN_STATUS_SUCCESS (0);
+i! Time: 2026-10-08T10:10:17.721031 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendDestroyDescriptor() called:
+i!     descriptor: type=CUDNN_BACKEND_VARIANT_PACK_DESCRIPTOR:
+i!         Uid=0: location=dev; addr=0x505e01600;
+i!         Uid=1: location=dev; addr=0x505e31600;
+i!         Uid=2: location=dev; addr=0x505e31e00;
+i!         Workspace: location=dev; addr=0x506200000;
+i! Time: 2026-10-08T10:10:17.728979 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendDestroyDescriptor() called:
+i!     status: type=cudnnStatus_t; val=CUDNN_STATUS_SUCCESS (0);
+i! Time: 2026-10-08T10:10:17.729024 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendDestroyDescriptor() called:
+i!     descriptor: type=CUDNN_BACKEND_EXECUTION_PLAN_DESCRIPTOR:
+i!         engcfg: type=CUDNN_BACKEND_ENGINECFG_DESCRIPTOR:
+i!             engine: type=CUDNN_BACKEND_ENGINE_DESCRIPTOR:
+i!                 opGraph: type=CUDNN_BACKEND_OPERATIONGRAPH_DESCRIPTOR:
+i!                     operation: type=CUDNN_BACKEND_OPERATION_CONVOLUTION_FORWARD_DESCRIPTOR:
+i!                         xDesc: type=CUDNN_BACKEND_TENSOR_DESCRIPTOR:
+i!                             type: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!                             nbDims: type=int; val=4;
+i!                             dimA: type=int; val=[4,3,64,64];
+i!                             strideA: type=int; val=[12288,4096,64,1];
+i!                             uid: type=int64_t; val=0;
+i!                             alignmentInBytes: type=int64_t; val=16;
+i!                             isVirtual: type=bool; val=false;
+i!                             isByVal: type=bool; val=false;
+i!                             isRagged: type=bool; val=false;
+i!                             raggedOffsetMultiplier: type=int64_t; val=1;
+i!                         wDesc: type=CUDNN_BACKEND_TENSOR_DESCRIPTOR:
+i!                             type: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!                             nbDims: type=int; val=4;
+i!                             dimA: type=int; val=[16,3,3,3];
+i!                             strideA: type=int; val=[27,9,3,1];
+i!                             uid: type=int64_t; val=1;
+i!                             alignmentInBytes: type=int64_t; val=16;
+i!                             isVirtual: type=bool; val=false;
+i!                             isByVal: type=bool; val=false;
+i!                             isRagged: type=bool; val=false;
+i!                             raggedOffsetMultiplier: type=int64_t; val=1;
+i!                         convDesc: type=CUDNN_BACKEND_CONVOLUTION_DESCRIPTOR:
+i!                             computeType: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!                             mode: type=cudnnConvolutionMode_t; val=CUDNN_CROSS_CORRELATION (1);
+i!                             nbDims: type=int; val=2;
+i!                             upperPadA: type=int; val=[1,1];
+i!                             lowerPadA: type=int; val=[1,1];
+i!                             strideA: type=int; val=[1,1];
+i!                             dilationA: type=int; val=[1,1];
+i!                         yDesc: type=CUDNN_BACKEND_TENSOR_DESCRIPTOR:
+i!                             type: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!                             nbDims: type=int; val=4;
+i!                             dimA: type=int; val=[4,16,64,64];
+i!                             strideA: type=int; val=[65536,4096,64,1];
+i!                             uid: type=int64_t; val=2;
+i!                             alignmentInBytes: type=int64_t; val=16;
+i!                             isVirtual: type=bool; val=false;
+i!                             isByVal: type=bool; val=false;
+i!                             isRagged: type=bool; val=false;
+i!                             raggedOffsetMultiplier: type=int64_t; val=1;
+i!                         alpha: type=float; val=1;
+i!                         beta: type=float; val=0;
+i!                 engine_id: type=int; val=71;
+i!                 knobDesc: type=cudnnBackendDescriptor_t:
+i!                     CUDNN_KNOB_TYPE_SPLIT_K_SLC: type=int; val=-1;
+i!                     CUDNN_KNOB_TYPE_KERNEL_CFG: type=int; val=-1;
+i!                     CUDNN_KNOB_TYPE_STREAM_K: type=int; val=-1;
+i!                 numericalNotes: type=cudnnBackendDescriptor_t:
+i!                     CUDNN_NUMERICAL_NOTE_TENSOR_CORE: type=bool; val=true;
+i!                 behaviorNotes: type=cudnnBackendDescriptor_t:
+i!                     CUDNN_BEHAVIOR_NOTE_RUNTIME_COMPILATION: type=bool; val=true;
+i!                     CUDNN_BEHAVIOR_NOTE_SUPPORTS_CUDA_GRAPH_NATIVE_API: type=bool; val=true;
+i!                 deviceProp: type=cudnnBackendDescriptor_t; val=NULL_PTR;
+i! Time: 2026-10-08T10:10:17.729049 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnBackendDestroyDescriptor() called:
+i!     status: type=cudnnStatus_t; val=CUDNN_STATUS_SUCCESS (0);
+i! Time: 2026-10-08T10:10:17.729070 (0d+0h+0m+1s since start)
+i! Process=17601; Thread=17601; GPU=NULL; Handle=NULL; StreamId=NULL.
+

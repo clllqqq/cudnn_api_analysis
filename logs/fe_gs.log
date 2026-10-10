@@ -1,0 +1,129 @@
+
+I! CuDNN (v92400 43) function cudnnCreateTensorDescriptor() called:
+i! Time: 2026-09-23T10:15:04.187790 (0d+0h+0m+0s since start)
+i! Process=9875; Thread=9875; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnSetTensorNdDescriptor() called:
+i!     dataType: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!     nbDims: type=int; val=4;
+i!     dimA: type=int; val=[2,3,16,16];
+i!     strideA: type=int; val=[768,256,16,1];
+i! Time: 2026-09-23T10:15:04.187977 (0d+0h+0m+0s since start)
+i! Process=9875; Thread=9875; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnCreateTensorDescriptor() called:
+i! Time: 2026-09-23T10:15:04.187997 (0d+0h+0m+0s since start)
+i! Process=9875; Thread=9875; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnSetTensorNdDescriptor() called:
+i!     dataType: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!     nbDims: type=int; val=4;
+i!     dimA: type=int; val=[2,3,16,16];
+i!     strideA: type=int; val=[768,256,16,1];
+i! Time: 2026-09-23T10:15:04.188004 (0d+0h+0m+0s since start)
+i! Process=9875; Thread=9875; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnCreate() called:
+i!     handle: location=host; addr=0x11ec15c0;
+i! Time: 2026-09-23T10:15:04.188349 (0d+0h+0m+0s since start)
+i! Process=9875; Thread=9875; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnGraphLibraryConfigInit() called:
+i!     apiLog: type=cudnnLibConfig_t; val=AUTO;
+i! Time: 2026-09-23T10:15:04.188441 (0d+0h+0m+0s since start)
+i! Process=9875; Thread=9875; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnCreate() called:
+i!     compute_capability_major: type=int; val=12;
+i!     compute_capability_minor: type=int; val=0;
+i!     status: type=cudnnStatus_t; val=CUDNN_STATUS_SUCCESS (0);
+i! Time: 2026-09-23T10:15:04.192742 (0d+0h+0m+0s since start)
+i! Process=9875; Thread=9875; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnSetStream() called:
+i!     handle: type=cudnnHandle_t:
+i!         streamId: type=cudaStream_t; streamId=(nil) (defaultStream);
+i!         deviceProp: type=CUDNN_BACKEND_DEVICEPROP_DESCRIPTOR:
+i!             deviceName: type=string; val="NVIDIA GeForce RTX 5060 Laptop GPU";
+i!             cudaDeviceId: type=int; val=0;
+i!             deviceVer: type=int; val=1200;
+i!             multiProcessorCount: type=int; val=26;
+i!             driverVer: type=int; val=13030;
+i!             maxSharedMemoryPerBlockOptin: type=int; val=101376;
+i!             totalGlobalMem: type=size_t; val=8546484224;
+i!     streamId: type=cudaStream_t; streamId=(nil) (defaultStream);
+i! Time: 2026-09-23T10:15:04.193014 (0d+0h+0m+0s since start)
+i! Process=9875; Thread=9875; GPU=0; Handle=0x11fd9b10; StreamId=(nil) (defaultStream).
+
+
+I! CuDNN (v92400 43) function cudnnCreateSpatialTransformerDescriptor() called:
+i! Time: 2026-09-23T10:15:04.193138 (0d+0h+0m+0s since start)
+i! Process=9875; Thread=9875; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnSetSpatialTransformerNdDescriptor() called:
+i!     samplerType: type=cudnnSamplerType_t; val=CUDNN_SAMPLER_BILINEAR (0);
+i!     dataType: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!     outputTensorNbDims: type=int; val=4;
+i!     dimA: type=int; val=[2,3,16,16];
+i! Time: 2026-09-23T10:15:04.193259 (0d+0h+0m+0s since start)
+i! Process=9875; Thread=9875; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnSpatialTfSamplerForward() called:
+i!     handle: type=cudnnHandle_t:
+i!         streamId: type=cudaStream_t; streamId=(nil) (defaultStream);
+i!         deviceProp: type=CUDNN_BACKEND_DEVICEPROP_DESCRIPTOR:
+i!             deviceName: type=string; val="NVIDIA GeForce RTX 5060 Laptop GPU";
+i!             cudaDeviceId: type=int; val=0;
+i!             deviceVer: type=int; val=1200;
+i!             multiProcessorCount: type=int; val=26;
+i!             driverVer: type=int; val=13030;
+i!             maxSharedMemoryPerBlockOptin: type=int; val=101376;
+i!             totalGlobalMem: type=size_t; val=8546484224;
+i!     stDesc: type=cudnnSpatialTransformerDescriptor_t:
+i!         thetaDimA: type=int; val=[2,2,3,0];
+i!         gridDimA: type=int; val=[2,16,16,2];
+i!         outputTensorNbDims: type=int; val=4;
+i!         samplerType: type=cudnnSamplerType_t; val=CUDNN_SAMPLER_BILINEAR (0);
+i!         dataType: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!     alpha: type=CUDNN_DATA_FLOAT; val=1.000000;
+i!     xDesc: type=cudnnTensorDescriptor_t:
+i!         dataType: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!         nbDims: type=int; val=4;
+i!         dimA: type=int; val=[2,3,16,16];
+i!         strideA: type=int; val=[768,256,16,1];
+i!     x: location=dev; addr=0x505e00000;
+i!     grid: location=dev; addr=0x505e01800;
+i!     beta: type=CUDNN_DATA_FLOAT; val=0.000000;
+i!     yDesc: type=cudnnTensorDescriptor_t:
+i!         dataType: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!         nbDims: type=int; val=4;
+i!         dimA: type=int; val=[2,3,16,16];
+i!         strideA: type=int; val=[768,256,16,1];
+i!     y: location=dev; addr=0x505e02800;
+i! Time: 2026-09-23T10:15:04.199998 (0d+0h+0m+0s since start)
+i! Process=9875; Thread=9875; GPU=0; Handle=0x11fd9b10; StreamId=(nil) (defaultStream).
+
+
+I! CuDNN (v92400 43) function cudnnDestroySpatialTransformerDescriptor() called:
+i! Time: 2026-09-23T10:15:04.210565 (0d+0h+0m+0s since start)
+i! Process=9875; Thread=9875; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnDestroyTensorDescriptor() called:
+i! Time: 2026-09-23T10:15:04.210708 (0d+0h+0m+0s since start)
+i! Process=9875; Thread=9875; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnDestroyTensorDescriptor() called:
+i! Time: 2026-09-23T10:15:04.210720 (0d+0h+0m+0s since start)
+i! Process=9875; Thread=9875; GPU=NULL; Handle=NULL; StreamId=NULL.
+

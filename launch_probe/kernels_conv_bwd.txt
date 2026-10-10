@@ -1,0 +1,12 @@
+# conv bwd: 11 kernels（按时间排序；CUPTI/torch.profiler）
+566511752003 void at::native::reduce_kernel<512, 1, at::native::ReduceOp<float, at: grid=[1, 32, 1] block=[512, 1, 1] smem=2064 regs=27 stream=7 dur=3.7us  ?
+566511761666 void at::native::vectorized_elementwise_kernel<4, at::native::FillFunc grid=[1, 1, 1] block=[128, 1, 1] smem=0 regs=16 stream=7 dur=0.9us  ?
+566511795134 void at::native::elementwise_kernel<128, 2, at::native::gpu_kernel_imp grid=[1024, 1, 1] block=[128, 1, 1] smem=0 regs=18 stream=7 dur=2.3us  ?
+566511816865 void cudnn::cnn::dgrad2d_grouped_direct_kernel<float, int, float, floa grid=[48, 1, 1] block=[1024, 1, 1] smem=0 regs=64 stream=7 dur=21.2us  libcudnn_engines_precompiled
+566511817039 void at::native::elementwise_kernel<128, 2, at::native::gpu_kernel_imp grid=[1024, 1, 1] block=[128, 1, 1] smem=0 regs=18 stream=7 dur=2.1us  ?
+566511877835 void cudnn::engines_precompiled::nchwToNhwcKernel<float, float, float, grid=[128, 1, 4] block=[256, 1, 1] smem=4224 regs=24 stream=7 dur=3.6us  libcudnn_engines_precompiled
+566511877884 void cudnn::engines_precompiled::nchwToNhwcKernel<float, float, float, grid=[128, 1, 4] block=[256, 1, 1] smem=4224 regs=24 stream=7 dur=3.8us  libcudnn_engines_precompiled
+566511878661 _ZN17cutlass__5x_cudnn6KernelINS_4conv6kernel23ImplicitGemmConvolution grid=[1, 1, 4] block=[128, 1, 1] smem=81920 regs=106 stream=7 dur=61.3us  libcudnn_engines_precompiled
+566511879851 void cutlass__5x_cudnn::Kernel<cutlass__5x_cudnn::reduction::kernel::R grid=[4, 1, 1] block=[32, 4, 1] smem=0 regs=38 stream=7 dur=1.1us  ?
+566511889656 void cudnn::engines_precompiled::nhwcToNchwKernel<float, float, float, grid=[1, 1, 16] block=[256, 1, 1] smem=4224 regs=20 stream=7 dur=1.4us  libcudnn_engines_precompiled
+566511889921 void at::native::reduce_kernel<512, 1, at::native::ReduceOp<float, at: grid=[1, 32, 1] block=[16, 32, 1] smem=2064 regs=27 stream=7 dur=3.4us  ?

@@ -1,0 +1,410 @@
+# 引擎库 / heuristic 从 libcudnn_graph.so.9 导入的符号（cuDNN 9.24.0, RTX 5060 Laptop sm_120, CUDA 13.0）
+# 方法: nm -D -u <lib>.so.9 ∩ nm -D --defined-only libcudnn_graph.so.9（剥离 @版本后缀），再 c++filt
+# 反向检查 1: libcudnn_graph.so.9 未定义符号中, 指向引擎库 / heuristic / dummy*Symbol / registerRuntimeCompiled 的 = 0
+# 反向检查 2: objdump -p 的 NEEDED, 三个引擎库+heuristic 都只有 libcudnn_graph.so.9 + 系统库(libz/libdl/libpthread/librt/libstdc++/libm/libgcc/libc)
+# 运行时检查: LD_DEBUG=libs 显示 graph demo(纯 cudnnBackend* 程序) 运行期 dlopen 了 heuristic 与三个 engines_* 库
+# lib 路径: /home/liquan/venvs/torch/lib/python3.14/site-packages/nvidia/cudnn/lib
+
+===== libcudnn_engines_precompiled.so.9 : 83 symbols imported from graph =====
+-- cnn (27) --
+   cudnn::cnn::ConvolutionEngine::ConvolutionEngine(cudnnDeviceProp const*, cudnnBackendEngineName_t, cudnn::cnn::GenericConvolution const&, int, cudnn::cnn::PerfKnobInfo const*)
+   cudnn::cnn::ConvolutionEngine::ConvolutionEngine(cudnnDeviceProp const*, cudnnBackendEngineName_t, cudnn::cnn::GenericConvolution const&, int, cudnn::cnn::PerfKnobInfo const*)
+   cudnn::cnn::ConvolutionEngine::isCompatibleVariantPack_internal(cudnn::backend::VariantPack const&) const
+   cudnn::cnn::EngineInterface::EngineInterface(cudnnDeviceProp const*, cudnnBackendEngineName_t, long, int, cudnn::cnn::PerfKnobInfo const*)
+   cudnn::cnn::EngineInterface::create_kernel_cache_key(std::shared_ptr<cudnn::backend::OperationGraph const>, engcfg_backend_t const&) const
+   cudnn::cnn::EngineInterface::execute(cudnn::backend::VariantPack const&, CUstream_st*) const
+   cudnn::cnn::GenericConvolution::ConvolutionParams::getBDescriptor(cudnn::backend::Tensor&) const
+   cudnn::cnn::GenericConvolution::ConvolutionParams::getWDescriptor(cudnn::backend::Tensor&) const
+   cudnn::cnn::GenericConvolution::ConvolutionParams::getXDescriptor(cudnn::backend::Tensor&) const
+   cudnn::cnn::GenericConvolution::ConvolutionParams::getYDescriptor(cudnn::backend::Tensor&) const
+   cudnn::cnn::GenericConvolution::GenericConvolution(bool)
+   cudnn::cnn::GenericConvolution::getConvDesc(cudnnConvolutionStruct&) const
+   cudnn::cnn::GenericConvolution::getWTensorStruct(cudnnTensorStruct&) const
+   cudnn::cnn::GenericConvolution::init(cudnn::cnn::GenericConvolution::ConvolutionParams const&, bool)
+   cudnn::cnn::GenericConvolution::init(cudnnTensorStruct const*, cudnnFilterStruct const*, cudnnConvolutionStruct const*, cudnnConvWorkingStruct const*, cudnnTensorStruct const*, bool, bool)
+   cudnn::cnn::PerfKnobs::PerfKnobs(int, cudnn::cnn::PerfKnobInfo const*)
+   cudnn::cnn::PerfKnobs::initKnobs(int, cudnn::cnn::PerfKnobInfo const*)
+   cudnn::cnn::PerfKnobs::reset()
+   cudnn::cnn::PerfKnobs::setChoice(cudnnBackendKnobType_t, int)
+   cudnn::cnn::PerfKnobs::setChoicesFrom(cudnn::cnn::PerfKnobs const&)
+   cudnn::cnn::computeReducedMathForward(cudnn::cnn::GenericConvolution::ConvolutionParams const&, cudnnConvWorkingStruct&, bool)
+   cudnn::cnn::getLegacyType(cudnn::cnn::GenericConvolution const&, cudnnDataType_t&, cudnnDataType_t&, cudnnDataType_t&)
+   cudnn::cnn::is_valid_spatial_dim(long, long, long, long, long, long, long)
+   typeinfo for cudnn::cnn::ConvolutionEngine
+   typeinfo for cudnn::cnn::EngineInterface
+   vtable for cudnn::cnn::ConvolutionEngine
+   vtable for cudnn::cnn::EngineInterface
+-- fusion (27) --
+   cudnn::fusion::Graph::Graph(cudnn::fusion::Graph const&)
+   cudnn::fusion::Graph::clear()
+   cudnn::fusion::Graph::getSortedNodes() const
+   cudnn::fusion::Graph::isAcyclicGraph() const
+   cudnn::fusion::Graph::operator=(cudnn::fusion::Graph const&)
+   cudnn::fusion::Graph::~Graph()
+   cudnn::fusion::Node::getConsumerNodes(cudnn::fusion::Graph const*)
+   cudnn::fusion::Node::getProducerNodes(cudnn::fusion::Graph const*) const
+   cudnn::fusion::Node::isEntranceNode(cudnn::fusion::Graph const*) const
+   cudnn::fusion::Node::isExitNode(cudnn::fusion::Graph const*) const
+   cudnn::fusion::PortAlloc::allocate(unsigned long)
+   cudnn::fusion::PortAlloc::deallocate(cudnn::fusion::Port**, unsigned long)
+   cudnn::fusion::RGCNPostBwdPatternMatcher::matchPattern(cudnn::fusion::Graph const*)
+   cudnn::fusion::RGCNPostFwdPatternMatcher::matchPattern(cudnn::fusion::Graph const*)
+   cudnn::fusion::RGCNPreBwdPatternMatcher::matchPattern(cudnn::fusion::Graph const*)
+   cudnn::fusion::RGCNPreFwdPatternMatcher::matchPattern(cudnn::fusion::Graph const*)
+   typeinfo for cudnn::fusion::BnFinalizeStatisticsMatcher
+   typeinfo for cudnn::fusion::ConvBiasActPatternMatcher
+   typeinfo for cudnn::fusion::DgradAddDreluDualdBnStatsMatcher
+   typeinfo for cudnn::fusion::ScaleBiasReluConvStatsMatcher
+   typeinfo for cudnn::fusion::ScaleBiasReluWgradMatcher
+   vtable for cudnn::fusion::ConvBiasActPatternMatcher
+   vtable for cudnn::fusion::LinearPatternMatcher
+   vtable for cudnn::fusion::RGCNPostBwdPatternMatcher
+   vtable for cudnn::fusion::RGCNPostFwdPatternMatcher
+   vtable for cudnn::fusion::RGCNPreBwdPatternMatcher
+   vtable for cudnn::fusion::RGCNPreFwdPatternMatcher
+-- backend (6) --
+   cudnn::backend::Engine::getDeviceProp() const
+   cudnn::backend::OperationGraph::initGraph(cudnn::fusion::Graph&) const
+   cudnn::backend::VariantPack::allocateFromWorkspace(unsigned long, void*&, unsigned long)
+   vtable for cudnn::backend::OperationGraph
+   vtable for cudnn::backend::Tensor
+   vtable for cudnn::backend::VariantPack
+-- ops (4) --
+   cudnn::ops::ForkInternalStreams(cudnnContext*, unsigned int, CUstream_st**, unsigned int)
+   cudnn::ops::JoinInternalStreams(cudnnContext*, unsigned int, CUstream_st**)
+   cudnn::ops::isForceKernelInit()
+   cudnn::ops::isTF32Enabled(int)
+-- graph(ns) (7) --
+   cudnn::graph::LibraryLoader::getInstance()
+   cudnn::graph::LibraryLoader::setCublasLtVersionFunc(unsigned long (*)())
+   cudnn::graph::LibraryLoader::setInitFunc(cudnnLibraryModule_t, cudnnStatus_t (*)(int))
+   cudnn::graph::LibraryLoader::setInstantiator(cudnnLibraryModule_t, cudnnStatus_t (*)(cudnn::backend::Engine&, bool))
+   cudnn::graph::setFilterNdDescriptor(cudnnFilterStruct*, cudnnDataType_t, cudnnTensorFormat_t, int, int const*)
+   cudnn::graph::setTensorNdDescriptor(cudnnTensorStruct*, dualDataType_t, int, int const*, int const*, bool)
+   cudnn::graph::setTensorNdDescriptorEx(cudnnTensorStruct*, cudnnTensorFormat_t, cudnnDataType_t, int, int const*)
+-- log/trace (4) --
+   traceback_iretf_impl(char const*, cudnnStatus_t)
+   traceback_iretf_impl(char const*, cudnnStatus_t, bool)
+   traceback_iretf_impl(char const*, cudnnStatus_t, bool, char const*, ...)
+   traceback_iretf_impl(char const*, cudnnStatus_t, char const*, ...)
+-- other (8) --
+   GPVar::GPVar(char const*, int)
+   cudnnHostCalloc(unsigned long, unsigned long)
+   cudnnHostFree(void*)
+   cudnnHostMalloc(unsigned long)
+   fmt::cudnn_fmt_v7::detail::vformat[abi:cxx11](fmt::cudnn_fmt_v7::basic_string_view<char>, fmt::cudnn_fmt_v7::format_args)
+   getEnumName(cudnn::backend::OperationGraphFinalizedMode_t)
+   getEnumName(cudnnPointwiseMode_t)
+   mb_tools::hasValidVSL(std::array<int, 24ul> const&)
+
+===== libcudnn_engines_runtime_compiled.so.9 : 192 symbols imported from graph =====
+-- cnn (9) --
+   cudnn::cnn::EngineInterface::EngineInterface(cudnnDeviceProp const*, cudnnBackendEngineName_t, long, int, cudnn::cnn::PerfKnobInfo const*)
+   cudnn::cnn::EngineInterface::create_kernel_cache_key(std::shared_ptr<cudnn::backend::OperationGraph const>, engcfg_backend_t const&) const
+   cudnn::cnn::EngineInterface::execute(cudnn::backend::VariantPack const&, CUstream_st*) const
+   cudnn::cnn::PerfKnobs::PerfKnobs(int, cudnn::cnn::PerfKnobInfo const*)
+   cudnn::cnn::PerfKnobs::initKnobs(int, cudnn::cnn::PerfKnobInfo const*)
+   cudnn::cnn::PerfKnobs::reset()
+   cudnn::cnn::PerfKnobs::setChoice(cudnnBackendKnobType_t, int)
+   cudnn::cnn::PerfKnobs::setChoicesFrom(cudnn::cnn::PerfKnobs const&)
+   typeinfo for cudnn::cnn::EngineInterface
+-- fusion (51) --
+   cudnn::fusion::GeneralParam::append_struct_member(cudnn::fusion::GeneralParam&&)
+   cudnn::fusion::GeneralParam::begin()
+   cudnn::fusion::GeneralParam::begin() const
+   cudnn::fusion::GeneralParam::copy_data() const
+   cudnn::fusion::GeneralParam::create_pointer(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, long)
+   cudnn::fusion::GeneralParam::create_struct(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+   cudnn::fusion::GeneralParam::create_value(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, long)
+   cudnn::fusion::GeneralParam::create_workspace_pointer(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int)
+   cudnn::fusion::GeneralParam::emit_struct_def(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, bool)
+   cudnn::fusion::GeneralParam::end()
+   cudnn::fusion::GeneralParam::end() const
+   cudnn::fusion::GeneralParam::find_struct_member(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const
+   cudnn::fusion::GeneralParam::generate_struct_buffer_recursive()
+   cudnn::fusion::GeneralParam::get_last_param_idx() const
+   cudnn::fusion::GeneralParam::get_param_idx(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const
+   cudnn::fusion::GeneralParam::get_struct_member(int) const
+   cudnn::fusion::GeneralParam::init_size_alignment_recursive()
+   cudnn::fusion::Graph::Graph(cudnn::fusion::Graph const&)
+   cudnn::fusion::Graph::clear()
+   cudnn::fusion::Graph::getSortedNodes() const
+   cudnn::fusion::Graph::operator=(cudnn::fusion::Graph const&)
+   cudnn::fusion::Graph::operator=(cudnn::fusion::Graph&&)
+   cudnn::fusion::Graph::removeNode(cudnn::fusion::Node*)
+   cudnn::fusion::Graph::~Graph()
+   cudnn::fusion::LayerNormBwdPatternMatcher::getLUTIndex(int) const
+   cudnn::fusion::Node::equivalentTo(cudnn::fusion::Node const*) const
+   cudnn::fusion::Node::getConsumerNodes(cudnn::fusion::Graph const*)
+   cudnn::fusion::Node::getConsumerNodes(cudnn::fusion::Graph const*) const
+   cudnn::fusion::Node::getProducerNodes(cudnn::fusion::Graph const*) const
+   cudnn::fusion::Node::isEntranceNode(cudnn::fusion::Graph const*) const
+   cudnn::fusion::Node::print(std::basic_ostream<char, std::char_traits<char> >&) const
+   cudnn::fusion::NormFwdPwReducePatternMatcher::getLUTIndex() const
+   cudnn::fusion::Port::can_inplace_FORT(cudnn::fusion::Graph const*) const
+   cudnn::fusion::PortAlloc::allocate(unsigned long)
+   cudnn::fusion::PortAlloc::deallocate(cudnn::fusion::Port**, unsigned long)
+   cudnn::fusion::RuntimeFusionEngineBase::getDisableClusterCooperative() const
+   cudnn::fusion::RuntimeFusionEngineBase::load_kernels_from_cache(std::shared_ptr<cudnn::backend::KernelCache>, std::shared_ptr<cudnn::backend::KernelCacheKey> const&, bool&)
+   cudnn::fusion::RuntimeFusionEngineBase::store_kernels_to_cache(std::shared_ptr<cudnn::backend::KernelCache>, std::shared_ptr<cudnn::backend::KernelCacheKey>)
+   cudnn::fusion::RuntimeKernel::from_json(rapidjson::GenericValue<rapidjson::UTF8<char>, rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator> > const&, int, int)
+   cudnn::fusion::RuntimeKernel::getDeviceCount() const
+   cudnn::fusion::RuntimeKernel::getNvrtcVersion() const
+   cudnn::fusion::RuntimeKernel::getPtxDesc(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&)
+   cudnn::fusion::RuntimeKernel::to_json(rapidjson::GenericValue<rapidjson::UTF8<char>, rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator> >&, rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator>&) const
+   cudnn::fusion::decompress_byte_arr_n_append_to_str(unsigned char const*, unsigned long, unsigned long, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&)
+   cudnn::fusion::detect_g_dim(cudnn::fusion::Graph const*, bool&)
+   typeinfo for cudnn::fusion::LayerNormBwdPatternMatcher
+   typeinfo for cudnn::fusion::Node
+   typeinfo for cudnn::fusion::NormFwdPwReducePatternMatcher
+   typeinfo for cudnn::fusion::RuntimeFusionEngineBase
+   vtable for cudnn::fusion::Node
+   vtable for cudnn::fusion::RuntimeFusionEngineBase
+-- backend (66) --
+   cudnn::backend::DiagonalBandMaskOperation::init(cudnn::backend::PointwiseOperation const*, cudnn::backend::PointwiseOperation const*, cudnn::backend::PointwiseOperation const*, cudnn::backend::PointwiseOperation const*, cudnn::backend::PointwiseOperation const*, cudnn::backend::PointwiseOperation const*, cudnn::backend::PointwiseOperation const*, cudnn::backend::PointwiseOperation const*)
+   cudnn::backend::DynamicShapeCacheKey::DynamicShapeCacheKey(std::shared_ptr<cudnn::backend::OperationGraph const>, engcfg_backend_t const&)
+   cudnn::backend::Engine::getDeviceProp() const
+   cudnn::backend::EngineConfig::EngineConfig(std::shared_ptr<cudnn::backend::OperationGraph const>, std::shared_ptr<cudnn::backend::DeviceProperty const>, engcfg_backend_t const&, int)
+   cudnn::backend::EngineHeuristics::EngineHeuristics()
+   cudnn::backend::EngineHeuristics::EngineHeuristics(std::shared_ptr<cudnn::backend::OperationGraph const>, std::shared_ptr<cudnn::backend::DeviceProperty const>, cudnnBackendHeurMode_t, unsigned long)
+   cudnn::backend::EngineHeuristics::addEngineConfig(engcfg_backend_t const&, bool)
+   cudnn::backend::EngineHeuristics::addEngineConfig(int, int, int const*, bool, cudnn::backend::KTMPrediction*)
+   cudnn::backend::EngineHeuristics::getDeviceProp() const
+   cudnn::backend::EngineHeuristics::getDevicePropertyNonNull() const
+   cudnn::backend::KernelCacheKey::from_json(rapidjson::GenericValue<rapidjson::UTF8<char>, rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator> > const&, int, int)
+   cudnn::backend::KernelCacheKey::hash() const
+   cudnn::backend::KernelCacheKey::to_json(rapidjson::GenericValue<rapidjson::UTF8<char>, rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator> >&, rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator>&) const
+   cudnn::backend::MatmulOperation::finalize_internal()
+   cudnn::backend::MatmulOperation::from_json(rapidjson::GenericValue<rapidjson::UTF8<char>, rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator> > const&, int)
+   cudnn::backend::MatmulOperation::getAllTensorPtr() const
+   cudnn::backend::MatmulOperation::get_internal(cudnnBackendAttributeName_t, cudnnBackendAttributeType_t, long, long*, void*) const
+   cudnn::backend::MatmulOperation::set_internal(cudnnBackendAttributeName_t, cudnnBackendAttributeType_t, long, void const*)
+   cudnn::backend::MatmulOperation::to_json(rapidjson::GenericValue<rapidjson::UTF8<char>, rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator> >&, rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator>&) const
+   cudnn::backend::MatmulOperation::updateAllTensors(std::map<long, cudnn::backend::Tensor, std::less<long>, std::allocator<std::pair<long const, cudnn::backend::Tensor> > > const&)
+   cudnn::backend::MoeGroupedMatmulOperation::finalize_internal()
+   cudnn::backend::MoeGroupedMatmulOperation::from_json(rapidjson::GenericValue<rapidjson::UTF8<char>, rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator> > const&, int)
+   cudnn::backend::MoeGroupedMatmulOperation::getAllTensorPtr() const
+   cudnn::backend::MoeGroupedMatmulOperation::get_internal(cudnnBackendAttributeName_t, cudnnBackendAttributeType_t, long, long*, void*) const
+   cudnn::backend::MoeGroupedMatmulOperation::set_internal(cudnnBackendAttributeName_t, cudnnBackendAttributeType_t, long, void const*)
+   cudnn::backend::MoeGroupedMatmulOperation::to_json(rapidjson::GenericValue<rapidjson::UTF8<char>, rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator> >&, rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator>&) const
+   cudnn::backend::MoeGroupedMatmulOperation::updateAllTensors(std::map<long, cudnn::backend::Tensor, std::less<long>, std::allocator<std::pair<long const, cudnn::backend::Tensor> > > const&)
+   cudnn::backend::OperationGraph::getHeurFeatures(long*) const
+   cudnn::backend::OperationGraph::initGraph(cudnn::fusion::Graph&) const
+   cudnn::backend::OperationGraph::isBlasMatmulHeurTargeted(int&, int&, int&, int&, int&) const
+   cudnn::backend::OperationGraph::isLayerNormFwdFusion() const
+   cudnn::backend::SoftmaxOperation::init(cudnn::backend::ReductionOperation const*, cudnn::backend::PointwiseOperation const*, cudnn::backend::PointwiseOperation const*, cudnn::backend::ReductionOperation const*, cudnn::backend::PointwiseOperation const*, cudnn::backend::PointwiseOperation const*, cudnn::backend::PointwiseOperation const*, cudnn::backend::PointwiseOperation const*)
+   cudnn::backend::Tensor::finalize_internal()
+   cudnn::backend::Tensor::set_internal(cudnnBackendAttributeName_t, cudnnBackendAttributeType_t, long, void const*)
+   cudnn::backend::VariantPack::allocateFromWorkspace(unsigned long, void*&, unsigned long)
+   cudnn::backend::fortNativeConvGemmKernelCacheKey::set_bits_per_access(int, int, int)
+   typeinfo for cudnn::backend::BlockScaleDequantizeOperation
+   typeinfo for cudnn::backend::ConcatOperation
+   typeinfo for cudnn::backend::ConvolutionDgradOperation
+   typeinfo for cudnn::backend::ConvolutionForwardOperation
+   typeinfo for cudnn::backend::ConvolutionWgradOperation
+   typeinfo for cudnn::backend::DiagonalBandMaskOperation
+   typeinfo for cudnn::backend::ExpandBandMatrixOperation
+   typeinfo for cudnn::backend::KernelCacheKey
+   typeinfo for cudnn::backend::MatmulOperation
+   typeinfo for cudnn::backend::MoeGroupedMatmulOperation
+   typeinfo for cudnn::backend::NormBackwardOperation
+   typeinfo for cudnn::backend::NormForwardOperation
+   typeinfo for cudnn::backend::PointwiseOperation
+   typeinfo for cudnn::backend::ReductionOperation
+   typeinfo for cudnn::backend::ResampleForwardOperation
+   typeinfo for cudnn::backend::SdpaForwardOperation
+   vtable for cudnn::backend::DeviceProperty
+   vtable for cudnn::backend::DiagonalBandMaskOperation
+   vtable for cudnn::backend::Engine
+   vtable for cudnn::backend::EngineConfig
+   vtable for cudnn::backend::EngineHeuristics
+   vtable for cudnn::backend::KernelCacheKey
+   vtable for cudnn::backend::MatmulDescriptor
+   vtable for cudnn::backend::MatmulOperation
+   vtable for cudnn::backend::MoeGroupedMatmulOperation
+   vtable for cudnn::backend::OperationGraph
+   vtable for cudnn::backend::SoftmaxOperation
+   vtable for cudnn::backend::Tensor
+   vtable for cudnn::backend::VariantPack
+   vtable for cudnn::backend::fortNativeConvGemmKernelCacheKey
+-- ops (2) --
+   cudnn::ops::isForwardCompatEnabled(int)
+   cudnn::ops::isTF32Enabled(int)
+-- graph(ns) (12) --
+   cudnn::graph::LibraryConfig::cudnnLibConfig
+   cudnn::graph::LibraryConfig::init()
+   cudnn::graph::LibraryLoader::getTensorIRHeurFunc()
+   cudnn::graph::LibraryLoader::loadLibraries()
+   cudnn::graph::LibraryLoader::setHeurFallbackFunc(cudnnStatus_t (*)(cudnnBackendEngineName_t, cudnn::backend::EngineHeuristics*))
+   cudnn::graph::LibraryLoader::setHeurFunc(cudnn::graph::HeurFunctionType_t, cudnnStatus_t (*)(cudnn::backend::EngineHeuristics*))
+   cudnn::graph::LibraryLoader::setInitFunc(cudnnLibraryModule_t, cudnnStatus_t (*)(int))
+   cudnn::graph::LibraryLoader::setInstantiator(cudnnLibraryModule_t, cudnnStatus_t (*)(cudnn::backend::Engine&, bool))
+   cudnn::graph::LibraryLoader::setKTMFunc(cudnn::backend::KTMBackend, cudnnStatus_t (*)(cudnn::backend::OperationGraph const&, cudnnDeviceProp const&, engcfg_t const&, cudnn::backend::KTMPrediction&))
+   cudnn::graph::setActivationDescriptor(cudnnActivationStruct*, cudnnActivationMode_t, cudnnNanPropagation_t, double)
+   cudnn::graph::setTensorNdDescriptor(cudnnTensorStruct*, dualDataType_t, int, int const*, int const*, bool)
+   cudnn::graph::setTensorNdDescriptorEx(cudnnTensorStruct*, cudnnTensorFormat_t, cudnnDataType_t, int, int const*)
+-- log/trace (12) --
+   CallbackFun
+   hasValidLoggingCallback()
+   logEnviron(char const*, char*, int*, bool)
+   logFunction(char const*, char*, int*, int)
+   loginfo_dbg
+   loglevel_dbg
+   startingTime
+   traceback_api_add(cudnnSeverity_t, cudnnStatus_t, void const*, ...)
+   traceback_iretf_impl(char const*, cudnnStatus_t)
+   traceback_iretf_impl(char const*, cudnnStatus_t, bool)
+   traceback_iretf_impl(char const*, cudnnStatus_t, bool, char const*, ...)
+   traceback_iretf_impl(char const*, cudnnStatus_t, char const*, ...)
+-- other (40) --
+   GPVar::GPVar(char const*, char const*)
+   GPVar::IsFromExternalOverride() const
+   cuDNN::dnnHeuristic::global_simd_arch
+   cudnnBackendCreateDescriptor
+   cudnnBackendDestroyDescriptor
+   cudnnBackendExecute
+   cudnnBackendFinalize
+   cudnnBackendGetAttribute
+   cudnnBackendSetAttribute
+   cudnnGetPid()
+   cudnnGetStream
+   cudnnGetTid()
+   cudnnGetTime
+   cudnnGetTimeDiffString
+   cudnnSnprintf
+   fmt::cudnn_fmt_v7::detail::vformat[abi:cxx11](fmt::cudnn_fmt_v7::basic_string_view<char>, fmt::cudnn_fmt_v7::format_args)
+   getEnumName(cudnn::backend::OperationGraphFinalizedMode_t)
+   getEnumName(cudnnDataType_t)
+   mb_tools::hasValidVSL(std::array<int, 24ul> const&)
+   nvrtcHelper::load()
+   userData
+   void cuDNN::dnnHeuristic::lin_act_avx2<128, 1, 0, 1>(float*, float*, float (*) [1], float*)
+   void cuDNN::dnnHeuristic::lin_act_avx2<128, 128, 1, 1>(float*, float*, float (*) [128], float*)
+   void cuDNN::dnnHeuristic::lin_act_avx2<128, 256, 1, 1>(float*, float*, float (*) [256], float*)
+   void cuDNN::dnnHeuristic::lin_act_avx2<256, 128, 1, 1>(float*, float*, float (*) [128], float*)
+   void cuDNN::dnnHeuristic::lin_act_avx2<8, 128, 1, 1>(float*, float*, float (*) [128], float*)
+   void cuDNN::dnnHeuristic::lin_act_avx2<9, 128, 1, 1>(float*, float*, float (*) [128], float*)
+   void cuDNN::dnnHeuristic::lin_act_avx<128, 1, 0, 1>(float*, float*, float (*) [1], float*)
+   void cuDNN::dnnHeuristic::lin_act_avx<128, 128, 1, 1>(float*, float*, float (*) [128], float*)
+   void cuDNN::dnnHeuristic::lin_act_avx<128, 256, 1, 1>(float*, float*, float (*) [256], float*)
+   void cuDNN::dnnHeuristic::lin_act_avx<256, 128, 1, 1>(float*, float*, float (*) [128], float*)
+   void cuDNN::dnnHeuristic::lin_act_avx<8, 128, 1, 1>(float*, float*, float (*) [128], float*)
+   void cuDNN::dnnHeuristic::lin_act_avx<9, 128, 1, 1>(float*, float*, float (*) [128], float*)
+   void cuDNN::dnnHeuristic::lin_act_sse2<128, 1, 0, 1>(float*, float*, float (*) [1], float*)
+   void cuDNN::dnnHeuristic::lin_act_sse2<128, 128, 1, 1>(float*, float*, float (*) [128], float*)
+   void cuDNN::dnnHeuristic::lin_act_sse2<128, 256, 1, 1>(float*, float*, float (*) [256], float*)
+   void cuDNN::dnnHeuristic::lin_act_sse2<256, 128, 1, 1>(float*, float*, float (*) [128], float*)
+   void cuDNN::dnnHeuristic::lin_act_sse2<8, 128, 1, 1>(float*, float*, float (*) [128], float*)
+   void cuDNN::dnnHeuristic::lin_act_sse2<9, 128, 1, 1>(float*, float*, float (*) [128], float*)
+   void fmt::cudnn_fmt_v7::detail::vformat_to<char>(fmt::cudnn_fmt_v7::detail::buffer<char>&, fmt::cudnn_fmt_v7::basic_string_view<char>, fmt::cudnn_fmt_v7::basic_format_args<fmt::cudnn_fmt_v7::basic_format_context<fmt::cudnn_fmt_v7::detail::buffer_appender<fmt::cudnn_fmt_v7::type_identity<char>::type>, fmt::cudnn_fmt_v7::type_identity<char>::type> >, fmt::cudnn_fmt_v7::detail::locale_ref)
+
+===== libcudnn_engines_tensor_ir.so.9 : 39 symbols imported from graph =====
+-- cnn (8) --
+   cudnn::cnn::EngineInterface::EngineInterface(cudnnDeviceProp const*, cudnnBackendEngineName_t, long, int, cudnn::cnn::PerfKnobInfo const*)
+   cudnn::cnn::EngineInterface::create_kernel_cache_key(std::shared_ptr<cudnn::backend::OperationGraph const>, engcfg_backend_t const&) const
+   cudnn::cnn::PerfKnobs::PerfKnobs(int, cudnn::cnn::PerfKnobInfo const*)
+   cudnn::cnn::PerfKnobs::initKnobs(int, cudnn::cnn::PerfKnobInfo const*)
+   cudnn::cnn::PerfKnobs::reset()
+   cudnn::cnn::PerfKnobs::setChoice(cudnnBackendKnobType_t, int)
+   cudnn::cnn::PerfKnobs::setChoicesFrom(cudnn::cnn::PerfKnobs const&)
+   typeinfo for cudnn::cnn::EngineInterface
+-- fusion (8) --
+   cudnn::fusion::Graph::Graph(cudnn::fusion::Graph const&)
+   cudnn::fusion::Graph::getSortedNodes() const
+   cudnn::fusion::Graph::~Graph()
+   cudnn::fusion::PortAlloc::allocate(unsigned long)
+   cudnn::fusion::PortAlloc::deallocate(cudnn::fusion::Port**, unsigned long)
+   cudnn::fusion::RuntimeFusionEngineBase::getDisableClusterCooperative() const
+   typeinfo for cudnn::fusion::RuntimeFusionEngineBase
+   vtable for cudnn::fusion::RuntimeFusionEngineBase
+-- backend (9) --
+   cudnn::backend::Engine::getDeviceProp() const
+   cudnn::backend::EngineHeuristics::addEngineConfig(engcfg_backend_t const&, bool)
+   cudnn::backend::EngineHeuristics::getDeviceProp() const
+   cudnn::backend::OperationGraph::initGraph(cudnn::fusion::Graph&) const
+   cudnn::backend::TensorIrKernelCacheKey::setShaderHashKey(unsigned long)
+   vtable for cudnn::backend::KernelCacheKey
+   vtable for cudnn::backend::OperationGraph
+   vtable for cudnn::backend::Tensor
+   vtable for cudnn::backend::TensorIrKernelCacheKey
+-- ops (1) --
+   cudnn::ops::isTF32Enabled(int)
+-- graph(ns) (3) --
+   cudnn::graph::LibraryLoader::setInitFunc(cudnnLibraryModule_t, cudnnStatus_t (*)(int))
+   cudnn::graph::LibraryLoader::setInstantiator(cudnnLibraryModule_t, cudnnStatus_t (*)(cudnn::backend::Engine&, bool))
+   cudnn::graph::LibraryLoader::setTensorIRHeurFunc(void (*)(cudnn::backend::EngineHeuristics&, int))
+-- log/trace (3) --
+   traceback_iretf_impl(char const*, cudnnStatus_t)
+   traceback_iretf_impl(char const*, cudnnStatus_t, bool)
+   traceback_iretf_impl(char const*, cudnnStatus_t, bool, char const*, ...)
+-- other (7) --
+   __nvrtcNvvmHandle
+   cudnn::serialize::RapidJsonSerializer<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::to_json(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator>&)
+   cudnn::serialize::decodeBase64(char const*, unsigned long, unsigned char*)
+   cudnn::serialize::decodeBase64Size(char const*, unsigned long, unsigned long&)
+   cudnn::serialize::encodeBase64(unsigned char const*, unsigned long, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&)
+   getEnumName(cudnn::backend::OperationGraphFinalizedMode_t)
+   mb_tools::hasValidVSL(std::array<int, 24ul> const&)
+
+===== libcudnn_heuristic.so.9 : 28 symbols imported from graph =====
+-- cnn (1) --
+   cudnn::cnn::GenericConvolution::getHeurBFeatures(ModelDesc&, ProblemCols&) const
+-- fusion (2) --
+   cudnn::fusion::Graph::Graph(cudnn::fusion::Graph const&)
+   cudnn::fusion::Graph::~Graph()
+-- backend (14) --
+   cudnn::backend::EngineConfig::EngineConfig(std::shared_ptr<cudnn::backend::OperationGraph const>, std::shared_ptr<cudnn::backend::DeviceProperty const>, engcfg_backend_t const&, int)
+   cudnn::backend::EngineConfig::finalize_internal()
+   cudnn::backend::EngineHeuristics::addEngineConfig(engcfg_backend_t const&, bool)
+   cudnn::backend::EngineHeuristics::getDeviceProp() const
+   cudnn::backend::EngineHeuristics::getDevicePropertyNonNull() const
+   cudnn::backend::ExecutionPlan::finalize_internal()
+   cudnn::backend::ExecutionPlan::get_metadata_internal(cudnn::cnn::kernel_metadata*) const
+   cudnn::backend::OperationGraph::getHeurFeatures(long*) const
+   cudnn::backend::OperationGraph::isLargeTensorConv() const
+   cudnn::backend::cudnnBackendGetMetadataFromGraph(void*)
+   vtable for cudnn::backend::Engine
+   vtable for cudnn::backend::EngineConfig
+   vtable for cudnn::backend::ExecutionPlan
+   vtable for cudnn::backend::OperationGraph
+-- ops (1) --
+   cudnn::ops::isForwardCompatEnabled(int)
+-- graph(ns) (6) --
+   cudnn::graph::LibraryConfig::init()
+   cudnn::graph::LibraryLoader::loadLibraries()
+   cudnn::graph::LibraryLoader::setAutoHeurGroupFromOpsetFunc(GPUHeurGroup (*)(int, int, cudnn::backend::OperationGraphFinalizedMode_t))
+   cudnn::graph::LibraryLoader::setHeurFunc(cudnn::graph::HeurFunctionType_t, cudnnStatus_t (*)(cudnn::backend::EngineHeuristics*))
+   cudnn::graph::LibraryLoader::setInitFunc(cudnnLibraryModule_t, cudnnStatus_t (*)(int))
+   cudnn::graph::LibraryLoader::setKTMFunc(cudnn::backend::KTMBackend, cudnnStatus_t (*)(cudnn::backend::OperationGraph const&, cudnnDeviceProp const&, engcfg_t const&, cudnn::backend::KTMPrediction&))
+-- log/trace (3) --
+   traceback_iretf_impl(char const*, cudnnStatus_t)
+   traceback_iretf_impl(char const*, cudnnStatus_t, bool)
+   traceback_iretf_impl(char const*, cudnnStatus_t, bool, char const*, ...)
+-- other (1) --
+   GPVar::GPVar(char const*, int)
+
+# 关键注册/钩子符号
+#   setInitFunc: engines_precompiled: 1; engines_runtime_compiled: 1; engines_tensor_ir: 1; heuristic: 1
+#   setInstantiator: engines_precompiled: 1; engines_runtime_compiled: 1; engines_tensor_ir: 1
+#   setHeurFunc: engines_runtime_compiled: 1; heuristic: 1
+#   setKTMFunc: engines_runtime_compiled: 1; heuristic: 1
+#   setAutoHeurGroupFromOpsetFunc: heuristic: 1
+#   loadLibraries: engines_runtime_compiled: 1; heuristic: 1
+#   registerRuntimeCompiled: graph 自身不导入(注册方在引擎/heuristic 内)
+#   dummyBackend: graph 自身不导入(注册方在引擎/heuristic 内)
+#   dummyHeuristic: graph 自身不导入(注册方在引擎/heuristic 内)
+#   nvrtcHelper::load: engines_runtime_compiled: 1
+#   __nvrtcNvvmHandle: engines_tensor_ir: 1
+
+# ---------------------------------------------------------------------------
+# 注册握手（objdump -d libcudnn_heuristic.so.9 实证，§4.7.1）
+#   0x1fe250: 静态构造器 → LibraryLoader::setInitFunc(module=2, fn=0x1fe270)
+#   0x1fe270: 注册的 init 函数；参数 != 0x168f0 时直接返回内部状态码 0x3ea(=1002)
+#             参数 == 0x168f0 时依次调用：
+#               setHeurFunc(3, fn) → setHeurFunc(4, fn) → setAutoHeurGroupFromOpsetFunc(fn)
+#               → setHeurFunc(6, fn) → setKTMFunc(KTMBackend{1}, fn)   （尾部 jmp）
+#   graph 侧唯一回调点: LibraryLoader::loadLibraries_() 里
+#               mov $0x168f0,%edi ; call *%r13     ← %r13 = 插件注册的 init 函数
+#   0x168f0 = 92400 = cuDNN 版本号(cudnnGetVersion)，即 graph↔插件之间做版本/ABI 一致性校验。
+#   heuristic 侧还解析了 __once_callable / pthread_once：注册走 std::call_once 一次性初始化。
+# ---------------------------------------------------------------------------

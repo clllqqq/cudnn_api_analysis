@@ -1,0 +1,41 @@
+== run_per_op_all.sh  2026-09-28 14:13:08
+target=/home/liquan/cudnn_per_op.py  CUDNN_LOGLEVEL_DBG=3
+
+case               exit    用时s 日志字节
+conv               0          1.84       620390
+batchnorm          0          1.47        11260
+rnn                0          1.59      7235050
+attention          0          1.42          190
+attention_forced   0          1.61      1173116
+grid_sample        0          1.53            0
+ctc                0          1.43            0
+
+== 每份日志的 cuDNN 公开入口调用次数（口径见 README §8.1）
+
+---- conv ----
+== conv.log   公开入口合计 533
+   BackendCreateDescriptor×174、BackendDestroyDescriptor×168、BackendSetAttribute×108、BackendGetAttribute×45、BackendFinalize×27、Create×4、SetStream×3、BackendExecute×3、GetVersion×1
+
+---- batchnorm ----
+== batchnorm.log   公开入口合计 16
+   CreateTensorDescriptor×3、SetTensorNdDescriptor×3、DestroyTensorDescriptor×3、Create×2、SetStream×2、GetBatchNormalizationForwardTrainingExWorkspaceSize×1、GetBatchNormalizationTrainingExReserveSpaceSize×1、BatchNormalizationForwardTrainingEx×1
+
+---- rnn ----
+== rnn.log   公开入口合计 3372
+   GetRNNWeightParams×3208、CreateTensorDescriptor×46、DestroyTensorDescriptor×46、GetTensorNdDescriptor×32、SetTensorNdDescriptor×6、SetStream×3、CreateDropoutDescriptor×3、SetDropoutDescriptor×3、CreateRNNDescriptor×3、SetRNNDescriptor_v8×3、DestroyDropoutDescriptor×3、DestroyRNNDescriptor×3、Create×2、GetRNNWeightSpaceSize×2、CreateRNNDataDescriptor×2、SetRNNDataDescriptor×2、DestroyRNNDataDescriptor×2、GetVersion×1、GetRNNTempSpaceSizes×1、RNNForward×1
+
+---- attention ----
+== attention.log   公开入口合计 1
+   GetVersion×1
+
+---- attention_forced ----
+== attention_forced.log   公开入口合计 456
+   BackendCreateDescriptor×159、BackendDestroyDescriptor×147、BackendGetAttribute×70、BackendSetAttribute×39、GetVersion×26、BackendFinalize×10、Create×2、SetStream×1、GetStream×1、BackendExecute×1
+
+---- grid_sample ----
+== grid_sample.log   公开入口合计 0
+   
+
+---- ctc ----
+== ctc.log   公开入口合计 0
+   

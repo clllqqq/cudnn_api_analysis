@@ -1,0 +1,84 @@
+########## HEUR_MODE=0 ##########
+== heuristic（mode 0）返回的候选 engine config ==
+候选数 = 17（count 查询报 17，实际取回 17）
+  # 0  engineId=28   workspace=0         smVersion=1200   旋钮={"CUDNN_KNOB_TYPE_TILE_SIZE":4,"CUDNN_KNOB_TYPE_USE_TEX":0}
+  # 1  engineId=28   workspace=0         smVersion=1200   旋钮={"CUDNN_KNOB_TYPE_TILE_SIZE":3,"CUDNN_KNOB_TYPE_USE_TEX":0}
+  # 2  engineId=48   workspace=1246928   smVersion=1200   旋钮={"CUDNN_KNOB_TYPE_TILE_SIZE":2,"CUDNN_KNOB_TYPE_LDGA":0,"CUDNN_KNOB_TYPE_TILEK":2,"CUDNN_KNOB_TYPE_STAGES":0,"CUDNN_KNOB_TYPE_LDGC":1}
+  # 3  engineId=48   workspace=1246928   smVersion=1200   旋钮={"CUDNN_KNOB_TYPE_TILE_SIZE":15,"CUDNN_KNOB_TYPE_LDGA":0,"CUDNN_KNOB_TYPE_TILEK":0,"CUDNN_KNOB_TYPE_STAGES":0,"CUDNN_KNOB_TYPE_LDGC":0}
+  # 4  engineId=1    workspace=108       smVersion=1200   旋钮={"CUDNN_KNOB_TYPE_TILE_SIZE":2,"CUDNN_KNOB_TYPE_USE_TEX":0}
+  # 5  engineId=6    workspace=11213568  smVersion=1200   旋钮={"CUDNN_KNOB_TYPE_WORKSPACE":0}
+  # 6  engineId=46   workspace=1313040   smVersion=1200   旋钮={"CUDNN_KNOB_TYPE_TILE_SIZE":4,"CUDNN_KNOB_TYPE_KBLOCK":2,"CUDNN_KNOB_TYPE_STAGES":3}
+  # 7  engineId=28   workspace=0         smVersion=1200   旋钮={"CUDNN_KNOB_TYPE_TILE_SIZE":1,"CUDNN_KNOB_TYPE_USE_TEX":0}
+  # 8  engineId=0    workspace=0         smVersion=1200   旋钮={}
+  # 9  engineId=46   workspace=1313040   smVersion=1200   旋钮={"CUDNN_KNOB_TYPE_TILE_SIZE":1,"CUDNN_KNOB_TYPE_KBLOCK":3,"CUDNN_KNOB_TYPE_STAGES":2}
+  #10  engineId=46   workspace=1313040   smVersion=1200   旋钮={"CUDNN_KNOB_TYPE_TILE_SIZE":5,"CUDNN_KNOB_TYPE_KBLOCK":2,"CUDNN_KNOB_TYPE_STAGES":6}
+  #11  engineId=36   workspace=1313040   smVersion=1200   旋钮={"CUDNN_KNOB_TYPE_TILE_SIZE":0,"CUDNN_KNOB_TYPE_TILEK":2,"CUDNN_KNOB_TYPE_STAGES":3,"CUDNN_KNOB_TYPE_IDX_MODE":1,"CUDNN_KNOB_TYPE_SPECFILT":0}
+  #12  engineId=38   workspace=264464    smVersion=1200   旋钮={"CUDNN_KNOB_TYPE_TILE_SIZE":0,"CUDNN_KNOB_TYPE_TILEK":2,"CUDNN_KNOB_TYPE_STAGES":3,"CUDNN_KNOB_TYPE_IDX_MODE":0,"CUDNN_KNOB_TYPE_LDGC":0,"CUDNN_KNOB_TYPE_SPECFILT":0}
+  #13  engineId=46   workspace=1313040   smVersion=1200   旋钮={"CUDNN_KNOB_TYPE_TILE_SIZE":5,"CUDNN_KNOB_TYPE_KBLOCK":3,"CUDNN_KNOB_TYPE_STAGES":4}
+  #14  engineId=35   workspace=1313040   smVersion=1200   旋钮={"CUDNN_KNOB_TYPE_TILE_SIZE":1,"CUDNN_KNOB_TYPE_KBLOCK":3,"CUDNN_KNOB_TYPE_STAGES":2}
+  #15  engineId=3    workspace=8521408   smVersion=1200   旋钮={"CUDNN_KNOB_TYPE_MULTIPLY":0}
+  #16  engineId=4    workspace=870400    smVersion=1200   旋钮={}
+
+== 汇总 ==
+  全局 engine=81，本机能 finalize 的=0；其中 runtime 编译=0  TensorCore=0  Winograd=0  FFT=0  非确定性=0
+  无法只靠 engine 描述符 finalize 成 config 的（缺省 knob 不完整）=0
+########## HEUR_MODE=1 ##########
+== heuristic（mode 1）返回的候选 engine config ==
+候选数 = 17（count 查询报 17，实际取回 17）
+  # 0  engineId=28   workspace=0         smVersion=1200   旋钮={"CUDNN_KNOB_TYPE_TILE_SIZE":4,"CUDNN_KNOB_TYPE_USE_TEX":0}
+  # 1  engineId=28   workspace=0         smVersion=1200   旋钮={"CUDNN_KNOB_TYPE_TILE_SIZE":3,"CUDNN_KNOB_TYPE_USE_TEX":0}
+  # 2  engineId=48   workspace=1246928   smVersion=1200   旋钮={"CUDNN_KNOB_TYPE_TILE_SIZE":2,"CUDNN_KNOB_TYPE_LDGA":0,"CUDNN_KNOB_TYPE_TILEK":2,"CUDNN_KNOB_TYPE_STAGES":0,"CUDNN_KNOB_TYPE_LDGC":1}
+  # 3  engineId=48   workspace=1246928   smVersion=1200   旋钮={"CUDNN_KNOB_TYPE_TILE_SIZE":15,"CUDNN_KNOB_TYPE_LDGA":0,"CUDNN_KNOB_TYPE_TILEK":0,"CUDNN_KNOB_TYPE_STAGES":0,"CUDNN_KNOB_TYPE_LDGC":0}
+  # 4  engineId=1    workspace=108       smVersion=1200   旋钮={"CUDNN_KNOB_TYPE_TILE_SIZE":2,"CUDNN_KNOB_TYPE_USE_TEX":0}
+  # 5  engineId=6    workspace=11213568  smVersion=1200   旋钮={"CUDNN_KNOB_TYPE_WORKSPACE":0}
+  # 6  engineId=46   workspace=1313040   smVersion=1200   旋钮={"CUDNN_KNOB_TYPE_TILE_SIZE":4,"CUDNN_KNOB_TYPE_KBLOCK":2,"CUDNN_KNOB_TYPE_STAGES":3}
+  # 7  engineId=28   workspace=0         smVersion=1200   旋钮={"CUDNN_KNOB_TYPE_TILE_SIZE":1,"CUDNN_KNOB_TYPE_USE_TEX":0}
+  # 8  engineId=0    workspace=0         smVersion=1200   旋钮={}
+  # 9  engineId=46   workspace=1313040   smVersion=1200   旋钮={"CUDNN_KNOB_TYPE_TILE_SIZE":1,"CUDNN_KNOB_TYPE_KBLOCK":3,"CUDNN_KNOB_TYPE_STAGES":2}
+  #10  engineId=46   workspace=1313040   smVersion=1200   旋钮={"CUDNN_KNOB_TYPE_TILE_SIZE":5,"CUDNN_KNOB_TYPE_KBLOCK":2,"CUDNN_KNOB_TYPE_STAGES":6}
+  #11  engineId=36   workspace=1313040   smVersion=1200   旋钮={"CUDNN_KNOB_TYPE_TILE_SIZE":0,"CUDNN_KNOB_TYPE_TILEK":2,"CUDNN_KNOB_TYPE_STAGES":3,"CUDNN_KNOB_TYPE_IDX_MODE":1,"CUDNN_KNOB_TYPE_SPECFILT":0}
+  #12  engineId=38   workspace=264464    smVersion=1200   旋钮={"CUDNN_KNOB_TYPE_TILE_SIZE":0,"CUDNN_KNOB_TYPE_TILEK":2,"CUDNN_KNOB_TYPE_STAGES":3,"CUDNN_KNOB_TYPE_IDX_MODE":0,"CUDNN_KNOB_TYPE_LDGC":0,"CUDNN_KNOB_TYPE_SPECFILT":0}
+  #13  engineId=46   workspace=1313040   smVersion=1200   旋钮={"CUDNN_KNOB_TYPE_TILE_SIZE":5,"CUDNN_KNOB_TYPE_KBLOCK":3,"CUDNN_KNOB_TYPE_STAGES":4}
+  #14  engineId=35   workspace=1313040   smVersion=1200   旋钮={"CUDNN_KNOB_TYPE_TILE_SIZE":1,"CUDNN_KNOB_TYPE_KBLOCK":3,"CUDNN_KNOB_TYPE_STAGES":2}
+  #15  engineId=3    workspace=8521408   smVersion=1200   旋钮={"CUDNN_KNOB_TYPE_MULTIPLY":0}
+  #16  engineId=4    workspace=870400    smVersion=1200   旋钮={}
+
+== 汇总 ==
+  全局 engine=81，本机能 finalize 的=0；其中 runtime 编译=0  TensorCore=0  Winograd=0  FFT=0  非确定性=0
+  无法只靠 engine 描述符 finalize 成 config 的（缺省 knob 不完整）=0
+########## HEUR_MODE=2 ##########
+== heuristic（mode 2）返回的候选 engine config ==
+候选数 = 5（count 查询报 5，实际取回 5）
+  # 0  engineId=1    workspace=108       smVersion=1200   旋钮={"CUDNN_KNOB_TYPE_TILE_SIZE":-1,"CUDNN_KNOB_TYPE_USE_TEX":-1}
+  # 1  engineId=28   workspace=0         smVersion=1200   旋钮={"CUDNN_KNOB_TYPE_TILE_SIZE":-1,"CUDNN_KNOB_TYPE_USE_TEX":-1}
+  # 2  engineId=0    workspace=0         smVersion=1200   旋钮={}
+  # 3  engineId=71   workspace=1247296   smVersion=1200   旋钮={"CUDNN_KNOB_TYPE_SPLIT_K_SLC":-1,"CUDNN_KNOB_TYPE_KERNEL_CFG":-1,"CUDNN_KNOB_TYPE_STREAM_K":-1}
+  # 4  engineId=39   workspace=9702831   smVersion=1200   旋钮={"CUDNN_KNOB_TYPE_TILE_SIZE":0,"CUDNN_KNOB_TYPE_SPLIT_K_BUF":-1,"CUDNN_KNOB_TYPE_TILEK":2,"CUDNN_KNOB_TYPE_STAGES":3,"CUDNN_KNOB_TYPE_REDUCTION_MODE":0,"CUDNN_KNOB_TYPE_SPLIT_K_SLC":3,"CUDNN_KNOB_TYPE_IDX_MODE":1,"CUDNN_KNOB_TYPE_SPECFILT":0}
+
+== 汇总 ==
+  全局 engine=81，本机能 finalize 的=0；其中 runtime 编译=0  TensorCore=0  Winograd=0  FFT=0  非确定性=0
+  无法只靠 engine 描述符 finalize 成 config 的（缺省 knob 不完整）=0
+########## HEUR_MODE=3 ##########
+== heuristic（mode 3）返回的候选 engine config ==
+候选数 = 17（count 查询报 17，实际取回 17）
+  # 0  engineId=28   workspace=0         smVersion=1200   旋钮={"CUDNN_KNOB_TYPE_TILE_SIZE":4,"CUDNN_KNOB_TYPE_USE_TEX":0}
+  # 1  engineId=28   workspace=0         smVersion=1200   旋钮={"CUDNN_KNOB_TYPE_TILE_SIZE":3,"CUDNN_KNOB_TYPE_USE_TEX":0}
+  # 2  engineId=48   workspace=1246928   smVersion=1200   旋钮={"CUDNN_KNOB_TYPE_TILE_SIZE":2,"CUDNN_KNOB_TYPE_LDGA":0,"CUDNN_KNOB_TYPE_TILEK":2,"CUDNN_KNOB_TYPE_STAGES":0,"CUDNN_KNOB_TYPE_LDGC":1}
+  # 3  engineId=48   workspace=1246928   smVersion=1200   旋钮={"CUDNN_KNOB_TYPE_TILE_SIZE":15,"CUDNN_KNOB_TYPE_LDGA":0,"CUDNN_KNOB_TYPE_TILEK":0,"CUDNN_KNOB_TYPE_STAGES":0,"CUDNN_KNOB_TYPE_LDGC":0}
+  # 4  engineId=1    workspace=108       smVersion=1200   旋钮={"CUDNN_KNOB_TYPE_TILE_SIZE":2,"CUDNN_KNOB_TYPE_USE_TEX":0}
+  # 5  engineId=6    workspace=11213568  smVersion=1200   旋钮={"CUDNN_KNOB_TYPE_WORKSPACE":0}
+  # 6  engineId=46   workspace=1313040   smVersion=1200   旋钮={"CUDNN_KNOB_TYPE_TILE_SIZE":4,"CUDNN_KNOB_TYPE_KBLOCK":2,"CUDNN_KNOB_TYPE_STAGES":3}
+  # 7  engineId=28   workspace=0         smVersion=1200   旋钮={"CUDNN_KNOB_TYPE_TILE_SIZE":1,"CUDNN_KNOB_TYPE_USE_TEX":0}
+  # 8  engineId=0    workspace=0         smVersion=1200   旋钮={}
+  # 9  engineId=46   workspace=1313040   smVersion=1200   旋钮={"CUDNN_KNOB_TYPE_TILE_SIZE":1,"CUDNN_KNOB_TYPE_KBLOCK":3,"CUDNN_KNOB_TYPE_STAGES":2}
+  #10  engineId=46   workspace=1313040   smVersion=1200   旋钮={"CUDNN_KNOB_TYPE_TILE_SIZE":5,"CUDNN_KNOB_TYPE_KBLOCK":2,"CUDNN_KNOB_TYPE_STAGES":6}
+  #11  engineId=36   workspace=1313040   smVersion=1200   旋钮={"CUDNN_KNOB_TYPE_TILE_SIZE":0,"CUDNN_KNOB_TYPE_TILEK":2,"CUDNN_KNOB_TYPE_STAGES":3,"CUDNN_KNOB_TYPE_IDX_MODE":1,"CUDNN_KNOB_TYPE_SPECFILT":0}
+  #12  engineId=38   workspace=264464    smVersion=1200   旋钮={"CUDNN_KNOB_TYPE_TILE_SIZE":0,"CUDNN_KNOB_TYPE_TILEK":2,"CUDNN_KNOB_TYPE_STAGES":3,"CUDNN_KNOB_TYPE_IDX_MODE":0,"CUDNN_KNOB_TYPE_LDGC":0,"CUDNN_KNOB_TYPE_SPECFILT":0}
+  #13  engineId=46   workspace=1313040   smVersion=1200   旋钮={"CUDNN_KNOB_TYPE_TILE_SIZE":5,"CUDNN_KNOB_TYPE_KBLOCK":3,"CUDNN_KNOB_TYPE_STAGES":4}
+  #14  engineId=35   workspace=1313040   smVersion=1200   旋钮={"CUDNN_KNOB_TYPE_TILE_SIZE":1,"CUDNN_KNOB_TYPE_KBLOCK":3,"CUDNN_KNOB_TYPE_STAGES":2}
+  #15  engineId=3    workspace=8521408   smVersion=1200   旋钮={"CUDNN_KNOB_TYPE_MULTIPLY":0}
+  #16  engineId=4    workspace=870400    smVersion=1200   旋钮={}
+
+== 汇总 ==
+  全局 engine=81，本机能 finalize 的=0；其中 runtime 编译=0  TensorCore=0  Winograd=0  FFT=0  非确定性=0
+  无法只靠 engine 描述符 finalize 成 config 的（缺省 knob 不完整）=0

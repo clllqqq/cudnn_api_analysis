@@ -1,0 +1,212 @@
+# heuristic 候选 #15: engineId=3  1.1624 ms/iter  maxerr=5.25e-06
+# 旋钮 "CUDNN_KNOB_TYPE_MULTIPLY":0
+  void DSE::regular_fft_pad<0, 1, 128, 16, 32, 1, float, float, float2>(float2*, float*, int, int3 grid=[96, 1, 1]       block=[32, 8, 1]       smem=  16384 regs=  60     11.9us  libcudnn_engines_precompiled
+  void DSE::vector_fft<0, 1, 128, 8, 8, 1, float, float, float2>(float2*, float2*, int, int3, int3 grid=[390, 1, 1]      block=[16, 8, 1]       smem=   4096 regs=  40      7.2us  ?
+  void DSE::regular_fft_pad<0, 1, 128, 16, 32, 1, float, float, float2>(float2*, float*, int, int3 grid=[24, 1, 1]       block=[32, 8, 1]       smem=  16384 regs=  60      9.2us  libcudnn_engines_precompiled
+  void DSE::vector_fft<0, 1, 128, 8, 8, 1, float, float, float2>(float2*, float2*, int, int3, int3 grid=[98, 1, 1]       block=[16, 8, 1]       smem=   4096 regs=  40      3.1us  ?
+  void internal::region_transform_ABC_val<int, 32, 32, false, internal::TransformParamsABC<float2, grid=[1, 260, 1]      block=[32, 1, 1]       smem=   8448 regs=  50      4.5us  ?
+  void internal::region_transform_ABC_val<int, 32, 32, false, internal::TransformParamsABC<float2, grid=[2, 260, 1]      block=[32, 1, 1]       smem=   8448 regs=  50      7.5us  ?
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_tn_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 8320]     block=[128, 1, 1]      smem=  40960 regs=  62    690.3us  ?
+  void internal::region_transform_ABC_val<int, 32, 32, false, internal::TransformParamsABC<float2, grid=[260, 2, 1]      block=[32, 1, 1]       smem=   8448 regs=  50      8.6us  ?
+  void DSE::vector_fft<1, 2, 128, 8, 8, 1, float, float, float2>(float2*, float2*, int, int3, int3 grid=[520, 1, 1]      block=[16, 8, 1]       smem=   4096 regs=  40      8.6us  ?
+  void DSE::regular_fft_clip<1, 2, 128, 16, 32, 1, float, float, float2>(float*, float2*, int, int grid=[128, 1, 1]      block=[32, 8, 1]       smem=  16384 regs=  69     22.0us  libcudnn_engines_precompiled
+  void DSE::regular_fft_pad<0, 1, 128, 16, 32, 1, float, float, float2>(float2*, float*, int, int3 grid=[96, 1, 1]       block=[32, 8, 1]       smem=  16384 regs=  60     11.5us  libcudnn_engines_precompiled
+  void DSE::vector_fft<0, 1, 128, 8, 8, 1, float, float, float2>(float2*, float2*, int, int3, int3 grid=[390, 1, 1]      block=[16, 8, 1]       smem=   4096 regs=  40      6.5us  ?
+  void DSE::regular_fft_pad<0, 1, 128, 16, 32, 1, float, float, float2>(float2*, float*, int, int3 grid=[24, 1, 1]       block=[32, 8, 1]       smem=  16384 regs=  60      4.4us  libcudnn_engines_precompiled
+  void DSE::vector_fft<0, 1, 128, 8, 8, 1, float, float, float2>(float2*, float2*, int, int3, int3 grid=[98, 1, 1]       block=[16, 8, 1]       smem=   4096 regs=  40      2.4us  ?
+  void internal::region_transform_ABC_val<int, 32, 32, false, internal::TransformParamsABC<float2, grid=[1, 260, 1]      block=[32, 1, 1]       smem=   8448 regs=  50      3.4us  ?
+  void internal::region_transform_ABC_val<int, 32, 32, false, internal::TransformParamsABC<float2, grid=[2, 260, 1]      block=[32, 1, 1]       smem=   8448 regs=  50      7.3us  ?
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_tn_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 8320]     block=[128, 1, 1]      smem=  40960 regs=  62    685.7us  ?
+  void internal::region_transform_ABC_val<int, 32, 32, false, internal::TransformParamsABC<float2, grid=[260, 2, 1]      block=[32, 1, 1]       smem=   8448 regs=  50      8.5us  ?
+  void DSE::vector_fft<1, 2, 128, 8, 8, 1, float, float, float2>(float2*, float2*, int, int3, int3 grid=[520, 1, 1]      block=[16, 8, 1]       smem=   4096 regs=  40      8.8us  ?
+  void DSE::regular_fft_clip<1, 2, 128, 16, 32, 1, float, float, float2>(float*, float2*, int, int grid=[128, 1, 1]      block=[32, 8, 1]       smem=  16384 regs=  69     22.0us  libcudnn_engines_precompiled
+  void DSE::regular_fft_pad<0, 1, 128, 16, 32, 1, float, float, float2>(float2*, float*, int, int3 grid=[96, 1, 1]       block=[32, 8, 1]       smem=  16384 regs=  60     11.7us  libcudnn_engines_precompiled
+  void DSE::vector_fft<0, 1, 128, 8, 8, 1, float, float, float2>(float2*, float2*, int, int3, int3 grid=[390, 1, 1]      block=[16, 8, 1]       smem=   4096 regs=  40      6.6us  ?
+  void DSE::regular_fft_pad<0, 1, 128, 16, 32, 1, float, float, float2>(float2*, float*, int, int3 grid=[24, 1, 1]       block=[32, 8, 1]       smem=  16384 regs=  60      4.2us  libcudnn_engines_precompiled
+  void DSE::vector_fft<0, 1, 128, 8, 8, 1, float, float, float2>(float2*, float2*, int, int3, int3 grid=[98, 1, 1]       block=[16, 8, 1]       smem=   4096 regs=  40      2.4us  ?
+  void internal::region_transform_ABC_val<int, 32, 32, false, internal::TransformParamsABC<float2, grid=[1, 260, 1]      block=[32, 1, 1]       smem=   8448 regs=  50      3.4us  ?
+  void internal::region_transform_ABC_val<int, 32, 32, false, internal::TransformParamsABC<float2, grid=[2, 260, 1]      block=[32, 1, 1]       smem=   8448 regs=  50      7.4us  ?
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_tn_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 8320]     block=[128, 1, 1]      smem=  40960 regs=  62    686.3us  ?
+  void internal::region_transform_ABC_val<int, 32, 32, false, internal::TransformParamsABC<float2, grid=[260, 2, 1]      block=[32, 1, 1]       smem=   8448 regs=  50      8.6us  ?
+  void DSE::vector_fft<1, 2, 128, 8, 8, 1, float, float, float2>(float2*, float2*, int, int3, int3 grid=[520, 1, 1]      block=[16, 8, 1]       smem=   4096 regs=  40      8.6us  ?
+  void DSE::regular_fft_clip<1, 2, 128, 16, 32, 1, float, float, float2>(float*, float2*, int, int grid=[128, 1, 1]      block=[32, 8, 1]       smem=  16384 regs=  69     21.4us  libcudnn_engines_precompiled
+  void DSE::regular_fft_pad<0, 1, 128, 16, 32, 1, float, float, float2>(float2*, float*, int, int3 grid=[96, 1, 1]       block=[32, 8, 1]       smem=  16384 regs=  60     11.6us  libcudnn_engines_precompiled
+  void DSE::vector_fft<0, 1, 128, 8, 8, 1, float, float, float2>(float2*, float2*, int, int3, int3 grid=[390, 1, 1]      block=[16, 8, 1]       smem=   4096 regs=  40      6.5us  ?
+  void DSE::regular_fft_pad<0, 1, 128, 16, 32, 1, float, float, float2>(float2*, float*, int, int3 grid=[24, 1, 1]       block=[32, 8, 1]       smem=  16384 regs=  60      4.1us  libcudnn_engines_precompiled
+  void DSE::vector_fft<0, 1, 128, 8, 8, 1, float, float, float2>(float2*, float2*, int, int3, int3 grid=[98, 1, 1]       block=[16, 8, 1]       smem=   4096 regs=  40      2.4us  ?
+  void internal::region_transform_ABC_val<int, 32, 32, false, internal::TransformParamsABC<float2, grid=[1, 260, 1]      block=[32, 1, 1]       smem=   8448 regs=  50      3.4us  ?
+  void internal::region_transform_ABC_val<int, 32, 32, false, internal::TransformParamsABC<float2, grid=[2, 260, 1]      block=[32, 1, 1]       smem=   8448 regs=  50      7.5us  ?
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_tn_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 8320]     block=[128, 1, 1]      smem=  40960 regs=  62    685.9us  ?
+  void internal::region_transform_ABC_val<int, 32, 32, false, internal::TransformParamsABC<float2, grid=[260, 2, 1]      block=[32, 1, 1]       smem=   8448 regs=  50      8.4us  ?
+  void DSE::vector_fft<1, 2, 128, 8, 8, 1, float, float, float2>(float2*, float2*, int, int3, int3 grid=[520, 1, 1]      block=[16, 8, 1]       smem=   4096 regs=  40      8.6us  ?
+  void DSE::regular_fft_clip<1, 2, 128, 16, 32, 1, float, float, float2>(float*, float2*, int, int grid=[128, 1, 1]      block=[32, 8, 1]       smem=  16384 regs=  69     21.8us  libcudnn_engines_precompiled
+  void DSE::regular_fft_pad<0, 1, 128, 16, 32, 1, float, float, float2>(float2*, float*, int, int3 grid=[96, 1, 1]       block=[32, 8, 1]       smem=  16384 regs=  60     11.6us  libcudnn_engines_precompiled
+  void DSE::vector_fft<0, 1, 128, 8, 8, 1, float, float, float2>(float2*, float2*, int, int3, int3 grid=[390, 1, 1]      block=[16, 8, 1]       smem=   4096 regs=  40      6.8us  ?
+  void DSE::regular_fft_pad<0, 1, 128, 16, 32, 1, float, float, float2>(float2*, float*, int, int3 grid=[24, 1, 1]       block=[32, 8, 1]       smem=  16384 regs=  60      4.2us  libcudnn_engines_precompiled
+  void DSE::vector_fft<0, 1, 128, 8, 8, 1, float, float, float2>(float2*, float2*, int, int3, int3 grid=[98, 1, 1]       block=[16, 8, 1]       smem=   4096 regs=  40      2.5us  ?
+  void internal::region_transform_ABC_val<int, 32, 32, false, internal::TransformParamsABC<float2, grid=[1, 260, 1]      block=[32, 1, 1]       smem=   8448 regs=  50      3.4us  ?
+  void internal::region_transform_ABC_val<int, 32, 32, false, internal::TransformParamsABC<float2, grid=[2, 260, 1]      block=[32, 1, 1]       smem=   8448 regs=  50      7.5us  ?
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_tn_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 8320]     block=[128, 1, 1]      smem=  40960 regs=  62    685.9us  ?
+  void internal::region_transform_ABC_val<int, 32, 32, false, internal::TransformParamsABC<float2, grid=[260, 2, 1]      block=[32, 1, 1]       smem=   8448 regs=  50      8.4us  ?
+  void DSE::vector_fft<1, 2, 128, 8, 8, 1, float, float, float2>(float2*, float2*, int, int3, int3 grid=[520, 1, 1]      block=[16, 8, 1]       smem=   4096 regs=  40      8.6us  ?
+  void DSE::regular_fft_clip<1, 2, 128, 16, 32, 1, float, float, float2>(float*, float2*, int, int grid=[128, 1, 1]      block=[32, 8, 1]       smem=  16384 regs=  69     22.1us  libcudnn_engines_precompiled
+  void DSE::regular_fft_pad<0, 1, 128, 16, 32, 1, float, float, float2>(float2*, float*, int, int3 grid=[96, 1, 1]       block=[32, 8, 1]       smem=  16384 regs=  60     11.7us  libcudnn_engines_precompiled
+  void DSE::vector_fft<0, 1, 128, 8, 8, 1, float, float, float2>(float2*, float2*, int, int3, int3 grid=[390, 1, 1]      block=[16, 8, 1]       smem=   4096 regs=  40      6.6us  ?
+  void DSE::regular_fft_pad<0, 1, 128, 16, 32, 1, float, float, float2>(float2*, float*, int, int3 grid=[24, 1, 1]       block=[32, 8, 1]       smem=  16384 regs=  60      4.2us  libcudnn_engines_precompiled
+  void DSE::vector_fft<0, 1, 128, 8, 8, 1, float, float, float2>(float2*, float2*, int, int3, int3 grid=[98, 1, 1]       block=[16, 8, 1]       smem=   4096 regs=  40      2.5us  ?
+  void internal::region_transform_ABC_val<int, 32, 32, false, internal::TransformParamsABC<float2, grid=[1, 260, 1]      block=[32, 1, 1]       smem=   8448 regs=  50      3.4us  ?
+  void internal::region_transform_ABC_val<int, 32, 32, false, internal::TransformParamsABC<float2, grid=[2, 260, 1]      block=[32, 1, 1]       smem=   8448 regs=  50      7.4us  ?
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_tn_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 8320]     block=[128, 1, 1]      smem=  40960 regs=  62    685.8us  ?
+  void internal::region_transform_ABC_val<int, 32, 32, false, internal::TransformParamsABC<float2, grid=[260, 2, 1]      block=[32, 1, 1]       smem=   8448 regs=  50      8.5us  ?
+  void DSE::vector_fft<1, 2, 128, 8, 8, 1, float, float, float2>(float2*, float2*, int, int3, int3 grid=[520, 1, 1]      block=[16, 8, 1]       smem=   4096 regs=  40      8.8us  ?
+  void DSE::regular_fft_clip<1, 2, 128, 16, 32, 1, float, float, float2>(float*, float2*, int, int grid=[128, 1, 1]      block=[32, 8, 1]       smem=  16384 regs=  69     21.5us  libcudnn_engines_precompiled
+  void DSE::regular_fft_pad<0, 1, 128, 16, 32, 1, float, float, float2>(float2*, float*, int, int3 grid=[96, 1, 1]       block=[32, 8, 1]       smem=  16384 regs=  60     11.6us  libcudnn_engines_precompiled
+  void DSE::vector_fft<0, 1, 128, 8, 8, 1, float, float, float2>(float2*, float2*, int, int3, int3 grid=[390, 1, 1]      block=[16, 8, 1]       smem=   4096 regs=  40      6.6us  ?
+  void DSE::regular_fft_pad<0, 1, 128, 16, 32, 1, float, float, float2>(float2*, float*, int, int3 grid=[24, 1, 1]       block=[32, 8, 1]       smem=  16384 regs=  60      4.2us  libcudnn_engines_precompiled
+  void DSE::vector_fft<0, 1, 128, 8, 8, 1, float, float, float2>(float2*, float2*, int, int3, int3 grid=[98, 1, 1]       block=[16, 8, 1]       smem=   4096 regs=  40      2.4us  ?
+  void internal::region_transform_ABC_val<int, 32, 32, false, internal::TransformParamsABC<float2, grid=[1, 260, 1]      block=[32, 1, 1]       smem=   8448 regs=  50      3.4us  ?
+  void internal::region_transform_ABC_val<int, 32, 32, false, internal::TransformParamsABC<float2, grid=[2, 260, 1]      block=[32, 1, 1]       smem=   8448 regs=  50      7.5us  ?
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_tn_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 8320]     block=[128, 1, 1]      smem=  40960 regs=  62    686.2us  ?
+  void internal::region_transform_ABC_val<int, 32, 32, false, internal::TransformParamsABC<float2, grid=[260, 2, 1]      block=[32, 1, 1]       smem=   8448 regs=  50      8.4us  ?
+  void DSE::vector_fft<1, 2, 128, 8, 8, 1, float, float, float2>(float2*, float2*, int, int3, int3 grid=[520, 1, 1]      block=[16, 8, 1]       smem=   4096 regs=  40      8.5us  ?
+  void DSE::regular_fft_clip<1, 2, 128, 16, 32, 1, float, float, float2>(float*, float2*, int, int grid=[128, 1, 1]      block=[32, 8, 1]       smem=  16384 regs=  69     21.6us  libcudnn_engines_precompiled
+  void DSE::regular_fft_pad<0, 1, 128, 16, 32, 1, float, float, float2>(float2*, float*, int, int3 grid=[96, 1, 1]       block=[32, 8, 1]       smem=  16384 regs=  60     11.8us  libcudnn_engines_precompiled
+  void DSE::vector_fft<0, 1, 128, 8, 8, 1, float, float, float2>(float2*, float2*, int, int3, int3 grid=[390, 1, 1]      block=[16, 8, 1]       smem=   4096 regs=  40      6.6us  ?
+  void DSE::regular_fft_pad<0, 1, 128, 16, 32, 1, float, float, float2>(float2*, float*, int, int3 grid=[24, 1, 1]       block=[32, 8, 1]       smem=  16384 regs=  60      4.1us  libcudnn_engines_precompiled
+  void DSE::vector_fft<0, 1, 128, 8, 8, 1, float, float, float2>(float2*, float2*, int, int3, int3 grid=[98, 1, 1]       block=[16, 8, 1]       smem=   4096 regs=  40      2.4us  ?
+  void internal::region_transform_ABC_val<int, 32, 32, false, internal::TransformParamsABC<float2, grid=[1, 260, 1]      block=[32, 1, 1]       smem=   8448 regs=  50      3.5us  ?
+  void internal::region_transform_ABC_val<int, 32, 32, false, internal::TransformParamsABC<float2, grid=[2, 260, 1]      block=[32, 1, 1]       smem=   8448 regs=  50      7.3us  ?
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_tn_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 8320]     block=[128, 1, 1]      smem=  40960 regs=  62    685.7us  ?
+  void internal::region_transform_ABC_val<int, 32, 32, false, internal::TransformParamsABC<float2, grid=[260, 2, 1]      block=[32, 1, 1]       smem=   8448 regs=  50      8.5us  ?
+  void DSE::vector_fft<1, 2, 128, 8, 8, 1, float, float, float2>(float2*, float2*, int, int3, int3 grid=[520, 1, 1]      block=[16, 8, 1]       smem=   4096 regs=  40      8.5us  ?
+  void DSE::regular_fft_clip<1, 2, 128, 16, 32, 1, float, float, float2>(float*, float2*, int, int grid=[128, 1, 1]      block=[32, 8, 1]       smem=  16384 regs=  69     21.7us  libcudnn_engines_precompiled
+  void DSE::regular_fft_pad<0, 1, 128, 16, 32, 1, float, float, float2>(float2*, float*, int, int3 grid=[96, 1, 1]       block=[32, 8, 1]       smem=  16384 regs=  60     11.7us  libcudnn_engines_precompiled
+  void DSE::vector_fft<0, 1, 128, 8, 8, 1, float, float, float2>(float2*, float2*, int, int3, int3 grid=[390, 1, 1]      block=[16, 8, 1]       smem=   4096 regs=  40      6.7us  ?
+  void DSE::regular_fft_pad<0, 1, 128, 16, 32, 1, float, float, float2>(float2*, float*, int, int3 grid=[24, 1, 1]       block=[32, 8, 1]       smem=  16384 regs=  60      4.1us  libcudnn_engines_precompiled
+  void DSE::vector_fft<0, 1, 128, 8, 8, 1, float, float, float2>(float2*, float2*, int, int3, int3 grid=[98, 1, 1]       block=[16, 8, 1]       smem=   4096 regs=  40      2.4us  ?
+  void internal::region_transform_ABC_val<int, 32, 32, false, internal::TransformParamsABC<float2, grid=[1, 260, 1]      block=[32, 1, 1]       smem=   8448 regs=  50      3.3us  ?
+  void internal::region_transform_ABC_val<int, 32, 32, false, internal::TransformParamsABC<float2, grid=[2, 260, 1]      block=[32, 1, 1]       smem=   8448 regs=  50      7.5us  ?
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_tn_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 8320]     block=[128, 1, 1]      smem=  40960 regs=  62    686.7us  ?
+  void internal::region_transform_ABC_val<int, 32, 32, false, internal::TransformParamsABC<float2, grid=[260, 2, 1]      block=[32, 1, 1]       smem=   8448 regs=  50      8.5us  ?
+  void DSE::vector_fft<1, 2, 128, 8, 8, 1, float, float, float2>(float2*, float2*, int, int3, int3 grid=[520, 1, 1]      block=[16, 8, 1]       smem=   4096 regs=  40      8.6us  ?
+  void DSE::regular_fft_clip<1, 2, 128, 16, 32, 1, float, float, float2>(float*, float2*, int, int grid=[128, 1, 1]      block=[32, 8, 1]       smem=  16384 regs=  69     22.2us  libcudnn_engines_precompiled
+  void DSE::regular_fft_pad<0, 1, 128, 16, 32, 1, float, float, float2>(float2*, float*, int, int3 grid=[96, 1, 1]       block=[32, 8, 1]       smem=  16384 regs=  60     11.6us  libcudnn_engines_precompiled
+  void DSE::vector_fft<0, 1, 128, 8, 8, 1, float, float, float2>(float2*, float2*, int, int3, int3 grid=[390, 1, 1]      block=[16, 8, 1]       smem=   4096 regs=  40      6.7us  ?
+  void DSE::regular_fft_pad<0, 1, 128, 16, 32, 1, float, float, float2>(float2*, float*, int, int3 grid=[24, 1, 1]       block=[32, 8, 1]       smem=  16384 regs=  60      4.1us  libcudnn_engines_precompiled
+  void DSE::vector_fft<0, 1, 128, 8, 8, 1, float, float, float2>(float2*, float2*, int, int3, int3 grid=[98, 1, 1]       block=[16, 8, 1]       smem=   4096 regs=  40      2.5us  ?
+  void internal::region_transform_ABC_val<int, 32, 32, false, internal::TransformParamsABC<float2, grid=[1, 260, 1]      block=[32, 1, 1]       smem=   8448 regs=  50      3.4us  ?
+  void internal::region_transform_ABC_val<int, 32, 32, false, internal::TransformParamsABC<float2, grid=[2, 260, 1]      block=[32, 1, 1]       smem=   8448 regs=  50      7.7us  ?
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_tn_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 8320]     block=[128, 1, 1]      smem=  40960 regs=  62    686.2us  ?
+  void internal::region_transform_ABC_val<int, 32, 32, false, internal::TransformParamsABC<float2, grid=[260, 2, 1]      block=[32, 1, 1]       smem=   8448 regs=  50      8.5us  ?
+  void DSE::vector_fft<1, 2, 128, 8, 8, 1, float, float, float2>(float2*, float2*, int, int3, int3 grid=[520, 1, 1]      block=[16, 8, 1]       smem=   4096 regs=  40      8.6us  ?
+  void DSE::regular_fft_clip<1, 2, 128, 16, 32, 1, float, float, float2>(float*, float2*, int, int grid=[128, 1, 1]      block=[32, 8, 1]       smem=  16384 regs=  69     22.3us  libcudnn_engines_precompiled
+  void DSE::regular_fft_pad<0, 1, 128, 16, 32, 1, float, float, float2>(float2*, float*, int, int3 grid=[96, 1, 1]       block=[32, 8, 1]       smem=  16384 regs=  60     11.7us  libcudnn_engines_precompiled
+  void DSE::vector_fft<0, 1, 128, 8, 8, 1, float, float, float2>(float2*, float2*, int, int3, int3 grid=[390, 1, 1]      block=[16, 8, 1]       smem=   4096 regs=  40      6.6us  ?
+  void DSE::regular_fft_pad<0, 1, 128, 16, 32, 1, float, float, float2>(float2*, float*, int, int3 grid=[24, 1, 1]       block=[32, 8, 1]       smem=  16384 regs=  60      4.2us  libcudnn_engines_precompiled
+  void DSE::vector_fft<0, 1, 128, 8, 8, 1, float, float, float2>(float2*, float2*, int, int3, int3 grid=[98, 1, 1]       block=[16, 8, 1]       smem=   4096 regs=  40      2.5us  ?
+  void internal::region_transform_ABC_val<int, 32, 32, false, internal::TransformParamsABC<float2, grid=[1, 260, 1]      block=[32, 1, 1]       smem=   8448 regs=  50      3.4us  ?
+  void internal::region_transform_ABC_val<int, 32, 32, false, internal::TransformParamsABC<float2, grid=[2, 260, 1]      block=[32, 1, 1]       smem=   8448 regs=  50      7.8us  ?
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_tn_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 8320]     block=[128, 1, 1]      smem=  40960 regs=  62    686.1us  ?
+  void internal::region_transform_ABC_val<int, 32, 32, false, internal::TransformParamsABC<float2, grid=[260, 2, 1]      block=[32, 1, 1]       smem=   8448 regs=  50      8.5us  ?
+  void DSE::vector_fft<1, 2, 128, 8, 8, 1, float, float, float2>(float2*, float2*, int, int3, int3 grid=[520, 1, 1]      block=[16, 8, 1]       smem=   4096 regs=  40      8.6us  ?
+  void DSE::regular_fft_clip<1, 2, 128, 16, 32, 1, float, float, float2>(float*, float2*, int, int grid=[128, 1, 1]      block=[32, 8, 1]       smem=  16384 regs=  69     21.9us  libcudnn_engines_precompiled
+  void DSE::regular_fft_pad<0, 1, 128, 16, 32, 1, float, float, float2>(float2*, float*, int, int3 grid=[96, 1, 1]       block=[32, 8, 1]       smem=  16384 regs=  60     11.6us  libcudnn_engines_precompiled
+  void DSE::vector_fft<0, 1, 128, 8, 8, 1, float, float, float2>(float2*, float2*, int, int3, int3 grid=[390, 1, 1]      block=[16, 8, 1]       smem=   4096 regs=  40      6.6us  ?
+  void DSE::regular_fft_pad<0, 1, 128, 16, 32, 1, float, float, float2>(float2*, float*, int, int3 grid=[24, 1, 1]       block=[32, 8, 1]       smem=  16384 regs=  60      4.1us  libcudnn_engines_precompiled
+  void DSE::vector_fft<0, 1, 128, 8, 8, 1, float, float, float2>(float2*, float2*, int, int3, int3 grid=[98, 1, 1]       block=[16, 8, 1]       smem=   4096 regs=  40      2.5us  ?
+  void internal::region_transform_ABC_val<int, 32, 32, false, internal::TransformParamsABC<float2, grid=[1, 260, 1]      block=[32, 1, 1]       smem=   8448 regs=  50      3.4us  ?
+  void internal::region_transform_ABC_val<int, 32, 32, false, internal::TransformParamsABC<float2, grid=[2, 260, 1]      block=[32, 1, 1]       smem=   8448 regs=  50      7.4us  ?
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_tn_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 8320]     block=[128, 1, 1]      smem=  40960 regs=  62    686.9us  ?
+  void internal::region_transform_ABC_val<int, 32, 32, false, internal::TransformParamsABC<float2, grid=[260, 2, 1]      block=[32, 1, 1]       smem=   8448 regs=  50      8.5us  ?
+  void DSE::vector_fft<1, 2, 128, 8, 8, 1, float, float, float2>(float2*, float2*, int, int3, int3 grid=[520, 1, 1]      block=[16, 8, 1]       smem=   4096 regs=  40      8.9us  ?
+  void DSE::regular_fft_clip<1, 2, 128, 16, 32, 1, float, float, float2>(float*, float2*, int, int grid=[128, 1, 1]      block=[32, 8, 1]       smem=  16384 regs=  69     21.3us  libcudnn_engines_precompiled
+  void DSE::regular_fft_pad<0, 1, 128, 16, 32, 1, float, float, float2>(float2*, float*, int, int3 grid=[96, 1, 1]       block=[32, 8, 1]       smem=  16384 regs=  60     11.7us  libcudnn_engines_precompiled
+  void DSE::vector_fft<0, 1, 128, 8, 8, 1, float, float, float2>(float2*, float2*, int, int3, int3 grid=[390, 1, 1]      block=[16, 8, 1]       smem=   4096 regs=  40      6.6us  ?
+  void DSE::regular_fft_pad<0, 1, 128, 16, 32, 1, float, float, float2>(float2*, float*, int, int3 grid=[24, 1, 1]       block=[32, 8, 1]       smem=  16384 regs=  60      4.2us  libcudnn_engines_precompiled
+  void DSE::vector_fft<0, 1, 128, 8, 8, 1, float, float, float2>(float2*, float2*, int, int3, int3 grid=[98, 1, 1]       block=[16, 8, 1]       smem=   4096 regs=  40      2.5us  ?
+  void internal::region_transform_ABC_val<int, 32, 32, false, internal::TransformParamsABC<float2, grid=[1, 260, 1]      block=[32, 1, 1]       smem=   8448 regs=  50      3.4us  ?
+  void internal::region_transform_ABC_val<int, 32, 32, false, internal::TransformParamsABC<float2, grid=[2, 260, 1]      block=[32, 1, 1]       smem=   8448 regs=  50      7.5us  ?
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_tn_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 8320]     block=[128, 1, 1]      smem=  40960 regs=  62    686.4us  ?
+  void internal::region_transform_ABC_val<int, 32, 32, false, internal::TransformParamsABC<float2, grid=[260, 2, 1]      block=[32, 1, 1]       smem=   8448 regs=  50      8.5us  ?
+  void DSE::vector_fft<1, 2, 128, 8, 8, 1, float, float, float2>(float2*, float2*, int, int3, int3 grid=[520, 1, 1]      block=[16, 8, 1]       smem=   4096 regs=  40      8.4us  ?
+  void DSE::regular_fft_clip<1, 2, 128, 16, 32, 1, float, float, float2>(float*, float2*, int, int grid=[128, 1, 1]      block=[32, 8, 1]       smem=  16384 regs=  69     22.0us  libcudnn_engines_precompiled
+  void DSE::regular_fft_pad<0, 1, 128, 16, 32, 1, float, float, float2>(float2*, float*, int, int3 grid=[96, 1, 1]       block=[32, 8, 1]       smem=  16384 regs=  60     11.7us  libcudnn_engines_precompiled
+  void DSE::vector_fft<0, 1, 128, 8, 8, 1, float, float, float2>(float2*, float2*, int, int3, int3 grid=[390, 1, 1]      block=[16, 8, 1]       smem=   4096 regs=  40      6.6us  ?
+  void DSE::regular_fft_pad<0, 1, 128, 16, 32, 1, float, float, float2>(float2*, float*, int, int3 grid=[24, 1, 1]       block=[32, 8, 1]       smem=  16384 regs=  60      4.1us  libcudnn_engines_precompiled
+  void DSE::vector_fft<0, 1, 128, 8, 8, 1, float, float, float2>(float2*, float2*, int, int3, int3 grid=[98, 1, 1]       block=[16, 8, 1]       smem=   4096 regs=  40      2.5us  ?
+  void internal::region_transform_ABC_val<int, 32, 32, false, internal::TransformParamsABC<float2, grid=[1, 260, 1]      block=[32, 1, 1]       smem=   8448 regs=  50      4.6us  ?
+  void internal::region_transform_ABC_val<int, 32, 32, false, internal::TransformParamsABC<float2, grid=[2, 260, 1]      block=[32, 1, 1]       smem=   8448 regs=  50      7.4us  ?
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_tn_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 8320]     block=[128, 1, 1]      smem=  40960 regs=  62    686.2us  ?
+  void internal::region_transform_ABC_val<int, 32, 32, false, internal::TransformParamsABC<float2, grid=[260, 2, 1]      block=[32, 1, 1]       smem=   8448 regs=  50      8.6us  ?
+  void DSE::vector_fft<1, 2, 128, 8, 8, 1, float, float, float2>(float2*, float2*, int, int3, int3 grid=[520, 1, 1]      block=[16, 8, 1]       smem=   4096 regs=  40      8.8us  ?
+  void DSE::regular_fft_clip<1, 2, 128, 16, 32, 1, float, float, float2>(float*, float2*, int, int grid=[128, 1, 1]      block=[32, 8, 1]       smem=  16384 regs=  69     21.6us  libcudnn_engines_precompiled
+  void DSE::regular_fft_pad<0, 1, 128, 16, 32, 1, float, float, float2>(float2*, float*, int, int3 grid=[96, 1, 1]       block=[32, 8, 1]       smem=  16384 regs=  60     11.7us  libcudnn_engines_precompiled
+  void DSE::vector_fft<0, 1, 128, 8, 8, 1, float, float, float2>(float2*, float2*, int, int3, int3 grid=[390, 1, 1]      block=[16, 8, 1]       smem=   4096 regs=  40      6.6us  ?
+  void DSE::regular_fft_pad<0, 1, 128, 16, 32, 1, float, float, float2>(float2*, float*, int, int3 grid=[24, 1, 1]       block=[32, 8, 1]       smem=  16384 regs=  60      4.2us  libcudnn_engines_precompiled
+  void DSE::vector_fft<0, 1, 128, 8, 8, 1, float, float, float2>(float2*, float2*, int, int3, int3 grid=[98, 1, 1]       block=[16, 8, 1]       smem=   4096 regs=  40      2.5us  ?
+  void internal::region_transform_ABC_val<int, 32, 32, false, internal::TransformParamsABC<float2, grid=[1, 260, 1]      block=[32, 1, 1]       smem=   8448 regs=  50      3.4us  ?
+  void internal::region_transform_ABC_val<int, 32, 32, false, internal::TransformParamsABC<float2, grid=[2, 260, 1]      block=[32, 1, 1]       smem=   8448 regs=  50      7.7us  ?
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_tn_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 8320]     block=[128, 1, 1]      smem=  40960 regs=  62    686.5us  ?
+  void internal::region_transform_ABC_val<int, 32, 32, false, internal::TransformParamsABC<float2, grid=[260, 2, 1]      block=[32, 1, 1]       smem=   8448 regs=  50      8.6us  ?
+  void DSE::vector_fft<1, 2, 128, 8, 8, 1, float, float, float2>(float2*, float2*, int, int3, int3 grid=[520, 1, 1]      block=[16, 8, 1]       smem=   4096 regs=  40      8.9us  ?
+  void DSE::regular_fft_clip<1, 2, 128, 16, 32, 1, float, float, float2>(float*, float2*, int, int grid=[128, 1, 1]      block=[32, 8, 1]       smem=  16384 regs=  69     21.8us  libcudnn_engines_precompiled
+  void DSE::regular_fft_pad<0, 1, 128, 16, 32, 1, float, float, float2>(float2*, float*, int, int3 grid=[96, 1, 1]       block=[32, 8, 1]       smem=  16384 regs=  60     11.8us  libcudnn_engines_precompiled
+  void DSE::vector_fft<0, 1, 128, 8, 8, 1, float, float, float2>(float2*, float2*, int, int3, int3 grid=[390, 1, 1]      block=[16, 8, 1]       smem=   4096 regs=  40      6.7us  ?
+  void DSE::regular_fft_pad<0, 1, 128, 16, 32, 1, float, float, float2>(float2*, float*, int, int3 grid=[24, 1, 1]       block=[32, 8, 1]       smem=  16384 regs=  60      4.1us  libcudnn_engines_precompiled
+  void DSE::vector_fft<0, 1, 128, 8, 8, 1, float, float, float2>(float2*, float2*, int, int3, int3 grid=[98, 1, 1]       block=[16, 8, 1]       smem=   4096 regs=  40      2.4us  ?
+  void internal::region_transform_ABC_val<int, 32, 32, false, internal::TransformParamsABC<float2, grid=[1, 260, 1]      block=[32, 1, 1]       smem=   8448 regs=  50      3.4us  ?
+  void internal::region_transform_ABC_val<int, 32, 32, false, internal::TransformParamsABC<float2, grid=[2, 260, 1]      block=[32, 1, 1]       smem=   8448 regs=  50      7.5us  ?
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_tn_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 8320]     block=[128, 1, 1]      smem=  40960 regs=  62    686.7us  ?
+  void internal::region_transform_ABC_val<int, 32, 32, false, internal::TransformParamsABC<float2, grid=[260, 2, 1]      block=[32, 1, 1]       smem=   8448 regs=  50      8.5us  ?
+  void DSE::vector_fft<1, 2, 128, 8, 8, 1, float, float, float2>(float2*, float2*, int, int3, int3 grid=[520, 1, 1]      block=[16, 8, 1]       smem=   4096 regs=  40      8.4us  ?
+  void DSE::regular_fft_clip<1, 2, 128, 16, 32, 1, float, float, float2>(float*, float2*, int, int grid=[128, 1, 1]      block=[32, 8, 1]       smem=  16384 regs=  69     22.5us  libcudnn_engines_precompiled
+  void DSE::regular_fft_pad<0, 1, 128, 16, 32, 1, float, float, float2>(float2*, float*, int, int3 grid=[96, 1, 1]       block=[32, 8, 1]       smem=  16384 regs=  60     11.7us  libcudnn_engines_precompiled
+  void DSE::vector_fft<0, 1, 128, 8, 8, 1, float, float, float2>(float2*, float2*, int, int3, int3 grid=[390, 1, 1]      block=[16, 8, 1]       smem=   4096 regs=  40      6.7us  ?
+  void DSE::regular_fft_pad<0, 1, 128, 16, 32, 1, float, float, float2>(float2*, float*, int, int3 grid=[24, 1, 1]       block=[32, 8, 1]       smem=  16384 regs=  60      4.2us  libcudnn_engines_precompiled
+  void DSE::vector_fft<0, 1, 128, 8, 8, 1, float, float, float2>(float2*, float2*, int, int3, int3 grid=[98, 1, 1]       block=[16, 8, 1]       smem=   4096 regs=  40      2.4us  ?
+  void internal::region_transform_ABC_val<int, 32, 32, false, internal::TransformParamsABC<float2, grid=[1, 260, 1]      block=[32, 1, 1]       smem=   8448 regs=  50      3.4us  ?
+  void internal::region_transform_ABC_val<int, 32, 32, false, internal::TransformParamsABC<float2, grid=[2, 260, 1]      block=[32, 1, 1]       smem=   8448 regs=  50      7.4us  ?
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_tn_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 8320]     block=[128, 1, 1]      smem=  40960 regs=  62    686.4us  ?
+  void internal::region_transform_ABC_val<int, 32, 32, false, internal::TransformParamsABC<float2, grid=[260, 2, 1]      block=[32, 1, 1]       smem=   8448 regs=  50      8.6us  ?
+  void DSE::vector_fft<1, 2, 128, 8, 8, 1, float, float, float2>(float2*, float2*, int, int3, int3 grid=[520, 1, 1]      block=[16, 8, 1]       smem=   4096 regs=  40      8.8us  ?
+  void DSE::regular_fft_clip<1, 2, 128, 16, 32, 1, float, float, float2>(float*, float2*, int, int grid=[128, 1, 1]      block=[32, 8, 1]       smem=  16384 regs=  69     21.5us  libcudnn_engines_precompiled
+  void DSE::regular_fft_pad<0, 1, 128, 16, 32, 1, float, float, float2>(float2*, float*, int, int3 grid=[96, 1, 1]       block=[32, 8, 1]       smem=  16384 regs=  60     11.7us  libcudnn_engines_precompiled
+  void DSE::vector_fft<0, 1, 128, 8, 8, 1, float, float, float2>(float2*, float2*, int, int3, int3 grid=[390, 1, 1]      block=[16, 8, 1]       smem=   4096 regs=  40      6.7us  ?
+  void DSE::regular_fft_pad<0, 1, 128, 16, 32, 1, float, float, float2>(float2*, float*, int, int3 grid=[24, 1, 1]       block=[32, 8, 1]       smem=  16384 regs=  60      4.2us  libcudnn_engines_precompiled
+  void DSE::vector_fft<0, 1, 128, 8, 8, 1, float, float, float2>(float2*, float2*, int, int3, int3 grid=[98, 1, 1]       block=[16, 8, 1]       smem=   4096 regs=  40      2.4us  ?
+  void internal::region_transform_ABC_val<int, 32, 32, false, internal::TransformParamsABC<float2, grid=[1, 260, 1]      block=[32, 1, 1]       smem=   8448 regs=  50      3.4us  ?
+  void internal::region_transform_ABC_val<int, 32, 32, false, internal::TransformParamsABC<float2, grid=[2, 260, 1]      block=[32, 1, 1]       smem=   8448 regs=  50      7.5us  ?
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_tn_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 8320]     block=[128, 1, 1]      smem=  40960 regs=  62    685.8us  ?
+  void internal::region_transform_ABC_val<int, 32, 32, false, internal::TransformParamsABC<float2, grid=[260, 2, 1]      block=[32, 1, 1]       smem=   8448 regs=  50      8.5us  ?
+  void DSE::vector_fft<1, 2, 128, 8, 8, 1, float, float, float2>(float2*, float2*, int, int3, int3 grid=[520, 1, 1]      block=[16, 8, 1]       smem=   4096 regs=  40      8.5us  ?
+  void DSE::regular_fft_clip<1, 2, 128, 16, 32, 1, float, float, float2>(float*, float2*, int, int grid=[128, 1, 1]      block=[32, 8, 1]       smem=  16384 regs=  69     21.8us  libcudnn_engines_precompiled
+  void DSE::regular_fft_pad<0, 1, 128, 16, 32, 1, float, float, float2>(float2*, float*, int, int3 grid=[96, 1, 1]       block=[32, 8, 1]       smem=  16384 regs=  60     11.6us  libcudnn_engines_precompiled
+  void DSE::vector_fft<0, 1, 128, 8, 8, 1, float, float, float2>(float2*, float2*, int, int3, int3 grid=[390, 1, 1]      block=[16, 8, 1]       smem=   4096 regs=  40      6.7us  ?
+  void DSE::regular_fft_pad<0, 1, 128, 16, 32, 1, float, float, float2>(float2*, float*, int, int3 grid=[24, 1, 1]       block=[32, 8, 1]       smem=  16384 regs=  60      4.2us  libcudnn_engines_precompiled
+  void DSE::vector_fft<0, 1, 128, 8, 8, 1, float, float, float2>(float2*, float2*, int, int3, int3 grid=[98, 1, 1]       block=[16, 8, 1]       smem=   4096 regs=  40      2.5us  ?
+  void internal::region_transform_ABC_val<int, 32, 32, false, internal::TransformParamsABC<float2, grid=[1, 260, 1]      block=[32, 1, 1]       smem=   8448 regs=  50      3.4us  ?
+  void internal::region_transform_ABC_val<int, 32, 32, false, internal::TransformParamsABC<float2, grid=[2, 260, 1]      block=[32, 1, 1]       smem=   8448 regs=  50      7.7us  ?
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_tn_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 8320]     block=[128, 1, 1]      smem=  40960 regs=  62    686.0us  ?
+  void internal::region_transform_ABC_val<int, 32, 32, false, internal::TransformParamsABC<float2, grid=[260, 2, 1]      block=[32, 1, 1]       smem=   8448 regs=  50      8.5us  ?
+  void DSE::vector_fft<1, 2, 128, 8, 8, 1, float, float, float2>(float2*, float2*, int, int3, int3 grid=[520, 1, 1]      block=[16, 8, 1]       smem=   4096 regs=  40      8.5us  ?
+  void DSE::regular_fft_clip<1, 2, 128, 16, 32, 1, float, float, float2>(float*, float2*, int, int grid=[128, 1, 1]      block=[32, 8, 1]       smem=  16384 regs=  69     22.2us  libcudnn_engines_precompiled
+  void DSE::regular_fft_pad<0, 1, 128, 16, 32, 1, float, float, float2>(float2*, float*, int, int3 grid=[96, 1, 1]       block=[32, 8, 1]       smem=  16384 regs=  60     11.6us  libcudnn_engines_precompiled
+  void DSE::vector_fft<0, 1, 128, 8, 8, 1, float, float, float2>(float2*, float2*, int, int3, int3 grid=[390, 1, 1]      block=[16, 8, 1]       smem=   4096 regs=  40      6.6us  ?
+  void DSE::regular_fft_pad<0, 1, 128, 16, 32, 1, float, float, float2>(float2*, float*, int, int3 grid=[24, 1, 1]       block=[32, 8, 1]       smem=  16384 regs=  60      4.2us  libcudnn_engines_precompiled
+  void DSE::vector_fft<0, 1, 128, 8, 8, 1, float, float, float2>(float2*, float2*, int, int3, int3 grid=[98, 1, 1]       block=[16, 8, 1]       smem=   4096 regs=  40      2.4us  ?
+  void internal::region_transform_ABC_val<int, 32, 32, false, internal::TransformParamsABC<float2, grid=[1, 260, 1]      block=[32, 1, 1]       smem=   8448 regs=  50      3.4us  ?
+  void internal::region_transform_ABC_val<int, 32, 32, false, internal::TransformParamsABC<float2, grid=[2, 260, 1]      block=[32, 1, 1]       smem=   8448 regs=  50      7.8us  ?
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_tn_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 8320]     block=[128, 1, 1]      smem=  40960 regs=  62    686.3us  ?
+  void internal::region_transform_ABC_val<int, 32, 32, false, internal::TransformParamsABC<float2, grid=[260, 2, 1]      block=[32, 1, 1]       smem=   8448 regs=  50      8.4us  ?
+  void DSE::vector_fft<1, 2, 128, 8, 8, 1, float, float, float2>(float2*, float2*, int, int3, int3 grid=[520, 1, 1]      block=[16, 8, 1]       smem=   4096 regs=  40      8.9us  ?
+  void DSE::regular_fft_clip<1, 2, 128, 16, 32, 1, float, float, float2>(float*, float2*, int, int grid=[128, 1, 1]      block=[32, 8, 1]       smem=  16384 regs=  69     21.6us  libcudnn_engines_precompiled
+  void DSE::regular_fft_pad<0, 1, 128, 16, 32, 1, float, float, float2>(float2*, float*, int, int3 grid=[96, 1, 1]       block=[32, 8, 1]       smem=  16384 regs=  60     11.7us  libcudnn_engines_precompiled
+  void DSE::vector_fft<0, 1, 128, 8, 8, 1, float, float, float2>(float2*, float2*, int, int3, int3 grid=[390, 1, 1]      block=[16, 8, 1]       smem=   4096 regs=  40      6.7us  ?
+  void DSE::regular_fft_pad<0, 1, 128, 16, 32, 1, float, float, float2>(float2*, float*, int, int3 grid=[24, 1, 1]       block=[32, 8, 1]       smem=  16384 regs=  60      4.2us  libcudnn_engines_precompiled
+  void DSE::vector_fft<0, 1, 128, 8, 8, 1, float, float, float2>(float2*, float2*, int, int3, int3 grid=[98, 1, 1]       block=[16, 8, 1]       smem=   4096 regs=  40      2.5us  ?
+  void internal::region_transform_ABC_val<int, 32, 32, false, internal::TransformParamsABC<float2, grid=[1, 260, 1]      block=[32, 1, 1]       smem=   8448 regs=  50      3.4us  ?
+  void internal::region_transform_ABC_val<int, 32, 32, false, internal::TransformParamsABC<float2, grid=[2, 260, 1]      block=[32, 1, 1]       smem=   8448 regs=  50      7.9us  ?
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_tn_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 8320]     block=[128, 1, 1]      smem=  40960 regs=  62    686.1us  ?
+  void internal::region_transform_ABC_val<int, 32, 32, false, internal::TransformParamsABC<float2, grid=[260, 2, 1]      block=[32, 1, 1]       smem=   8448 regs=  50      8.4us  ?
+  void DSE::vector_fft<1, 2, 128, 8, 8, 1, float, float, float2>(float2*, float2*, int, int3, int3 grid=[520, 1, 1]      block=[16, 8, 1]       smem=   4096 regs=  40      8.2us  ?
+  void DSE::regular_fft_clip<1, 2, 128, 16, 32, 1, float, float, float2>(float*, float2*, int, int grid=[128, 1, 1]      block=[32, 8, 1]       smem=  16384 regs=  69     22.7us  libcudnn_engines_precompiled

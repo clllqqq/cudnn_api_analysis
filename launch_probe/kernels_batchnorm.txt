@@ -1,0 +1,6 @@
+# batchnorm: 3 个 kernel 发射（CUPTI，torch.profiler）
+# target=/home/liquan/cudnn_per_op.py case=batchnorm
+# kernel                                                                   grid             block                smem  regs stream        us  归属库
+void at::native::(anonymous namespace)::distribution_elementwise_grid_st [156, 1, 1]      [256, 1, 1]             0    60      7       2.7  ?
+void at::native::vectorized_elementwise_kernel<2, at::native::CUDAFuncto [1, 1, 1]        [128, 1, 1]             0    40      7       1.2  ?
+void cudnn::bn_fw_tr_1C11_singleread<float, 512, true, 1, 2, 0>(cudnn::b [16, 1, 1]       [512, 1, 1]         32912    40      7       5.5  libcudnn_ops

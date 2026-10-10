@@ -1,0 +1,212 @@
+# 三个算子库从 libcudnn_graph.so.9 导入的符号（nm -D -u ∩ nm -D --defined-only，c++filt 还原）
+
+===== libcudnn_ops.so.9: 共 53 个
+  -- 日志/追踪: 35
+       CallbackFun
+       logArgVoid(char const*, void const*, cudnnDataType_t, char*, int*, int)
+       logEnviron(char const*, char*, int*, bool)
+       logHostPtr(char const*, void const*, char*, int*, int)
+       logArgArray(char const*, int const*, int, char*, int*, int)
+       logArgArray(char const*, unsigned int const*, int, char*, int*, int)
+       logFunction(char const*, char*, int*, int)
+       traceback_iretf_impl(char const*, cudnnStatus_t)
+       traceback_iretf_impl(char const*, cudnnStatus_t, bool)
+       traceback_iretf_impl(char const*, cudnnStatus_t, bool, char const*, ...)
+       hasValidLoggingCallback()
+       logArg(char const*, cudnnDataType_t, char*, int*, int)
+       logArg(char const*, cudnnTensorFormat_t, char*, int*, int)
+       logArg(char const*, cudnnActivationMode_t, char*, int*, int)
+       logArg(char const*, cudnnNanPropagation_t, char*, int*, int)
+       logArg(char const*, cudnnReduceTensorOp_t, char*, int*, int)
+       logArg(char const*, cudnnContext*, char*, int*, int)
+       logArg(char const*, cudnnFilterStruct const*, char*, int*, int)
+       logArg(char const*, cudnnTensorStruct const*, char*, int*, int)
+       logArg(char const*, cudnnActivationStruct const*, char*, int*, int)
+       logArg(char const*, double const*, char*, int*, int)
+       logArg(char const*, double, char*, int*, int)
+       logArg(char const*, float, char*, int*, int)
+       logArg(char const*, int, char*, int*, int)
+       logArg(char const*, unsigned int, char*, int*, int)
+       logArg(char const*, unsigned long, char*, int*, int)
+       logArg(char const*, unsigned long long, char*, int*, int)
+       logDevPtr(char const*, void const*, char*, int*, int)
+       TracebackLogger::TracebackLogger(char const*)
+       TracebackLogger::~TracebackLogger()
+       logerr_dbg
+       loginfo_dbg
+       loglevel_dbg
+       logwarn_dbg
+       startingTime
+  -- 库加载 / 版本 / 句柄 / 运行时工具: 14
+       cudnnGetPid()
+       cudnnGetTid()
+       cudnn::ops::ForkPriorityStreams(cudnnContext*, unsigned int, CUstream_st**, unsigned int)
+       cudnn::ops::JoinPriorityStreams(cudnnContext*, unsigned int, CUstream_st**)
+       cudnn::ops::isForwardCompatEnabled(int)
+       cudnn::graph::LibraryLoader::getInstance()
+       cudnn::graph::LibraryLoader::loadLibraries()
+       GPVar::IsFromExternalOverride() const
+       cudnnGetStream
+       cudnnGetTime
+       cudnnGetTimeDiffString
+       cudnnSnprintf
+       cudnn_graph_version
+       userData
+  -- 描述符 setter / 描述符实体: 4
+       cudnn::graph::setFilterNdDescriptor(cudnnFilterStruct*, cudnnDataType_t, cudnnTensorFormat_t, int, int const*)
+       cudnn::graph::setTensorNdDescriptor(cudnnTensorStruct*, dualDataType_t, int, int const*, int const*, bool)
+       cudnn::graph::setActivationDescriptor(cudnnActivationStruct*, cudnnActivationMode_t, cudnnNanPropagation_t, double)
+       cudnn::graph::setTensorNdDescriptorEx(cudnnTensorStruct*, cudnnTensorFormat_t, cudnnDataType_t, int, int const*)
+
+===== libcudnn_cnn.so.9: 共 92 个
+  -- 日志/追踪: 33
+       CallbackFun
+       logArgVoid(char const*, void const*, cudnnDataType_t, char*, int*, int)
+       logEnviron(char const*, char*, int*, bool)
+       logHostPtr(char const*, void const*, char*, int*, int)
+       logArgArray(char const*, int const*, int, char*, int*, int)
+       logFunction(char const*, char*, int*, int)
+       traceback_iretf_impl(char const*, cudnnStatus_t)
+       traceback_iretf_impl(char const*, cudnnStatus_t, bool)
+       traceback_iretf_impl(char const*, cudnnStatus_t, bool, char const*, ...)
+       hasValidLoggingCallback()
+       logArg(char const*, cudnnDataType_t, char*, int*, int)
+       logArg(char const*, cudnnMathType_t, char*, int*, int)
+       logArg(char const*, cudnnTensorFormat_t, char*, int*, int)
+       logArg(char const*, cudnnConvolutionMode_t, char*, int*, int)
+       logArg(char const*, cudnnContext*, char*, int*, int)
+       logArg(char const*, cudnnFilterStruct const*, char*, int*, int)
+       logArg(char const*, cudnnTensorStruct const*, char*, int*, int)
+       logArg(char const*, cudnnActivationStruct const*, char*, int*, int)
+       logArg(char const*, cudnnConvolutionStruct const*, char*, int*, int)
+       logArg(char const*, bool, char*, int*, int)
+       logArg(char const*, double, char*, int*, int)
+       logArg(char const*, float, char*, int*, int)
+       logArg(char const*, int, char*, int*, int)
+       logArg(char const*, long, char*, int*, int)
+       logArg(char const*, unsigned long, char*, int*, int)
+       logDevPtr(char const*, void const*, char*, int*, int)
+       TracebackLogger::TracebackLogger(char const*)
+       TracebackLogger::~TracebackLogger()
+       logerr_dbg
+       loginfo_dbg
+       loglevel_dbg
+       logwarn_dbg
+       startingTime
+  -- backend / 引擎机制: 30
+       getEnumName(cudnn::backend::OperationGraphFinalizedMode_t)
+       cudnn::backend::Convolution::finalize_internal()
+       cudnn::backend::EngineConfig::EngineConfig(std::shared_ptr<cudnn::backend::OperationGraph const>, std::shared_ptr<cudnn::backend::DeviceProperty const>, engcfg_backend_t const&, int)
+       cudnn::backend::EngineConfig::EngineConfig(std::shared_ptr<cudnn::backend::OperationGraph const>, std::shared_ptr<cudnn::backend::DeviceProperty const>, cudnn::backend::EngineConfig const&)
+       cudnn::backend::ExecutionPlan::setEngineConfig(cudnn::backend::EngineConfig const&)
+       cudnn::backend::ExecutionPlan::finalize_internal()
+       cudnn::backend::OperationGraph::appendOperation(cudnn::fusion::Node const&, bool)
+       cudnn::backend::OperationGraph::getEngineGlobalIndex(cudnn::backend::OperationGraphFinalizedMode_t, cudnnBackendEngineName_t)
+       cudnn::backend::EngineHeuristics::setHeuristicsResult(engcfg_backend_t const*, unsigned long)
+       cudnn::backend::EngineHeuristics::EngineHeuristics(std::shared_ptr<cudnn::backend::OperationGraph const>, std::shared_ptr<cudnn::backend::DeviceProperty const>, cudnnBackendHeurMode_t, unsigned long)
+       cudnn::backend::ConvolutionWgradOperation::finalize_internal()
+       cudnn::backend::Tensor::finalize_internal()
+       cudnn::backend::execute(cudnnContext*, cudnn::backend::ExecutionPlan const&, cudnn::backend::VariantPack&)
+       cudnn::backend::ExecutionPlan::getNumericalNoteMask() const
+       cudnn::backend::EngineHeuristics::getHeursticsResult(engcfg_backend_t const*&, unsigned long&) const
+       cudnn::backend::Engine::get_internal(cudnnBackendAttributeName_t, cudnnBackendAttributeType_t, long, long*, void*) const
+       cudnn::backend::Engine::getDeviceProp() const
+       vtable for cudnn::backend::Convolution
+       vtable for cudnn::backend::VariantPack
+       vtable for cudnn::backend::EngineConfig
+       vtable for cudnn::backend::ExecutionPlan
+       vtable for cudnn::backend::DeviceProperty
+       vtable for cudnn::backend::OperationGraph
+       vtable for cudnn::backend::EngineHeuristics
+       vtable for cudnn::backend::PointwiseOperation
+       vtable for cudnn::backend::ConvolutionDgradOperation
+       vtable for cudnn::backend::ConvolutionWgradOperation
+       vtable for cudnn::backend::ConvolutionForwardOperation
+       vtable for cudnn::backend::Engine
+       vtable for cudnn::backend::Tensor
+  -- 库加载 / 版本 / 句柄 / 运行时工具: 12
+       cudnnGetPid()
+       cudnnGetTid()
+       GPVar::GPVar(char const*, int)
+       cudnn::ops::isForwardCompatEnabled(int)
+       cudnn::graph::LibraryLoader::getHeurFunc(cudnn::graph::HeurFunctionType_t)
+       cudnn::graph::LibraryLoader::getInstance()
+       cudnn::graph::LibraryLoader::loadLibraries()
+       GPVar::IsFromExternalOverride() const
+       cudnnGetTime
+       cudnnGetTimeDiffString
+       cudnnSnprintf
+       userData
+  -- 其它: 10
+       getEnumName(cudnnBackendKnobType_t)
+       getEnumName(cudnnBackendNumericalNote_t)
+       cudnnHostFree(void*)
+       cudnnHostMalloc(unsigned long)
+       cudnn::cnn::GenericConvolution::GenericConvolution(bool)
+       cudnn::cnn::PerfKnobs::PerfKnobs(int, cudnn::cnn::PerfKnobInfo const*)
+       cudnn::ops::isTF32Enabled(int)
+       cudnn::graph::LibraryConfig::init()
+       cudnn::fusion::Graph::~Graph()
+       cudnn::fusion::Graph::operator=(cudnn::fusion::Graph&&)
+  -- 描述符 setter / 描述符实体: 7
+       cudnn::cnn::setConvolutionMathType(cudnnConvolutionStruct*, cudnnMathType_t)
+       cudnn::cnn::setConvolutionGroupCount(cudnnConvolutionStruct*, int)
+       cudnn::cnn::setConvolutionReorderType(cudnnConvolutionStruct*, cudnnReorderType_t)
+       cudnn::cnn::setConvolutionNdDescriptor(cudnnConvolutionStruct*, int, int const*, int const*, int const*, cudnnConvolutionMode_t, cudnnDataType_t)
+       cudnn::backend::PointwiseOperation::setOpAttrs(cudnn::backend::PointwiseDescriptor const&, int, cudnn::backend::Tensor**, cudnn::backend::Tensor const&, double*)
+       cudnn::backend::PointwiseDescriptor::setOpAttrs(cudnnPointwiseMode_t, cudnnDataType_t, cudnnNanPropagation_t, double, double)
+       vtable for cudnn::backend::PointwiseDescriptor
+
+===== libcudnn_adv.so.9: 共 48 个
+  -- 日志/追踪: 27
+       CallbackFun
+       logArgVoid(char const*, void const*, cudnnDataType_t, char*, int*, int)
+       logEnviron(char const*, char*, int*, bool)
+       logHostPtr(char const*, void const*, char*, int*, int)
+       logArgArray(char const*, int const*, int, char*, int*, int)
+       logFunction(char const*, char*, int*, int)
+       traceback_iretf_impl(char const*, cudnnStatus_t, bool)
+       traceback_iretf_impl(char const*, cudnnStatus_t, bool, char const*, ...)
+       hasValidLoggingCallback()
+       logArg(char const*, cudnnDataType_t, char*, int*, int)
+       logArg(char const*, cudnnMathType_t, char*, int*, int)
+       logArg(char const*, cudnnNanPropagation_t, char*, int*, int)
+       logArg(char const*, cudnnContext*, char*, int*, int)
+       logArg(char const*, cudnnTensorStruct const*, char*, int*, int)
+       logArg(char const*, unsigned long const*, char*, int*, int)
+       logArg(char const*, bool, char*, int*, int)
+       logArg(char const*, double, char*, int*, int)
+       logArg(char const*, int, char*, int*, int)
+       logArg(char const*, unsigned long, char*, int*, int)
+       logDevPtr(char const*, void const*, char*, int*, int)
+       TracebackLogger::TracebackLogger(char const*)
+       TracebackLogger::~TracebackLogger()
+       logerr_dbg
+       loginfo_dbg
+       loglevel_dbg
+       logwarn_dbg
+       startingTime
+  -- 库加载 / 版本 / 句柄 / 运行时工具: 12
+       cudnnGetPid()
+       cudnnGetTid()
+       GPVar::GPVar(char const*, int)
+       cudnn::ops::ForkPriorityStreams(cudnnContext*, unsigned int, CUstream_st**, unsigned int)
+       cudnn::ops::JoinPriorityStreams(cudnnContext*, unsigned int, CUstream_st**)
+       cudnn::ops::isForwardCompatEnabled(int)
+       cudnn::ops::GetStream(cudnnContext*, CUstream_st**)
+       GPVar::IsFromExternalOverride() const
+       cudnnGetTime
+       cudnnGetTimeDiffString
+       cudnnSnprintf
+       userData
+  -- 其它: 8
+       cudnnHostFree(void*)
+       cudnnHostCalloc(unsigned long, unsigned long)
+       cudnnHostMalloc(unsigned long)
+       nvrtcHelper::load()
+       cudnn::ops::isTF32Enabled(int)
+       cudnn::ops::ForkInternalStreams(cudnnContext*, unsigned int, CUstream_st**, unsigned int)
+       cudnn::ops::JoinInternalStreams(cudnnContext*, unsigned int, CUstream_st**)
+       cudnn::ops::SetStream(cudnnContext*, CUstream_st*)
+  -- 描述符 setter / 描述符实体: 1
+       cudnn::graph::setTensorNdDescriptor(cudnnTensorStruct*, dualDataType_t, int, int const*, int const*, bool)

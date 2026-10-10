@@ -1,0 +1,21 @@
+
+W! CuDNN (v92400 43) function cudnnGetConvolutionForwardAlgorithm_v7() called:
+w!         Warning: CUDNN_STATUS_SUCCESS; Reason: cuDNN Library configuration is set to AUTO. Automatically configuring the library mode to FULL.
+
+w!         Warning: CUDNN_STATUS_NOT_SUPPORTED; Reason: false == cudnn::cnn::isForwardSupported(handle, xDesc, wDesc, cDesc, yDesc, algo)
+w!         Warning: CUDNN_STATUS_NOT_SUPPORTED; Reason: false == cudnn::cnn::isForwardSupported(handle, xDesc, wDesc, cDesc, yDesc, algo)
+w! Time: 2026-09-23T15:42:01.855116 (0d+0h+0m+0s since start)
+w! Process=87599; Thread=87599; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+W! CuDNN (v92400 43) function cudnnGetConvolutionBackwardDataAlgorithm_v7() called:
+w!         Warning: CUDNN_STATUS_NOT_SUPPORTED; Reason: false == isBackwardDataSupported(handle, dxDesc, wDesc, cDesc, dyDesc, algo)
+w! Time: 2026-09-23T15:42:02.190898 (0d+0h+0m+1s since start)
+w! Process=87599; Thread=87619; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+W! CuDNN (v92400 43) function cudnnGetConvolutionBackwardFilterAlgorithm_v7() called:
+w!         Warning: CUDNN_STATUS_NOT_SUPPORTED; Reason: (dyDesc->dimA[2] != 1) && (dyDesc->dimA[3] != 1)
+w! Time: 2026-09-23T15:42:02.371985 (0d+0h+0m+1s since start)
+w! Process=87599; Thread=87619; GPU=NULL; Handle=NULL; StreamId=NULL.
+

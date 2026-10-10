@@ -1,0 +1,5 @@
+
+I! CuDNN (v92400 43) function cudnnGetVersion() called:
+i! Time: 2026-09-28T14:13:03.183288 (0d+0h+0m+0s since start)
+i! Process=66422; Thread=66422; GPU=NULL; Handle=NULL; StreamId=NULL.
+

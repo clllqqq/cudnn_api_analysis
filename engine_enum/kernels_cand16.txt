@@ -1,0 +1,590 @@
+# heuristic 候选 #16: engineId=4  0.4171 ms/iter  maxerr=4.77e-06
+# 旋钮 
+  void fft2d_r2c_32x32<float, false, 1u, true>(float2*, float const*, int, int, int, int, int, int grid=[3, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      5.3us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.0us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     18.8us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      5.6us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.0us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.1us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      5.9us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      3.7us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     18.7us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.5us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      6.4us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.0us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      5.6us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      7.8us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     18.9us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      5.9us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      3.7us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.0us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.5us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.3us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.0us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.4us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.2us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     18.8us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.4us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      5.0us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.1us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.4us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 1u, true>(float2*, float const*, int, int, int, int, int, int grid=[3, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      5.2us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.1us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     18.9us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      5.6us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      5.1us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.0us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      6.0us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.1us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     18.7us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.5us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      3.8us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.1us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      5.6us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.2us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.2us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      5.9us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      3.6us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.2us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.8us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      3.6us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.2us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.3us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      3.6us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.0us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.2us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.6us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     18.9us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.2us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 1u, true>(float2*, float const*, int, int, int, int, int, int grid=[3, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      5.2us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      3.9us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.1us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      5.7us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.2us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.1us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      5.9us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      3.6us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.0us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      6.4us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      3.8us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.4us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      5.6us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.2us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.2us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      5.9us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      3.8us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     18.9us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.6us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      3.5us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.0us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.3us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.7us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     18.8us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.3us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      3.5us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     18.7us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.4us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 1u, true>(float2*, float const*, int, int, int, int, int, int grid=[3, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      5.2us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.0us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.0us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      8.2us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.0us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.5us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      6.7us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.3us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.0us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      5.2us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      3.7us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.5us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      5.6us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      5.6us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.2us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      8.4us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      3.6us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.2us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.4us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      3.6us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     18.8us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.2us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      3.6us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.1us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.4us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      3.7us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     18.9us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.3us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 1u, true>(float2*, float const*, int, int, int, int, int, int grid=[3, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      5.2us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      3.9us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.1us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      9.0us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.0us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.6us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      6.0us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      3.7us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     18.7us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.4us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      3.8us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.0us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      5.6us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.4us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.1us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      6.0us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      3.6us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.0us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.7us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      3.6us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     18.9us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.3us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      3.6us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.0us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.3us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      3.6us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     18.9us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.3us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 1u, true>(float2*, float const*, int, int, int, int, int, int grid=[3, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      5.2us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      3.9us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     18.8us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      5.6us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.0us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.2us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      5.9us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      3.8us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     18.7us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      5.6us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      3.8us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.4us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      6.7us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      5.0us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.1us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      8.5us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      3.6us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.0us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.5us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      3.6us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     18.7us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.3us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      3.6us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.1us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.4us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      5.1us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     18.9us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.3us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 1u, true>(float2*, float const*, int, int, int, int, int, int grid=[3, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      5.2us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.0us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.2us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      8.3us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.0us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.5us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      6.3us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      5.2us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.1us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      7.6us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.0us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.5us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      6.7us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      5.7us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.0us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      8.7us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      6.2us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.5us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.5us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      3.7us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.1us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      7.1us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      3.5us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.5us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.4us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      3.7us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     18.8us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.3us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 1u, true>(float2*, float const*, int, int, int, int, int, int grid=[3, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      5.2us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      3.9us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.3us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      5.5us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.1us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.0us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      6.0us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      5.4us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.2us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      6.6us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      3.8us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     18.9us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      5.6us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      3.9us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.5us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      5.9us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.9us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.2us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      7.6us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      3.6us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     18.8us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.3us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      3.6us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.1us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      7.3us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      3.7us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     18.8us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.4us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 1u, true>(float2*, float const*, int, int, int, int, int, int grid=[3, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      5.2us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.0us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     18.8us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      7.5us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.0us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.2us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      6.0us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.3us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.2us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      7.9us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      3.8us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.7us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      5.6us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      5.6us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.2us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      8.5us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      3.6us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.3us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      5.6us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      3.6us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.1us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.4us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      3.6us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.4us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.3us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      5.0us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     18.9us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.2us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 1u, true>(float2*, float const*, int, int, int, int, int, int grid=[3, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      5.2us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      3.9us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     18.9us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      5.8us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.0us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.3us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      6.0us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.1us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     18.8us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.5us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      3.7us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.6us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      5.6us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      3.9us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     18.7us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      5.9us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      3.6us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     18.8us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.5us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      3.6us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.1us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.5us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      3.7us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     18.7us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.3us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      3.7us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     18.8us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.4us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 1u, true>(float2*, float const*, int, int, int, int, int, int grid=[3, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      5.2us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.0us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.4us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      5.6us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.0us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     18.8us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      8.3us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      6.9us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.7us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      5.8us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      5.1us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.1us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      8.4us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      3.9us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.5us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      5.8us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      3.6us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.2us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      7.7us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      3.6us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     18.8us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.4us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      3.6us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     18.9us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.3us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      3.7us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     18.8us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.4us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 1u, true>(float2*, float const*, int, int, int, int, int, int grid=[3, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      5.2us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.0us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.1us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      8.4us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.0us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.6us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      6.0us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.6us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.1us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      5.6us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      3.8us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.4us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      5.5us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.7us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     18.8us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      6.0us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.2us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.2us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.5us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      3.6us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.1us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      7.0us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      3.6us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.2us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.3us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      3.6us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     18.7us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.3us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 1u, true>(float2*, float const*, int, int, int, int, int, int grid=[3, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      5.2us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      3.9us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     18.7us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      5.7us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.0us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.1us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      5.8us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      3.7us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     18.9us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.5us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.4us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.6us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      5.5us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.0us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     18.8us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      5.9us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      3.6us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     18.9us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.6us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      3.6us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.2us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      7.2us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      3.6us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     18.8us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.2us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      5.5us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     18.7us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.3us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 1u, true>(float2*, float const*, int, int, int, int, int, int grid=[3, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      5.2us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      3.9us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.3us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      6.0us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.1us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     18.8us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      6.1us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      3.8us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     18.7us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.6us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      5.1us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     18.8us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      5.5us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.0us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     18.8us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      5.8us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      3.6us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     18.8us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.5us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      3.6us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     18.8us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.4us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      3.6us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     18.7us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.3us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      3.7us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     18.8us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.3us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 1u, true>(float2*, float const*, int, int, int, int, int, int grid=[3, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      5.2us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      3.9us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.2us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      5.5us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.1us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     18.9us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      6.6us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      6.5us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.5us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      5.4us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      5.1us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.1us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      9.0us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      3.9us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.3us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      5.9us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      3.6us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.1us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      7.7us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      3.5us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.1us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.3us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.1us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.1us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      7.2us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      3.6us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     18.8us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.3us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 1u, true>(float2*, float const*, int, int, int, int, int, int grid=[3, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      5.2us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      3.9us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.7us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      5.6us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.1us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     18.9us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      6.1us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.6us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.6us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      7.6us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      5.9us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.3us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      8.3us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.2us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.5us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      5.9us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.4us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.2us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      7.8us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      3.5us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.5us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.3us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.1us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.1us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      5.4us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      3.6us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     18.8us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.3us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 1u, true>(float2*, float const*, int, int, int, int, int, int grid=[3, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      5.2us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.0us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.5us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      7.9us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.1us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     18.7us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      6.0us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      3.7us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.4us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.5us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.7us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.1us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      5.6us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.0us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     18.7us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      5.9us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      3.6us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     18.8us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.5us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      3.7us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     18.8us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.2us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      3.6us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     18.8us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      5.2us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      3.6us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     18.9us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.4us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 1u, true>(float2*, float const*, int, int, int, int, int, int grid=[3, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      5.2us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.0us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.6us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      7.6us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.1us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     18.9us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      8.6us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      5.6us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.5us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      6.2us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      5.3us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.2us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      7.0us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      5.0us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.3us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      5.9us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      3.6us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.2us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      7.6us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      3.6us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.2us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.3us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      6.1us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.0us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      7.3us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      3.6us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     18.8us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.4us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 1u, true>(float2*, float const*, int, int, int, int, int, int grid=[3, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      5.2us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      3.9us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.0us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      5.6us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.4us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     18.7us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      6.0us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      3.9us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.0us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      6.7us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      3.9us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.0us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      5.6us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      3.8us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.1us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      9.3us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      3.6us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.0us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.5us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      3.6us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     18.8us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.3us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      3.6us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.3us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.3us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      3.6us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     18.8us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.4us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 1u, true>(float2*, float const*, int, int, int, int, int, int grid=[3, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      5.2us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.0us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.5us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      7.8us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.4us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.0us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      7.9us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      5.8us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.6us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      6.2us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      5.3us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.2us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      9.0us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.7us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.2us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      6.0us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      3.6us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.2us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.8us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      3.7us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.4us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.3us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      3.6us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.1us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      7.5us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      3.6us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     18.9us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.3us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 1u, true>(float2*, float const*, int, int, int, int, int, int grid=[3, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      5.2us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.0us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.6us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      5.6us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.4us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     18.9us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      6.2us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.4us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.4us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      5.7us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      6.9us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.1us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      8.2us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.0us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.3us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      6.1us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      3.6us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.1us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      7.7us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.2us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     19.3us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.2us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      3.7us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     18.9us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.4us  libcudnn_engines_precompiled
+  void fft2d_r2c_32x32<float, false, 0u, false>(float2*, float const*, int, int, int, int, int, in grid=[1, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      3.6us  libcudnn_engines_precompiled
+  void cutlass::Kernel2<cutlass_100_simt_cgemm_32x32_16x5_nt_align1>(cutlass_100_simt_cgemm_32x32_ grid=[1, 1, 544]      block=[128, 1, 1]      smem=  40960 regs=  62     18.8us  ?
+  void fft2d_c2r_32x32<float, false, false, 0u, false, false>(float*, float2 const*, int, int, int grid=[4, 1, 1]        block=[512, 1, 1]      smem=  35904 regs=  64      4.4us  libcudnn_engines_precompiled

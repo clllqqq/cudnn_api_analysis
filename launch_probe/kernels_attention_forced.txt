@@ -1,0 +1,5 @@
+# attention_forced: 2 个 kernel 发射（CUPTI，torch.profiler）
+# target=/home/liquan/cudnn_per_op.py case=attention_forced
+# kernel                                                                   grid             block                smem  regs stream        us  归属库
+void at::native::(anonymous namespace)::distribution_elementwise_grid_st [156, 1, 1]      [256, 1, 1]             0    61      7       3.0  ?
+cudnn_generated_fort_native_sdpa_sm80_flash_fprop_wmma_f16_knob_1_128x64 [1, 8, 2]        [128, 1, 1]         40960   234      7       5.0  runtime JIT(引擎现场编译)

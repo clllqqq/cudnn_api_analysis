@@ -1,0 +1,892 @@
+
+I! CuDNN (v92400 43) function cudnnGetVersion() called:
+i! Time: 2026-09-23T15:39:47.967325 (0d+0h+0m+0s since start)
+i! Process=87011; Thread=87011; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnCreate() called:
+i!     handle: location=host; addr=0x3b5ad240;
+i! Time: 2026-09-23T15:39:47.968011 (0d+0h+0m+0s since start)
+i! Process=87011; Thread=87011; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnGraphLibraryConfigInit() called:
+i!     apiLog: type=cudnnLibConfig_t; val=AUTO;
+i! Time: 2026-09-23T15:39:47.968061 (0d+0h+0m+0s since start)
+i! Process=87011; Thread=87011; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnCreate() called:
+i!     compute_capability_major: type=int; val=12;
+i!     compute_capability_minor: type=int; val=0;
+i!     status: type=cudnnStatus_t; val=CUDNN_STATUS_SUCCESS (0);
+i! Time: 2026-09-23T15:39:47.976288 (0d+0h+0m+0s since start)
+i! Process=87011; Thread=87011; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnSetStream() called:
+i!     handle: type=cudnnHandle_t:
+i!         streamId: type=cudaStream_t; streamId=(nil) (defaultStream);
+i!         deviceProp: type=CUDNN_BACKEND_DEVICEPROP_DESCRIPTOR:
+i!             deviceName: type=string; val="NVIDIA GeForce RTX 5060 Laptop GPU";
+i!             cudaDeviceId: type=int; val=0;
+i!             deviceVer: type=int; val=1200;
+i!             multiProcessorCount: type=int; val=26;
+i!             driverVer: type=int; val=13030;
+i!             maxSharedMemoryPerBlockOptin: type=int; val=101376;
+i!             totalGlobalMem: type=size_t; val=8546484224;
+i!     streamId: type=cudaStream_t; streamId=(nil) (defaultStream);
+i! Time: 2026-09-23T15:39:47.976552 (0d+0h+0m+0s since start)
+i! Process=87011; Thread=87011; GPU=0; Handle=0x3b601af0; StreamId=(nil) (defaultStream).
+
+
+I! CuDNN (v92400 43) function cudnnCreateTensorDescriptor() called:
+i! Time: 2026-09-23T15:39:48.005279 (0d+0h+0m+1s since start)
+i! Process=87011; Thread=87011; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnSetTensorNdDescriptor() called:
+i!     dataType: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!     nbDims: type=int; val=4;
+i!     dimA: type=int; val=[4,3,64,64];
+i!     strideA: type=int; val=[12288,4096,64,1];
+i! Time: 2026-09-23T15:39:48.005746 (0d+0h+0m+1s since start)
+i! Process=87011; Thread=87011; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnCreateFilterDescriptor() called:
+i! Time: 2026-09-23T15:39:48.005908 (0d+0h+0m+1s since start)
+i! Process=87011; Thread=87011; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnSetFilterNdDescriptor() called:
+i!     dataType: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!     format: type=cudnnTensorFormat_t; val=CUDNN_TENSOR_NCHW (0);
+i!     nbDims: type=int; val=4;
+i!     filterDimA: type=int; val=[16,3,3,3];
+i! Time: 2026-09-23T15:39:48.006018 (0d+0h+0m+1s since start)
+i! Process=87011; Thread=87011; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnCreateTensorDescriptor() called:
+i! Time: 2026-09-23T15:39:48.006040 (0d+0h+0m+1s since start)
+i! Process=87011; Thread=87011; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnSetTensorNdDescriptor() called:
+i!     dataType: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!     nbDims: type=int; val=4;
+i!     dimA: type=int; val=[4,16,64,64];
+i!     strideA: type=int; val=[65536,4096,64,1];
+i! Time: 2026-09-23T15:39:48.006048 (0d+0h+0m+1s since start)
+i! Process=87011; Thread=87011; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnCreateConvolutionDescriptor() called:
+i!     convDesc: location=host; addr=0x7ffcde906b20;
+i! Time: 2026-09-23T15:39:48.009916 (0d+0h+0m+1s since start)
+i! Process=87011; Thread=87011; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnSetConvolutionNdDescriptor() called:
+i!     convDesc: location=host; addr=0x3b6beaa0;
+i!     arrayLength: type=int; val=2;
+i!     padA: type=int; val=[1,1];
+i!     strideA: type=int; val=[1,1];
+i!     dilationA: type=int; val=[1,1];
+i!     mode: type=cudnnConvolutionMode_t; val=CUDNN_CROSS_CORRELATION (1);
+i!     dataType: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i! Time: 2026-09-23T15:39:48.010039 (0d+0h+0m+1s since start)
+i! Process=87011; Thread=87011; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnSetConvolutionGroupCount() called:
+i!     convDesc: location=host; addr=0x3b6beaa0;
+i!     groupCount: type=int; val=1;
+i! Time: 2026-09-23T15:39:48.010142 (0d+0h+0m+1s since start)
+i! Process=87011; Thread=87011; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnSetConvolutionMathType() called:
+i!     convDesc: location=host; addr=0x3b6beaa0;
+i!     mathType: type=cudnnMathType_t; val=CUDNN_DEFAULT_MATH (0);
+i! Time: 2026-09-23T15:39:48.010234 (0d+0h+0m+1s since start)
+i! Process=87011; Thread=87011; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnGetConvolutionForwardAlgorithm_v7() called:
+i!     handle: type=cudnnHandle_t:
+i!         streamId: type=cudaStream_t; streamId=(nil) (defaultStream);
+i!         deviceProp: type=CUDNN_BACKEND_DEVICEPROP_DESCRIPTOR:
+i!             deviceName: type=string; val="NVIDIA GeForce RTX 5060 Laptop GPU";
+i!             cudaDeviceId: type=int; val=0;
+i!             deviceVer: type=int; val=1200;
+i!             multiProcessorCount: type=int; val=26;
+i!             driverVer: type=int; val=13030;
+i!             maxSharedMemoryPerBlockOptin: type=int; val=101376;
+i!             totalGlobalMem: type=size_t; val=8546484224;
+i!     srcDesc: type=cudnnTensorDescriptor_t:
+i!         dataType: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!         nbDims: type=int; val=4;
+i!         dimA: type=int; val=[4,3,64,64];
+i!         strideA: type=int; val=[12288,4096,64,1];
+i!     filterDesc: type=cudnnFilterDescriptor_t:
+i!         dataType: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!         vect: type=int; val=0;
+i!         nbDims: type=int; val=4;
+i!         dimA: type=int; val=[16,3,3,3];
+i!         format: type=cudnnTensorFormat_t; val=CUDNN_TENSOR_NCHW (0);
+i!     convDesc: type=cudnnConvolutionDescriptor_t:
+i!         mode: type=cudnnConvolutionMode_t; val=CUDNN_CROSS_CORRELATION (1);
+i!         dataType: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!         mathType: type=cudnnMathType_t; val=CUDNN_DEFAULT_MATH (0);
+i!         reorderType: type=int; val=0;
+i!         arrayLength: type=int; val=2;
+i!         padA: type=int; val=[1,1];
+i!         strideA: type=int; val=[1,1];
+i!         dilationA: type=int; val=[1,1];
+i!         groupCount: type=int; val=1;
+i!     destDesc: type=cudnnTensorDescriptor_t:
+i!         dataType: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!         nbDims: type=int; val=4;
+i!         dimA: type=int; val=[4,16,64,64];
+i!         strideA: type=int; val=[65536,4096,64,1];
+i!     requestedAlgoCount: type=int; val=1;
+i!     returnedAlgoCount: location=host; addr=0x7ffcde9068cc;
+i!     perfResults: location=host; addr=0x7ffcde9069e0;
+i! Time: 2026-09-23T15:39:48.010355 (0d+0h+0m+1s since start)
+i! Process=87011; Thread=87011; GPU=0; Handle=0x3b601af0; StreamId=(nil) (defaultStream).
+
+
+W! CuDNN (v92400 43) function cudnnGetConvolutionForwardAlgorithm_v7() called:
+w!     Info: Traceback contains 15 message(s)
+w!         Warning: CUDNN_STATUS_SUCCESS; Reason: cuDNN Library configuration is set to AUTO. Automatically configuring the library mode to FULL.
+
+w!         Error: CUDNN_STATUS_BAD_PARAM; Reason: outputGraph.buildDAG()
+w!         Error: CUDNN_STATUS_BAD_PARAM; Reason: initGraph(graph)
+w!         Warning: CUDNN_STATUS_INTERNAL_ERROR; Reason: cudnnBackendFinalizeGraphVisualize: Graph logging failed
+w!         Error: CUDNN_STATUS_BAD_PARAM; Reason: outputGraph.buildDAG()
+w!         Error: CUDNN_STATUS_BAD_PARAM; Reason: initGraph(graph)
+w!         Warning: CUDNN_STATUS_INTERNAL_ERROR; Reason: cudnnBackendFinalizeGraphVisualize: Graph logging failed
+w!         Warning: CUDNN_STATUS_NOT_SUPPORTED; Reason: false == cudnn::cnn::isForwardSupported(handle, xDesc, wDesc, cDesc, yDesc, algo)
+w!         Warning: CUDNN_STATUS_NOT_SUPPORTED; Reason: false == cudnn::cnn::isForwardSupported(handle, xDesc, wDesc, cDesc, yDesc, algo)
+w!         Error: CUDNN_STATUS_BAD_PARAM; Reason: outputGraph.buildDAG()
+w!         Error: CUDNN_STATUS_BAD_PARAM; Reason: initGraph(graph)
+w!         Warning: CUDNN_STATUS_INTERNAL_ERROR; Reason: cudnnBackendFinalizeEngineCfgVisualize: Graph logging failed
+w!         Error: CUDNN_STATUS_BAD_PARAM; Reason: outputGraph.buildDAG()
+w!         Error: CUDNN_STATUS_BAD_PARAM; Reason: initGraph(graph)
+w!         Warning: CUDNN_STATUS_INTERNAL_ERROR; Reason: cudnnBackendFinalizeEngineCfgVisualize: Graph logging failed
+w! Time: 2026-09-23T15:39:48.361080 (0d+0h+0m+1s since start)
+w! Process=87011; Thread=87011; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnSetConvolutionMathType() called:
+i!     convDesc: location=host; addr=0x3b6beaa0;
+i!     mathType: type=cudnnMathType_t; val=CUDNN_DEFAULT_MATH (0);
+i! Time: 2026-09-23T15:39:48.361161 (0d+0h+0m+1s since start)
+i! Process=87011; Thread=87011; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnConvolutionForward() called:
+i!     handle: type=cudnnHandle_t:
+i!         streamId: type=cudaStream_t; streamId=(nil) (defaultStream);
+i!         deviceProp: type=CUDNN_BACKEND_DEVICEPROP_DESCRIPTOR:
+i!             deviceName: type=string; val="NVIDIA GeForce RTX 5060 Laptop GPU";
+i!             cudaDeviceId: type=int; val=0;
+i!             deviceVer: type=int; val=1200;
+i!             multiProcessorCount: type=int; val=26;
+i!             driverVer: type=int; val=13030;
+i!             maxSharedMemoryPerBlockOptin: type=int; val=101376;
+i!             totalGlobalMem: type=size_t; val=8546484224;
+i!     alpha: type=CUDNN_DATA_FLOAT; val=1.000000;
+i!     xDesc: type=cudnnTensorDescriptor_t:
+i!         dataType: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!         nbDims: type=int; val=4;
+i!         dimA: type=int; val=[4,3,64,64];
+i!         strideA: type=int; val=[12288,4096,64,1];
+i!     xData: location=dev; addr=0x505e00000;
+i!     wDesc: type=cudnnFilterDescriptor_t:
+i!         dataType: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!         vect: type=int; val=0;
+i!         nbDims: type=int; val=4;
+i!         dimA: type=int; val=[16,3,3,3];
+i!         format: type=cudnnTensorFormat_t; val=CUDNN_TENSOR_NCHW (0);
+i!     wData: location=dev; addr=0x505e30000;
+i!     convDesc: type=cudnnConvolutionDescriptor_t:
+i!         mode: type=cudnnConvolutionMode_t; val=CUDNN_CROSS_CORRELATION (1);
+i!         dataType: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!         mathType: type=cudnnMathType_t; val=CUDNN_DEFAULT_MATH (0);
+i!         reorderType: type=int; val=0;
+i!         arrayLength: type=int; val=2;
+i!         padA: type=int; val=[1,1];
+i!         strideA: type=int; val=[1,1];
+i!         dilationA: type=int; val=[1,1];
+i!         groupCount: type=int; val=1;
+i!     algo: type=cudnnConvolutionFwdAlgo_t; val=CUDNN_CONVOLUTION_FWD_ALGO_IMPLICIT_PRECOMP_GEMM (1);
+i!     workSpace: location=dev; addr=NULL_PTR;
+i!     workSpaceSizeInBytes: type=size_t; val=0;
+i!     beta: type=CUDNN_DATA_FLOAT; val=0.000000;
+i!     yDesc: type=cudnnTensorDescriptor_t:
+i!         dataType: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!         nbDims: type=int; val=4;
+i!         dimA: type=int; val=[4,16,64,64];
+i!         strideA: type=int; val=[65536,4096,64,1];
+i!     yData: location=dev; addr=0x505e30a00;
+i! Time: 2026-09-23T15:39:48.361349 (0d+0h+0m+1s since start)
+i! Process=87011; Thread=87011; GPU=0; Handle=0x3b601af0; StreamId=(nil) (defaultStream).
+
+
+I! CuDNN (v92400 43) function cudnnBackendExecuteInternal() called:
+i!     enable_tf32: type=bool; val=true;
+i!     operation: type=internalType; val=CONV_FORWARD;
+i!     xDesc: type=cudnnTensorDescriptor_t:
+i!         dataType: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!         nbDims: type=int; val=0;
+i!         dimA: type=int; val=[];
+i!         strideA: type=int; val=[];
+i!     wDesc: type=cudnnFilterDescriptor_t:
+i!         dataType: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!         vect: type=int; val=0;
+i!         nbDims: type=int; val=0;
+i!         dimA: type=int; val=[];
+i!         format: type=cudnnTensorFormat_t; val=CUDNN_TENSOR_NCHW (0);
+i!     yDesc: type=cudnnTensorDescriptor_t:
+i!         dataType: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!         nbDims: type=int; val=0;
+i!         dimA: type=int; val=[];
+i!         strideA: type=int; val=[];
+i!     convDesc: type=cudnnConvolutionDescriptor_t:
+i!         mode: type=cudnnConvolutionMode_t; val=CUDNN_CONVOLUTION (0);
+i!         dataType: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!         mathType: type=cudnnMathType_t; val=CUDNN_DEFAULT_MATH (0);
+i!         reorderType: type=int; val=0;
+i!         arrayLength: type=int; val=0;
+i!         padA: type=int; val=[];
+i!         strideA: type=int; val=[];
+i!         dilationA: type=int; val=[];
+i!         groupCount: type=int; val=0;
+i!     alpha: type=CUDNN_DATA_FLOAT; val=1.000000;
+i!     beta: type=CUDNN_DATA_FLOAT; val=0.000000;
+i!     engine_id: type=int; val=28;
+i!     target_sm_count: type=int; val=0;
+i!     knobDesc: type=cudnnBackendDescriptor_t:
+i!         CUDNN_KNOB_TYPE_TILE_SIZE: type=int; val=4;
+i!         CUDNN_KNOB_TYPE_USE_TEX: type=int; val=0;
+i!     numericalNotes: type=cudnnBackendDescriptor_t; val=NULL_PTR;
+i!     behaviorNotes: type=cudnnBackendDescriptor_t; val=NULL_PTR;
+i! Time: 2026-09-23T15:39:48.361417 (0d+0h+0m+1s since start)
+i! Process=87011; Thread=87011; GPU=0; Handle=0x3b601af0; StreamId=(nil) (defaultStream).
+
+
+W! CuDNN (v92400 43) function cudnnConvolutionForward() called:
+w!     Info: Traceback contains 6 message(s)
+w!         Error: CUDNN_STATUS_BAD_PARAM; Reason: outputGraph.buildDAG()
+w!         Error: CUDNN_STATUS_BAD_PARAM; Reason: initGraph(graph)
+w!         Warning: CUDNN_STATUS_INTERNAL_ERROR; Reason: cudnnBackendFinalizeGraphVisualize: Graph logging failed
+w!         Error: CUDNN_STATUS_BAD_PARAM; Reason: outputGraph.buildDAG()
+w!         Error: CUDNN_STATUS_BAD_PARAM; Reason: initGraph(graph)
+w!         Warning: CUDNN_STATUS_INTERNAL_ERROR; Reason: cudnnBackendFinalizeEngineCfgVisualize: Graph logging failed
+w! Time: 2026-09-23T15:39:48.445020 (0d+0h+0m+1s since start)
+w! Process=87011; Thread=87011; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnDestroyConvolutionDescriptor() called:
+i!     convDesc: location=host; addr=0x3b6beaa0;
+i! Time: 2026-09-23T15:39:48.445230 (0d+0h+0m+1s since start)
+i! Process=87011; Thread=87011; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnDestroyFilterDescriptor() called:
+i! Time: 2026-09-23T15:39:48.445358 (0d+0h+0m+1s since start)
+i! Process=87011; Thread=87011; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnDestroyTensorDescriptor() called:
+i! Time: 2026-09-23T15:39:48.445455 (0d+0h+0m+1s since start)
+i! Process=87011; Thread=87011; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnDestroyTensorDescriptor() called:
+i! Time: 2026-09-23T15:39:48.445465 (0d+0h+0m+1s since start)
+i! Process=87011; Thread=87011; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnCreate() called:
+i!     handle: location=host; addr=0x706805f98358;
+i! Time: 2026-09-23T15:39:48.590481 (0d+0h+0m+1s since start)
+i! Process=87011; Thread=87049; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnCreate() called:
+i!     compute_capability_major: type=int; val=12;
+i!     compute_capability_minor: type=int; val=0;
+i!     status: type=cudnnStatus_t; val=CUDNN_STATUS_SUCCESS (0);
+i! Time: 2026-09-23T15:39:48.592717 (0d+0h+0m+1s since start)
+i! Process=87011; Thread=87049; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnSetStream() called:
+i!     handle: type=cudnnHandle_t:
+i!         streamId: type=cudaStream_t; streamId=(nil) (defaultStream);
+i!         deviceProp: type=CUDNN_BACKEND_DEVICEPROP_DESCRIPTOR:
+i!             deviceName: type=string; val="NVIDIA GeForce RTX 5060 Laptop GPU";
+i!             cudaDeviceId: type=int; val=0;
+i!             deviceVer: type=int; val=1200;
+i!             multiProcessorCount: type=int; val=26;
+i!             driverVer: type=int; val=13030;
+i!             maxSharedMemoryPerBlockOptin: type=int; val=101376;
+i!             totalGlobalMem: type=size_t; val=8546484224;
+i!     streamId: type=cudaStream_t; streamId=(nil) (defaultStream);
+i! Time: 2026-09-23T15:39:48.592757 (0d+0h+0m+1s since start)
+i! Process=87011; Thread=87049; GPU=0; Handle=0x706805f9b3e0; StreamId=(nil) (defaultStream).
+
+
+I! CuDNN (v92400 43) function cudnnCreateTensorDescriptor() called:
+i! Time: 2026-09-23T15:39:48.592780 (0d+0h+0m+1s since start)
+i! Process=87011; Thread=87049; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnSetTensorNdDescriptor() called:
+i!     dataType: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!     nbDims: type=int; val=4;
+i!     dimA: type=int; val=[4,3,64,64];
+i!     strideA: type=int; val=[12288,4096,64,1];
+i! Time: 2026-09-23T15:39:48.592795 (0d+0h+0m+1s since start)
+i! Process=87011; Thread=87049; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnCreateFilterDescriptor() called:
+i! Time: 2026-09-23T15:39:48.592804 (0d+0h+0m+1s since start)
+i! Process=87011; Thread=87049; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnSetFilterNdDescriptor() called:
+i!     dataType: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!     format: type=cudnnTensorFormat_t; val=CUDNN_TENSOR_NCHW (0);
+i!     nbDims: type=int; val=4;
+i!     filterDimA: type=int; val=[16,3,3,3];
+i! Time: 2026-09-23T15:39:48.592815 (0d+0h+0m+1s since start)
+i! Process=87011; Thread=87049; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnCreateTensorDescriptor() called:
+i! Time: 2026-09-23T15:39:48.592823 (0d+0h+0m+1s since start)
+i! Process=87011; Thread=87049; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnSetTensorNdDescriptor() called:
+i!     dataType: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!     nbDims: type=int; val=4;
+i!     dimA: type=int; val=[4,16,64,64];
+i!     strideA: type=int; val=[65536,4096,64,1];
+i! Time: 2026-09-23T15:39:48.592828 (0d+0h+0m+1s since start)
+i! Process=87011; Thread=87049; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnCreateConvolutionDescriptor() called:
+i!     convDesc: location=host; addr=0x70680d1fca50;
+i! Time: 2026-09-23T15:39:48.592837 (0d+0h+0m+1s since start)
+i! Process=87011; Thread=87049; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnSetConvolutionNdDescriptor() called:
+i!     convDesc: location=host; addr=0x706805fca660;
+i!     arrayLength: type=int; val=2;
+i!     padA: type=int; val=[1,1];
+i!     strideA: type=int; val=[1,1];
+i!     dilationA: type=int; val=[1,1];
+i!     mode: type=cudnnConvolutionMode_t; val=CUDNN_CROSS_CORRELATION (1);
+i!     dataType: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i! Time: 2026-09-23T15:39:48.592845 (0d+0h+0m+1s since start)
+i! Process=87011; Thread=87049; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnSetConvolutionGroupCount() called:
+i!     convDesc: location=host; addr=0x706805fca660;
+i!     groupCount: type=int; val=1;
+i! Time: 2026-09-23T15:39:48.592852 (0d+0h+0m+1s since start)
+i! Process=87011; Thread=87049; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnSetConvolutionMathType() called:
+i!     convDesc: location=host; addr=0x706805fca660;
+i!     mathType: type=cudnnMathType_t; val=CUDNN_DEFAULT_MATH (0);
+i! Time: 2026-09-23T15:39:48.592858 (0d+0h+0m+1s since start)
+i! Process=87011; Thread=87049; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnGetConvolutionBackwardDataAlgorithm_v7() called:
+i!     handle: type=cudnnHandle_t:
+i!         streamId: type=cudaStream_t; streamId=(nil) (defaultStream);
+i!         deviceProp: type=CUDNN_BACKEND_DEVICEPROP_DESCRIPTOR:
+i!             deviceName: type=string; val="NVIDIA GeForce RTX 5060 Laptop GPU";
+i!             cudaDeviceId: type=int; val=0;
+i!             deviceVer: type=int; val=1200;
+i!             multiProcessorCount: type=int; val=26;
+i!             driverVer: type=int; val=13030;
+i!             maxSharedMemoryPerBlockOptin: type=int; val=101376;
+i!             totalGlobalMem: type=size_t; val=8546484224;
+i!     filterDesc: type=cudnnFilterDescriptor_t:
+i!         dataType: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!         vect: type=int; val=0;
+i!         nbDims: type=int; val=4;
+i!         dimA: type=int; val=[16,3,3,3];
+i!         format: type=cudnnTensorFormat_t; val=CUDNN_TENSOR_NCHW (0);
+i!     diffDesc: type=cudnnTensorDescriptor_t:
+i!         dataType: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!         nbDims: type=int; val=4;
+i!         dimA: type=int; val=[4,16,64,64];
+i!         strideA: type=int; val=[65536,4096,64,1];
+i!     convDesc: type=cudnnConvolutionDescriptor_t:
+i!         mode: type=cudnnConvolutionMode_t; val=CUDNN_CROSS_CORRELATION (1);
+i!         dataType: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!         mathType: type=cudnnMathType_t; val=CUDNN_DEFAULT_MATH (0);
+i!         reorderType: type=int; val=0;
+i!         arrayLength: type=int; val=2;
+i!         padA: type=int; val=[1,1];
+i!         strideA: type=int; val=[1,1];
+i!         dilationA: type=int; val=[1,1];
+i!         groupCount: type=int; val=1;
+i!     gradDesc: type=cudnnTensorDescriptor_t:
+i!         dataType: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!         nbDims: type=int; val=4;
+i!         dimA: type=int; val=[4,3,64,64];
+i!         strideA: type=int; val=[12288,4096,64,1];
+i!     requestedAlgoCount: type=int; val=1;
+i! Time: 2026-09-23T15:39:48.593031 (0d+0h+0m+1s since start)
+i! Process=87011; Thread=87049; GPU=0; Handle=0x706805f9b3e0; StreamId=(nil) (defaultStream).
+
+
+W! CuDNN (v92400 43) function cudnnGetConvolutionBackwardDataAlgorithm_v7() called:
+w!     Info: Traceback contains 13 message(s)
+w!         Error: CUDNN_STATUS_BAD_PARAM; Reason: outputGraph.buildDAG()
+w!         Error: CUDNN_STATUS_BAD_PARAM; Reason: initGraph(graph)
+w!         Warning: CUDNN_STATUS_INTERNAL_ERROR; Reason: cudnnBackendFinalizeGraphVisualize: Graph logging failed
+w!         Error: CUDNN_STATUS_BAD_PARAM; Reason: outputGraph.buildDAG()
+w!         Error: CUDNN_STATUS_BAD_PARAM; Reason: initGraph(graph)
+w!         Warning: CUDNN_STATUS_INTERNAL_ERROR; Reason: cudnnBackendFinalizeGraphVisualize: Graph logging failed
+w!         Warning: CUDNN_STATUS_NOT_SUPPORTED; Reason: false == isBackwardDataSupported(handle, dxDesc, wDesc, cDesc, dyDesc, algo)
+w!         Error: CUDNN_STATUS_BAD_PARAM; Reason: outputGraph.buildDAG()
+w!         Error: CUDNN_STATUS_BAD_PARAM; Reason: initGraph(graph)
+w!         Warning: CUDNN_STATUS_INTERNAL_ERROR; Reason: cudnnBackendFinalizeEngineCfgVisualize: Graph logging failed
+w!         Error: CUDNN_STATUS_BAD_PARAM; Reason: outputGraph.buildDAG()
+w!         Error: CUDNN_STATUS_BAD_PARAM; Reason: initGraph(graph)
+w!         Warning: CUDNN_STATUS_INTERNAL_ERROR; Reason: cudnnBackendFinalizeEngineCfgVisualize: Graph logging failed
+w! Time: 2026-09-23T15:39:48.593504 (0d+0h+0m+1s since start)
+w! Process=87011; Thread=87049; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnSetConvolutionMathType() called:
+i!     convDesc: location=host; addr=0x706805fca660;
+i!     mathType: type=cudnnMathType_t; val=CUDNN_DEFAULT_MATH (0);
+i! Time: 2026-09-23T15:39:48.593545 (0d+0h+0m+1s since start)
+i! Process=87011; Thread=87049; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnConvolutionBackwardData() called:
+i!     handle: type=cudnnHandle_t:
+i!         streamId: type=cudaStream_t; streamId=(nil) (defaultStream);
+i!         deviceProp: type=CUDNN_BACKEND_DEVICEPROP_DESCRIPTOR:
+i!             deviceName: type=string; val="NVIDIA GeForce RTX 5060 Laptop GPU";
+i!             cudaDeviceId: type=int; val=0;
+i!             deviceVer: type=int; val=1200;
+i!             multiProcessorCount: type=int; val=26;
+i!             driverVer: type=int; val=13030;
+i!             maxSharedMemoryPerBlockOptin: type=int; val=101376;
+i!             totalGlobalMem: type=size_t; val=8546484224;
+i!     alpha: type=CUDNN_DATA_FLOAT; val=1.000000;
+i!     wDesc: type=cudnnFilterDescriptor_t:
+i!         dataType: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!         vect: type=int; val=0;
+i!         nbDims: type=int; val=4;
+i!         dimA: type=int; val=[16,3,3,3];
+i!         format: type=cudnnTensorFormat_t; val=CUDNN_TENSOR_NCHW (0);
+i!     wData: location=dev; addr=0x505e30000;
+i!     dyDesc: type=cudnnTensorDescriptor_t:
+i!         dataType: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!         nbDims: type=int; val=4;
+i!         dimA: type=int; val=[4,16,64,64];
+i!         strideA: type=int; val=[65536,4096,64,1];
+i!     dyData: location=dev; addr=0x505e30a00;
+i!     convDesc: type=cudnnConvolutionDescriptor_t:
+i!         mode: type=cudnnConvolutionMode_t; val=CUDNN_CROSS_CORRELATION (1);
+i!         dataType: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!         mathType: type=cudnnMathType_t; val=CUDNN_DEFAULT_MATH (0);
+i!         reorderType: type=int; val=0;
+i!         arrayLength: type=int; val=2;
+i!         padA: type=int; val=[1,1];
+i!         strideA: type=int; val=[1,1];
+i!         dilationA: type=int; val=[1,1];
+i!         groupCount: type=int; val=1;
+i!     algo: type=cudnnConvolutionBwdDataAlgo_t; val=CUDNN_CONVOLUTION_BWD_DATA_ALGO_1 (1);
+i!     workSpace: location=dev; addr=NULL_PTR;
+i!     workSpaceSizeInBytes: type=size_t; val=0;
+i!     beta: type=CUDNN_DATA_FLOAT; val=0.000000;
+i!     dxDesc: type=cudnnTensorDescriptor_t:
+i!         dataType: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!         nbDims: type=int; val=4;
+i!         dimA: type=int; val=[4,3,64,64];
+i!         strideA: type=int; val=[12288,4096,64,1];
+i!     dxData: location=dev; addr=0x505f30e00;
+i! Time: 2026-09-23T15:39:48.593702 (0d+0h+0m+1s since start)
+i! Process=87011; Thread=87049; GPU=0; Handle=0x706805f9b3e0; StreamId=(nil) (defaultStream).
+
+
+I! CuDNN (v92400 43) function cudnnBackendExecuteInternal() called:
+i!     enable_tf32: type=bool; val=true;
+i!     operation: type=internalType; val=CONV_BWD_DATA;
+i!     xDesc: type=cudnnTensorDescriptor_t:
+i!         dataType: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!         nbDims: type=int; val=0;
+i!         dimA: type=int; val=[];
+i!         strideA: type=int; val=[];
+i!     wDesc: type=cudnnFilterDescriptor_t:
+i!         dataType: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!         vect: type=int; val=0;
+i!         nbDims: type=int; val=0;
+i!         dimA: type=int; val=[];
+i!         format: type=cudnnTensorFormat_t; val=CUDNN_TENSOR_NCHW (0);
+i!     yDesc: type=cudnnTensorDescriptor_t:
+i!         dataType: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!         nbDims: type=int; val=0;
+i!         dimA: type=int; val=[];
+i!         strideA: type=int; val=[];
+i!     convDesc: type=cudnnConvolutionDescriptor_t:
+i!         mode: type=cudnnConvolutionMode_t; val=CUDNN_CONVOLUTION (0);
+i!         dataType: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!         mathType: type=cudnnMathType_t; val=CUDNN_DEFAULT_MATH (0);
+i!         reorderType: type=int; val=0;
+i!         arrayLength: type=int; val=0;
+i!         padA: type=int; val=[];
+i!         strideA: type=int; val=[];
+i!         dilationA: type=int; val=[];
+i!         groupCount: type=int; val=0;
+i!     alpha: type=CUDNN_DATA_FLOAT; val=1.000000;
+i!     beta: type=CUDNN_DATA_FLOAT; val=0.000000;
+i!     engine_id: type=int; val=0;
+i!     target_sm_count: type=int; val=0;
+i!     knobDesc: type=cudnnBackendDescriptor_t; val=NULL_PTR;
+i!     numericalNotes: type=cudnnBackendDescriptor_t:
+i!         CUDNN_NUMERICAL_NOTE_STRICT_NAN_PROP: type=bool; val=true;
+i!     behaviorNotes: type=cudnnBackendDescriptor_t; val=NULL_PTR;
+i! Time: 2026-09-23T15:39:48.593773 (0d+0h+0m+1s since start)
+i! Process=87011; Thread=87049; GPU=0; Handle=0x706805f9b3e0; StreamId=(nil) (defaultStream).
+
+
+W! CuDNN (v92400 43) function cudnnConvolutionBackwardData() called:
+w!     Info: Traceback contains 6 message(s)
+w!         Error: CUDNN_STATUS_BAD_PARAM; Reason: outputGraph.buildDAG()
+w!         Error: CUDNN_STATUS_BAD_PARAM; Reason: initGraph(graph)
+w!         Warning: CUDNN_STATUS_INTERNAL_ERROR; Reason: cudnnBackendFinalizeGraphVisualize: Graph logging failed
+w!         Error: CUDNN_STATUS_BAD_PARAM; Reason: outputGraph.buildDAG()
+w!         Error: CUDNN_STATUS_BAD_PARAM; Reason: initGraph(graph)
+w!         Warning: CUDNN_STATUS_INTERNAL_ERROR; Reason: cudnnBackendFinalizeEngineCfgVisualize: Graph logging failed
+w! Time: 2026-09-23T15:39:48.609106 (0d+0h+0m+1s since start)
+w! Process=87011; Thread=87049; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnDestroyConvolutionDescriptor() called:
+i!     convDesc: location=host; addr=0x706805fca660;
+i! Time: 2026-09-23T15:39:48.609165 (0d+0h+0m+1s since start)
+i! Process=87011; Thread=87049; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnDestroyFilterDescriptor() called:
+i! Time: 2026-09-23T15:39:48.609178 (0d+0h+0m+1s since start)
+i! Process=87011; Thread=87049; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnDestroyTensorDescriptor() called:
+i! Time: 2026-09-23T15:39:48.609187 (0d+0h+0m+1s since start)
+i! Process=87011; Thread=87049; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnDestroyTensorDescriptor() called:
+i! Time: 2026-09-23T15:39:48.609194 (0d+0h+0m+1s since start)
+i! Process=87011; Thread=87049; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnSetStream() called:
+i!     handle: type=cudnnHandle_t:
+i!         streamId: type=cudaStream_t; streamId=(nil) (defaultStream);
+i!         deviceProp: type=CUDNN_BACKEND_DEVICEPROP_DESCRIPTOR:
+i!             deviceName: type=string; val="NVIDIA GeForce RTX 5060 Laptop GPU";
+i!             cudaDeviceId: type=int; val=0;
+i!             deviceVer: type=int; val=1200;
+i!             multiProcessorCount: type=int; val=26;
+i!             driverVer: type=int; val=13030;
+i!             maxSharedMemoryPerBlockOptin: type=int; val=101376;
+i!             totalGlobalMem: type=size_t; val=8546484224;
+i!     streamId: type=cudaStream_t; streamId=(nil) (defaultStream);
+i! Time: 2026-09-23T15:39:48.609348 (0d+0h+0m+1s since start)
+i! Process=87011; Thread=87049; GPU=0; Handle=0x706805f9b3e0; StreamId=(nil) (defaultStream).
+
+
+I! CuDNN (v92400 43) function cudnnCreateTensorDescriptor() called:
+i! Time: 2026-09-23T15:39:48.609362 (0d+0h+0m+1s since start)
+i! Process=87011; Thread=87049; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnSetTensorNdDescriptor() called:
+i!     dataType: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!     nbDims: type=int; val=4;
+i!     dimA: type=int; val=[4,3,64,64];
+i!     strideA: type=int; val=[12288,4096,64,1];
+i! Time: 2026-09-23T15:39:48.609374 (0d+0h+0m+1s since start)
+i! Process=87011; Thread=87049; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnCreateFilterDescriptor() called:
+i! Time: 2026-09-23T15:39:48.609382 (0d+0h+0m+1s since start)
+i! Process=87011; Thread=87049; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnSetFilterNdDescriptor() called:
+i!     dataType: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!     format: type=cudnnTensorFormat_t; val=CUDNN_TENSOR_NCHW (0);
+i!     nbDims: type=int; val=4;
+i!     filterDimA: type=int; val=[16,3,3,3];
+i! Time: 2026-09-23T15:39:48.609392 (0d+0h+0m+1s since start)
+i! Process=87011; Thread=87049; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnCreateTensorDescriptor() called:
+i! Time: 2026-09-23T15:39:48.609400 (0d+0h+0m+1s since start)
+i! Process=87011; Thread=87049; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnSetTensorNdDescriptor() called:
+i!     dataType: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!     nbDims: type=int; val=4;
+i!     dimA: type=int; val=[4,16,64,64];
+i!     strideA: type=int; val=[65536,4096,64,1];
+i! Time: 2026-09-23T15:39:48.609408 (0d+0h+0m+1s since start)
+i! Process=87011; Thread=87049; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnCreateConvolutionDescriptor() called:
+i!     convDesc: location=host; addr=0x70680d1fc900;
+i! Time: 2026-09-23T15:39:48.609419 (0d+0h+0m+1s since start)
+i! Process=87011; Thread=87049; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnSetConvolutionNdDescriptor() called:
+i!     convDesc: location=host; addr=0x706805fcb200;
+i!     arrayLength: type=int; val=2;
+i!     padA: type=int; val=[1,1];
+i!     strideA: type=int; val=[1,1];
+i!     dilationA: type=int; val=[1,1];
+i!     mode: type=cudnnConvolutionMode_t; val=CUDNN_CROSS_CORRELATION (1);
+i!     dataType: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i! Time: 2026-09-23T15:39:48.609429 (0d+0h+0m+1s since start)
+i! Process=87011; Thread=87049; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnSetConvolutionGroupCount() called:
+i!     convDesc: location=host; addr=0x706805fcb200;
+i!     groupCount: type=int; val=1;
+i! Time: 2026-09-23T15:39:48.609438 (0d+0h+0m+1s since start)
+i! Process=87011; Thread=87049; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnSetConvolutionMathType() called:
+i!     convDesc: location=host; addr=0x706805fcb200;
+i!     mathType: type=cudnnMathType_t; val=CUDNN_DEFAULT_MATH (0);
+i! Time: 2026-09-23T15:39:48.609446 (0d+0h+0m+1s since start)
+i! Process=87011; Thread=87049; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnGetConvolutionBackwardFilterAlgorithm_v7() called:
+i!     handle: type=cudnnHandle_t:
+i!         streamId: type=cudaStream_t; streamId=(nil) (defaultStream);
+i!         deviceProp: type=CUDNN_BACKEND_DEVICEPROP_DESCRIPTOR:
+i!             deviceName: type=string; val="NVIDIA GeForce RTX 5060 Laptop GPU";
+i!             cudaDeviceId: type=int; val=0;
+i!             deviceVer: type=int; val=1200;
+i!             multiProcessorCount: type=int; val=26;
+i!             driverVer: type=int; val=13030;
+i!             maxSharedMemoryPerBlockOptin: type=int; val=101376;
+i!             totalGlobalMem: type=size_t; val=8546484224;
+i!     srcDesc: type=cudnnTensorDescriptor_t:
+i!         dataType: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!         nbDims: type=int; val=4;
+i!         dimA: type=int; val=[4,3,64,64];
+i!         strideA: type=int; val=[12288,4096,64,1];
+i!     diffDesc: type=cudnnTensorDescriptor_t:
+i!         dataType: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!         nbDims: type=int; val=4;
+i!         dimA: type=int; val=[4,16,64,64];
+i!         strideA: type=int; val=[65536,4096,64,1];
+i!     convDesc: type=cudnnConvolutionDescriptor_t:
+i!         mode: type=cudnnConvolutionMode_t; val=CUDNN_CROSS_CORRELATION (1);
+i!         dataType: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!         mathType: type=cudnnMathType_t; val=CUDNN_DEFAULT_MATH (0);
+i!         reorderType: type=int; val=0;
+i!         arrayLength: type=int; val=2;
+i!         padA: type=int; val=[1,1];
+i!         strideA: type=int; val=[1,1];
+i!         dilationA: type=int; val=[1,1];
+i!         groupCount: type=int; val=1;
+i!     gradDesc: type=cudnnFilterDescriptor_t:
+i!         dataType: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!         vect: type=int; val=0;
+i!         nbDims: type=int; val=4;
+i!         dimA: type=int; val=[16,3,3,3];
+i!         format: type=cudnnTensorFormat_t; val=CUDNN_TENSOR_NCHW (0);
+i!     requestedAlgoCount: type=int; val=1;
+i! Time: 2026-09-23T15:39:48.609672 (0d+0h+0m+1s since start)
+i! Process=87011; Thread=87049; GPU=0; Handle=0x706805f9b3e0; StreamId=(nil) (defaultStream).
+
+
+W! CuDNN (v92400 43) function cudnnGetConvolutionBackwardFilterAlgorithm_v7() called:
+w!     Info: Traceback contains 13 message(s)
+w!         Error: CUDNN_STATUS_BAD_PARAM; Reason: outputGraph.buildDAG()
+w!         Error: CUDNN_STATUS_BAD_PARAM; Reason: initGraph(graph)
+w!         Warning: CUDNN_STATUS_INTERNAL_ERROR; Reason: cudnnBackendFinalizeGraphVisualize: Graph logging failed
+w!         Error: CUDNN_STATUS_BAD_PARAM; Reason: outputGraph.buildDAG()
+w!         Error: CUDNN_STATUS_BAD_PARAM; Reason: initGraph(graph)
+w!         Warning: CUDNN_STATUS_INTERNAL_ERROR; Reason: cudnnBackendFinalizeGraphVisualize: Graph logging failed
+w!         Warning: CUDNN_STATUS_NOT_SUPPORTED; Reason: (dyDesc->dimA[2] != 1) && (dyDesc->dimA[3] != 1)
+w!         Error: CUDNN_STATUS_BAD_PARAM; Reason: outputGraph.buildDAG()
+w!         Error: CUDNN_STATUS_BAD_PARAM; Reason: initGraph(graph)
+w!         Warning: CUDNN_STATUS_INTERNAL_ERROR; Reason: cudnnBackendFinalizeEngineCfgVisualize: Graph logging failed
+w!         Error: CUDNN_STATUS_BAD_PARAM; Reason: outputGraph.buildDAG()
+w!         Error: CUDNN_STATUS_BAD_PARAM; Reason: initGraph(graph)
+w!         Warning: CUDNN_STATUS_INTERNAL_ERROR; Reason: cudnnBackendFinalizeEngineCfgVisualize: Graph logging failed
+w! Time: 2026-09-23T15:39:48.648348 (0d+0h+0m+1s since start)
+w! Process=87011; Thread=87049; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnSetConvolutionMathType() called:
+i!     convDesc: location=host; addr=0x706805fcb200;
+i!     mathType: type=cudnnMathType_t; val=CUDNN_DEFAULT_MATH (0);
+i! Time: 2026-09-23T15:39:48.648951 (0d+0h+0m+1s since start)
+i! Process=87011; Thread=87049; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnConvolutionBackwardFilter() called:
+i!     handle: type=cudnnHandle_t:
+i!         streamId: type=cudaStream_t; streamId=(nil) (defaultStream);
+i!         deviceProp: type=CUDNN_BACKEND_DEVICEPROP_DESCRIPTOR:
+i!             deviceName: type=string; val="NVIDIA GeForce RTX 5060 Laptop GPU";
+i!             cudaDeviceId: type=int; val=0;
+i!             deviceVer: type=int; val=1200;
+i!             multiProcessorCount: type=int; val=26;
+i!             driverVer: type=int; val=13030;
+i!             maxSharedMemoryPerBlockOptin: type=int; val=101376;
+i!             totalGlobalMem: type=size_t; val=8546484224;
+i!     alpha: type=CUDNN_DATA_FLOAT; val=1.000000;
+i!     xDesc: type=cudnnTensorDescriptor_t:
+i!         dataType: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!         nbDims: type=int; val=4;
+i!         dimA: type=int; val=[4,3,64,64];
+i!         strideA: type=int; val=[12288,4096,64,1];
+i!     xData: location=dev; addr=0x505e00000;
+i!     dyDesc: type=cudnnTensorDescriptor_t:
+i!         dataType: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!         nbDims: type=int; val=4;
+i!         dimA: type=int; val=[4,16,64,64];
+i!         strideA: type=int; val=[65536,4096,64,1];
+i!     dyData: location=dev; addr=0x505e30a00;
+i!     convDesc: type=cudnnConvolutionDescriptor_t:
+i!         mode: type=cudnnConvolutionMode_t; val=CUDNN_CROSS_CORRELATION (1);
+i!         dataType: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!         mathType: type=cudnnMathType_t; val=CUDNN_DEFAULT_MATH (0);
+i!         reorderType: type=int; val=0;
+i!         arrayLength: type=int; val=2;
+i!         padA: type=int; val=[1,1];
+i!         strideA: type=int; val=[1,1];
+i!         dilationA: type=int; val=[1,1];
+i!         groupCount: type=int; val=1;
+i!     algo: type=cudnnConvolutionBwdFilterAlgo_t; val=CUDNN_CONVOLUTION_BWD_FILTER_ALGO_1 (1);
+i!     workSpace: location=dev; addr=0x502200000;
+i!     workSpaceSizeInBytes: type=size_t; val=1322384;
+i!     beta: type=CUDNN_DATA_FLOAT; val=0.000000;
+i!     dwDesc: type=cudnnFilterDescriptor_t:
+i!         dataType: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!         vect: type=int; val=0;
+i!         nbDims: type=int; val=4;
+i!         dimA: type=int; val=[16,3,3,3];
+i!         format: type=cudnnTensorFormat_t; val=CUDNN_TENSOR_NCHW (0);
+i!     dwData: location=dev; addr=0x505f60e00;
+i! Time: 2026-09-23T15:39:48.649195 (0d+0h+0m+1s since start)
+i! Process=87011; Thread=87049; GPU=0; Handle=0x706805f9b3e0; StreamId=(nil) (defaultStream).
+
+
+I! CuDNN (v92400 43) function cudnnBackendExecuteInternal() called:
+i!     enable_tf32: type=bool; val=true;
+i!     operation: type=internalType; val=CONV_BWD_FILTER;
+i!     xDesc: type=cudnnTensorDescriptor_t:
+i!         dataType: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!         nbDims: type=int; val=4;
+i!         dimA: type=int; val=[4,3,64,64];
+i!         strideA: type=int; val=[12288,4096,64,1];
+i!     wDesc: type=cudnnFilterDescriptor_t:
+i!         dataType: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!         vect: type=int; val=0;
+i!         nbDims: type=int; val=4;
+i!         dimA: type=int; val=[16,3,3,3];
+i!         format: type=cudnnTensorFormat_t; val=CUDNN_TENSOR_NCHW (0);
+i!     yDesc: type=cudnnTensorDescriptor_t:
+i!         dataType: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!         nbDims: type=int; val=4;
+i!         dimA: type=int; val=[4,16,64,64];
+i!         strideA: type=int; val=[65536,4096,64,1];
+i!     convDesc: type=cudnnConvolutionDescriptor_t:
+i!         mode: type=cudnnConvolutionMode_t; val=CUDNN_CROSS_CORRELATION (1);
+i!         dataType: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!         mathType: type=cudnnMathType_t; val=CUDNN_DEFAULT_MATH (0);
+i!         reorderType: type=int; val=0;
+i!         arrayLength: type=int; val=2;
+i!         padA: type=int; val=[1,1];
+i!         strideA: type=int; val=[1,1];
+i!         dilationA: type=int; val=[1,1];
+i!         groupCount: type=int; val=1;
+i!     alpha: type=CUDNN_DATA_FLOAT; val=1.000000;
+i!     beta: type=CUDNN_DATA_FLOAT; val=0.000000;
+i!     engine_id: type=int; val=50;
+i!     target_sm_count: type=int; val=0;
+i!     knobDesc: type=cudnnBackendDescriptor_t:
+i!         CUDNN_KNOB_TYPE_SPLIT_K: type=int; val=4;
+i!         CUDNN_KNOB_TYPE_TILE_SIZE: type=int; val=5;
+i!         CUDNN_KNOB_TYPE_KBLOCK: type=int; val=2;
+i!         CUDNN_KNOB_TYPE_STAGES: type=int; val=6;
+i!     numericalNotes: type=cudnnBackendDescriptor_t:
+i!         CUDNN_NUMERICAL_NOTE_TENSOR_CORE: type=bool; val=true;
+i!     behaviorNotes: type=cudnnBackendDescriptor_t; val=NULL_PTR;
+i! Time: 2026-09-23T15:39:48.649323 (0d+0h+0m+1s since start)
+i! Process=87011; Thread=87049; GPU=0; Handle=0x706805f9b3e0; StreamId=(nil) (defaultStream).
+
+
+W! CuDNN (v92400 43) function cudnnConvolutionBackwardFilter() called:
+w!     Info: Traceback contains 6 message(s)
+w!         Error: CUDNN_STATUS_BAD_PARAM; Reason: outputGraph.buildDAG()
+w!         Error: CUDNN_STATUS_BAD_PARAM; Reason: initGraph(graph)
+w!         Warning: CUDNN_STATUS_INTERNAL_ERROR; Reason: cudnnBackendFinalizeGraphVisualize: Graph logging failed
+w!         Error: CUDNN_STATUS_BAD_PARAM; Reason: outputGraph.buildDAG()
+w!         Error: CUDNN_STATUS_BAD_PARAM; Reason: initGraph(graph)
+w!         Warning: CUDNN_STATUS_INTERNAL_ERROR; Reason: cudnnBackendFinalizeEngineCfgVisualize: Graph logging failed
+w! Time: 2026-09-23T15:39:48.684439 (0d+0h+0m+1s since start)
+w! Process=87011; Thread=87049; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnDestroyConvolutionDescriptor() called:
+i!     convDesc: location=host; addr=0x706805fcb200;
+i! Time: 2026-09-23T15:39:48.684501 (0d+0h+0m+1s since start)
+i! Process=87011; Thread=87049; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnDestroyFilterDescriptor() called:
+i! Time: 2026-09-23T15:39:48.684512 (0d+0h+0m+1s since start)
+i! Process=87011; Thread=87049; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnDestroyTensorDescriptor() called:
+i! Time: 2026-09-23T15:39:48.684521 (0d+0h+0m+1s since start)
+i! Process=87011; Thread=87049; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnDestroyTensorDescriptor() called:
+i! Time: 2026-09-23T15:39:48.684528 (0d+0h+0m+1s since start)
+i! Process=87011; Thread=87049; GPU=NULL; Handle=NULL; StreamId=NULL.
+

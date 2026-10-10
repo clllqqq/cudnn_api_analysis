@@ -1,0 +1,12 @@
+cuDNN 92400  设备: NVIDIA GeForce RTX 5060 Laptop GPU
+
+首次 cudnnCreate -> SUCCESS 0x2ebf7290 耗时 504.62 ms
+再次 cudnnCreate -> 0x2ed4cab0 耗时 0.612 ms 句柄堆块大小 2072 字节（两次地址不同：True）
+
+未设置 stream 时 cudnnGetStream -> None（NULL）
+cudnnSetStream(s1) 后 getStream=0x2ed7ae50，匹配=True，该指针出现在句柄内存偏移 ['0x4b8']
+cudnnSetStream(s2) 后 getStream=0x2ed85e10，匹配=True，该指针出现在句柄内存偏移 ['0x4b8']
+
+cudnnSetStream(NULL 句柄, 0) -> 2000 (BAD_PARAM)：句柄是几乎所有 API 的必需第一个参数
+
+另一个线程里 cudnnCreate 得到 0x75e88c003f90（与主线程 0x2ebf7290 不同）

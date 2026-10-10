@@ -1,0 +1,10 @@
+# ctc: 7 个 kernel 发射（CUPTI，torch.profiler）
+# target=/home/liquan/cudnn_per_op.py case=ctc
+# kernel                                                                   grid             block                smem  regs stream        us  归属库
+void at::native::(anonymous namespace)::distribution_elementwise_grid_st [4, 1, 1]        [256, 1, 1]             0    60      7       1.2  ?
+void (anonymous namespace)::softmax_warp_forward<float, float, float, 4, [5, 1, 1]        [16, 8, 1]              0    19      7       1.2  ?
+void at::native::(anonymous namespace)::distribution_elementwise_grid_st [1, 1, 1]        [256, 1, 1]             0    50      7       1.0  ?
+void at::native::(anonymous namespace)::ctc_loss_log_alpha_gpu_kernel<fl [1, 1, 1]        [20, 4, 1]              0    56      7       6.3  ?
+void at::native::vectorized_elementwise_kernel<4, at::native::(anonymous [1, 1, 1]        [128, 1, 1]             0    36      7       1.0  ?
+void at::native::vectorized_elementwise_kernel<4, at::native::BinaryFunc [1, 1, 1]        [128, 1, 1]             0    40      7       1.5  ?
+void at::native::reduce_kernel<512, 1, at::native::ReduceOp<float, at::n [1, 1, 1]        [4, 1, 1]              16    27      7       1.5  libcudnn_engines_runtime_compiled

@@ -1,0 +1,167 @@
+
+I! CuDNN (v92400 43) function cudnnCreate() called:
+i!     handle: location=host; addr=0x1c4b7900;
+i! Time: 2026-09-23T10:15:03.775896 (0d+0h+0m+0s since start)
+i! Process=9863; Thread=9863; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnGraphLibraryConfigInit() called:
+i!     apiLog: type=cudnnLibConfig_t; val=AUTO;
+i! Time: 2026-09-23T10:15:03.776251 (0d+0h+0m+0s since start)
+i! Process=9863; Thread=9863; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnCreate() called:
+i!     compute_capability_major: type=int; val=12;
+i!     compute_capability_minor: type=int; val=0;
+i!     status: type=cudnnStatus_t; val=CUDNN_STATUS_SUCCESS (0);
+i! Time: 2026-09-23T10:15:03.788218 (0d+0h+0m+0s since start)
+i! Process=9863; Thread=9863; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnSetStream() called:
+i!     handle: type=cudnnHandle_t:
+i!         streamId: type=cudaStream_t; streamId=(nil) (defaultStream);
+i!         deviceProp: type=CUDNN_BACKEND_DEVICEPROP_DESCRIPTOR:
+i!             deviceName: type=string; val="NVIDIA GeForce RTX 5060 Laptop GPU";
+i!             cudaDeviceId: type=int; val=0;
+i!             deviceVer: type=int; val=1200;
+i!             multiProcessorCount: type=int; val=26;
+i!             driverVer: type=int; val=13030;
+i!             maxSharedMemoryPerBlockOptin: type=int; val=101376;
+i!             totalGlobalMem: type=size_t; val=8546484224;
+i!     streamId: type=cudaStream_t; streamId=(nil) (defaultStream);
+i! Time: 2026-09-23T10:15:03.789419 (0d+0h+0m+0s since start)
+i! Process=9863; Thread=9863; GPU=0; Handle=0x1c54b530; StreamId=(nil) (defaultStream).
+
+
+I! CuDNN (v92400 43) function cudnnCreateCTCLossDescriptor() called:
+i! Time: 2026-09-23T10:15:03.823192 (0d+0h+0m+0s since start)
+i! Process=9863; Thread=9863; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnSetCTCLossDescriptor_v9() called:
+i!     compType: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!     normMode: type=cudnnLossNormalizationMode_t; val=CUDNN_LOSS_NORMALIZATION_SOFTMAX (1);
+i!     ctcGradMode: type=int; val=1;
+i!     maxLabelLength: type=int; val=255;
+i! Time: 2026-09-23T10:15:03.823789 (0d+0h+0m+0s since start)
+i! Process=9863; Thread=9863; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnCreateTensorDescriptor() called:
+i! Time: 2026-09-23T10:15:03.824358 (0d+0h+0m+0s since start)
+i! Process=9863; Thread=9863; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnSetTensorNdDescriptor() called:
+i!     dataType: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!     nbDims: type=int; val=3;
+i!     dimA: type=int; val=[20,4,10];
+i!     strideA: type=int; val=[40,10,1];
+i! Time: 2026-09-23T10:15:03.824521 (0d+0h+0m+0s since start)
+i! Process=9863; Thread=9863; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnCreateTensorDescriptor() called:
+i! Time: 2026-09-23T10:15:03.824979 (0d+0h+0m+0s since start)
+i! Process=9863; Thread=9863; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnSetTensorNdDescriptor() called:
+i!     dataType: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!     nbDims: type=int; val=3;
+i!     dimA: type=int; val=[20,4,10];
+i!     strideA: type=int; val=[40,10,1];
+i! Time: 2026-09-23T10:15:03.825003 (0d+0h+0m+0s since start)
+i! Process=9863; Thread=9863; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnGetCTCLossWorkspaceSizeInternal() called:
+i!     isLabelDataOnDevice: type=bool; val=true;
+i!     handle: type=cudnnHandle_t:
+i!         streamId: type=cudaStream_t; streamId=(nil) (defaultStream);
+i!         deviceProp: type=CUDNN_BACKEND_DEVICEPROP_DESCRIPTOR:
+i!             deviceName: type=string; val="NVIDIA GeForce RTX 5060 Laptop GPU";
+i!             cudaDeviceId: type=int; val=0;
+i!             deviceVer: type=int; val=1200;
+i!             multiProcessorCount: type=int; val=26;
+i!             driverVer: type=int; val=13030;
+i!             maxSharedMemoryPerBlockOptin: type=int; val=101376;
+i!             totalGlobalMem: type=size_t; val=8546484224;
+i!     probsDesc: type=cudnnTensorDescriptor_t:
+i!         dataType: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!         nbDims: type=int; val=3;
+i!         dimA: type=int; val=[20,4,10];
+i!         strideA: type=int; val=[40,10,1];
+i!     gradientsDesc: type=cudnnTensorDescriptor_t:
+i!         dataType: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!         nbDims: type=int; val=3;
+i!         dimA: type=int; val=[20,4,10];
+i!         strideA: type=int; val=[40,10,1];
+i!     algo: type=cudnnCTCLossAlgo_t; val=CUDNN_CTC_LOSS_ALGO_DETERMINISTIC (0);
+i!     ctcLossDesc: type=cudnnCTCLossDescriptor_t:
+i!         compType: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!         normMode: type=cudnnLossNormalizationMode_t; val=CUDNN_LOSS_NORMALIZATION_SOFTMAX (1);
+i!         gradMode: type=cudnnNanPropagation_t; val=CUDNN_PROPAGATE_NAN (1);
+i!     maxLabelLength: type=int; val=255;
+i!     maxInputLength: type=int; val=20;
+i!     sizeInBytes: type=size_t; val=136397122096859;
+i! Time: 2026-09-23T10:15:03.825199 (0d+0h+0m+0s since start)
+i! Process=9863; Thread=9863; GPU=0; Handle=0x1c54b530; StreamId=(nil) (defaultStream).
+
+
+I! CuDNN (v92400 43) function cudnnCTCLossInternal() called:
+i!     handle: type=cudnnHandle_t:
+i!         streamId: type=cudaStream_t; streamId=(nil) (defaultStream);
+i!         deviceProp: type=CUDNN_BACKEND_DEVICEPROP_DESCRIPTOR:
+i!             deviceName: type=string; val="NVIDIA GeForce RTX 5060 Laptop GPU";
+i!             cudaDeviceId: type=int; val=0;
+i!             deviceVer: type=int; val=1200;
+i!             multiProcessorCount: type=int; val=26;
+i!             driverVer: type=int; val=13030;
+i!             maxSharedMemoryPerBlockOptin: type=int; val=101376;
+i!             totalGlobalMem: type=size_t; val=8546484224;
+i!     probsDesc: type=cudnnTensorDescriptor_t:
+i!         dataType: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!         nbDims: type=int; val=3;
+i!         dimA: type=int; val=[20,4,10];
+i!         strideA: type=int; val=[40,10,1];
+i!     probs: location=dev; addr=0x505e00e00;
+i!     labels: location=dev; addr=0x505e00000;
+i!     labelLengths: location=dev; addr=0x505e00400;
+i!     inputLengths: location=dev; addr=0x505e00200;
+i!     maxLabelLength: type=int; val=255;
+i!     maxInputLength: type=int; val=20;
+i!     costs: location=dev; addr=0x505e00600;
+i!     gradientsDesc: type=cudnnTensorDescriptor_t:
+i!         dataType: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!         nbDims: type=int; val=3;
+i!         dimA: type=int; val=[20,4,10];
+i!         strideA: type=int; val=[40,10,1];
+i!     gradients: location=dev; addr=0x505e01c00;
+i!     algo: type=cudnnCTCLossAlgo_t; val=CUDNN_CTC_LOSS_ALGO_DETERMINISTIC (0);
+i!     ctcLossDesc: type=cudnnCTCLossDescriptor_t:
+i!         compType: type=cudnnDataType_t; val=CUDNN_DATA_FLOAT (0);
+i!         normMode: type=cudnnLossNormalizationMode_t; val=CUDNN_LOSS_NORMALIZATION_SOFTMAX (1);
+i!         gradMode: type=cudnnNanPropagation_t; val=CUDNN_PROPAGATE_NAN (1);
+i!     workspace: location=dev; addr=0x505e02a00;
+i!     workSpaceSizeInBytes: type=size_t; val=338448;
+i! Time: 2026-09-23T10:15:03.825407 (0d+0h+0m+0s since start)
+i! Process=9863; Thread=9863; GPU=0; Handle=0x1c54b530; StreamId=(nil) (defaultStream).
+
+
+I! CuDNN (v92400 43) function cudnnDestroyTensorDescriptor() called:
+i! Time: 2026-09-23T10:15:03.842825 (0d+0h+0m+0s since start)
+i! Process=9863; Thread=9863; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnDestroyTensorDescriptor() called:
+i! Time: 2026-09-23T10:15:03.842854 (0d+0h+0m+0s since start)
+i! Process=9863; Thread=9863; GPU=NULL; Handle=NULL; StreamId=NULL.
+
+
+I! CuDNN (v92400 43) function cudnnDestroyCTCLossDescriptor() called:
+i! Time: 2026-09-23T10:15:03.843003 (0d+0h+0m+0s since start)
+i! Process=9863; Thread=9863; GPU=NULL; Handle=NULL; StreamId=NULL.
+

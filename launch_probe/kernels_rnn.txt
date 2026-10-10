@@ -1,0 +1,14 @@
+# rnn: 11 个 kernel 发射（CUPTI，torch.profiler）
+# target=/home/liquan/cudnn_per_op.py case=rnn
+# kernel                                                                   grid             block                smem  regs stream        us  归属库
+void at::native::vectorized_elementwise_kernel<4, at::native::FillFuncto [57, 1, 1]       [128, 1, 1]             0    16      7       1.0  ?
+void at::native::(anonymous namespace)::distribution_elementwise_grid_st [20, 1, 1]       [256, 1, 1]             0    60      7       1.1  ?
+void at::native::vectorized_elementwise_kernel<4, at::native::FillFuncto [1, 1, 1]        [128, 1, 1]             0    16      7       0.7  ?
+void at::native::vectorized_elementwise_kernel<4, at::native::FillFuncto [1, 1, 1]        [128, 1, 1]             0    16      7       0.7  ?
+void at::native::elementwise_kernel<128, 2, at::native::gpu_kernel_impl_ [20, 1, 1]       [128, 1, 1]             0    18      7       1.1  ?
+void cutlass::Kernel2<cutlass_80_tensorop_s1688gemm_64x64_32x6_tn_align4 [12, 1, 1]       [128, 1, 1]         98304    94     13       2.0  ?
+void cublasLt::splitKreduce_kernel<32, 16, int, float, float, float, flo [8, 10, 1]       [32, 16, 1]             0    46     13       1.8  ?
+void RNN_blockPersist_fp_LSTM<float, float, float, 64>(float const*, flo [8, 1, 1]        [256, 1, 1]          1280    98     13      14.5  libcudnn_adv
+void cutlass::Kernel2<cutlass_80_tensorop_s1688gemm_64x64_32x6_tn_align4 [12, 1, 2]       [128, 1, 1]         98304    94     13       2.0  ?
+void cublasLt::splitKreduce_kernel<32, 16, int, float, float, float, flo [8, 10, 1]       [32, 16, 1]             0    46     13       2.0  ?
+void RNN_blockPersist_fp_LSTM<float, float, float, 64>(float const*, flo [8, 1, 1]        [256, 1, 1]          1280    98     13      14.5  libcudnn_adv

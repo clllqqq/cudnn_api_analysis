@@ -1,0 +1,22 @@
+# 全局 engine 28: plan finalize=0.08 ms  0.0471 ms/iter  maxerr=2.38e-06  kernels=21
+  void implicit_convolve_sgemm<float, float, int, 128, 6, 7, 3, 3, 5, 1, false, false, true>(int,  grid=[256, 1, 1]      block=[8, 32, 1]       smem=   6400 regs=  73     23.3us  libcudnn_engines_precompiled
+  void implicit_convolve_sgemm<float, float, int, 128, 6, 7, 3, 3, 5, 1, false, false, true>(int,  grid=[256, 1, 1]      block=[8, 32, 1]       smem=   6400 regs=  73     21.8us  libcudnn_engines_precompiled
+  void implicit_convolve_sgemm<float, float, int, 128, 6, 7, 3, 3, 5, 1, false, false, true>(int,  grid=[256, 1, 1]      block=[8, 32, 1]       smem=   6400 regs=  73     22.0us  libcudnn_engines_precompiled
+  void implicit_convolve_sgemm<float, float, int, 128, 6, 7, 3, 3, 5, 1, false, false, true>(int,  grid=[256, 1, 1]      block=[8, 32, 1]       smem=   6400 regs=  73     22.9us  libcudnn_engines_precompiled
+  void implicit_convolve_sgemm<float, float, int, 128, 6, 7, 3, 3, 5, 1, false, false, true>(int,  grid=[256, 1, 1]      block=[8, 32, 1]       smem=   6400 regs=  73     22.5us  libcudnn_engines_precompiled
+  void implicit_convolve_sgemm<float, float, int, 128, 6, 7, 3, 3, 5, 1, false, false, true>(int,  grid=[256, 1, 1]      block=[8, 32, 1]       smem=   6400 regs=  73     22.3us  libcudnn_engines_precompiled
+  void implicit_convolve_sgemm<float, float, int, 128, 6, 7, 3, 3, 5, 1, false, false, true>(int,  grid=[256, 1, 1]      block=[8, 32, 1]       smem=   6400 regs=  73     22.4us  libcudnn_engines_precompiled
+  void implicit_convolve_sgemm<float, float, int, 128, 6, 7, 3, 3, 5, 1, false, false, true>(int,  grid=[256, 1, 1]      block=[8, 32, 1]       smem=   6400 regs=  73     22.0us  libcudnn_engines_precompiled
+  void implicit_convolve_sgemm<float, float, int, 128, 6, 7, 3, 3, 5, 1, false, false, true>(int,  grid=[256, 1, 1]      block=[8, 32, 1]       smem=   6400 regs=  73     22.6us  libcudnn_engines_precompiled
+  void implicit_convolve_sgemm<float, float, int, 128, 6, 7, 3, 3, 5, 1, false, false, true>(int,  grid=[256, 1, 1]      block=[8, 32, 1]       smem=   6400 regs=  73     22.3us  libcudnn_engines_precompiled
+  void implicit_convolve_sgemm<float, float, int, 128, 6, 7, 3, 3, 5, 1, false, false, true>(int,  grid=[256, 1, 1]      block=[8, 32, 1]       smem=   6400 regs=  73     22.2us  libcudnn_engines_precompiled
+  void implicit_convolve_sgemm<float, float, int, 128, 6, 7, 3, 3, 5, 1, false, false, true>(int,  grid=[256, 1, 1]      block=[8, 32, 1]       smem=   6400 regs=  73     22.0us  libcudnn_engines_precompiled
+  void implicit_convolve_sgemm<float, float, int, 128, 6, 7, 3, 3, 5, 1, false, false, true>(int,  grid=[256, 1, 1]      block=[8, 32, 1]       smem=   6400 regs=  73     22.6us  libcudnn_engines_precompiled
+  void implicit_convolve_sgemm<float, float, int, 128, 6, 7, 3, 3, 5, 1, false, false, true>(int,  grid=[256, 1, 1]      block=[8, 32, 1]       smem=   6400 regs=  73     22.3us  libcudnn_engines_precompiled
+  void implicit_convolve_sgemm<float, float, int, 128, 6, 7, 3, 3, 5, 1, false, false, true>(int,  grid=[256, 1, 1]      block=[8, 32, 1]       smem=   6400 regs=  73     22.0us  libcudnn_engines_precompiled
+  void implicit_convolve_sgemm<float, float, int, 128, 6, 7, 3, 3, 5, 1, false, false, true>(int,  grid=[256, 1, 1]      block=[8, 32, 1]       smem=   6400 regs=  73     22.0us  libcudnn_engines_precompiled
+  void implicit_convolve_sgemm<float, float, int, 128, 6, 7, 3, 3, 5, 1, false, false, true>(int,  grid=[256, 1, 1]      block=[8, 32, 1]       smem=   6400 regs=  73     22.2us  libcudnn_engines_precompiled
+  void implicit_convolve_sgemm<float, float, int, 128, 6, 7, 3, 3, 5, 1, false, false, true>(int,  grid=[256, 1, 1]      block=[8, 32, 1]       smem=   6400 regs=  73     22.0us  libcudnn_engines_precompiled
+  void implicit_convolve_sgemm<float, float, int, 128, 6, 7, 3, 3, 5, 1, false, false, true>(int,  grid=[256, 1, 1]      block=[8, 32, 1]       smem=   6400 regs=  73     21.9us  libcudnn_engines_precompiled
+  void implicit_convolve_sgemm<float, float, int, 128, 6, 7, 3, 3, 5, 1, false, false, true>(int,  grid=[256, 1, 1]      block=[8, 32, 1]       smem=   6400 regs=  73     22.6us  libcudnn_engines_precompiled
+  void implicit_convolve_sgemm<float, float, int, 128, 6, 7, 3, 3, 5, 1, false, false, true>(int,  grid=[256, 1, 1]      block=[8, 32, 1]       smem=   6400 regs=  73     22.3us  libcudnn_engines_precompiled

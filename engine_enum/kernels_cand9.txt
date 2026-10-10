@@ -1,0 +1,86 @@
+# heuristic 候选 #9: engineId=46  0.0766 ms/iter  maxerr=3.34e-03
+# 旋钮 "CUDNN_KNOB_TYPE_TILE_SIZE":1,"CUDNN_KNOB_TYPE_KBLOCK":3,"CUDNN_KNOB_TYPE_STAGES":2
+  void cudnn::engines_precompiled::nchwToNhwcKernel<float, float, float, false, true, (cudnnKernel grid=[128, 1, 4]      block=[256, 1, 1]      smem=   4224 regs=  24      3.6us  libcudnn_engines_precompiled
+  void cudnn::engines_precompiled::nchwToNhwcKernel<float, float, float, false, true, (cudnnKernel grid=[1, 1, 16]       block=[256, 1, 1]      smem=   4224 regs=  24      1.1us  libcudnn_engines_precompiled
+  void cutlass__5x_cudnn::Kernel<cutlass_tensorop_s1688fprop_optimized_tf32_128x64_32x3_nhwc_align grid=[128, 1, 1]      block=[128, 1, 1]      smem=  73728 regs= 174     42.8us  ?
+  void cudnn::engines_precompiled::nhwcToNchwKernel<float, float, float, true, false, (cudnnKernel grid=[128, 1, 4]      block=[256, 1, 1]      smem=   4224 regs=  20      3.8us  libcudnn_engines_precompiled
+  void cudnn::engines_precompiled::nchwToNhwcKernel<float, float, float, false, true, (cudnnKernel grid=[128, 1, 4]      block=[256, 1, 1]      smem=   4224 regs=  24      3.5us  libcudnn_engines_precompiled
+  void cudnn::engines_precompiled::nchwToNhwcKernel<float, float, float, false, true, (cudnnKernel grid=[1, 1, 16]       block=[256, 1, 1]      smem=   4224 regs=  24      1.1us  libcudnn_engines_precompiled
+  void cutlass__5x_cudnn::Kernel<cutlass_tensorop_s1688fprop_optimized_tf32_128x64_32x3_nhwc_align grid=[128, 1, 1]      block=[128, 1, 1]      smem=  73728 regs= 174     42.5us  ?
+  void cudnn::engines_precompiled::nhwcToNchwKernel<float, float, float, true, false, (cudnnKernel grid=[128, 1, 4]      block=[256, 1, 1]      smem=   4224 regs=  20      3.7us  libcudnn_engines_precompiled
+  void cudnn::engines_precompiled::nchwToNhwcKernel<float, float, float, false, true, (cudnnKernel grid=[128, 1, 4]      block=[256, 1, 1]      smem=   4224 regs=  24      3.7us  libcudnn_engines_precompiled
+  void cudnn::engines_precompiled::nchwToNhwcKernel<float, float, float, false, true, (cudnnKernel grid=[1, 1, 16]       block=[256, 1, 1]      smem=   4224 regs=  24      1.1us  libcudnn_engines_precompiled
+  void cutlass__5x_cudnn::Kernel<cutlass_tensorop_s1688fprop_optimized_tf32_128x64_32x3_nhwc_align grid=[128, 1, 1]      block=[128, 1, 1]      smem=  73728 regs= 174     42.6us  ?
+  void cudnn::engines_precompiled::nhwcToNchwKernel<float, float, float, true, false, (cudnnKernel grid=[128, 1, 4]      block=[256, 1, 1]      smem=   4224 regs=  20      3.8us  libcudnn_engines_precompiled
+  void cudnn::engines_precompiled::nchwToNhwcKernel<float, float, float, false, true, (cudnnKernel grid=[128, 1, 4]      block=[256, 1, 1]      smem=   4224 regs=  24      3.6us  libcudnn_engines_precompiled
+  void cudnn::engines_precompiled::nchwToNhwcKernel<float, float, float, false, true, (cudnnKernel grid=[1, 1, 16]       block=[256, 1, 1]      smem=   4224 regs=  24      1.1us  libcudnn_engines_precompiled
+  void cutlass__5x_cudnn::Kernel<cutlass_tensorop_s1688fprop_optimized_tf32_128x64_32x3_nhwc_align grid=[128, 1, 1]      block=[128, 1, 1]      smem=  73728 regs= 174     42.7us  ?
+  void cudnn::engines_precompiled::nhwcToNchwKernel<float, float, float, true, false, (cudnnKernel grid=[128, 1, 4]      block=[256, 1, 1]      smem=   4224 regs=  20      3.7us  libcudnn_engines_precompiled
+  void cudnn::engines_precompiled::nchwToNhwcKernel<float, float, float, false, true, (cudnnKernel grid=[128, 1, 4]      block=[256, 1, 1]      smem=   4224 regs=  24      3.7us  libcudnn_engines_precompiled
+  void cudnn::engines_precompiled::nchwToNhwcKernel<float, float, float, false, true, (cudnnKernel grid=[1, 1, 16]       block=[256, 1, 1]      smem=   4224 regs=  24      1.1us  libcudnn_engines_precompiled
+  void cutlass__5x_cudnn::Kernel<cutlass_tensorop_s1688fprop_optimized_tf32_128x64_32x3_nhwc_align grid=[128, 1, 1]      block=[128, 1, 1]      smem=  73728 regs= 174     42.5us  ?
+  void cudnn::engines_precompiled::nhwcToNchwKernel<float, float, float, true, false, (cudnnKernel grid=[128, 1, 4]      block=[256, 1, 1]      smem=   4224 regs=  20      3.7us  libcudnn_engines_precompiled
+  void cudnn::engines_precompiled::nchwToNhwcKernel<float, float, float, false, true, (cudnnKernel grid=[128, 1, 4]      block=[256, 1, 1]      smem=   4224 regs=  24      3.6us  libcudnn_engines_precompiled
+  void cudnn::engines_precompiled::nchwToNhwcKernel<float, float, float, false, true, (cudnnKernel grid=[1, 1, 16]       block=[256, 1, 1]      smem=   4224 regs=  24      1.1us  libcudnn_engines_precompiled
+  void cutlass__5x_cudnn::Kernel<cutlass_tensorop_s1688fprop_optimized_tf32_128x64_32x3_nhwc_align grid=[128, 1, 1]      block=[128, 1, 1]      smem=  73728 regs= 174     42.6us  ?
+  void cudnn::engines_precompiled::nhwcToNchwKernel<float, float, float, true, false, (cudnnKernel grid=[128, 1, 4]      block=[256, 1, 1]      smem=   4224 regs=  20      3.7us  libcudnn_engines_precompiled
+  void cudnn::engines_precompiled::nchwToNhwcKernel<float, float, float, false, true, (cudnnKernel grid=[128, 1, 4]      block=[256, 1, 1]      smem=   4224 regs=  24      3.6us  libcudnn_engines_precompiled
+  void cudnn::engines_precompiled::nchwToNhwcKernel<float, float, float, false, true, (cudnnKernel grid=[1, 1, 16]       block=[256, 1, 1]      smem=   4224 regs=  24      1.1us  libcudnn_engines_precompiled
+  void cutlass__5x_cudnn::Kernel<cutlass_tensorop_s1688fprop_optimized_tf32_128x64_32x3_nhwc_align grid=[128, 1, 1]      block=[128, 1, 1]      smem=  73728 regs= 174     42.4us  ?
+  void cudnn::engines_precompiled::nhwcToNchwKernel<float, float, float, true, false, (cudnnKernel grid=[128, 1, 4]      block=[256, 1, 1]      smem=   4224 regs=  20      3.7us  libcudnn_engines_precompiled
+  void cudnn::engines_precompiled::nchwToNhwcKernel<float, float, float, false, true, (cudnnKernel grid=[128, 1, 4]      block=[256, 1, 1]      smem=   4224 regs=  24      3.6us  libcudnn_engines_precompiled
+  void cudnn::engines_precompiled::nchwToNhwcKernel<float, float, float, false, true, (cudnnKernel grid=[1, 1, 16]       block=[256, 1, 1]      smem=   4224 regs=  24      1.1us  libcudnn_engines_precompiled
+  void cutlass__5x_cudnn::Kernel<cutlass_tensorop_s1688fprop_optimized_tf32_128x64_32x3_nhwc_align grid=[128, 1, 1]      block=[128, 1, 1]      smem=  73728 regs= 174     42.7us  ?
+  void cudnn::engines_precompiled::nhwcToNchwKernel<float, float, float, true, false, (cudnnKernel grid=[128, 1, 4]      block=[256, 1, 1]      smem=   4224 regs=  20      3.8us  libcudnn_engines_precompiled
+  void cudnn::engines_precompiled::nchwToNhwcKernel<float, float, float, false, true, (cudnnKernel grid=[128, 1, 4]      block=[256, 1, 1]      smem=   4224 regs=  24      3.6us  libcudnn_engines_precompiled
+  void cudnn::engines_precompiled::nchwToNhwcKernel<float, float, float, false, true, (cudnnKernel grid=[1, 1, 16]       block=[256, 1, 1]      smem=   4224 regs=  24      1.1us  libcudnn_engines_precompiled
+  void cutlass__5x_cudnn::Kernel<cutlass_tensorop_s1688fprop_optimized_tf32_128x64_32x3_nhwc_align grid=[128, 1, 1]      block=[128, 1, 1]      smem=  73728 regs= 174     42.8us  ?
+  void cudnn::engines_precompiled::nhwcToNchwKernel<float, float, float, true, false, (cudnnKernel grid=[128, 1, 4]      block=[256, 1, 1]      smem=   4224 regs=  20      3.8us  libcudnn_engines_precompiled
+  void cudnn::engines_precompiled::nchwToNhwcKernel<float, float, float, false, true, (cudnnKernel grid=[128, 1, 4]      block=[256, 1, 1]      smem=   4224 regs=  24      3.6us  libcudnn_engines_precompiled
+  void cudnn::engines_precompiled::nchwToNhwcKernel<float, float, float, false, true, (cudnnKernel grid=[1, 1, 16]       block=[256, 1, 1]      smem=   4224 regs=  24      1.1us  libcudnn_engines_precompiled
+  void cutlass__5x_cudnn::Kernel<cutlass_tensorop_s1688fprop_optimized_tf32_128x64_32x3_nhwc_align grid=[128, 1, 1]      block=[128, 1, 1]      smem=  73728 regs= 174     42.3us  ?
+  void cudnn::engines_precompiled::nhwcToNchwKernel<float, float, float, true, false, (cudnnKernel grid=[128, 1, 4]      block=[256, 1, 1]      smem=   4224 regs=  20      3.7us  libcudnn_engines_precompiled
+  void cudnn::engines_precompiled::nchwToNhwcKernel<float, float, float, false, true, (cudnnKernel grid=[128, 1, 4]      block=[256, 1, 1]      smem=   4224 regs=  24      3.5us  libcudnn_engines_precompiled
+  void cudnn::engines_precompiled::nchwToNhwcKernel<float, float, float, false, true, (cudnnKernel grid=[1, 1, 16]       block=[256, 1, 1]      smem=   4224 regs=  24      1.1us  libcudnn_engines_precompiled
+  void cutlass__5x_cudnn::Kernel<cutlass_tensorop_s1688fprop_optimized_tf32_128x64_32x3_nhwc_align grid=[128, 1, 1]      block=[128, 1, 1]      smem=  73728 regs= 174     42.4us  ?
+  void cudnn::engines_precompiled::nhwcToNchwKernel<float, float, float, true, false, (cudnnKernel grid=[128, 1, 4]      block=[256, 1, 1]      smem=   4224 regs=  20      3.7us  libcudnn_engines_precompiled
+  void cudnn::engines_precompiled::nchwToNhwcKernel<float, float, float, false, true, (cudnnKernel grid=[128, 1, 4]      block=[256, 1, 1]      smem=   4224 regs=  24      3.7us  libcudnn_engines_precompiled
+  void cudnn::engines_precompiled::nchwToNhwcKernel<float, float, float, false, true, (cudnnKernel grid=[1, 1, 16]       block=[256, 1, 1]      smem=   4224 regs=  24      1.1us  libcudnn_engines_precompiled
+  void cutlass__5x_cudnn::Kernel<cutlass_tensorop_s1688fprop_optimized_tf32_128x64_32x3_nhwc_align grid=[128, 1, 1]      block=[128, 1, 1]      smem=  73728 regs= 174     42.6us  ?
+  void cudnn::engines_precompiled::nhwcToNchwKernel<float, float, float, true, false, (cudnnKernel grid=[128, 1, 4]      block=[256, 1, 1]      smem=   4224 regs=  20      3.7us  libcudnn_engines_precompiled
+  void cudnn::engines_precompiled::nchwToNhwcKernel<float, float, float, false, true, (cudnnKernel grid=[128, 1, 4]      block=[256, 1, 1]      smem=   4224 regs=  24      3.6us  libcudnn_engines_precompiled
+  void cudnn::engines_precompiled::nchwToNhwcKernel<float, float, float, false, true, (cudnnKernel grid=[1, 1, 16]       block=[256, 1, 1]      smem=   4224 regs=  24      1.1us  libcudnn_engines_precompiled
+  void cutlass__5x_cudnn::Kernel<cutlass_tensorop_s1688fprop_optimized_tf32_128x64_32x3_nhwc_align grid=[128, 1, 1]      block=[128, 1, 1]      smem=  73728 regs= 174     42.5us  ?
+  void cudnn::engines_precompiled::nhwcToNchwKernel<float, float, float, true, false, (cudnnKernel grid=[128, 1, 4]      block=[256, 1, 1]      smem=   4224 regs=  20      3.8us  libcudnn_engines_precompiled
+  void cudnn::engines_precompiled::nchwToNhwcKernel<float, float, float, false, true, (cudnnKernel grid=[128, 1, 4]      block=[256, 1, 1]      smem=   4224 regs=  24      3.6us  libcudnn_engines_precompiled
+  void cudnn::engines_precompiled::nchwToNhwcKernel<float, float, float, false, true, (cudnnKernel grid=[1, 1, 16]       block=[256, 1, 1]      smem=   4224 regs=  24      1.1us  libcudnn_engines_precompiled
+  void cutlass__5x_cudnn::Kernel<cutlass_tensorop_s1688fprop_optimized_tf32_128x64_32x3_nhwc_align grid=[128, 1, 1]      block=[128, 1, 1]      smem=  73728 regs= 174     42.9us  ?
+  void cudnn::engines_precompiled::nhwcToNchwKernel<float, float, float, true, false, (cudnnKernel grid=[128, 1, 4]      block=[256, 1, 1]      smem=   4224 regs=  20      3.7us  libcudnn_engines_precompiled
+  void cudnn::engines_precompiled::nchwToNhwcKernel<float, float, float, false, true, (cudnnKernel grid=[128, 1, 4]      block=[256, 1, 1]      smem=   4224 regs=  24      3.6us  libcudnn_engines_precompiled
+  void cudnn::engines_precompiled::nchwToNhwcKernel<float, float, float, false, true, (cudnnKernel grid=[1, 1, 16]       block=[256, 1, 1]      smem=   4224 regs=  24      1.1us  libcudnn_engines_precompiled
+  void cutlass__5x_cudnn::Kernel<cutlass_tensorop_s1688fprop_optimized_tf32_128x64_32x3_nhwc_align grid=[128, 1, 1]      block=[128, 1, 1]      smem=  73728 regs= 174     42.9us  ?
+  void cudnn::engines_precompiled::nhwcToNchwKernel<float, float, float, true, false, (cudnnKernel grid=[128, 1, 4]      block=[256, 1, 1]      smem=   4224 regs=  20      3.7us  libcudnn_engines_precompiled
+  void cudnn::engines_precompiled::nchwToNhwcKernel<float, float, float, false, true, (cudnnKernel grid=[128, 1, 4]      block=[256, 1, 1]      smem=   4224 regs=  24      3.6us  libcudnn_engines_precompiled
+  void cudnn::engines_precompiled::nchwToNhwcKernel<float, float, float, false, true, (cudnnKernel grid=[1, 1, 16]       block=[256, 1, 1]      smem=   4224 regs=  24      1.1us  libcudnn_engines_precompiled
+  void cutlass__5x_cudnn::Kernel<cutlass_tensorop_s1688fprop_optimized_tf32_128x64_32x3_nhwc_align grid=[128, 1, 1]      block=[128, 1, 1]      smem=  73728 regs= 174     42.8us  ?
+  void cudnn::engines_precompiled::nhwcToNchwKernel<float, float, float, true, false, (cudnnKernel grid=[128, 1, 4]      block=[256, 1, 1]      smem=   4224 regs=  20      3.7us  libcudnn_engines_precompiled
+  void cudnn::engines_precompiled::nchwToNhwcKernel<float, float, float, false, true, (cudnnKernel grid=[128, 1, 4]      block=[256, 1, 1]      smem=   4224 regs=  24      3.6us  libcudnn_engines_precompiled
+  void cudnn::engines_precompiled::nchwToNhwcKernel<float, float, float, false, true, (cudnnKernel grid=[1, 1, 16]       block=[256, 1, 1]      smem=   4224 regs=  24      1.1us  libcudnn_engines_precompiled
+  void cutlass__5x_cudnn::Kernel<cutlass_tensorop_s1688fprop_optimized_tf32_128x64_32x3_nhwc_align grid=[128, 1, 1]      block=[128, 1, 1]      smem=  73728 regs= 174     42.8us  ?
+  void cudnn::engines_precompiled::nhwcToNchwKernel<float, float, float, true, false, (cudnnKernel grid=[128, 1, 4]      block=[256, 1, 1]      smem=   4224 regs=  20      3.7us  libcudnn_engines_precompiled
+  void cudnn::engines_precompiled::nchwToNhwcKernel<float, float, float, false, true, (cudnnKernel grid=[128, 1, 4]      block=[256, 1, 1]      smem=   4224 regs=  24      3.6us  libcudnn_engines_precompiled
+  void cudnn::engines_precompiled::nchwToNhwcKernel<float, float, float, false, true, (cudnnKernel grid=[1, 1, 16]       block=[256, 1, 1]      smem=   4224 regs=  24      1.1us  libcudnn_engines_precompiled
+  void cutlass__5x_cudnn::Kernel<cutlass_tensorop_s1688fprop_optimized_tf32_128x64_32x3_nhwc_align grid=[128, 1, 1]      block=[128, 1, 1]      smem=  73728 regs= 174     42.9us  ?
+  void cudnn::engines_precompiled::nhwcToNchwKernel<float, float, float, true, false, (cudnnKernel grid=[128, 1, 4]      block=[256, 1, 1]      smem=   4224 regs=  20      3.7us  libcudnn_engines_precompiled
+  void cudnn::engines_precompiled::nchwToNhwcKernel<float, float, float, false, true, (cudnnKernel grid=[128, 1, 4]      block=[256, 1, 1]      smem=   4224 regs=  24      3.6us  libcudnn_engines_precompiled
+  void cudnn::engines_precompiled::nchwToNhwcKernel<float, float, float, false, true, (cudnnKernel grid=[1, 1, 16]       block=[256, 1, 1]      smem=   4224 regs=  24      1.1us  libcudnn_engines_precompiled
+  void cutlass__5x_cudnn::Kernel<cutlass_tensorop_s1688fprop_optimized_tf32_128x64_32x3_nhwc_align grid=[128, 1, 1]      block=[128, 1, 1]      smem=  73728 regs= 174     42.7us  ?
+  void cudnn::engines_precompiled::nhwcToNchwKernel<float, float, float, true, false, (cudnnKernel grid=[128, 1, 4]      block=[256, 1, 1]      smem=   4224 regs=  20      3.8us  libcudnn_engines_precompiled
+  void cudnn::engines_precompiled::nchwToNhwcKernel<float, float, float, false, true, (cudnnKernel grid=[128, 1, 4]      block=[256, 1, 1]      smem=   4224 regs=  24      3.6us  libcudnn_engines_precompiled
+  void cudnn::engines_precompiled::nchwToNhwcKernel<float, float, float, false, true, (cudnnKernel grid=[1, 1, 16]       block=[256, 1, 1]      smem=   4224 regs=  24      1.1us  libcudnn_engines_precompiled
+  void cutlass__5x_cudnn::Kernel<cutlass_tensorop_s1688fprop_optimized_tf32_128x64_32x3_nhwc_align grid=[128, 1, 1]      block=[128, 1, 1]      smem=  73728 regs= 174     42.6us  ?
+  void cudnn::engines_precompiled::nhwcToNchwKernel<float, float, float, true, false, (cudnnKernel grid=[128, 1, 4]      block=[256, 1, 1]      smem=   4224 regs=  20      3.7us  libcudnn_engines_precompiled
+  void cudnn::engines_precompiled::nchwToNhwcKernel<float, float, float, false, true, (cudnnKernel grid=[128, 1, 4]      block=[256, 1, 1]      smem=   4224 regs=  24      3.6us  libcudnn_engines_precompiled
+  void cudnn::engines_precompiled::nchwToNhwcKernel<float, float, float, false, true, (cudnnKernel grid=[1, 1, 16]       block=[256, 1, 1]      smem=   4224 regs=  24      1.1us  libcudnn_engines_precompiled
+  void cutlass__5x_cudnn::Kernel<cutlass_tensorop_s1688fprop_optimized_tf32_128x64_32x3_nhwc_align grid=[128, 1, 1]      block=[128, 1, 1]      smem=  73728 regs= 174     42.8us  ?
+  void cudnn::engines_precompiled::nhwcToNchwKernel<float, float, float, true, false, (cudnnKernel grid=[128, 1, 4]      block=[256, 1, 1]      smem=   4224 regs=  20      3.8us  libcudnn_engines_precompiled

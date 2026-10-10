@@ -1,0 +1,17 @@
+# conv: 14 个 kernel 发射（CUPTI，torch.profiler）
+# target=/home/liquan/cudnn_per_op.py case=conv
+#       t_us kernel                                                                   grid             block                smem  regs stream        us  归属库
+566469705870.1 void at::native::elementwise_kernel<128, 2, at::native::gpu_kernel_impl_ [1024, 1, 1]     [128, 1, 1]             0    18      7       2.2  ?
+566469731712.2 void cudnn::cnn::dgrad2d_grouped_direct_kernel<float, int, float, float, [48, 1, 1]       [1024, 1, 1]            0    64      7      21.2  libcudnn_engines_precompiled
+566469731910.2 void at::native::elementwise_kernel<128, 2, at::native::gpu_kernel_impl_ [1024, 1, 1]     [128, 1, 1]             0    18      7       2.2  ?
+566469803704.5 void cudnn::engines_precompiled::nchwToNhwcKernel<float, float, float, f [128, 1, 4]      [256, 1, 1]          4224    24      7       3.6  libcudnn_engines_precompiled
+566469803809.6 void cudnn::engines_precompiled::nchwToNhwcKernel<float, float, float, f [128, 1, 4]      [256, 1, 1]          4224    24      7       3.9  libcudnn_engines_precompiled
+566469804851.7 _ZN17cutlass__5x_cudnn6KernelINS_4conv6kernel23ImplicitGemmConvolutionIN [1, 1, 4]        [128, 1, 1]         81920   106      7      61.0  libcudnn_engines_precompiled
+566469806305.5 void cutlass__5x_cudnn::Kernel<cutlass__5x_cudnn::reduction::kernel::Red [4, 1, 1]        [32, 4, 1]              0    38      7       1.1  ?
+566469821134.3 void cudnn::engines_precompiled::nhwcToNchwKernel<float, float, float, t [1, 1, 16]       [256, 1, 1]          4224    20      7       1.2  libcudnn_engines_precompiled
+566469821356.4 void at::native::reduce_kernel<512, 1, at::native::ReduceOp<float, at::n [1, 32, 1]       [16, 32, 1]          2064    27      7       3.3  ?
+566469349682.3 void at::native::(anonymous namespace)::distribution_elementwise_grid_st [156, 1, 1]      [256, 1, 1]             0    60      7       2.6  ?
+566469512927.5 void implicit_convolve_sgemm<float, float, int, 1024, 5, 5, 3, 3, 3, 1,  [512, 1, 1]      [8, 8, 1]            2304    63      7       8.6  libcudnn_engines_precompiled
+566469564226.0 void at::native::elementwise_kernel<128, 2, at::native::gpu_kernel_impl_ [1024, 1, 1]     [128, 1, 1]             0    21      7       4.5  ?
+566469636871.2 void at::native::reduce_kernel<512, 1, at::native::ReduceOp<float, at::n [1, 32, 1]       [512, 1, 1]          2064    27      7       3.6  ?
+566469649666.1 void at::native::vectorized_elementwise_kernel<4, at::native::FillFuncto [1, 1, 1]        [128, 1, 1]             0    16      7       0.7  ?

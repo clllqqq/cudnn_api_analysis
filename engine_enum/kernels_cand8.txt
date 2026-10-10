@@ -1,0 +1,23 @@
+# heuristic 候选 #8: engineId=0  0.0566 ms/iter  maxerr=2.38e-06
+# 旋钮 
+  void cudnn::cnn::conv2d_grouped_direct_kernel<false, true, false, false, false, false, 0, 0, int grid=[256, 1, 1]      block=[1024, 1, 1]     smem=      0 regs=  48     38.0us  libcudnn_engines_precompiled
+  void cudnn::cnn::conv2d_grouped_direct_kernel<false, true, false, false, false, false, 0, 0, int grid=[256, 1, 1]      block=[1024, 1, 1]     smem=      0 regs=  48     37.9us  libcudnn_engines_precompiled
+  void cudnn::cnn::conv2d_grouped_direct_kernel<false, true, false, false, false, false, 0, 0, int grid=[256, 1, 1]      block=[1024, 1, 1]     smem=      0 regs=  48     38.2us  libcudnn_engines_precompiled
+  void cudnn::cnn::conv2d_grouped_direct_kernel<false, true, false, false, false, false, 0, 0, int grid=[256, 1, 1]      block=[1024, 1, 1]     smem=      0 regs=  48     38.2us  libcudnn_engines_precompiled
+  void cudnn::cnn::conv2d_grouped_direct_kernel<false, true, false, false, false, false, 0, 0, int grid=[256, 1, 1]      block=[1024, 1, 1]     smem=      0 regs=  48     37.6us  libcudnn_engines_precompiled
+  void cudnn::cnn::conv2d_grouped_direct_kernel<false, true, false, false, false, false, 0, 0, int grid=[256, 1, 1]      block=[1024, 1, 1]     smem=      0 regs=  48     37.4us  libcudnn_engines_precompiled
+  void cudnn::cnn::conv2d_grouped_direct_kernel<false, true, false, false, false, false, 0, 0, int grid=[256, 1, 1]      block=[1024, 1, 1]     smem=      0 regs=  48     38.1us  libcudnn_engines_precompiled
+  void cudnn::cnn::conv2d_grouped_direct_kernel<false, true, false, false, false, false, 0, 0, int grid=[256, 1, 1]      block=[1024, 1, 1]     smem=      0 regs=  48     37.8us  libcudnn_engines_precompiled
+  void cudnn::cnn::conv2d_grouped_direct_kernel<false, true, false, false, false, false, 0, 0, int grid=[256, 1, 1]      block=[1024, 1, 1]     smem=      0 regs=  48     38.0us  libcudnn_engines_precompiled
+  void cudnn::cnn::conv2d_grouped_direct_kernel<false, true, false, false, false, false, 0, 0, int grid=[256, 1, 1]      block=[1024, 1, 1]     smem=      0 regs=  48     37.5us  libcudnn_engines_precompiled
+  void cudnn::cnn::conv2d_grouped_direct_kernel<false, true, false, false, false, false, 0, 0, int grid=[256, 1, 1]      block=[1024, 1, 1]     smem=      0 regs=  48     38.0us  libcudnn_engines_precompiled
+  void cudnn::cnn::conv2d_grouped_direct_kernel<false, true, false, false, false, false, 0, 0, int grid=[256, 1, 1]      block=[1024, 1, 1]     smem=      0 regs=  48     38.0us  libcudnn_engines_precompiled
+  void cudnn::cnn::conv2d_grouped_direct_kernel<false, true, false, false, false, false, 0, 0, int grid=[256, 1, 1]      block=[1024, 1, 1]     smem=      0 regs=  48     37.8us  libcudnn_engines_precompiled
+  void cudnn::cnn::conv2d_grouped_direct_kernel<false, true, false, false, false, false, 0, 0, int grid=[256, 1, 1]      block=[1024, 1, 1]     smem=      0 regs=  48     37.1us  libcudnn_engines_precompiled
+  void cudnn::cnn::conv2d_grouped_direct_kernel<false, true, false, false, false, false, 0, 0, int grid=[256, 1, 1]      block=[1024, 1, 1]     smem=      0 regs=  48     37.2us  libcudnn_engines_precompiled
+  void cudnn::cnn::conv2d_grouped_direct_kernel<false, true, false, false, false, false, 0, 0, int grid=[256, 1, 1]      block=[1024, 1, 1]     smem=      0 regs=  48     37.2us  libcudnn_engines_precompiled
+  void cudnn::cnn::conv2d_grouped_direct_kernel<false, true, false, false, false, false, 0, 0, int grid=[256, 1, 1]      block=[1024, 1, 1]     smem=      0 regs=  48     37.1us  libcudnn_engines_precompiled
+  void cudnn::cnn::conv2d_grouped_direct_kernel<false, true, false, false, false, false, 0, 0, int grid=[256, 1, 1]      block=[1024, 1, 1]     smem=      0 regs=  48     37.4us  libcudnn_engines_precompiled
+  void cudnn::cnn::conv2d_grouped_direct_kernel<false, true, false, false, false, false, 0, 0, int grid=[256, 1, 1]      block=[1024, 1, 1]     smem=      0 regs=  48     38.0us  libcudnn_engines_precompiled
+  void cudnn::cnn::conv2d_grouped_direct_kernel<false, true, false, false, false, false, 0, 0, int grid=[256, 1, 1]      block=[1024, 1, 1]     smem=      0 regs=  48     37.7us  libcudnn_engines_precompiled
+  void cudnn::cnn::conv2d_grouped_direct_kernel<false, true, false, false, false, false, 0, 0, int grid=[256, 1, 1]      block=[1024, 1, 1]     smem=      0 regs=  48     37.8us  libcudnn_engines_precompiled
